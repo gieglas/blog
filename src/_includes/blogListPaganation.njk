@@ -59,15 +59,15 @@
 <nav aria-label="pagination" class="pagination govcy-mb-3">
     <ul>
     {% if pagination.previousPageLink %}
-      <li><a class="" href="{{ pagination.previousPageHref }}"><span class="govcy-visually-hidden-error">Go to </span>Previous<span class="govcy-visually-hidden-error"> page</span></a></li>
+      <li><a class="" href="{{ pagination.previousPageHref | url }}"><span class="govcy-visually-hidden-error">Go to </span>Previous<span class="govcy-visually-hidden-error"> page</span></a></li>
     {% else %}
       <li><span class="govcy-mr-2">Previous</span></li>
     {% endif %}
     {%- for pageEntry in pagination.pages %}
-        <li><a class="" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}><span class="govcy-visually-hidden-error">Go to page number </span>{{ loop.index }}</a></li>
+        <li><a class="" href="{{ pagination.hrefs[ loop.index0 ] | url }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}><span class="govcy-visually-hidden-error">Go to page number </span>{{ loop.index }}</a></li>
     {%- endfor %}
     {% if pagination.nextPageLink %}
-      <li><a class="" href="{{ pagination.nextPageHref}}"><span class="govcy-visually-hidden-error">Go to </span>Next<span class="govcy-visually-hidden-error"> page</span></a></li>
+      <li><a class="" href="{{ pagination.nextPageHref | url }}"><span class="govcy-visually-hidden-error">Go to </span>Next<span class="govcy-visually-hidden-error"> page</span></a></li>
     {% else %}
       <li><span>Next</span></li>
     {% endif %}
