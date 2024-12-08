@@ -14,7 +14,7 @@
                     <p class="govcy-hint">{{ page.date | dateOnly }} </p>
                     {% endif %}
                     {% if image %} 
-                    <img src="{{ site.imagesLocation  ~  image | url }}" alt="{{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
+                    <img src="{{ (site.imagesLocation  ~  image) | url }}" alt="{{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
                     {% endif %}
                     {{ content | safe }}
                 </div>

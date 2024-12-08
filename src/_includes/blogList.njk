@@ -24,7 +24,7 @@
                                     </h2>
                                     <p class="govcy-hint govcy-mb-1">{{ pag.date | dateOnly }} </p>
                                     {% if pag.data.image %} 
-                                    <a href="{{ pag.url | url }}"><img style="height:180px" src="{{ pag.data.image }}" alt="{{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
+                                    <a href="{{ pag.url | url }}"><img style="height:180px" src="{{ pag.data.image | url }}" alt="{{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
                                     {% endif %}
                                     <p>{{pag.data.summary}}</p>
                                 </li>

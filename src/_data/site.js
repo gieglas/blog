@@ -1,7 +1,7 @@
 module.exports = {
   buildTime: new Date(),
   isMultiLanguage : false,
-  url : "https://gov-cy.github.io/govcy-design-system-docs/",
+  url : "https://gieglas.github.io/blog/",
   version:"1.3.2", 
   cssDownload: "https://raw.githubusercontent.com/gov-cy/govcy-design-system/v1.3.2/dist/css/main.min.css",
   imagesLocation: "/img/",

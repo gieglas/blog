@@ -7,14 +7,14 @@
         <meta property="og:title" content="{{ title }} - {{ site.localization[locale].title }}">
         <meta property="og:url" content="{{ site.url }}">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="{% if image %}{{ site.imagesLocation ~ image | url }}{% else %}{{ site.url }}img/icons-512.png{% endif %}">
+        <meta property="og:image" content="{% if image %}{{ (site.imagesLocation ~ image) | url }}{% else %}{{ site.url }}img/icons-512.png{% endif %}">
         <meta property="og:site_name" content="{{ site.localization[locale].title }}">
     
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="{{ site.url }}">
         <meta property="twitter:title" content="{{ title }} - {{ site.localization[locale].title }}">
         <meta property="twitter:description" content="{{ site.localization[locale].description }}">
-        <meta property="twitter:image" content="{% if image %}{{ site.imagesLocation ~ image | url }}{% else %}{{ site.url }}img/icons-512.png{% endif %}">
+        <meta property="twitter:image" content="{% if image %}{{ (site.imagesLocation ~ image) | url }}{% else %}{{ site.url }}img/icons-512.png{% endif %}">
         <!-- Theme --> 
         <link rel="manifest" href="{{'/manifest.json' | url }}">
         <meta name="theme-color" content="#0090d3">

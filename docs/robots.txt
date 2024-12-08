@@ -1,4 +1,4 @@
-Sitemap: https://gov-cy.github.io/govcy-design-system-docs//sitemap.xml
+Sitemap: https://gieglas.github.io/blog//sitemap.xml
 
 User-agent: *
 Disallow:
