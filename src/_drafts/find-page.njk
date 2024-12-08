@@ -1,0 +1,35 @@
+---
+title: "Find page"
+category: "find-page"
+layout: "blogPage"
+pageType: "page"
+breadcrumbs: [{"name":"Search", "url": "/search/" }]
+hideSearch: true
+---
+
+{# <link href="{{ '/pagefind/pagefind-ui.css' | url}}" rel="stylesheet">
+<div id="search" class="search"></div>
+<script src="{{ '/pagefind/pagefind-ui.js' | url}}" onload="new PagefindUI({ element: '#search', showImages: true });"></script> #}
+<style>
+
+
+</style>
+
+
+<div class="combobox combobox-list">
+  <div class="group">
+    <input id="cb1-input" class="cb_edit" type="text" role="combobox" aria-label="search" placeholder="Search" aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" autocomplete="off">
+  </div>
+  <ul id="cb1-listbox" role="listbox" aria-label="Search pages" class="combobox-list-box">
+{% for page in collections.all %}
+    {%- if not page.data.hideSearch -%}
+        {%- if locale == page.data.locale -%}
+            { label: "{{page.data.title}}", url: '{{ page.url | url }}', keys: "{{page.data.searchKeys}}" },
+    <li id="{{ page.fileSlug}}" data-url="{{ page.url | url }}" role="option">{{page.data.title}}</li>
+        {%- endif -%}
+    {%- endif -%}
+{% endfor %}
+  </ul>
+</div>
+        
+

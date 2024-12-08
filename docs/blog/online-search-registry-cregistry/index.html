@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="Design your services using gov.cy styles, components and patterns.">
+        <meta property="og:title" content="Online search registry (cRegistry) - Con&#39;s place">
+        <meta property="og:url" content="https://gov-cy.github.io/govcy-design-system-docs/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/cregistrylogo256.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gov-cy.github.io/govcy-design-system-docs/">
+        <meta property="twitter:title" content="Online search registry (cRegistry) - Con&#39;s place">
+        <meta property="twitter:description" content="Design your services using gov.cy styles, components and patterns.">
+        <meta property="twitter:image" content="/img/cregistrylogo256.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Online search registry (cRegistry) - Con&#39;s place</title>
+        <meta name="description" content="Design your services using gov.cy styles, components and patterns.">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/contact/"  class="nav-link" >
+                                        Contact
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Online search registry (cRegistry)</h1>
+                    <p class="govcy-hint">17 April 2018 </p>
+                    
+                     
+                    <img src="/img/cregistrylogo256.png" alt="Online search registry (cRegistry)" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <p>Recently I had a chance to create an online search system which can basically connect to any database type and search and display information. I tried to make the system as configurable as possible and it should be easy to adapt in any business environment so I thought I’d share my work. I called my system <strong>cRegistry</strong> (supposed to stand for Common Registry) :-). You can visit a <a href="http://gieglas.byethost10.com/cRegistry/?i=2" target="_blank">demo here</a> and I have uploaded the <a href="https://www.dropbox.com/sh/y14kpexhg3w1ngf/AAA--Rb1bGR_KwpEMht4CXfba?dl=0" target="_blank">code here</a>. I didn’t create a git this time, rather just shared a Dropbox folder with the code as I don’t think I will be making many modifications.</p>
+<h2>cRegistry Description</h2>
+<p>cRegistry is a system that can create search forms, display search results, details on selected items and even static pages, from different databases. The definitions of the search forms, display search results and details can be defined in configuration files without changing the code. Also the UI and static pages are controlled by templates again without changing the code.</p>
+<h2>General Features</h2>
+<ul>
+<li>API Based + javascript application</li>
+<li>Technology: PHP, Javascript, Slim Framework, JWT, mustache js</li>
+<li>Can connect to any database (MySQL, SQL Server, Oracle, Sybase)</li>
+<li>Keeps error log file with archiving rule</li>
+<li>Google Analytics</li>
+<li>Google invisible reCAPTCHA</li>
+</ul>
+<p>See below some screenshots of the main type of pages supported by the system:</p>
+<h3>Static pages</h3>
+<p><img src="../../img/ScreenShot01.jpg" alt="Home page screen shot" class="img-fluid pop-small govcy-mb-3"></p>
+<h3>Search Forms, Search Results</h3>
+<p><img src="../../img/ScreenShot02.jpg" alt="Search screen shot" class="img-fluid pop-small govcy-mb-3"></p>
+<h3>Details</h3>
+<p><img src="../../img/ScreenShot03.jpg" alt="Details screen shot" class="img-fluid pop-small govcy-mb-3"></p>
+<h2>cRegistry Characteristics</h2>
+<p><strong>UI</strong></p>
+<ul>
+<li>Responsive, mobile first works on all devices</li>
+<li>Uses twitter bootstrap, best practices on UI</li>
+<li>Works on all modern browsers</li>
+<li>Complete control over Presentation</li>
+<li>Printer friendly</li>
+<li>Uses hashed variables (enable use of navigation functionality of browsers and direct access to information with links)</li>
+<li>Has maintenance mode</li>
+</ul>
+<p><strong>Performance focused</strong></p>
+<ul>
+<li>All ajax minimum load time</li>
+<li>Data exchanges with the API with only minimum information</li>
+</ul>
+<p><strong>Flexible</strong></p>
+<ul>
+<li>without changing the code
+<ul>
+<li>Can add more search services in both the API and Client app (configs)</li>
+<li>can add more client applications to it</li>
+<li>Can easily add static content</li>
+</ul>
+</li>
+<li>Multi-language</li>
+</ul>
+<p><strong>Security</strong></p>
+<ul>
+<li>read only on data</li>
+<li>connect to external databases</li>
+<li>Security against bots with invisible recaptcha + access tockens</li>
+</ul>
+<p><strong>Cost</strong></p>
+<ul>
+<li>All open source no additional cost</li>
+<li>Can easily be maintained (small code)</li>
+</ul>
+<p><strong>Business</strong></p>
+<ul>
+<li>Can reuse data from different sites and services and deploy within 1-2 months</li>
+</ul>
+<p><strong>Restrictions</strong></p>
+<ul>
+<li>Javascript enable</li>
+<li>Search must be able to be executed with 1 select statement</li>
+<li>Does not handle replication of data (internal database to external) or images</li>
+<li>Database tables should be optimized</li>
+<li>Doesn’t handle payments</li>
+<li>Doesn’t handle logins</li>
+</ul>
+<h2>Framework Explained</h2>
+<p>The system uses simple REST web services to show search results and details. Specifically it uses the following web services:</p>
+<p><strong>getResults</strong> : Handles requests the get search results requests</p>
+<p><strong>getDetails</strong> : Handles requests the get details requests</p>
+<p><strong>getConfig</strong> : Gets the configuration details for the client application</p>
+<p><strong>auth</strong> : for authentication based on the client id (in this case the JS application’s client id) and if enabled in the config file.</p>
+<p>All system configuration is defined in the <strong>api/config.php</strong> file where the database connections, general settings, search and details queries and client application settings are defined.</p>
+<p>On the client javascript application the <strong>options.js</strong> file is used to define the client id. Under the <strong>tmpl</strong> folder, the templates and localization text are defined for each service (that were defined in the config.php)</p>
+<p>More details on the flow of the system is described in the diagram below:<br>
+<img src="../../img/ScreenShot04.jpg" alt="cRegistry flow diagram" class="img-fluid pop-small govcy-mb-3"></p>
+<h2>API Options</h2>
+<p>All of the system’s API Options are defined in the <strong>api/config.php</strong> file.</p>
+<h3>cRegistryOptions - API Options</h3>
+<p>Options of the API define the details of the and the API requests. They are defined in the <code>api/config.php</code> under <code>$cRegistryOptions</code> variable array.</p>
+<p>See below the details of the options file</p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Parent</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>proxy</strong></td>
+<td>Proxy for connecting to the internet</td>
+<td></td>
+<td>url:port</td>
+</tr>
+<tr>
+<td><strong>isMaintenance</strong></td>
+<td>If true noting is returned http status is returned 503 and no data re returned by the API. Also a setting <code>doMaintenance</code> on the client side is set to true</td>
+<td></td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td><strong>searchActions</strong></td>
+<td>All the API calls are defined here. Below the <code>getResults</code> and <code>getDetails</code> POST requests are defined which define a complete cRegistry service. Each element in the array is one service of getResults and getDetails. In the example below the <code>design</code> service is define</td>
+<td></td>
+<td>Array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For each Service</strong></p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Parent</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td>The ID of the service. Must be the same as the parent element of the array</td>
+<td>Service</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>connection</strong></td>
+<td>The connection id as defined in the <code>$connectionOptions</code> array</td>
+<td>Service</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>searchsqlbody</strong></td>
+<td>The <code>select</code>, <code>from</code>, <code>joins</code> part of the search sql. It is the start for defining the <code>getResults</code> request</td>
+<td>Service</td>
+<td>SQL String</td>
+</tr>
+<tr>
+<td><strong>searchsqlwhere</strong></td>
+<td>The first <code>where</code> part. It must include the keyword <code>where</code> to work and it will be the first element in the where clause. The rest of the where clause will be constructed depending on the parameters passed and the <code>searchoptions</code> defined below</td>
+<td>Service</td>
+<td>SQL String</td>
+</tr>
+<tr>
+<td><strong>searchsqlend</strong></td>
+<td>The last part of the sql query. Usually the <code>order by</code> and <code>limit</code> keywords are included here.</td>
+<td>Service</td>
+<td>SQL String</td>
+</tr>
+<tr>
+<td><strong>searchoptions</strong></td>
+<td>The definition of the filter options that can be defined for this service. These sql where parts will be inclided in the where clause if a parameter is passed in the array of the request body array i.e. <code>[{&quot;name&quot;:&quot;InputName&quot;,&quot;value&quot;:&quot;value&quot;}]</code></td>
+<td>Service</td>
+<td>Array</td>
+</tr>
+<tr>
+<td><strong>detailssql</strong></td>
+<td>The main sql query that will produce the results of the <code>getDetails</code> request, together with the <code>detailsarrayssql</code> results</td>
+<td>Service</td>
+<td>SQL String</td>
+</tr>
+<tr>
+<td><strong>detailsarrayssql</strong></td>
+<td>The results of these sql queries will be included in the <code>getDetails</code> request. Note that these sqls need a parameter ID to be passed (see <code>getDetails</code> API reference)</td>
+<td>Service</td>
+<td>Array of SQL String</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For each searchoptions</strong></p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Parent</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>addwhere</strong></td>
+<td>The SQL where part that corresponds to that option</td>
+<td>searchoptions</td>
+<td>SQL String</td>
+</tr>
+<tr>
+<td><strong>islike</strong></td>
+<td>If this is a <code>like</code></td>
+<td>searchoptions</td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="language-php"><code class="language-php"><span class="token variable">$cRegistryOptions</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><br>    <span class="token string single-quoted-string">'proxy'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'10.10.10.10:8080'</span><span class="token punctuation">,</span><br>    <span class="token string single-quoted-string">'isMaintenance'</span> <span class="token operator">=></span> <span class="token constant boolean">false</span><span class="token punctuation">,</span><br>    <span class="token string single-quoted-string">'searchActions'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><br>        <span class="token comment">//---------Design------------------</span><br>        <span class="token string single-quoted-string">'design'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><br>            <span class="token string single-quoted-string">'id'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'design'</span><span class="token punctuation">,</span><br>            <span class="token string single-quoted-string">'connection'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'dsViewDB'</span><span class="token punctuation">,</span><br>            <span class="token string single-quoted-string">'searchsqlbody'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'SELECT DISTINCT a.APPLICATIONNUMBER, a.TYREGOFFICECODE, a.APPLICATIONNUMBER, a.REGISTRATIONNUMBER, a.DESCRIPTION, a.TYCURRENTSTATUSCODE, a.CYPRUSTYCURRENTSTATUSCODE FROM design a INNER JOIN designperson b ON a.DESIGNID=b.DESIGNID INNER JOIN person c ON b.PERSONID = c.PERSONID'</span><span class="token punctuation">,</span><br>            <span class="token string single-quoted-string">'searchsqlwhere'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'WHERE a.ACTIVEROW = 1'</span><span class="token punctuation">,</span><br>            <span class="token string single-quoted-string">'searchsqlend'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">' ORDER BY a.APPLICATIONNUMBER desc LIMIT 1000'</span><span class="token punctuation">,</span><br>            <span class="token string single-quoted-string">'searchoptions'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><br>                <span class="token string single-quoted-string">'Application_No'</span> <span class="token operator">=></span> <span class="token keyword">array</span> <span class="token punctuation">(</span><br>                    <span class="token string single-quoted-string">'addwhere'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'AND a.APPLICATIONNUMBER like :Application_No'</span><span class="token punctuation">,</span><br>                    <span class="token string single-quoted-string">'islike'</span> <span class="token operator">=></span> <span class="token constant boolean">true</span><br>                <span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'Description'</span> <span class="token operator">=></span> <span class="token keyword">array</span> <span class="token punctuation">(</span><br>                    <span class="token string single-quoted-string">'addwhere'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'AND a.DESCRIPTION like :Description'</span><span class="token punctuation">,</span><br>                    <span class="token string single-quoted-string">'islike'</span> <span class="token operator">=></span> <span class="token constant boolean">true</span><br>                <span class="token punctuation">)</span><br>            <span class="token punctuation">)</span><span class="token punctuation">,</span><br>            <span class="token string single-quoted-string">'detailssql'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'SELECT * FROM design a where a.APPLICATIONNUMBER = :id'</span><span class="token punctuation">,</span><br>            <span class="token string single-quoted-string">'detailsarrayssql'</span> <span class="token operator">=></span> <span class="token keyword">array</span> <span class="token punctuation">(</span><br>                <span class="token string single-quoted-string">'DesignImages'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'SELECT a.FILENAME as Filename FROM designimage a INNER JOIN design b ON a.DESIGNID=b.DESIGNID WHERE b.APPLICATIONNUMBER = :id AND a.ACTIVEROW = 1'</span><span class="token punctuation">,</span><br>                <span class="token string single-quoted-string">'Classification'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'SELECT a.CLASSIFICATIONNUMBER as Locarno_Classification FROM classification a INNER JOIN design b ON a.DESIGNID=b.DESIGNID WHERE b.APPLICATIONNUMBER = :id AND a.ACTIVEROW = 1'</span><br>            <span class="token punctuation">)</span><br>        <span class="token punctuation">)</span><br>    <span class="token punctuation">)</span><br><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3>cRegistryClientOptions – Client Options</h3>
+<p>The client options define the client applications that use the API. They reside on the server side under <code>api/config.php</code> under <code>$cRegistryClientOptions</code> variable array. The client application options can be retrieved by the <code>getConfig</code> request.</p>
+<p>Each element in the root array defines a client application.</p>
+<p>See below the details of the options file for each client.</p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>key</strong></td>
+<td>Key for signing the JWT’s, I suggest generate it with base64_encode(openssl_random_pseudo_bytes(64))</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>issuer</strong></td>
+<td>JWT Issuer</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>audience</strong></td>
+<td>JWT Audience</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>refreshin</strong></td>
+<td>When the client should refresh the JWT token</td>
+<td>Number</td>
+</tr>
+<tr>
+<td><strong>expire</strong></td>
+<td>When the JWT token expires</td>
+<td>Number</td>
+</tr>
+<tr>
+<td><strong>doCaptcha</strong></td>
+<td>true to do google recaptia authentication</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td><strong>captchaSecret</strong></td>
+<td>google recapthca secret key</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>captchaUrl</strong></td>
+<td>google recaptcha url</td>
+<td>String:Url</td>
+</tr>
+<tr>
+<td><strong>simplePageRoutes</strong></td>
+<td>Define the simple (Presentation) Pages. These pages may also include the search form. The template and localization for each page are defined in the folder <code>tmpl/pageRoute/</code>. See more under <code>??? Clinet side</code></td>
+<td>Array of Strings</td>
+</tr>
+<tr>
+<td><strong>searchPageRoutes</strong></td>
+<td>Define the search Pages. The template and localization for each page are defined in the folder <code>tmpl/pageRoute/</code>. See more under <code>??? Clinet side</code></td>
+<td>Array of Strings</td>
+</tr>
+<tr>
+<td><strong>detailPageRoutes</strong></td>
+<td>Define the search details Pages. The template and localization for each page are defined in the folder <code>tmpl/pageRoute/</code>. See more under <code>??? Clinet side</code></td>
+<td>Array of Strings</td>
+</tr>
+<tr>
+<td><strong>allowedWebServices</strong></td>
+<td>Define the web services <code>getResults</code> and <code>getDetails</code>. On the defined web services in this array will be allowed for the specific client.</td>
+<td>Array of Strings</td>
+</tr>
+<tr>
+<td><strong>doAnalytics</strong></td>
+<td>True to send analytics details to google analytics</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td><strong>analyticsClientId</strong></td>
+<td>The google analytics client id</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>resourceVersion</strong></td>
+<td>The resources (templates and localizations) version number. Change this when you want to force the client cache to be reset</td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<pre class="language-php"><code class="language-php"><span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><br>    <span class="token string single-quoted-string">'xxxxxxxxx'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><br>        <span class="token string single-quoted-string">'key'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'</span><span class="token punctuation">,</span>    <span class="token comment">// Key for signing the JWT's, I suggest generate it with base64_encode(openssl_random_pseudo_bytes(64))</span><br>        <span class="token string single-quoted-string">'issuer'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'DRCORRegistry'</span><span class="token punctuation">,</span> <span class="token comment">//JWT issuer</span><br>        <span class="token string single-quoted-string">'audience'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'DRCORRegistry_clients'</span><span class="token punctuation">,</span> <span class="token comment">//JWT audience</span><br>        <span class="token string single-quoted-string">'refreshin'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'10'</span><span class="token punctuation">,</span> <span class="token comment">// Adding 15 minutes to refresh (when the client should refresh the token)</span><br>        <span class="token string single-quoted-string">'expire'</span> <span class="token operator">=></span> <span class="token number">60</span><span class="token punctuation">,</span> <span class="token comment">// Adding 30 minutes to expire (When the JWT token expires)</span><br>        <span class="token string single-quoted-string">'doCaptcha'</span> <span class="token operator">=></span> <span class="token constant boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//true to do google recaptia authentication</span><br>        <span class="token string single-quoted-string">'captchaSecret'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'xxxxxxxxxxxxxxxxxxxxxx'</span><span class="token punctuation">,</span> <span class="token comment">//google recapthca secret key</span><br>        <span class="token string single-quoted-string">'captchaUrl'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'https://www.google.com/recaptcha/api/siteverify'</span><span class="token punctuation">,</span> <span class="token comment">//google recaptcha url</span><br>        <span class="token comment">//define simple pages</span><br>        <span class="token string single-quoted-string">'simplePageRoutes'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'trademark'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'design'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'publications'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'about'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'help'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'contact'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'disclaimer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        <span class="token comment">//define search pages</span><br>        <span class="token string single-quoted-string">'searchPageRoutes'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'trademark'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'design'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'publications'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        <span class="token comment">//define details pages</span><br>        <span class="token string single-quoted-string">'detailPageRoutes'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'trademark'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'design'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'publications'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        <span class="token comment">//define web services</span><br>        <span class="token string single-quoted-string">'allowedWebServices'</span> <span class="token operator">=></span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'trademark'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'design'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'publications'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        <span class="token comment">//google analytics</span><br>        <span class="token string single-quoted-string">'doAnalytics'</span> <span class="token operator">=></span> <span class="token constant boolean">false</span><span class="token punctuation">,</span><br>        <span class="token comment">//google anlytics client id</span><br>        <span class="token string single-quoted-string">'analyticsClientId'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'UA-102006363-1'</span><span class="token punctuation">,</span><br>        <span class="token comment">//clinet resources version</span><br>        <span class="token string single-quoted-string">'resourceVersion'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'4'</span><br>    <span class="token punctuation">)</span><br><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3>connectionOptions – Connection Options</h3>
+<p>The connection options define database and file connections that the API uses. They are defined under <code>api/config.php</code> under <code>$connectionOptions</code> variable array.</p>
+<p>Each element in the root array defines a data connection.</p>
+<p>See below the details of the options file for each client.</p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td>The id of the connection. Must be the same as the array element name</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>server</strong></td>
+<td>The server location (ip or domain)</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>port</strong></td>
+<td>The database connection port number</td>
+<td>Number</td>
+</tr>
+<tr>
+<td><strong>user</strong></td>
+<td>The database connection user nane</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>pass</strong></td>
+<td>The database connection password</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td>The database name OR the path in case of a filesystem provider</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>provider</strong></td>
+<td>The data provider. Note that specific driver must be installed. The providers that are supported are <strong>mysql</strong>, <strong>sqlsrv</strong>, <strong>oci</strong>, <strong>sybase</strong>, <strong>filesystem</strong> (This is not a database connection but for searching i files)</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+<p><strong>example</strong>:</p>
+<pre class="language-php"><code class="language-php"><span class="token variable">$connectionOptions</span> <span class="token operator">=</span> <span class="token keyword">array</span> <span class="token punctuation">(</span><br>    <span class="token string double-quoted-string">"dsViewDB"</span> <span class="token operator">=></span> <span class="token keyword">array</span> <span class="token punctuation">(</span><br>        <span class="token string double-quoted-string">"id"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"dsViewDB"</span><span class="token punctuation">,</span><br>        <span class="token string double-quoted-string">"server"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"localhost"</span><span class="token punctuation">,</span><br>        <span class="token string double-quoted-string">"port"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">""</span><span class="token punctuation">,</span><br>        <span class="token string double-quoted-string">"user"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"user"</span><span class="token punctuation">,</span><br>        <span class="token string double-quoted-string">"pass"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"password"</span><span class="token punctuation">,</span><br>        <span class="token string double-quoted-string">"name"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"databasename"</span><span class="token punctuation">,</span> <br>        <span class="token string double-quoted-string">"provider"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"mysql"</span><br>    <span class="token punctuation">)</span><br><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>API Reference</h2>
+<p>Authorize and authenticate based on client id and response from google recaptcha (in the body of the request)</p>
+<h3>auth</h3>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Request Method</strong></td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL Breakdown</td>
+<td>api/<strong>auth/</strong>:<strong>clientId</strong>/<strong>:language</strong></td>
+</tr>
+<tr>
+<td><strong>Request Headers</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>Bearer :JWT i.e. <code>xxxxxxxxx.xxxxxxxxxx.xxxxxxxxxxxxx</code></td>
+</tr>
+<tr>
+<td>Content-Type</td>
+<td>application/json</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>text/plain</td>
+</tr>
+<tr>
+<td><strong>Request Body</strong></td>
+<td>{“response” : “:reCapchaCode”}</td>
+</tr>
+</tbody>
+</table>
+<p>Example Request:</p>
+<pre class="language-http"><code class="language-http">POST api/auth/99999999/el HTTP/1.1<br><span class="token header"><span class="token header-name keyword">Host</span><span class="token punctuation">:</span> <span class="token header-value">userver:8080</span></span><br><span class="token header"><span class="token header-name keyword">Connection</span><span class="token punctuation">:</span> <span class="token header-value">keep-alive</span></span><br><span class="token header"><span class="token header-name keyword">Origin</span><span class="token punctuation">:</span> <span class="token header-value">http://host:8080</span></span><br><span class="token header"><span class="token header-name keyword">Accept-Language</span><span class="token punctuation">:</span> <span class="token header-value">el</span></span><br><span class="token header"><span class="token header-name keyword">Authorization</span><span class="token punctuation">:</span> <span class="token header-value">Bearer xxxxxxxxx.xxxxxxxxxx.xxxxxxxxxxxxx</span></span><br><span class="token header"><span class="token header-name keyword">Content-Type</span><span class="token punctuation">:</span> <span class="token header-value">application/json</span></span><br><span class="token header"><span class="token header-name keyword">Accept</span><span class="token punctuation">:</span> <span class="token header-value">text/plain</span></span><br><span class="token header"><span class="token header-name keyword">Cache-Control</span><span class="token punctuation">:</span> <span class="token header-value">no-cache</span></span></code></pre>
+<p>Sample Return:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><span class="token property">"token"</span><span class="token operator">:</span><span class="token string">"xxxxxxxx.xxxxxxx.xxxxxxx"</span><span class="token punctuation">,</span><span class="token property">"refreshin"</span><span class="token operator">:</span><span class="token string">"10"</span><span class="token punctuation">}</span></code></pre>
+<h3>getResults</h3>
+<p>Handles requests the get search results requests</p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Request Method</strong></td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL Breakdown</td>
+<td>api/<strong>getResults</strong>/<strong>:action</strong>/<strong>:clientId</strong>/<strong>:language</strong></td>
+</tr>
+<tr>
+<td><strong>Request Headers</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>Bearer :JWT i.e. <code>xxxxxxxxx.xxxxxxxxxx.xxxxxxxxxxxxx</code></td>
+</tr>
+<tr>
+<td>Content-Type</td>
+<td>application/json</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>application/json</td>
+</tr>
+<tr>
+<td><strong>Request Body</strong></td>
+<td>:FormValues i.e. <code>[{&quot;name&quot;:&quot;InputName&quot;,&quot;value&quot;:&quot;value&quot;}]</code></td>
+</tr>
+</tbody>
+</table>
+<p>Example Request:</p>
+<pre class="language-http"><code class="language-http">POST api/getResults/design/99999999/el HTTP/1.1<br><span class="token header"><span class="token header-name keyword">Host</span><span class="token punctuation">:</span> <span class="token header-value">userver:8080</span></span><br><span class="token header"><span class="token header-name keyword">Connection</span><span class="token punctuation">:</span> <span class="token header-value">keep-alive</span></span><br><span class="token header"><span class="token header-name keyword">Origin</span><span class="token punctuation">:</span> <span class="token header-value">http://host:8080</span></span><br><span class="token header"><span class="token header-name keyword">Accept-Language</span><span class="token punctuation">:</span> <span class="token header-value">el</span></span><br><span class="token header"><span class="token header-name keyword">Authorization</span><span class="token punctuation">:</span> <span class="token header-value">Bearer xxxxxxxxx.xxxxxxxxxx.xxxxxxxxxxxxx</span></span><br><span class="token header"><span class="token header-name keyword">Content-Type</span><span class="token punctuation">:</span> <span class="token header-value">application/json</span></span><br><span class="token header"><span class="token header-name keyword">Accept</span><span class="token punctuation">:</span> <span class="token header-value">application/json</span></span><br><span class="token header"><span class="token header-name keyword">Cache-Control</span><span class="token punctuation">:</span> <span class="token header-value">no-cache</span></span><br> <br>[{"name":"Application_No","value":""},{"name":"Registration_No","value":""},{"name":"Description","value":""},{"name":"Person_Id","value":""},{"name":"Person_Name","value":""}]<br></code></pre>
+<p>Sample Return:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">[</span><br> <span class="token punctuation">{</span><br> <span class="token property">"applicationnumber"</span><span class="token operator">:</span> <span class="token string">"78721 "</span><span class="token punctuation">,</span><br> <span class="token property">"verbalelement"</span><span class="token operator">:</span> <span class="token string">"mas supermarkets"</span><span class="token punctuation">,</span><br> <span class="token property">"tyfeature"</span><span class="token operator">:</span> <span class="token string">"Combined"</span><span class="token punctuation">,</span><br> <span class="token property">"tycurrentstatuscode"</span><span class="token operator">:</span> <span class="token string">"Registered"</span><span class="token punctuation">,</span><br> <span class="token property">"expirydate"</span><span class="token operator">:</span> <span class="token string">"2017-10-26"</span><span class="token punctuation">,</span><br> <span class="token property">"filename"</span><span class="token operator">:</span> <span class="token string">"CY502010000078721"</span><br> <span class="token punctuation">}</span><span class="token punctuation">,</span><br> <span class="token punctuation">{</span><br> <span class="token property">"applicationnumber"</span><span class="token operator">:</span> <span class="token string">"42887 "</span><span class="token punctuation">,</span><br> <span class="token property">"verbalelement"</span><span class="token operator">:</span> <span class="token string">"PS PHILIPS SUPERMARKET"</span><span class="token punctuation">,</span><br> <span class="token property">"tyfeature"</span><span class="token operator">:</span> <span class="token string">"Word"</span><span class="token punctuation">,</span><br> <span class="token property">"tycurrentstatuscode"</span><span class="token operator">:</span> <span class="token string">"Expired"</span><span class="token punctuation">,</span><br> <span class="token property">"expirydate"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span><br> <span class="token property">"filename"</span><span class="token operator">:</span> <span class="token null keyword">null</span><br> <span class="token punctuation">}</span><br><span class="token punctuation">]</span></code></pre>
+<h3>getDetails</h3>
+<p>Handles requests the get details requests</p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>** Request Method**</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL Breakdown</td>
+<td>api/<strong>getDetails</strong>/<strong>:action</strong>/<strong>:id</strong>/<strong>:clientId</strong>/<strong>:language</strong></td>
+</tr>
+<tr>
+<td><strong>Request Headers</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>Bearer :JWT i.e. <code>xxxxxxxxx.xxxxxxxxxx.xxxxxxxxxxxxx</code></td>
+</tr>
+<tr>
+<td>Content-Type</td>
+<td>application/json</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>text/plain</td>
+</tr>
+<tr>
+<td><strong>Request Body</strong></td>
+<td>Empty</td>
+</tr>
+</tbody>
+</table>
+<p>Example Request:</p>
+<pre class="language-http"><code class="language-http">POST api/getDetails/design/201600018/99999999/el HTTP/1.1<br><span class="token header"><span class="token header-name keyword">Host</span><span class="token punctuation">:</span> <span class="token header-value">userver:8080</span></span><br><span class="token header"><span class="token header-name keyword">Connection</span><span class="token punctuation">:</span> <span class="token header-value">keep-alive</span></span><br><span class="token header"><span class="token header-name keyword">Origin</span><span class="token punctuation">:</span> <span class="token header-value">http://host:8080</span></span><br><span class="token header"><span class="token header-name keyword">Accept-Language</span><span class="token punctuation">:</span> <span class="token header-value">el</span></span><br><span class="token header"><span class="token header-name keyword">Authorization</span><span class="token punctuation">:</span> <span class="token header-value">Bearer xxxxxxxxx.xxxxxxxxxx.xxxxxxxxxxxxx</span></span><br><span class="token header"><span class="token header-name keyword">Content-Type</span><span class="token punctuation">:</span> <span class="token header-value">application/json</span></span><br><span class="token header"><span class="token header-name keyword">Accept</span><span class="token punctuation">:</span> <span class="token header-value">text/plain</span></span><br><span class="token header"><span class="token header-name keyword">Cache-Control</span><span class="token punctuation">:</span> <span class="token header-value">no-cache</span></span></code></pre>
+<p>Sample Return:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">[</span><br> <span class="token punctuation">{</span><br> <span class="token property">"verbalelement"</span><span class="token operator">:</span> <span class="token string">"mas supermarkets"</span><span class="token punctuation">,</span><br> <span class="token property">"applicationnumber"</span><span class="token operator">:</span> <span class="token string">"78721"</span><span class="token punctuation">,</span><br> <span class="token property">"dtapplication"</span><span class="token operator">:</span> <span class="token string">"2010-10-26"</span><span class="token punctuation">,</span><br> <span class="token property">"registrationnumber"</span><span class="token operator">:</span> <span class="token string">"78721"</span><span class="token punctuation">,</span><br> <span class="token property">"recordals"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br> <span class="token punctuation">{</span><br> <span class="token property">"date"</span><span class="token operator">:</span> <span class="token string">"2010-11-18"</span><span class="token punctuation">,</span><br> <span class="token property">"event_description"</span><span class="token operator">:</span> <span class="token string">"Η αίτηση καταχώρησης εμπορικού σήματος καταχωρήθηκε"</span><br> <span class="token punctuation">}</span><span class="token punctuation">,</span><br> <span class="token punctuation">{</span><br> <span class="token property">"date"</span><span class="token operator">:</span> <span class="token string">"2012-05-11"</span><span class="token punctuation">,</span><br> <span class="token property">"event_description"</span><span class="token operator">:</span> <span class="token string">"Awaiting for publication"</span><br> <span class="token punctuation">}</span><span class="token punctuation">,</span><br> <span class="token punctuation">{</span><br> <span class="token property">"date"</span><span class="token operator">:</span> <span class="token string">"2012-06-20"</span><span class="token punctuation">,</span><br> <span class="token property">"event_description"</span><span class="token operator">:</span> <span class="token string">"The Mark No. 78721 was published in gazette 4240, section Μέρος 2° - Υπηρεσίες, ΚΛΑΣΗ 36"</span><br> <span class="token punctuation">}</span><br> <span class="token punctuation">]</span><br> <span class="token punctuation">}</span><br><span class="token punctuation">]</span></code></pre>
+
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/privacy-statement/">Privacy</a></li>
+                            <li><a href="/cookie-policy/">Cookies</a></li>
+                            <li><a href="/accessibility-statement/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{locale}}">
+{% include 'sections/head.njk' %}
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">{{ site.localization[locale].skip_to_main }}</a> 
+        {% include 'sections/header.njk' %}
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-{% if showCategoryMenu %}9{% else %}8{% endif %} govcy-order-last">
+                    <h1>{{ title }}</h1>
+                    <ul class="govcy-pl-0">
+                    {%- for pag in collections[category].reverse()  -%}
+                        {#- Checks for same locale -#}
+                        {% if locale  == pag.data.locale -%}
+                            {#- Checks if we want to show the index page -#}
+                            {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category -%}
+                                <li class="nav-side govcy-br-bottom-1 govcy-br-bottom-standard govcy-mb-4">
+                                    <h2 class="govcy-fs-3 govcy-mb-1">
+                                        <a href="{{ pag.url | url }}">
+                                            {{ pag.data.title }}
+                                        </a>
+                                    </h2>
+                                    <p class="govcy-hint govcy-mb-1">{{ pag.date | dateOnly }} </p>
+                                    {% if pag.data.image %} 
+                                    <a href="{{ pag.url | url }}"><img style="height:180px" src="{{ pag.data.image }}" alt="{{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
+                                    {% endif %}
+                                    <p>{{pag.data.summary}}</p>
+                                </li>
+                            {%- endif %}
+                        {%- endif %}
+                    {%- endfor -%}
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        {% include 'sections/footer.njk' %}
+        <!-- js stuff -->
+        {% include 'sections/js.njk' %}       
+    </body>
+</html>

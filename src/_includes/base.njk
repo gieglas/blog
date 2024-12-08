@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{locale}}">
+{% include 'sections/head.njk' %}
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">{{ site.localization[locale].skip_to_main }}</a> 
+        {% include 'sections/header.njk' %}
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-{% if showCategoryMenu %}9{% else %}8{% endif %} govcy-order-last">
+                    <h1 data-pagefind-weight="10">{{ title }}</h1>
+                    {{ content | safe }}
+                </div>
+        {# Check if showCategoryMenu is true, to change the layout to have 2 columns and add menu
+        This should be default in styles, components and patterns  #}
+        {% if showCategoryMenu -%}
+                <aside class="govcy-col-3 govcy-order-first">
+                    <ul class="nav-side govcy-flex-column">
+                        {#- for all pages with tag = to `category`
+                            'category' should be set by default in styles, components and patterns
+                            corresponding tags should be set for every page in those folders except index.md -#}
+                        {%- for pag in collections[category] -%}
+                            {#- Checks for same locale -#}
+                            {% if locale  == pag.data.locale -%}
+                                {#- Checks if we want to show the index page -#}
+                                {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category -%}
+                                    <li><a href="{{ pag.url | url }}" class="nav-link{% if page.url == pag.url %} active{% endif %}">{{ pag.data.title }}</a></li>
+                                {%- endif %}
+                            {%- endif %}
+                        {%- endfor -%}
+                    </ul>
+                </aside>
+        {%- endif %}
+            </div>
+        </main>
+        <!-- Footer -->
+        {% include 'sections/footer.njk' %}
+        <!-- js stuff -->
+        {% include 'sections/js.njk' %}       
+    </body>
+</html>

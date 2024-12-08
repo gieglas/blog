@@ -1,0 +1,9 @@
+{
+    "layout" : "blogPage.njk",
+    "category" : "blog",
+    "tags" : ["blog"],
+    "showCategoryMenu" : false,
+    "showIndexInCategoryMenu" : false,
+    "pageType": "blog",
+    "breadcrumbs" : [{"name":"Blog", "url": "/blog/" }]
+}

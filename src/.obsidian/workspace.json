@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "b846959851314d40",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef633a0f27c2284a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "072c3589fd318041",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9ee6331f6c9dace6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/GitLab-CI-CD-and-React-Tests.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GitLab-CI-CD-and-React-Tests"
+            }
+          },
+          {
+            "id": "a3371fbfc32fdd9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/google-sheets-script-for-web-apps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "google-sheets-script-for-web-apps"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cc434c9ec77593b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ae92921bcc528f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96130c5b5b916e96",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "061df4d8ce53d722",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d3d0a2c80fe115ca",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e2ab52f6c4004c70",
+    "type": "split",
+    "children": [
+      {
+        "id": "09ccf6a50de28d64",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56ae4465ae453eb8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "blog/how-I-made-my-app-a-pwa.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for how-I-made-my-app-a-pwa"
+            }
+          },
+          {
+            "id": "445253cda4cf325f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "blog/how-I-made-my-app-a-pwa.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from how-I-made-my-app-a-pwa"
+            }
+          },
+          {
+            "id": "e9f6a84e661a2db3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b044609c413ecfc5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "blog/how-I-made-my-app-a-pwa.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of how-I-made-my-app-a-pwa"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "a3371fbfc32fdd9e",
+  "lastOpenFiles": [
+    "_drafts/find-page.njk",
+    "_drafts",
+    "_temp/find-page.njk",
+    "_temp",
+    "blog/getting-organized-with-google-sheets-everything-in-one-place.md",
+    "img/Screenshot-23.png",
+    "img/Screenshot-22.png",
+    "img/Screenshot-19.png",
+    "img/Screenshot-18.png",
+    "blog/GitLab-CI-CD-and-React-Tests.md",
+    "img/Google-Sheets-Organized.png",
+    "img/Screenshot-17.png",
+    "blog/google-sheets-script-for-web-apps.md",
+    "img/Google-App-Script-Publish-Web-App.png",
+    "blog/google-sheets-script-for-email-report.md",
+    "img/Sheet-to-Web-App.png",
+    "img/GoogleSheetEmailOptions-1.png",
+    "img/GoogleSheetEmail.png",
+    "blog/eisenhower-matrix-with-evernote.md",
+    "blog/intellectual-and-industrial-property-eservices.md",
+    "blog/how-I-made-my-app-a-pwa.md",
+    "blog/why-i-made-my-app-a-pwa.md",
+    "blog/google-sheets-script-for-trello-v2.md",
+    "blog/prince2-project-management-with-google-sheets.md",
+    "blog/online-search-registry-cregistry.md",
+    "blog/gmail-issue-tracking-system.md",
+    "blog/trello-kanban-like-board-for-issues-and-tasks-tracking.md",
+    "blog/google-sheets-script-for-trello.md",
+    "blog/how-i-made-my-wordpress-a-pwa.md",
+    "blog/writing-a-good-readme-file.md",
+    "blog/Gitlab-ci-cd-and-gitlab-pages.md",
+    "templates/blog template.md",
+    "blog/create_a_design_element.md",
+    "Untitled",
+    "blog/user_name_and_sign_out.md",
+    "templates"
+  ]
+}

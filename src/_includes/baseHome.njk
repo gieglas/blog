@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{locale}}">
+{% include 'sections/head.njk' %}
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">{{ site.localization[locale].skip_to_main }}</a> 
+        {% include 'sections/header.njk' %}
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-12 govcy-order-last">
+                    {{ content | safe }}
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        {% include 'sections/footer.njk' %}
+        <!-- js stuff -->
+        {% include 'sections/js.njk' %}       
+    </body>
+</html>

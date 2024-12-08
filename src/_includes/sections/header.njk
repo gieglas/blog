@@ -1,0 +1,87 @@
+<!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="{{ '/' | url }}" class="desktop-header personal-logo">
+                        <img alt="{{ site.localization[locale].logo_alt }}" src="{{ '/img/GieglasIconInverse.png' | url }}">
+                        {{ site.localization[locale].title }}
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">{{ site.localization[locale].tagline }} </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="{{ '/' | url }}" class="mobile-header personal-logo"><img alt="{{ site.localization[locale].title }}" src="{{ '/img/GieglasIconInverse.png' | url }}">{{ site.localization[locale].title }}</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>{{ site.localization[locale].menu }} 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    {# loop through categories #}
+                                {%- for cat in site.localization[locale]["top_menu"] -%}
+                                    <li class="nav-item">
+                                    <a href="{{ cat.url | url }}" {% if category == cat.category %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>
+                                        {{ cat.name }}
+                                    </a>
+                                    </li>
+                                {%- endfor -%}
+                                </ul>
+                                {# pagefind search box #}
+                                {# <link href="{{ '/pagefind/pagefind-ui.css' | url}}" rel="stylesheet">
+                                <div id="search" class="search"></div>
+                                <script src="{{ '/pagefind/pagefind-ui.js' | url}}" onload="new PagefindUI({ element: '#search', showImages: true }); document.querySelector('.pagefind-ui__search-input').setAttribute('aria-label', '{{ site.localization[locale].search_placeholder }}');"></script> #}
+                                {# loop search box #}
+                                {# <div class="combobox combobox-list">
+                                    <div class="group">
+                                        <input id="cb1-input" class="cb_edit" type="text" role="combobox" aria-label="{{ site.localization[locale].quick_find_placeholder }}" placeholder="{{ site.localization[locale].quick_find_placeholder }}" aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" autocomplete="off">
+                                    </div>
+                                    <ul id="cb1-listbox" role="listbox" aria-label="Search pages" class="combobox-list-box">
+                                    {% for page in collections.all %}
+                                        {%- if not page.data.hideSearch -%}
+                                            {%- if locale == page.data.locale -%}
+                                                { label: "{{page.data.title}}", url: '{{ page.url | url }}', keys: "{{page.data.searchKeys}}" },
+                                        <li id="{{ page.fileSlug}}" data-url="{{ page.url | url }}" role="option">{{page.data.title}}</li>
+                                            {%- endif -%}
+                                        {%- endif -%}
+                                    {% endfor %}
+                                    </ul>
+                                </div> #}
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">{{ site.localization[locale].tagline }} </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    {# <div class="breadcrumbs">
+        <div class="govcy-container">
+             <div class="row">
+                {% if breadcrumbs %}
+                    <nav class="govcy-float-start" aria-label="Breadcrumb">
+                    {%- for breadcrumb in breadcrumbs -%}
+                        {% if loop.index != loop.length  %}
+                            <a class="govcy-back-link" href="{{ breadcrumb.url }}"> {{ breadcrumb.name }}</a> <span class="bi bi-chevron-right"></span>
+                        {% else %}
+                            <span aria-current="page">{{ breadcrumb.name }}</span>
+                        {% endif %}
+                    {%- endfor -%}
+                     </nav>   
+                {% endif %}
+            </div>
+        </div>
+    </div> #}

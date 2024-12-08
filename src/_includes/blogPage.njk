@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{locale}}">
+{% include 'sections/head.njk' %}
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">{{ site.localization[locale].skip_to_main }}</a> 
+        {% include 'sections/header.njk' %}
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-{% if showCategoryMenu %}9{% else %}8{% endif %} govcy-order-last">
+                    <h1>{{ title }}</h1>
+                    {% if pageType=="blog" -%}
+                    <p class="govcy-hint">{{ page.date | dateOnly }} </p>
+                    {% endif %}
+                    {% if image %} 
+                    <img src="{{ site.imagesLocation  ~  image | url }}" alt="{{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
+                    {% endif %}
+                    {{ content | safe }}
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        {% include 'sections/footer.njk' %}
+        <!-- js stuff -->
+        {% include 'sections/js.njk' %}       
+    </body>
+</html>

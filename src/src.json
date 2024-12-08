@@ -1,0 +1,6 @@
+{
+    "layout" : "base.njk",
+    "tags" : "en",
+    "locale" : "en",
+    "breadcrumbs" : [{"name":"Home", "url": "/" }]
+  }
