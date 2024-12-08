@@ -16,7 +16,7 @@ main li {
         <p class="govcy-fs-4">I am an interaction designer working for the <a href="https://dsf.dmrid.gov.cy" target="_blank">Digital Services Factory (DSF)</a> who loves to play with code.</p>
     </div>
     <div class="govcy-col-6 govcy-my-3">
-        <img class="govcy-mt-3 img-fluid pop-small" src="{{'../img/DS-in-cafe.jpg' | url}}" alt="Decorative image">
+        <img class="govcy-mt-3 img-fluid pop-small" src="{{'/img/DS-in-cafe.jpg' | url}}" alt="Decorative image">
     </div>
 </div>
 
