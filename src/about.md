@@ -1,6 +1,7 @@
 ---
 title: "About Me"
 hideSearch: true
+category: "about"
 ---
 
 Hello, I'm Constantinos Evangelou, an interaction designer working for the <a href="https://dsf.dmrid.gov.cy" target="_blank">Digital Services Factory (DSF)</a> who loves to play with code and this is where I write about stuff. 
