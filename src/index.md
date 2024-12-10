@@ -32,6 +32,6 @@ main li {
     <p>{{pag.data.summary}}</p></li>
 {% endfor %}</ul>
 
-[See all posts →](../blog)
+[See all posts →]({{ '/blog/' | url }})
 
 </div></div>
