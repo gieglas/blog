@@ -121,6 +121,7 @@
                      
                     <img aria-hidden="true" src="/blog/img/Pasted%20image%2020240326093018.png" alt="Graphic for GitLab CI/CD and GitLab Pages" class="img-fluid pop-small govcy-mb-4"></a>
                     
+                    <div class="blog-page">
                     <p>In this post I will try and explain how to deploy a simple javascript application on GitLab pages, using Continuous Deployment with a live working example.</p>
 <p>For those that don’t know about <a href="https://about.gitlab.com/" target="_blank">GitLab</a> , it’s an online GIT repository, just like GitHub that offers web-based DevOps tools. Where GitLab really shines, is it’s Continuous Integration (CI) and Continuous Delivery (CD) capabilities.</p>
 <p>GitLab’s definitions for CI and CD:</p>
@@ -138,6 +139,7 @@
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">pages</span><span class="token punctuation">:</span><br>  <span class="token key atrule">stage</span><span class="token punctuation">:</span> deploy<br>  <span class="token key atrule">script</span><span class="token punctuation">:</span><br>  <span class="token punctuation">-</span> mkdir .public<br>  <span class="token punctuation">-</span> cp <span class="token punctuation">-</span>r * .public<br>  <span class="token punctuation">-</span> mv .public public<br>  <span class="token key atrule">artifacts</span><span class="token punctuation">:</span><br>    <span class="token key atrule">paths</span><span class="token punctuation">:</span><br>    <span class="token punctuation">-</span> public<br>  <span class="token key atrule">only</span><span class="token punctuation">:</span><br>  <span class="token punctuation">-</span> master</code></pre>
 <p>Take a look also on a more detailed tutorial by GitLab on <a href="https://about.gitlab.com/2016/04/07/gitlab-pages-setup/" target="_blank">pages setup</a>  and the documentation on <a href="https://docs.gitlab.com/ee/ci/yaml/README.html" target="_blank">.gitlab-ci.yml</a>  and <a href="https://docs.gitlab.com/ee/user/project/pages/index.html" target="_blank">GitLab Pages</a> .</p>
 
+                    </div>
                 </div>
             </div>
         </main>

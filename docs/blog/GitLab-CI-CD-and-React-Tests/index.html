@@ -121,16 +121,18 @@
                      
                     <img aria-hidden="true" src="/blog/img/Pasted%20image%2020240326093018.png" alt="Graphic for GitLab CI/CD and React Tests" class="img-fluid pop-small govcy-mb-4"></a>
                     
+                    <div class="blog-page">
                     <p>Continuing after my previous post about <a href="../Gitlab-ci-cd-and-gitlab-pages">Gitlab CI/CD</a>, I would like to show another example of Continuous Integration, this time with unit testing react components.</p>
 <h3>.gitlab-ci.yml</h3>
 <p>Just a reminder, the way to configure GitLab’s CI is by adding a <a href="https://doc.gitlab.com/ee/ci/quick_start/README.html#creating-a-.gitlab-ci.yml-file" target="_blank">configuration file</a>  called <code>.gitlab-ci.yml</code>, which tells the GitLab runner what to do.</p>
 <p>In this example we only use the <code>test</code> stage. The script simply uses <code>npm</code> commands to install all dependencies and perform the test (i.e. using <a href="https://jestjs.io/" target="_blank">Jest</a> ). Check out the code below.</p>
 <pre class="language-shell"><code class="language-shell">image: node:11.10.1<br> <br>stages:<br>    - <span class="token builtin class-name">test</span><br> <br>run-unit-test:<br>    stage: <span class="token builtin class-name">test</span><br>    script:<br>        - <span class="token function">npm</span> <span class="token function">install</span> <span class="token comment"># Install all dependencies</span><br>        - <span class="token function">npm</span> <span class="token builtin class-name">test</span> <span class="token comment"># Test </span><br>    only:<br>        - merge_requests</code></pre>
 <p>As you might have noticed the job will only be triggered on <code>merge_requests</code>. So after a merge request you can see the results of the tests in the <code>CI/CD / Pipelines</code> and <code>CI/CD / Jobs</code> (check out the screenshoots below)</p>
-<p><img src="../../img/Pasted%20image%2020240326092746.png" alt="Pipelines test" class="img-fluid pop-small govcy-mb-3"></p>
-<p><img src="../../img/Pasted%20image%2020240326092840.png" alt="Jobs test" class="img-fluid pop-small govcy-mb-3"></p>
-<p><img src="../../img/Pasted%20image%2020240326092929.png" alt="Test results" class="img-fluid pop-small govcy-mb-3"></p>
+<p><img src="../../img/Pasted%20image%2020240326092746.png" alt="Pipelines test"></p>
+<p><img src="../../img/Pasted%20image%2020240326092840.png" alt="Jobs test"></p>
+<p><img src="../../img/Pasted%20image%2020240326092929.png" alt="Test results"></p>
 
+                    </div>
                 </div>
             </div>
         </main>

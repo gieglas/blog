@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="Finally I found a way to sync my tasks between iOS and Android">
+        <meta property="og:title" content="Multi-OS/device Task Management with toodledo - Con&#39;s place">
+        <meta property="og:url" content="https://gieglas.github.io/blog/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/blog/img/Pasted%20image%2020241210203957.jpg">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gieglas.github.io/blog/">
+        <meta property="twitter:title" content="Multi-OS/device Task Management with toodledo - Con&#39;s place">
+        <meta property="twitter:description" content="Finally I found a way to sync my tasks between iOS and Android">
+        <meta property="twitter:image" content="/blog/img/Pasted%20image%2020241210203957.jpg">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Multi-OS/device Task Management with toodledo - Con&#39;s place</title>
+        <meta name="description" content="Finally I found a way to sync my tasks between iOS and Android">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Multi-OS/device Task Management with toodledo</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2011-09-06T00:00:00.000Z">6 September 2011</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/productivity">productivity</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020241210203957.jpg" alt="Graphic for Multi-OS/device Task Management with toodledo" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Ever since I discovered that you could use the internet for task managenent (think yahoo calendar… just found out I had pending tasks from 2001 🙂 ), I was trying to figure out a workflow that would work for me. My requirements were simple… help me remember all of my tasks, keep track of all things I did on any given project, help me do some basic planing and all that with minimum administration time and efford (not to mention cost).</p>
+<p>I tried a lot of solutions but every time I found that something was missing. I kept waiting for the technology to catch up with my requirements. I always knew that mobile tech would be a big part of this workflow since we are always moving. I also thought that like with the rest of my productivity solutions, I would depend on Google’s products, but I was wrong since Google Tasks wouldn’t release sync APIs (up until May 2011). Another thing that was holding me back was the high cost of mobile internet and the lack of real smart phones.</p>
+<p><img src="../../img/Pasted%20image%2020241210204026.png" alt="Toodledo in multiple devices"></p>
+<p>But anyway brighter days have come with the appearance of iOS and Android and an interesting cloud service called <a href="http://www.toodledo.com/">Toodledo</a>. I wont get into too much details about toodledo, I’ll just say that the tasks are stored on their servers and a lot of innovative apps sync with their services (oh not to mention that the service has a free plan which is more than enough for my needs). Also Toodledo is an excellent service for implementing <a href="http://www.davidco.com/">GTD (David Allen | <em>Getting Things Done</em>)</a> on which I will talk about in later posts.</p>
+<p>Toodledo by its self is nothing more than a browser based task list. When you connect your Toodledo account though with client applications for macs, wincows, iPhones, iPads, Android devices e.t.c., you get to see its real power. Depending on the application you use you can get the most out of your task management process. For example some applications such as <a href="http://www.2doapp.com/">2Do</a> for iOs use the device location services to map tasks on locations, and get reminders when in certain range. Others such as the <a href="http://www.pocketinformant.com/products_info.php?p_id=pocketinformant_ipad">Pocket Informant HD</a> for iPad combine tasks with calendars providing an excellent planning tool. So great Android apps are <a href="http://www.lakeridgesoftware.com/products/android/DueToday/">Due Today</a> and <a href="https://market.android.com/details?id=com.dg.gtd.android.lite&amp;hl=en">DGT GTD &amp; ToDo</a>. There are a lot of apps that sync with Toodledo, I just mentioned some that can implement David Allen’s GTD. There are also integrations with calendars such as google calendar, syncs with outlook and many more.</p>
+<p><img src="../../img/Pasted%20image%2020241210204130.png" alt="2DO in multiple devices"><br>
+<img src="../../img/Pasted%20image%2020241210204204.png" alt="Pocket informant"><br>
+<img src="../../img/Pasted%20image%2020241210204234.png" alt="DGT GTD &amp; ToDo"><br>
+I use mobile apps on my Android phone to add tasks on the run and for my reminders and iPad apps for planning and to manage my tasks. To sum it all up, there are other cloud services for Task Management, some of them are actually quite innovative. I ended up with Toodledo though for 3 main reasons:</p>
+<ol>
+<li>It implements GTD.</li>
+<li>Even-though it has its own mobile apps (for iOS at least) there is a big range of 3rd party apps out there as well.</li>
+<li>Its model of providing the cloud service and allowing others to sync and the low pricing, make me think that it will be here for a long time.</li>
+</ol>
+<p><strong>Sources:</strong></p>
+<p><a href="http://www.toodledo.com/">Toodledo</a><br>
+<a href="http://www.davidco.com/">GTD (David Allen | <em>Getting Things Done</em>)</a><br>
+<a href="http://www.2doapp.com/">2Do</a><br>
+<a href="http://www.pocketinformant.com/products_info.php?p_id=pocketinformant_ipad">Pocket Informant HD</a><br>
+<a href="http://www.lakeridgesoftware.com/products/android/DueToday/">Due Today</a><br>
+<a href="https://market.android.com/details?id=com.dg.gtd.android.lite&amp;hl=en">DGT GTD &amp; ToDo</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/blog/privacy-statement/">Privacy</a></li>
+                            <li><a href="/blog/cookie-policy/">Cookies</a></li>
+                            <li><a href="/blog/accessibility/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>

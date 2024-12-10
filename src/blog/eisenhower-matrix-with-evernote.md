@@ -4,7 +4,7 @@ date: 2014-10-13
 summary: I recently talked with a friend of mine that uses the Eisenhower Matrix technique and I though why not do that with Evernote.
 image: Eisenhower-Matrix.jpg
 tags:
-  - dev
+  - productivity
 ---
 So it’s been a long time since I wrote something but here I am. I recently talked with a friend of mine that uses the Eisenhower Matrix technique and I though why not do that with Evernote.
 

@@ -4,49 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "ef633a0f27c2284a",
+        "id": "df412b95c100ed64",
         "type": "tabs",
         "children": [
           {
-            "id": "072c3589fd318041",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "9ee6331f6c9dace6",
+            "id": "65675b813500ca5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/GitLab-CI-CD-and-React-Tests.md",
+                "file": "blog/productivity-services-101.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitLab-CI-CD-and-React-Tests"
-            }
-          },
-          {
-            "id": "a3371fbfc32fdd9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/google-sheets-script-for-web-apps.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "google-sheets-script-for-web-apps"
+              "title": "productivity-services-101"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,44 +164,50 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a3371fbfc32fdd9e",
+  "active": "65675b813500ca5f",
   "lastOpenFiles": [
-    "index.md",
+    "img/Pasted image 20241210205853.jpg",
+    "img/Pasted image 20241210205837.jpg",
+    "img/Pasted image 20241210205825.jpg",
+    "img/Pasted image 20241210205812.jpg",
+    "img/Pasted image 20241210205752.jpg",
+    "img/Pasted image 20241210205737.jpg",
+    "img/Pasted image 20241210205715.jpg",
+    "img/Pasted image 20241210205647.jpg",
+    "img/Pasted image 20241210204938.jpg",
+    "blog/multi-os-device-task-management-with-toodledo.md",
+    "blog/productivity-services-101.md",
+    "img/Pasted image 20241210204234.png",
+    "img/Pasted image 20241210204204.png",
+    "_drafts/archives/jqueryui-dialog-asp-ne.md",
+    "blog/serial-progress-bar-for-asp-net-3-5.md",
+    "blog/promises-promises-web-app.md",
+    "_drafts/archives/buy-soccer-tickets-on-line-in-cyprus.md",
+    "_drafts/archives/711-next-day.md",
+    "blog/web-apps-ui-trends.md",
+    "_drafts/archives/cypriot-history-x.md",
+    "_drafts/archives/more-high-tech-shit.md",
+    "blog/GitLab-CI-CD-and-React-Tests.md",
+    "blog/perfect-entertainment-unit.md",
+    "blog/how-I-made-my-app-a-pwa.md",
+    "_drafts/archives/high-tech-shit-for-real.md",
+    "_drafts/archives/asus-padfone-the-smartphone-that-docks-into-a-tablet.md",
+    "_drafts/archives/news-time-line.md",
+    "_drafts/archives/cmits-transphone-also-doubles-as-a-tablet.md",
+    "_drafts/archives",
     "blog/google-sheets-script-for-web-apps.md",
+    "index.md",
     "_drafts/find-page.njk",
     "_drafts",
     "_temp/find-page.njk",
     "_temp",
     "blog/getting-organized-with-google-sheets-everything-in-one-place.md",
-    "img/Screenshot-23.png",
-    "img/Screenshot-22.png",
-    "img/Screenshot-19.png",
-    "img/Screenshot-18.png",
-    "blog/GitLab-CI-CD-and-React-Tests.md",
-    "img/Google-Sheets-Organized.png",
-    "img/Screenshot-17.png",
-    "img/Google-App-Script-Publish-Web-App.png",
     "blog/google-sheets-script-for-email-report.md",
-    "img/Sheet-to-Web-App.png",
-    "img/GoogleSheetEmailOptions-1.png",
-    "img/GoogleSheetEmail.png",
     "blog/eisenhower-matrix-with-evernote.md",
     "blog/intellectual-and-industrial-property-eservices.md",
-    "blog/how-I-made-my-app-a-pwa.md",
     "blog/why-i-made-my-app-a-pwa.md",
     "blog/google-sheets-script-for-trello-v2.md",
-    "blog/prince2-project-management-with-google-sheets.md",
-    "blog/online-search-registry-cregistry.md",
-    "blog/gmail-issue-tracking-system.md",
-    "blog/trello-kanban-like-board-for-issues-and-tasks-tracking.md",
-    "blog/google-sheets-script-for-trello.md",
-    "blog/how-i-made-my-wordpress-a-pwa.md",
-    "blog/writing-a-good-readme-file.md",
-    "blog/Gitlab-ci-cd-and-gitlab-pages.md",
-    "templates/blog template.md",
-    "blog/create_a_design_element.md",
     "Untitled",
-    "blog/user_name_and_sign_out.md",
     "templates"
   ]
 }

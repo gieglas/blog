@@ -30,8 +30,8 @@ run-unit-test:
 
 As you might have noticed the job will only be triggered on `merge_requests`. So after a merge request you can see the results of the tests in the `CI/CD / Pipelines` and `CI/CD / Jobs` (check out the screenshoots below)
 
-![Pipelines test](../../img/Pasted%20image%2020240326092746.png){.img-fluid .pop-small .govcy-mb-3}
+![Pipelines test](../../img/Pasted%20image%2020240326092746.png)
 
-![Jobs test](../../img/Pasted%20image%2020240326092840.png){.img-fluid .pop-small .govcy-mb-3}
+![Jobs test](../../img/Pasted%20image%2020240326092840.png)
 
-![Test results](../../img/Pasted%20image%2020240326092929.png){.img-fluid .pop-small .govcy-mb-3}
+![Test results](../../img/Pasted%20image%2020240326092929.png)

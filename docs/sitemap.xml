@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+            <loc>https://gieglas.github.io/blog//blog/blog/perfect-entertainment-unit/</loc>
+            <lastmod>2011-06-14T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>https://gieglas.github.io/blog//blog/blog/web-apps-ui-trends/</loc>
+            <lastmod>2011-07-11T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>https://gieglas.github.io/blog//blog/blog/promises-promises-web-app/</loc>
+            <lastmod>2011-07-22T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>https://gieglas.github.io/blog//blog/blog/serial-progress-bar-for-asp-net-3-5/</loc>
+            <lastmod>2011-08-01T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>https://gieglas.github.io/blog//blog/blog/multi-os-device-task-management-with-toodledo/</loc>
+            <lastmod>2011-09-06T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>https://gieglas.github.io/blog//blog/blog/productivity-services-101/</loc>
+            <lastmod>2011-09-20T00:00:00.000Z</lastmod>
+        </url><url>
             <loc>https://gieglas.github.io/blog//blog/blog/eisenhower-matrix-with-evernote/</loc>
             <lastmod>2014-10-13T00:00:00.000Z</lastmod>
         </url><url>
@@ -73,7 +91,7 @@
             <loc>https://gieglas.github.io/blog//blog/about/</loc>
             <lastmod>2024-12-09T19:35:07.841Z</lastmod>
         </url><url>
-            <loc>https://gieglas.github.io/blog//blog/tags/dev/</loc>
+            <loc>https://gieglas.github.io/blog//blog/tags/productivity/</loc>
             <lastmod>2024-12-10T05:33:49.822Z</lastmod>
         </url>
 </urlset>

@@ -23,7 +23,9 @@
                     {% if image %} 
                     <img aria-hidden="true" src="{{ (site.imagesLocation  ~  image) | url }}" alt="Graphic for {{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
                     {% endif %}
+                    <div class="blog-page">
                     {{ content | safe }}
+                    </div>
                 </div>
             </div>
         </main>

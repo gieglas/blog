@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="A guide to create an ASP.NET 3.5 serial progress barr">
+        <meta property="og:title" content="Serial Progress Bar for ASP.NET 3.5 - Con&#39;s place">
+        <meta property="og:url" content="https://gieglas.github.io/blog/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/blog/img/Pasted%20image%2020241210202425.jpg">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gieglas.github.io/blog/">
+        <meta property="twitter:title" content="Serial Progress Bar for ASP.NET 3.5 - Con&#39;s place">
+        <meta property="twitter:description" content="A guide to create an ASP.NET 3.5 serial progress barr">
+        <meta property="twitter:image" content="/blog/img/Pasted%20image%2020241210202425.jpg">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Serial Progress Bar for ASP.NET 3.5 - Con&#39;s place</title>
+        <meta name="description" content="A guide to create an ASP.NET 3.5 serial progress barr">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Serial Progress Bar for ASP.NET 3.5</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2011-08-01T00:00:00.000Z">1 August 2011</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020241210202425.jpg" alt="Graphic for Serial Progress Bar for ASP.NET 3.5" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>There are many user controls in ASP.NET for a progress bar, but not so many for a progress bar that shows you how many steps are finished and how many are left to be completed. I call that a <strong>Serial Progress Bar</strong>, hence the title of the post.</p>
+<p>So since I had to go ahead and do it my self, I thought I’d share it. Now for the style, I had to have different styles for <strong>finished</strong> (<code>customSerialFlowBarFinished</code>) and <strong>unfinished</strong> steps (<code>customSerialFlowBarUnFinished</code>). I also added a little salt into it and made the steps look like arrows, so I needed four more styles with images… two for every step (finished and unfinished), which where the <strong>start</strong> and the <strong>end</strong> of the arrow.</p>
+<p><img src="../../img/flowFinishedL.png" alt="flowFinishedL image"><br>
+<img src="../../img/flowFinishedR.png" alt="flowFinishedR image"><br>
+<img src="../../img/flowUnFinishedL.png" alt="flowUnFinishedL image"><br>
+<img src="../../img/flowUnFinishedR.png" alt="flowUnFinishedR image"></p>
+<pre class="language-css"><code class="language-css"><span class="token comment">/* Custom Serial Flow Bar*/</span><br><span class="token selector">.customSerialFlowBar</span><br><span class="token punctuation">{</span><br><span class="token punctuation">}</span><br><span class="token selector">.customSerialFlowBar .customSerialFlowBarFinished</span><br><span class="token punctuation">{</span><br>    <span class="token property">height</span><span class="token punctuation">:</span>15px<span class="token punctuation">;</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><br>    <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.customSerialFlowBar .customSerialFlowBarFinished .customSerialFlowBarFinishedL</span><br><span class="token punctuation">{</span><br>    <span class="token property">height</span><span class="token punctuation">:</span>15px<span class="token punctuation">;</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><br>    <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span><br>    <span class="token property">background</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>‘Images/flowFinishedL.png’<span class="token punctuation">)</span></span> no-repeat scroll left center #2080C0<span class="token punctuation">;</span><br>    <span class="token property">width</span><span class="token punctuation">:</span>49%<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.customSerialFlowBar .customSerialFlowBarFinished .customSerialFlowBarFinishedR</span><br><span class="token punctuation">{</span><br>    <span class="token property">height</span><span class="token punctuation">:</span>15px<span class="token punctuation">;</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><br>    <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span><br>    <span class="token property">background</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>‘Images/flowFinishedR.png’<span class="token punctuation">)</span></span> no-repeat scroll right center #2080C0<span class="token punctuation">;</span><br>    <span class="token property">width</span><span class="token punctuation">:</span>49%<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.customSerialFlowBar .customSerialFlowBarUnFinished</span><br><span class="token punctuation">{</span><br>    <span class="token property">height</span><span class="token punctuation">:</span>15px<span class="token punctuation">;</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><br>    <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.customSerialFlowBar .customSerialFlowBarUnFinished .customSerialFlowBarUnFinishedL</span><br><span class="token punctuation">{</span><br>    <span class="token property">height</span><span class="token punctuation">:</span>15px<span class="token punctuation">;</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><br>    <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span><br>    <span class="token property">background</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>‘Images/flowUnFinishedL.png’<span class="token punctuation">)</span></span> no-repeat scroll left center #A6CAF0<span class="token punctuation">;</span><br>    <span class="token property">width</span><span class="token punctuation">:</span>49%<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.customSerialFlowBar .customSerialFlowBarUnFinished .customSerialFlowBarUnFinishedR</span><br><span class="token punctuation">{</span><br>    <span class="token property">height</span><span class="token punctuation">:</span>15px<span class="token punctuation">;</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><br>    <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span><br>    <span class="token property">background</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>‘Images/flowUnFinishedR.png’<span class="token punctuation">)</span></span> no-repeat scroll right center #A6CAF0<span class="token punctuation">;</span><br>    <span class="token property">width</span><span class="token punctuation">:</span>49%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>After the style the logic behind the code is easy. In order to render the serial progress bar you need the <strong>MaxValue</strong> which is the number of steps and the <strong>ItemValue</strong> which is the step you currently are now. You only have to calculable the percentage of the width of each step and go ahead and render the code.</p>
+<pre class="language-aspnet"><code class="language-aspnet">		Dim RtrnHtml As StringBuilder = New StringBuilder()<br>        Dim ProcessDivWidth As Double = 0<br>        Dim CssClassPrefix As String = “”<br>        RtrnHtml.Append(“&lt;div class='” &amp; BarStyleClass &amp; “‘>”)<br>        Try<br>            ‘calculate div width for every step (percentage)<br>            ProcessDivWidth = Math.Round(((1) / (MaxValue) * 100)) – 1<br>            ‘for all steps<br>            For i = 1 To MaxValue Step 1<br>                ‘if step is in finished show finished<br>                If i &lt;= ItemValue Then<br>                    CssClassPrefix = “customSerialFlowBarFinished”<br>                Else<br>                    CssClassPrefix = “customSerialFlowBarUnFinished”<br>                End If<br>                RtrnHtml.Append(“&lt;div class='” &amp; CssClassPrefix &amp; “‘ style=’width:” &amp; ProcessDivWidth &amp; “%’>”)<br>                RtrnHtml.Append(“&lt;div class='” &amp; CssClassPrefix &amp; “L’><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>”)<br>                RtrnHtml.Append(“&lt;div class='” &amp; CssClassPrefix &amp; “R’><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>”)<br>            Next<br>            RtrnHtml.Append(“<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token value css language-css"><span class="token property">’clear</span><span class="token punctuation">:</span>both<span class="token punctuation">;</span>’</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>”)<br>        Catch ex As Exception<br>            RtrnHtml.Append(” “)<br>        End Try<br>        RtrnHtml.Append(“<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>”)</code></pre>
+<p>At the end you should end up with with something like this:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBar”</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarFinished”</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token value css language-css"><span class="token property">”width</span><span class="token punctuation">:</span>32%”</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarFinishedL”</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarFinishedR”</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarUnFinished”</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token value css language-css"><span class="token property">”width</span><span class="token punctuation">:</span>32%”</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarUnFinishedL”</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarUnFinishedR”</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarUnFinished”</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token value css language-css"><span class="token property">”width</span><span class="token punctuation">:</span>32%”</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarUnFinishedL”</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”customSerialFlowBarUnFinishedR”</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token value css language-css"><span class="token property">”clear</span><span class="token punctuation">:</span>both<span class="token punctuation">;</span>”</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>Now this is not the best way to do it, but since we are doing it the .NET 3.5 way we used a custom control for it. The optimal way would be to render all html through Javascript (maybe use jQuery) and if you want to pass values from the server, you can pass them with JSON through AJAX.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/blog/privacy-statement/">Privacy</a></li>
+                            <li><a href="/blog/cookie-policy/">Cookies</a></li>
+                            <li><a href="/blog/accessibility/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>
