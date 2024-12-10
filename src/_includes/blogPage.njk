@@ -11,10 +11,17 @@
                 <div class="govcy-col-{% if showCategoryMenu %}9{% else %}8{% endif %} govcy-order-last">
                     <h1>{{ title }}</h1>
                     {% if pageType=="blog" -%}
-                    <p class="govcy-hint">{{ page.date | dateOnly }} </p>
+                    <p class="post-date">Posted on 
+                                      <time datetime="{{ page.date | dateISO }}">{{ page.date | dateOnly }}</time> 
+                                      • Tagged with 
+                                      {% for tag in tags -%}
+                                        {% if tag !== 'blog' and tag !== 'en' %}
+                                            <a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>
+                                        {% endif %}
+                                      {%- endfor %}</p>
                     {% endif %}
                     {% if image %} 
-                    <img src="{{ (site.imagesLocation  ~  image) | url }}" alt="{{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
+                    <img aria-hidden="true" src="{{ (site.imagesLocation  ~  image) | url }}" alt="Graphic for {{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
                     {% endif %}
                     {{ content | safe }}
                 </div>

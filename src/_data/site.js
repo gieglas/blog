@@ -16,6 +16,7 @@ module.exports = {
       "title" : "Con's place",
       "logo_alt" : "Con's place logo",
       "tagline": "Be creative",
+      "author": "Constantinos Evangelou",
       "subtitle" : " ",
       "admin_email" : "consevangelou@gmail.com",
       "description" : "A place where I write about things I find interesting or useful.",
@@ -32,9 +33,42 @@ module.exports = {
         [
           {"name" : "Home", "url" : "/", category: "home"},
           {"name" : "Blog", "url" : "/blog/", category: "blog"},
-          {"name" : "Contact", "url" : "/contact/", category: "contact"},
+          {"name" : "About", "url" : "/about/", category: "about"},
           {"name" : "Search", "url" : "/search/", category: "search"}
-        ]
+        ],
+        "projects": 
+        [
+          {
+            name : "govcy-design-system", 
+            url : "https://github.com/gov-cy/govcy-design-system", 
+            description: "The gov.cy design system developer assets project"
+          },
+          {
+            name : "govcy-design-system-docs", 
+            url : "https://gov-cy.github.io/govcy-design-system-docs/", 
+            description: "The documentation pages of the govcy design system"
+          },
+          {
+            name : "gov.cy - UDS Library in Figma", 
+            url : "https://www.figma.com/community/file/1388468172430388495/dsf-gov-cy-unified-design-system-v-3", 
+            description: "Figma library for the gov.cy Design System"
+          },
+          {
+            name : "govcy-frontend-renderer", 
+            url : "https://www.npmjs.com/package/@gov-cy/govcy-frontend-renderer", 
+            description: "NPM package to render HTML for design elements, as they are defined in the gov.cy Design System based on JSON or njk templates"
+          },
+          {
+            name : "govcy-frontend-tester", 
+            url : "https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester", 
+            description: "NPM package to perform front end tests in terms of the accessibility and design guidelines established by the Digital Services Factory (DSF) Cyprus"
+          },
+          {
+            name : "dsf-email-templates", 
+            url : "https://www.npmjs.com/package/@gov-cy/dsf-email-templates", 
+            description: "NPM package to produce html emails with gov.cy looks"
+          },
+      ]
     }
   }
 };

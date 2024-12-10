@@ -5,6 +5,7 @@ summary: In this post I will try and explain how to deploy a simple javascript a
 image: Pasted%20image%2020240326093018.png
 tags:
   - dev
+  - ci-cd
 ---
 In this post I will try and explain how to deploy a simple javascript application on GitLab pages, using Continuous Deployment with a live working example.
 

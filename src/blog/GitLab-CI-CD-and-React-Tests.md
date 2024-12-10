@@ -5,6 +5,7 @@ summary: An example of Continuous Integration, this time with unit testing react
 image: Pasted%20image%2020240326093018.png
 tags:
   - dev
+  - ci-cd
 ---
 Continuing after my previous post about [Gitlab CI/CD](../Gitlab-ci-cd-and-gitlab-pages), I would like to show another example of Continuous Integration, this time with unit testing react components.
 ### .gitlab-ci.yml

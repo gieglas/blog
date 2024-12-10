@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+hideSearch: true
 # layout: "blogList"
 layout: "blogListPaganation"
 pagination:

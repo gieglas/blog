@@ -5,6 +5,7 @@ summary: I have been experimenting with Trello with my coworkers and I found tha
 image: ScreenShot016.jpg
 tags:
   - dev
+  - trello
 ---
 I was always concerned with handling the various issues and tasks that are related to the IT systems we maintain. I have been experimenting with [Trello](https://trello.com/){target="_blank"} with my coworkers and I found that using a Kanban like Boards for our organization’s IT issues, was working for us, so I thought I’d write about it.
 

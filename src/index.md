@@ -10,10 +10,10 @@ main li {
     list-style-type: "– ";
 }
 </style>
-<div class="row pop-medium">
+<div class="row pop-medium govcy-rounded-2">
     <div class="govcy-col-6 govcy-mb-3">
         <h1 class="govcy-mt-3 govcy-mb-5 govcy-fs-2">Hello, I'm Constantinos</h1>
-        <p class="govcy-fs-4">I am an interaction designer working for the <a href="https://dsf.dmrid.gov.cy" target="_blank">Digital Services Factory (DSF)</a> who loves to play with code.</p>
+        <p class="govcy-fs-5">I am an interaction designer working for the <a href="https://dsf.dmrid.gov.cy" target="_blank">Digital Services Factory (DSF)</a> who loves to play with code and this is where I write about stuff.</p>
     </div>
     <div class="govcy-col-6 govcy-my-3">
         <img class="govcy-mt-3 img-fluid pop-small" src="{{'/img/DS-in-cafe.jpg' | url}}" alt="Decorative image">
@@ -23,49 +23,15 @@ main li {
 
 <div class="row"><div class="govcy-col-8 govcy-mt-4">
 
-I helped implement various government services, but what I really enjoy is creating reusable tools to help others create simple, accessible services that improve people’s lives.
+## Latest posts
+<ul class="govcy-pl-0" data-pagefind-ignore>{% for pag in collections["recentPosts"]  %}
+<li class="nav-side govcy-br-bottom-1 govcy-br-bottom-standard govcy-py-2 govcy-mb-4"><a class="govcy-fw-bold" href="{{ pag.url | url }}">{{ pag.data.title }}</a>
+    <p class="post-date govcy-mb-1">Posted on <time datetime="{{ pag.date | dateISO }}">{{ pag.date | dateOnly }}</time> • Tagged with {% for tag in pag.data.tags -%}
+        {% if tag !== 'blog' and tag !== 'en' %}<a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>{% endif %}{%- endfor %}</p>
+    {% if pag.data.image %}<a href="{{ pag.url | url }}"><img aria-hidden="true" style="height:100px" src="../img/{{ pag.data.image }}" alt="graphic for {{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>{% endif %}
+    <p>{{pag.data.summary}}</p></li>
+{% endfor %}</ul>
 
-## Contact
-<dl>
-    <dt>
-        Email
-    </dt>
-    <dd>
-        <a href="mailto:consevangelou@gmail.com">
-        consevangelou@gmail.com
-        </a>
-    </dd>
-    <dt>
-        Linkedin
-    </dt>
-    <dd>
-        <a href="https://www.linkedin.com/in/constantinosevangelou/" target="_blank">
-        Constantinos Evangelou
-        </a>
-    </dd>
-</dl>
-
-## Work
-
-### DSF stuff
-- [gov.cy design system](https://gov-cy.github.io/govcy-design-system-docs/){target="_blank"}
-- [Reusable Design Elements in Figma](https://www.figma.com/community/file/1188065288540425761){target="_blank"}
-- [NPM - Front end test library](https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester){target="_blank"}
-- [NPM - DSF email template](https://www.npmjs.com/package/@gov-cy/dsf-email-templates){target="_blank"}
-- [DSF prototype tool](https://github.com/gov-cy/dsf-prototype){target="_blank"}
-
-### Services I worked on
-- [Child birth grant](https://child-birth-grant.service.gov.cy/){target="_blank"}
-- [Update my personal details](https://update-my-details.service.gov.cy/){target="_blank"} 
-- [Voter registration](https://voter-registration.service.gov.cy/){target="_blank"} 
-- [National Solidarity Fund Scheme](https://national-solidarity-fund.service.gov.cy/){target="_blank"} 
-
-## Writing
-
-- [Improving Accessibility: Lessons from making design elements screen reader-friendly](https://dsf.dmrid.gov.cy/2024/01/23/improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly){target="_blank"}
-- [How to use the Figma community library file to design digital services](https://dsf.dmrid.gov.cy/2023/08/24/how-to-use-the-figma-community-library-file-to-design-digital-services/){targe="_blank"}
-- [How to create new design elements using the gov.cy utility classes](https://dsf.dmrid.gov.cy/2023/02/16/how-to-create-new-design-elements-using-the-gov-cy-utility-classes/){target="_blank"}
-- [How to create a page using the gov.cy design system](https://dsf.dmrid.gov.cy/2023/02/15/how-to-create-a-page-using-the-gov-cy-design-system/){target="_blank"}
-- [Designing the Design System](https://dsf.dmrid.gov.cy/2023/02/15/designing-the-design-system/){target="_blank"}
+[See all posts →](../blog)
 
 </div></div>

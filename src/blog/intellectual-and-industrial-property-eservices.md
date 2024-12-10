@@ -5,6 +5,7 @@ summary: Take a look at the brand new site of the Intellectual and Industrial P
 image: DRCOR-icon-512x512.png
 tags:
   - dev
+  - pwa
 ---
 Take a look at the brand new site of the [Intellectual and Industrial Property of the Department of the Registrar of Companies and Official Receiver of Cyprus (DRCOR)](https://efiling.drcor.mcit.gov.cy/ip/){target="_blank"}. The site provides links for all the online services of the Intellectual and Industrial Property Department and also utilises the [Online search registry (cRegistry)](../online-search-registry-cregistry/) technology to provide search functionality on the [Trademarks’ registry](https://efiling.drcor.mcit.gov.cy/ip/#trademark){target="_blank"} of the DRCOR and [Trademarks’ Publications](https://efiling.drcor.mcit.gov.cy/ip/#publications){target="_blank"}. We will be adding more services soon so make sure to re-vistit the site in the future.
 

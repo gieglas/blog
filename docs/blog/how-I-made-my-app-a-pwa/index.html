@@ -36,6 +36,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
         <title>How I made my app a PWA - Con&#39;s place</title>
         <meta name="description" content="A guide on through how I turned my last app into a PWA.">
+        <meta name="author" content="Constantinos Evangelou">
     </head>
     <body>
         <!-- Skip link -->
@@ -50,7 +51,7 @@
                 <!--Displayed only on desktop-->
                 <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
                     <a href="/blog/" class="desktop-header personal-logo">
-                        <img alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
                         Con&#39;s place
                     </a>
                 </div>
@@ -80,8 +81,8 @@
                                         Blog
                                     </a>
                                     </li><li class="nav-item">
-                                    <a href="/blog/contact/"  class="nav-link" >
-                                        Contact
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
                                     </a>
                                     </li><li class="nav-item">
                                     <a href="/blog/search/"  class="nav-link" >
@@ -108,10 +109,17 @@
             <div class="row">
                 <div class="govcy-col-8 govcy-order-last">
                     <h1>How I made my app a PWA</h1>
-                    <p class="govcy-hint">29 July 2019 </p>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2019-07-29T00:00:00.000Z">29 July 2019</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/blog/tags/pwa">pwa</a>
+                                        </p>
                     
                      
-                    <img src="/blog/img/Code-PWA.png" alt="How I made my app a PWA" class="img-fluid pop-small govcy-mb-4"></a>
+                    <img aria-hidden="true" src="/blog/img/Code-PWA.png" alt="Graphic for How I made my app a PWA" class="img-fluid pop-small govcy-mb-4"></a>
                     
                     <p>I have <a href="../why-i-made-my-app-a-pwa/">previously posted on why</a> I made my <a href="../intellectual-and-industrial-property-eservices/">app</a> a Progressive Web App (or simply <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">PWA</a> ) and in this post I will try and explain <em>how</em> I turned my app into a PWA.</p>
 <p>Note that the code I am presenting in this post is just a sample. It is for educational purposes and will definitely not work if you simply copy and paste it. I just want to present some ideas around service workers and to show how easy it is to create a PWA and serve offline content. For other aspects of how I made the app check out <a href="../online-search-registry-cregistry/">Online search registry (cRegistry)</a>.</p>

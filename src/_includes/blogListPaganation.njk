@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="govcy-col-{% if showCategoryMenu %}9{% else %}8{% endif %} govcy-order-last">
                     <h1>{{ title }}</h1>
-                    <ul class="govcy-pl-0">
+                    <ul class="govcy-pl-0" data-pagefind-ignore>
                     {%- for pag in pagination.items  -%}
                         {#- Checks for same locale -#}
                         {% if locale  == pag.data.locale -%}
@@ -23,9 +23,18 @@
                                             {{ pag.data.title }}
                                         </a>
                                     </h2>
-                                    <p class="govcy-hint govcy-mb-1">{{ pag.date | dateOnly }} </p>
+                                    <p class="post-date govcy-mb-1">
+                                      Posted on 
+                                      <time datetime="{{ pag.date | dateISO }}">{{ pag.date | dateOnly }}</time> 
+                                      • Tagged with 
+                                      {% for tag in pag.data.tags -%}
+                                        {% if tag !== 'blog' and tag !== 'en' %}
+                                            <a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>
+                                        {% endif %}
+                                      {%- endfor %}
+                                    </p>
                                     {% if pag.data.image %} 
-                                    <a href="{{ pag.url | url }}"><img style="height:180px" src="{{ (site.imagesLocation ~ pag.data.image) | url }}" alt="{{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
+                                    <a href="{{ pag.url | url }}"><img style="height:180px" src="{{ (site.imagesLocation ~ pag.data.image) | url }}" alt="graphic for {{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
                                     {% endif %}
                                     <p>{{pag.data.summary}}</p>
                                 </li>

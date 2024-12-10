@@ -5,6 +5,8 @@ summary: Since I have posted the Google Sheets script for Trello I made some upd
 image: Screen-Shot-08-23-18-at-10.13-AM.jpg
 tags:
   - dev
+  - google-sheets
+  - trello
 ---
 Since I have posted the [Google Sheets script for Trello](../google-sheets-script-for-trello/) I made some updates to include members assigned to card and customfields value (power-up), so I thought I’d share the code.
 

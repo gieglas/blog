@@ -5,6 +5,7 @@ summary: A guide on through how I turned my last app into a PWA.
 image: Code-PWA.png
 tags:
   - dev
+  - pwa
 ---
 I have [previously posted on why](../why-i-made-my-app-a-pwa/) I made my [app](../intellectual-and-industrial-property-eservices/) a Progressive Web App (or simply [PWA](https://developers.google.com/web/progressive-web-apps/){target="_blank"} ) and in this post I will try and explain _how_ I turned my app into a PWA.
 

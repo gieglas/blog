@@ -36,6 +36,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
         <title>Google Sheets Script for email report - Con&#39;s place</title>
         <meta name="description" content="A general purpose script to send the emails from contents of a specific sheet. When combining the script, with Google Spreadsheet build in functions and event triggers (in my case Time Driven triggers), you can pretty much automate any kind of report you like.">
+        <meta name="author" content="Constantinos Evangelou">
     </head>
     <body>
         <!-- Skip link -->
@@ -50,7 +51,7 @@
                 <!--Displayed only on desktop-->
                 <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
                     <a href="/blog/" class="desktop-header personal-logo">
-                        <img alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
                         Con&#39;s place
                     </a>
                 </div>
@@ -80,8 +81,8 @@
                                         Blog
                                     </a>
                                     </li><li class="nav-item">
-                                    <a href="/blog/contact/"  class="nav-link" >
-                                        Contact
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
                                     </a>
                                     </li><li class="nav-item">
                                     <a href="/blog/search/"  class="nav-link" >
@@ -108,10 +109,17 @@
             <div class="row">
                 <div class="govcy-col-8 govcy-order-last">
                     <h1>Google Sheets Script for email report</h1>
-                    <p class="govcy-hint">26 August 2018 </p>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2018-08-26T00:00:00.000Z">26 August 2018</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/blog/tags/google-sheets">google-sheets</a>
+                                        </p>
                     
                      
-                    <img src="/blog/img/GoogleSheetEmail.png" alt="Google Sheets Script for email report" class="img-fluid pop-small govcy-mb-4"></a>
+                    <img aria-hidden="true" src="/blog/img/GoogleSheetEmail.png" alt="Graphic for Google Sheets Script for email report" class="img-fluid pop-small govcy-mb-4"></a>
                     
                     <p>After working a little bit with Google Sheets and seeing it’s power in action, we thought it would be nice to automate email reports / notifications or even reminders. So once again I tried to make a general purpose script that we could reuse whenever we need to send the contents of a specific sheet. When combining the script, with Google Spreadsheet build in functions and event triggers (in my case Time Driven triggers), you can pretty much automate any kind of report you like.</p>
 <p>An example of this type of automation is related to my previous post <a href="../google-sheets-script-for-trello/">Google Sheets script for Trello</a>, where we import data from Trello Boards and apply different filters on separate sheets. Using the script and a weekly event trigger, we have a weekly summary email automatically sent for the TODO and DOING tasks.</p>

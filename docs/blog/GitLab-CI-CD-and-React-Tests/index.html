@@ -36,6 +36,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
         <title>GitLab CI/CD and React Tests - Con&#39;s place</title>
         <meta name="description" content="An example of Continuous Integration, this time with unit testing react components.">
+        <meta name="author" content="Constantinos Evangelou">
     </head>
     <body>
         <!-- Skip link -->
@@ -50,7 +51,7 @@
                 <!--Displayed only on desktop-->
                 <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
                     <a href="/blog/" class="desktop-header personal-logo">
-                        <img alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
                         Con&#39;s place
                     </a>
                 </div>
@@ -80,8 +81,8 @@
                                         Blog
                                     </a>
                                     </li><li class="nav-item">
-                                    <a href="/blog/contact/"  class="nav-link" >
-                                        Contact
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
                                     </a>
                                     </li><li class="nav-item">
                                     <a href="/blog/search/"  class="nav-link" >
@@ -108,10 +109,17 @@
             <div class="row">
                 <div class="govcy-col-8 govcy-order-last">
                     <h1>GitLab CI/CD and React Tests</h1>
-                    <p class="govcy-hint">27 September 2019 </p>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2019-09-27T00:00:00.000Z">27 September 2019</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/blog/tags/ci-cd">ci-cd</a>
+                                        </p>
                     
                      
-                    <img src="/blog/img/Pasted%20image%2020240326093018.png" alt="GitLab CI/CD and React Tests" class="img-fluid pop-small govcy-mb-4"></a>
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020240326093018.png" alt="Graphic for GitLab CI/CD and React Tests" class="img-fluid pop-small govcy-mb-4"></a>
                     
                     <p>Continuing after my previous post about <a href="../Gitlab-ci-cd-and-gitlab-pages">Gitlab CI/CD</a>, I would like to show another example of Continuous Integration, this time with unit testing react components.</p>
 <h3>.gitlab-ci.yml</h3>

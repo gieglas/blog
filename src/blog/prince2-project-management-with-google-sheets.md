@@ -5,6 +5,7 @@ summary: I thought it would be nice to setup some Google Sheets to better manage
 image: Prince2Dashboard.jpg
 tags:
   - dev
+  - google-sheets
 ---
 Recently I was assigned to manage a PRINCE2 IT project, so I thought it would be nice to setup some Google Sheets to better manage the project. The idea was to create all my PRINCE2 Registers and Logs on Google Sheets and then have a Dashboard like Sheet (as in the picture above) to easily review the Project and create my Reports (such as Highlight reports). It all seems to have worked out nicely for me, so I thought I’d share my setup. I have links below to all the Google Sheets templates based on my setup to view or download if you like.
 

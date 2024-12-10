@@ -22,7 +22,16 @@
                                             {{ pag.data.title }}
                                         </a>
                                     </h2>
-                                    <p class="govcy-hint govcy-mb-1">{{ pag.date | dateOnly }} </p>
+                                    <p class="post-date govcy-mb-1">
+                                        Posted on 
+                                      <time datetime="{{ pag.date | dateISO }}">{{ pag.date | dateOnly }}</time> 
+                                      • Tagged with 
+                                      {% for tag in pag.data.tags -%}
+                                        {% if tag !== 'blog' and tag !== 'en' %}
+                                            <a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>
+                                        {% endif %}
+                                      {%- endfor %}
+                                    </p>
                                     {% if pag.data.image %} 
                                     <a href="{{ pag.url | url }}"><img style="height:180px" src="{{ pag.data.image | url }}" alt="{{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
                                     {% endif %}

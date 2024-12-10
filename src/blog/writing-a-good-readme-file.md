@@ -3,7 +3,8 @@ title: "Writing a good README file"
 date: 2023-05-06
 summary: "Documentation is a key for any coding project and the README file is a big part of it. In this article you can find some best practices on how to write a good README file."
 image: README_TRANSPARENT.png
-tag: dev
+tags: 
+  - dev
 ---
 Documentation is a key for any coding project and the README file is a big part of it. In this article you can find some best practices on how to write a good README file.
 
@@ -85,5 +86,3 @@ If you have any questions or feedback, please feel free to reach out to us at [y
 ```
 By following these best practices, you can create a README file that is clear, concise, and easy to understand. This can help users get up and running with your project quickly and easily, and can make your project more accessible to a wider audience.
 
-- Markdown icon by Dustin Curtis – https://github.com/dcurtis/markdown-mark/tree/master/svg, CC0, https://commons.wikimedia.org/w/index.php?curid=31095459
-- Document icons by Tanah Basah – Flaticon https://www.flaticon.com/free-icons/document

@@ -192,6 +192,25 @@
     box-shadow: #64646f33 0 7px 29px !important;
 }
 
+.post-date {
+    font-size: 16px;
+}
+.post-tag {
+    margin-left: .35rem;
+    margin-bottom: 5px;
+    border-radius: 500px;
+    font-size: 12px;
+    padding: 3px 12px;
+    display: inline-block;
+    vertical-align: top;
+    width: fit-content;
+    width: -moz-fit-content;
+    /* background: #efefef; */
+    border: 1px solid #bbbcbf !important;
+    color: #212121;
+    text-decoration: none;
+}
+
 /** Bootsrap img-fluid */
 .img-mobile-screenshoot {
     box-shadow: #64646f33 0 7px 29px !important;

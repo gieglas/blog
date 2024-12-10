@@ -5,6 +5,7 @@ summary: A nice hack on how to Get Organized with Google Sheets and have Everyth
 image: Screenshot-17.png
 tags:
   - dev
+  - google-sheets
 ---
 Lately I have been experimenting with Google App Scripts for Google Sheets and in the back of my mind I always had the possibility of having all our digital organization in one place. Things finally feel into place and here I am presenting how to Get Organized with Google Sheets and have Everything in one place.
 

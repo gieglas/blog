@@ -5,10 +5,12 @@ summary: " I discovered that it is fairly simple to convert your wordpress into 
 image: wordpress-PWA.png
 tags:
   - dev
+  - pwa
+  - wordpress
 ---
 Keeping up with the [PWA](https://developers.google.com/web/progressive-web-apps/){target="_blank"} frency, I discovered that it is fairly simple to convert your wordpress into a Progressive Web App, so I thought I’d share my exprerience.
 
-Remember all you need to do to turn your WordPress site into a PWA are the 3 basic steps (for more on PWAs check out my posts about [why](../why-i-made-my-app-a-pwa/) and [how](../how-i-made-my-app-a-pwa/) I made my app a PWA) :
+Remember all you need to do to turn your WordPress site into a PWA are the 3 basic steps (for more on PWAs check out my posts about [why](../why-i-made-my-app-a-pwa/) and [how](../how-I-made-my-app-a-pwa/) I made my app a PWA) :
 
 1. add a **[service worker](https://developers.google.com/web/fundamentals/primers/service-workers/){target="_blank"}**
 2. add a **[manifest](https://developers.google.com/web/fundamentals/web-app-manifest/){target="_blank"}** file 

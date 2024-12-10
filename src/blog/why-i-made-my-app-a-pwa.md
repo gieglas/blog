@@ -5,6 +5,7 @@ summary: A walk through why I developed the Intellectual and Industrial Property
 image: DRCOR_PWA.png
 tags:
   - dev
+  - pwa
 ---
 In my previous post I talked about the [Intellectual and Industrial Property eServices](../intellectual-and-industrial-property-eservices/) app and in this post I will talk about why I developed it as a Progressive Web App (or simply PWA).
 
