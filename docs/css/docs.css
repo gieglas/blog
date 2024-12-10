@@ -210,6 +210,34 @@
     color: #212121;
     text-decoration: none;
 }
+.fail-tag {
+    margin-left: .35rem;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px 12px;
+    display: inline-block;
+    vertical-align: top;
+    width: fit-content;
+    width: -moz-fit-content;
+    background: #D4351C; 
+    color: #ffffff;
+    text-decoration: none;
+}
+.success-tag {
+    margin-left: .35rem;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px 12px;
+    display: inline-block;
+    vertical-align: top;
+    width: fit-content;
+    width: -moz-fit-content;
+    background: #00703C; 
+    color: #ffffff;
+    text-decoration: none;
+}
 
 /** Bootsrap img-fluid */
 .img-mobile-screenshoot {
