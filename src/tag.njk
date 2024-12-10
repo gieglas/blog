@@ -25,7 +25,7 @@ permalink: /tags/{{ tag }}/
             <a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>
         {% endif %}
         {%- endfor %}</p>
-    {# {% if pag.data.image %}<a href="{{ pag.url | url }}"><img aria-hidden="true" style="height:100px" src="../../img/{{ pag.data.image }}" alt="graphic for {{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>{% endif %} #}
+    {# {% if pag.data.image %}<a href="{{ pag.url | url }}"><img style="height:100px" src="../../img/{{ pag.data.image }}" alt="graphic for {{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>{% endif %} #}
     <p>{{pag.data.summary}}</p></li>
 {% endfor %}
 </ul>
