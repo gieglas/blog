@@ -28,7 +28,7 @@ main li {
 <li class="nav-side govcy-br-bottom-1 govcy-br-bottom-standard govcy-py-2 govcy-mb-4"><a class="govcy-fw-bold" href="{{ pag.url | url }}">{{ pag.data.title }}</a>
     <p class="post-date govcy-mb-1">Posted on <time datetime="{{ pag.date | dateISO }}">{{ pag.date | dateOnly }}</time> • Tagged with {% for tag in pag.data.tags -%}
         {% if tag !== 'blog' and tag !== 'en' %}<a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>{% endif %}{%- endfor %}</p>
-    {% if pag.data.image %}<a href="{{ pag.url | url }}"><img aria-hidden="true" style="height:100px" src="{{'/img/' ~ pag.data.image | url }}" alt="graphic for {{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>{% endif %}
+    {% if pag.data.image %}<a href="{{ pag.url | url }}"><img aria-hidden="true" style="height:100px" src="{{ (site.imagesLocation ~ pag.data.image) | url }}" alt="graphic for {{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>{% endif %}
     <p>{{pag.data.summary}}</p></li>
 {% endfor %}</ul>
 
