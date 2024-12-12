@@ -13,9 +13,9 @@ I tried a lot of solutions but every time I found that something was missing. I 
 ![Toodledo in multiple devices](../../img/Pasted%20image%2020241210204026.png)
 
 
-But anyway brighter days have come with the appearance of iOS and Android and an interesting cloud service called [Toodledo](http://www.toodledo.com/). I wont get into too much details about toodledo, I’ll just say that the tasks are stored on their servers and a lot of innovative apps sync with their services (oh not to mention that the service has a free plan which is more than enough for my needs). Also Toodledo is an excellent service for implementing [GTD (David Allen | _Getting Things Done_)](http://www.davidco.com/) on which I will talk about in later posts.
+But anyway brighter days have come with the appearance of iOS and Android and an interesting cloud service called [Toodledo](http://www.toodledo.com/){target="_blank"}. I wont get into too much details about toodledo, I’ll just say that the tasks are stored on their servers and a lot of innovative apps sync with their services (oh not to mention that the service has a free plan which is more than enough for my needs). Also Toodledo is an excellent service for implementing [GTD (David Allen | _Getting Things Done_)](http://www.davidco.com/){target="_blank"} on which I will talk about in later posts.
 
-Toodledo by its self is nothing more than a browser based task list. When you connect your Toodledo account though with client applications for macs, wincows, iPhones, iPads, Android devices e.t.c., you get to see its real power. Depending on the application you use you can get the most out of your task management process. For example some applications such as [2Do](http://www.2doapp.com/) for iOs use the device location services to map tasks on locations, and get reminders when in certain range. Others such as the [Pocket Informant HD](http://www.pocketinformant.com/products_info.php?p_id=pocketinformant_ipad) for iPad combine tasks with calendars providing an excellent planning tool. So great Android apps are [Due Today](http://www.lakeridgesoftware.com/products/android/DueToday/) and [DGT GTD & ToDo](https://market.android.com/details?id=com.dg.gtd.android.lite&hl=en). There are a lot of apps that sync with Toodledo, I just mentioned some that can implement David Allen’s GTD. There are also integrations with calendars such as google calendar, syncs with outlook and many more.
+Toodledo by its self is nothing more than a browser based task list. When you connect your Toodledo account though with client applications for macs, wincows, iPhones, iPads, Android devices e.t.c., you get to see its real power. Depending on the application you use you can get the most out of your task management process. For example some applications such as [2Do](http://www.2doapp.com/){target="_blank"} for iOs use the device location services to map tasks on locations, and get reminders when in certain range. Others such as the [Pocket Informant HD](http://www.pocketinformant.com/products_info.php?p_id=pocketinformant_ipad){target="_blank"} for iPad combine tasks with calendars providing an excellent planning tool. So great Android apps are [Due Today](http://www.lakeridgesoftware.com/products/android/DueToday/){target="_blank"} and [DGT GTD & ToDo](https://market.android.com/details?id=com.dg.gtd.android.lite&hl=en){target="_blank"}. There are a lot of apps that sync with Toodledo, I just mentioned some that can implement David Allen’s GTD. There are also integrations with calendars such as google calendar, syncs with outlook and many more.
 
 ![2DO in multiple devices](../../img/Pasted%20image%2020241210204130.png)
 ![Pocket informant](../../img/Pasted%20image%2020241210204204.png)
@@ -27,9 +27,9 @@ I use mobile apps on my Android phone to add tasks on the run and for my reminde
 
 **Sources:**
 
-[Toodledo](http://www.toodledo.com/)
-[GTD (David Allen | _Getting Things Done_)](http://www.davidco.com/)
-[2Do](http://www.2doapp.com/)
-[Pocket Informant HD](http://www.pocketinformant.com/products_info.php?p_id=pocketinformant_ipad)
-[Due Today](http://www.lakeridgesoftware.com/products/android/DueToday/)
-[DGT GTD & ToDo](https://market.android.com/details?id=com.dg.gtd.android.lite&hl=en)
+[Toodledo](http://www.toodledo.com/){target="_blank"}
+[GTD (David Allen | _Getting Things Done_)](http://www.davidco.com/){target="_blank"}
+[2Do](http://www.2doapp.com/){target="_blank"}
+[Pocket Informant HD](http://www.pocketinformant.com/products_info.php?p_id=pocketinformant_ipad){target="_blank"}
+[Due Today](http://www.lakeridgesoftware.com/products/android/DueToday/){target="_blank"}
+[DGT GTD & ToDo](https://market.android.com/details?id=com.dg.gtd.android.lite&hl=en){target="_blank"}

@@ -6,6 +6,7 @@ image: Sheet-to-Web-App.png
 tags:
   - dev
   - google-sheets
+  - productivity
 ---
 Following on the post for [Google Sheets Script for email Report](../google-sheets-script-for-email-report/), I wrote another Google App Script to also show HTML as a web app following the same rules as in my previous post.
 

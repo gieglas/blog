@@ -6,6 +6,7 @@ image: GoogleSheetEmail.png
 tags:
   - dev
   - google-sheets
+  - productivity
 ---
 After working a little bit with Google Sheets and seeing it’s power in action, we thought it would be nice to automate email reports / notifications or even reminders. So once again I tried to make a general purpose script that we could reuse whenever we need to send the contents of a specific sheet. When combining the script, with Google Spreadsheet build in functions and event triggers (in my case Time Driven triggers), you can pretty much automate any kind of report you like.
 

@@ -1,8 +1,36 @@
 {
-  "date": "2024-12-10",
+  "date": "2024-12-12",
   "results": [
     {
       "url": "/blog/eisenhower-matrix-with-evernote/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-project-master-note-template/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-business-taveling-maste-note-template/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-working-example-business-meeting-1/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-life-work-balance/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-working-example-business-meeting-2/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-organized-with-evernote-gtd-methodology/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-organized-with-evernote-gtd-task-management/",
       "issues": []
     },
     {
@@ -11,6 +39,14 @@
     },
     {
       "url": "/blog/Gitlab-ci-cd-and-gitlab-pages/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-organized-with-evernote/",
+      "issues": []
+    },
+    {
+      "url": "/blog/fast-gtd-with-doit-im/",
       "issues": []
     },
     {
@@ -38,19 +74,35 @@
       "issues": []
     },
     {
-      "url": "/blog/how-I-made-my-app-a-pwa/",
-      "issues": []
-    },
-    {
       "url": "/blog/how-i-made-my-wordpress-a-pwa/",
       "issues": []
     },
     {
-      "url": "/blog/intellectual-and-industrial-property-eservices/",
+      "url": "/blog/how-I-made-my-app-a-pwa/",
+      "issues": []
+    },
+    {
+      "url": "/blog/nobodys-perfect-when-it-comes-pixels/",
+      "issues": []
+    },
+    {
+      "url": "/blog/multi-os-device-task-management-with-toodledo/",
       "issues": []
     },
     {
       "url": "/blog/online-search-registry-cregistry/",
+      "issues": []
+    },
+    {
+      "url": "/blog/perfect-entertainment-unit/",
+      "issues": []
+    },
+    {
+      "url": "/blog/power-by-simplicity-with-ifttt/",
+      "issues": []
+    },
+    {
+      "url": "/blog/prince2-project-management-with-google-sheets/",
       "issues": []
     },
     {
@@ -62,11 +114,11 @@
       "issues": []
     },
     {
-      "url": "/blog/multi-os-device-task-management-with-toodledo/",
+      "url": "/blog/serial-progress-bar-for-asp-net-3-5/",
       "issues": []
     },
     {
-      "url": "/blog/serial-progress-bar-for-asp-net-3-5/",
+      "url": "/blog/tag-your-plug/",
       "issues": []
     },
     {
@@ -86,39 +138,19 @@
       "issues": []
     },
     {
-      "url": "/blog/perfect-entertainment-unit/",
-      "issues": []
-    },
-    {
-      "url": "/blog/prince2-project-management-with-google-sheets/",
-      "issues": []
-    },
-    {
-      "url": "/about/",
-      "issues": []
-    },
-    {
-      "url": "/privacy-statement/",
-      "issues": []
-    },
-    {
-      "url": "/accessibility/",
-      "issues": []
-    },
-    {
-      "url": "/cookie-policy/",
-      "issues": []
-    },
-    {
-      "url": "/",
-      "issues": []
-    },
-    {
       "url": "/contact/",
       "issues": []
     },
     {
       "url": "/search/",
+      "issues": []
+    },
+    {
+      "url": "/tags/productivity/",
+      "issues": []
+    },
+    {
+      "url": "/tags/evernote/",
       "issues": []
     },
     {
@@ -146,11 +178,27 @@
       "issues": []
     },
     {
-      "url": "/tags/productivity/",
+      "url": "/tags/design/",
       "issues": []
     },
     {
-      "url": "/tags/design/",
+      "url": "/accessibility/",
+      "issues": []
+    },
+    {
+      "url": "/about/",
+      "issues": []
+    },
+    {
+      "url": "/privacy-statement/",
+      "issues": []
+    },
+    {
+      "url": "/cookie-policy/",
+      "issues": []
+    },
+    {
+      "url": "/",
       "issues": []
     },
     {
@@ -163,6 +211,10 @@
     },
     {
       "url": "/blog/2/",
+      "issues": []
+    },
+    {
+      "url": "/blog/3/",
       "issues": []
     }
   ]

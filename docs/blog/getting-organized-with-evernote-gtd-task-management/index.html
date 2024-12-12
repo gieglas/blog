@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="A guide to implement GTD Task management with the help of Evernote.">
+        <meta property="og:title" content="Getting Organized with Evernote – GTD Task Management - Con&#39;s place">
+        <meta property="og:url" content="https://gieglas.github.io/blog/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/blog/img/Pasted%20image%2020241212131600.jpg">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gieglas.github.io/blog/">
+        <meta property="twitter:title" content="Getting Organized with Evernote – GTD Task Management - Con&#39;s place">
+        <meta property="twitter:description" content="A guide to implement GTD Task management with the help of Evernote.">
+        <meta property="twitter:image" content="/blog/img/Pasted%20image%2020241212131600.jpg">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Getting Organized with Evernote – GTD Task Management - Con&#39;s place</title>
+        <meta name="description" content="A guide to implement GTD Task management with the help of Evernote.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Getting Organized with Evernote – GTD Task Management</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2012-04-12T00:00:00.000Z">12 April 2012</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/productivity">productivity</a>
+                                        
+                                            <a class="post-tag" href="/blog/tags/evernote">evernote</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020241212131600.jpg" alt="Graphic for Getting Organized with Evernote – GTD Task Management" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>n this post I will present a method for implementing GTD Task management with the help of Evernote. This method relies on the methodology described on  <a href="../getting-organized-with-evernote-gtd-methodology/">Getting Organized with Evernote – GTD Methodology</a>.</p>
+<p>Task management plays an important role in getting organized, especially in environments where change is constant. Again David Allen’s GTD gives us a great starting point to come up with our own methodology. I will rely on GTD and Evernote once more and end up with a way to manage our chaotic and constantly demanding lives.</p>
+<h3>Requirements</h3>
+<p><img src="../../img/Pasted%20image%2020241212131715.jpg" alt="Requirements"></p>
+<p>I needed a method and a tool that allowed me to do the following:</p>
+<ul>
+<li><strong>Collect and Record</strong> Issues and Tasks</li>
+<li><strong>Review</strong> the tasks I have to do</li>
+<li><strong>Keep Notes</strong> on those issues (and if applies the solution to a problem)</li>
+<li><strong>Refer</strong> and find notes or solutions to previous similar issues</li>
+</ul>
+<p>In effect I needed a combination of <strong>Issue Tracking</strong>, <strong>Task Management</strong> and <strong>Knowledge Base</strong>. Additional requirements were ease of use, speed in all actions mentioned above, ability to collect issues from a variety of sources and advanced search.</p>
+<h3>Method</h3>
+<p>I already used Evernote as a Knowledge Base and loved it, so I wanted to utilize it for Tasks and Issues. I also wanted to be faithful to my method for getting organized as described in my previous post <a href="../getting-organized-with-evernote-gtd-methodology/">Getting Organized with Evernote – GTD Methodology</a> (it’s supposed to be a universal method after all).</p>
+<p><img src="../../img/Pasted%20image%2020241212101518.jpg" alt="The method"></p>
+<h3>Evernote Clip</h3>
+<p>To apply the method, we need a Tag Structure specific to Tasks and Issues. With the help of Evernote’s Search and these tags we will be able to quickly <strong>review</strong> our tasks.</p>
+<p><img src="../../img/Pasted%20image%2020241212131935.jpg" alt="Task Tag Structure"></p>
+<p>I have started the task related tags with the character “@” and again I used numbers 1 – 4 to easily distinguish different tag categories and to set the tag’s priority. Again by typing the first characters in tags section when adding a note will produce a drop down list with the available tags, making it extremely fast to categorize notes.</p>
+<p><img src="../../img/Pasted%20image%2020241212131959.jpg" alt="Further Categorization Tag Structure"></p>
+<p>To further categorize the task I also use the same 1 2 3 4 5 tag structure as described in my previous posts (see image above). This tag structure will be very helpful in the <strong>knowledge management</strong> area. So once more by setting some tags when creating a task, not only you can review the tasks easily, but can create a valuable knowledge base for the future. I cannot stress enough how important this is when dealing with repetitive problems or support. Again the tags are subject to your own needs, this is just an example.</p>
+<p>Within the notes I use some special phrases to help me with my searches such as <code>@Requested By</code> or <code>@Due Date</code>. For the actual task list I use the bullet points and check boxes.</p>
+<h3>Review</h3>
+<p>To review, we will take advantage of the search functionality and the ability to save searches in Evernote. Specifically for our example I will show how to take advantage of the “tag” search operator to find exactly what we want. For more details on search operators consult evernote’s knowledge base <a href="https://support.evernote.com/link/portal/16051/16058/Article/535/Using-Evernote-s-advanced-search-operators" title="Using-Evernote-s-advanced-search-operators">Using Evernote’s advanced search operators</a>. Here is a list of some of the most important searches:</p>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Search Name</th>
+<th>Query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Issues Pending</td>
+<td><code>tag:”:Issues” -tag:”@3St-6 Completed” -tag:”@3St-5 Canceled”</code></td>
+</tr>
+<tr>
+<td>Issues Pending Review – 0 Daily</td>
+<td><code>tag:”:Issues” -tag:”@3St-6 Completed” -tag:”@3St-5 Canceled” tag:”@2Rev-0 Daily”</code></td>
+</tr>
+<tr>
+<td>Issues Pending Review – 1 Weekly</td>
+<td><code>tag:”:Issues” -tag:”@3St-6 Completed” -tag:”@3St-5 Canceled” tag:”@2Rev-1 Weekly”</code></td>
+</tr>
+<tr>
+<td>Issues Pending Review – 2 Occasionally</td>
+<td><code>tag:”:Issues” -tag:”@3St-6 Completed” -tag:”@3St-5 Canceled” tag:”@2Rev-2 Occasionally”</code></td>
+</tr>
+</tbody>
+</table>
+<p>These searches will allow you to easily find which issues are pending and check the issues <strong>daily</strong>, <strong>weekly</strong> and <strong>occasionally</strong> (maybe once a month or so). This way you will not be troubled with what’s pending and as GTD says, take these stuff out of your mind and concentrate on the performing your tasks. Putting this into practice will effectively increases your productivity.</p>
+<p>You can of course perform different combinations in your searches. For example you can use the <code>Issues Pending Review – 0 Daily</code> and further filter with <code>tag:”3.Pro-Project A”</code>. This will show you the issues pending daily for the specific project.</p>
+<p><img src="../../img/Pasted%20image%2020241212133300.jpg" alt="Pending Daily Tasks on Windows Evernote"></p>
+<h3>Conclusion</h3>
+<p>I used this method at work for a while and was happy with it. The real test came when I returned to work after a week’s leave of absence. During that week I let my self forget everything that had to do with work and tried to be true to my work life balance plan (there is no plan really just want some life after a lot of work :-)). When I came back to work I truly had no idea what I was doing before my leave or what was due and when and so on. After 15 minutes of reviewing my notes through the saved searches I was up to date and ready for work.</p>
+<p>This method will not create the perfect Task Management or Issue Tracking system, but it combines speed, knowledge management features, and enables you to have a single system for all your getting organized needs. I would love to see some features that integrates notes with your calendar or notifications without cluttering our inbox or having to depend on external services. There are some Evernote integrations that are very interesting in this area such as:</p>
+<ul>
+<li><a href="https://www.evernote.com/about/trunk/items/alarms?lang=en&amp;layout=default&amp;source=desktop_page" title="Alarms" target="_blank">Alarms for Macs</a></li>
+<li><a href="https://www.evernote.com/about/trunk/items/hojoki?lang=en&amp;layout=default&amp;source=desktop_page" title="hojoki" target="_blank">hojoki</a></li>
+<li><a href="https://www.evernote.com/about/trunk/items/getitdone?lang=en&amp;layout=default&amp;source=desktop_page" title="GetItDone" target="_blank">GetItDone</a></li>
+<li><a href="https://www.evernote.com/about/trunk/items/nozbe?lang=en&amp;layout=default&amp;source=desktop_page" title="Nozbe" target="_blank">Nozbe</a></li>
+<li><a href="http://ifttt.com/" title="ifttt" target="_blank">ifttt</a></li>
+</ul>
+<p>Once more I would like to stress out that this method might not apply to everyone. Evernote and GTD have givens us the means and the methodology that we can work on and the rest is up to us.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/blog/privacy-statement/">Privacy</a></li>
+                            <li><a href="/blog/cookie-policy/">Cookies</a></li>
+                            <li><a href="/blog/accessibility/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>

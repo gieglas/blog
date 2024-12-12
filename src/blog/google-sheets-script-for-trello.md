@@ -7,6 +7,7 @@ tags:
   - dev
   - google-sheets
   - trello
+  - productivity
 ---
 I came accross this stackoverflow question about [Google Script to import Trello data to Google Sheets](https://stackoverflow.com/questions/35878813/google-script-to-import-trello-data-to-google-sheets){target="_blank"} and since we are using [Trello in our Team](../trello-kanban-like-board-for-issues-and-tasks-tracking/) and [Google Sheets for Project Management](../prince2-project-management-with-google-sheets/), I thought it might be interesting to have a Google Sheet with all the Trello Cards. I started working on it and I ended up with an interesting script and Google Sheet template, so I thought I’d share it with the world.  
 
