@@ -15,13 +15,19 @@ I helped implement various government services, but what I really enjoy is creat
 <div class="row" style=""> 
 {% for project in site.localization[locale]["projects"] %}
 <div class="govcy-col-6"> 
-    <div style="padding: 0.5rem; border: 1px solid #d3d3d3; margin-bottom: 1rem; border-radius: 5px; min-height:150px"> 
-        <a href="{{project.url}}" target="_blank">{{project.name}}</a>
+    <div style="padding: 0.5rem; border: 1px solid #d3d3d3; margin-bottom: 1rem; border-radius: 5px; /*min-height:150px*/"> 
+        <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../../img/figmaicon.png" aria-hidden="true" class="img-icon"/>{% endif %}{{project.name}}</a>
         <p style="margin-top: 1rem">{{project.description}}</p>
     </div>
 </div>
 {% endfor %}
 </div>
+
+<ul class="govcy-pl-0"> 
+{% for project in site.localization[locale]["projects"] %}
+    <li class="nav-side"> <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../../img/figmaicon.png" aria-hidden="true" class="img-icon"/>{% endif %}{{project.name}}</a><div class="govcy-mt-1">{{project.description}}</div></li>
+{% endfor %}
+</ul>
 
 ### gov.cy services I worked on
 - [Issue citizen documents](https://citizen-documents.staging.service.gov.cy/){target="_blank"}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="We all know how cool PHP is. What is even cooler is using PHP with PDO to connect to … well basically everywhere.">
+        <meta property="og:title" content="PHP PDO Connect Everywhere - Con&#39;s place">
+        <meta property="og:url" content="https://gieglas.github.io/blog/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/blog/img/Pasted%20image%2020241215120754.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gieglas.github.io/blog/">
+        <meta property="twitter:title" content="PHP PDO Connect Everywhere - Con&#39;s place">
+        <meta property="twitter:description" content="We all know how cool PHP is. What is even cooler is using PHP with PDO to connect to … well basically everywhere.">
+        <meta property="twitter:image" content="/blog/img/Pasted%20image%2020241215120754.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>PHP PDO Connect Everywhere - Con&#39;s place</title>
+        <meta name="description" content="We all know how cool PHP is. What is even cooler is using PHP with PDO to connect to … well basically everywhere.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>PHP PDO Connect Everywhere</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2015-02-24T00:00:00.000Z">24 February 2015</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020241215120754.png" alt="Graphic for PHP PDO Connect Everywhere" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Back to programming. We all know how cool PHP is. What is even cooler is using PHP with PDO to connect to … well basically everywhere. Now that I suddenly remembered my coding days, I thought I’d share a little guide on using PHP with PDO on windows.</p>
+<p>Yes I know, coding on windows… are you nuts? Ok fair enough but some people do that and turns out there are not may resources out there. Am not going to get into describing how to use PDO, there are tons of articles out there.</p>
+<p>Now the coolest thing about PDO is being able to connect to different database technologies from the same machine, but as I discovered it’s not as easy as it sounds on windows. So here is a set of notes I gathered regarding the databases I have encountered so far with a xampp installation:</p>
+<h2>MySQL</h2>
+<p><strong>MySQL</strong> using <strong>PDO_MYSQL</strong> extension seemed to be installed on xampp by default didn’t have to do much work. Here is the code I used for the connection:</p>
+<pre class="language-php"><code class="language-php"><span class="token variable">$connStr</span> <span class="token operator">=</span> <span class="token string double-quoted-string">"mysql:host="</span><span class="token operator">.</span><span class="token variable">$myServer</span><span class="token operator">.</span><span class="token string double-quoted-string">";dbname="</span><span class="token operator">.</span><span class="token variable">$myDB</span><span class="token punctuation">;</span> <br><span class="token variable">$conn</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PDO</span><span class="token punctuation">(</span><span class="token variable">$connStr</span><span class="token punctuation">,</span><span class="token variable">$myUser</span><span class="token punctuation">,</span><span class="token variable">$myPass</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>Microsoft SQL Server</h2>
+<p><strong>Microsoft SQL Server</strong> using <strong>PDO_SQLSRV</strong> followed the instructions on <a href="http://craigballinger.com/blog/2011/08/usin-php-5-3-with-mssql-pdo-on-windows/" target="_blank">Using php 5.3 with mssql pdo on windows/</a>. Here is the code I used:</p>
+<pre class="language-php"><code class="language-php"><span class="token variable">$connStr</span> <span class="token operator">=</span> <span class="token string double-quoted-string">"sqlsrv:Server="</span><span class="token operator">.</span><span class="token variable">$myServer</span><span class="token operator">.</span><span class="token string double-quoted-string">";Database="</span><span class="token operator">.</span><span class="token variable">$myDB</span><span class="token punctuation">;</span> <br><span class="token variable">$conn</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PDO</span><span class="token punctuation">(</span><span class="token variable">$connStr</span><span class="token punctuation">,</span><span class="token variable">$myUser</span><span class="token punctuation">,</span><span class="token variable">$myPass</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>Oracle</h2>
+<p><strong>Oracle</strong> with <strong>PDO_OCI</strong>. Download and install the proper Oracle Instant Client on your windows machine for example instantclient_12_1 and add its path to PATH in SYSTEM Environmental Variables. Note Oracle supports only 2 versions down so select your client version properly. Do that and then restart your Apache. Here is the code I used:</p>
+<pre class="language-php"><code class="language-php"><span class="token variable">$tns</span> <span class="token operator">=</span> <span class="token string double-quoted-string">"(DESCRIPTION=(ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = "</span><span class="token operator">.</span><span class="token variable">$myServer</span><span class="token operator">.</span><span class="token string double-quoted-string">")(PORT = 1521)))(CONNECT_DATA=(SID="</span><span class="token operator">.</span><span class="token variable">$myDB</span><span class="token operator">.</span><span class="token string double-quoted-string">")))"</span><span class="token punctuation">;</span> <br><span class="token variable">$connStr</span> <span class="token operator">=</span> <span class="token string double-quoted-string">"oci:dbname="</span><span class="token operator">.</span><span class="token variable">$tns</span><span class="token punctuation">;</span>      <br><span class="token variable">$conn</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PDO</span><span class="token punctuation">(</span><span class="token variable">$connStr</span><span class="token punctuation">,</span><span class="token variable">$myUser</span><span class="token punctuation">,</span><span class="token variable">$myPass</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>Sybase</h2>
+<p><strong>Sybase</strong> with <strong>PDO_ODBC</strong> Must have Sybase ASE ODBC Driver which comes with the SDK. Here is the code I used:</p>
+<pre class="language-php"><code class="language-php"><span class="token variable">$connStr</span> <span class="token operator">=</span> <span class="token string double-quoted-string">"odbc:Driver={Adaptive Server Enterprise};server="</span><span class="token operator">.</span><span class="token variable">$myServer</span><span class="token operator">.</span><span class="token string double-quoted-string">";port="</span><span class="token operator">.</span><span class="token variable">$myPort</span><span class="token operator">.</span><span class="token string double-quoted-string">";db="</span><span class="token operator">.</span><span class="token variable">$myDB</span><span class="token punctuation">;</span><br><span class="token variable">$conn</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PDO</span><span class="token punctuation">(</span><span class="token variable">$connStr</span><span class="token punctuation">,</span><span class="token variable">$myUser</span><span class="token punctuation">,</span><span class="token variable">$myPass</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Hope it helps.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/blog/privacy-statement/">Privacy</a></li>
+                            <li><a href="/blog/cookie-policy/">Cookies</a></li>
+                            <li><a href="/blog/accessibility/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>

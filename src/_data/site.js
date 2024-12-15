@@ -40,33 +40,39 @@ module.exports = {
         [
           {
             name : "govcy-design-system", 
+            type : "github", 
             url : "https://github.com/gov-cy/govcy-design-system", 
             description: "The gov.cy design system developer assets project"
           },
           {
             name : "govcy-design-system-docs", 
+            type : "github", 
             url : "https://gov-cy.github.io/govcy-design-system-docs/", 
             description: "The documentation pages of the govcy design system"
           },
           {
             name : "gov.cy - UDS Library in Figma", 
+            type : "figma",
             url : "https://www.figma.com/community/file/1388468172430388495/dsf-gov-cy-unified-design-system-v-3", 
             description: "Figma library for the gov.cy Design System"
           },
           {
             name : "govcy-frontend-renderer", 
+            type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/govcy-frontend-renderer", 
-            description: "NPM package to render HTML for design elements, as they are defined in the gov.cy Design System based on JSON or njk templates"
+            description: "Render HTML for design elements, as they are defined in the gov.cy Design System based on JSON or njk templates"
           },
           {
             name : "govcy-frontend-tester", 
+            type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester", 
-            description: "NPM package to perform front end tests in terms of the accessibility and design guidelines established by the Digital Services Factory (DSF) Cyprus"
+            description: "Perform front end tests in terms of the accessibility and design guidelines established by the Digital Services Factory (DSF) Cyprus"
           },
           {
             name : "dsf-email-templates", 
+            type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/dsf-email-templates", 
-            description: "NPM package to produce html emails with gov.cy looks"
+            description: "Produce html emails with gov.cy looks"
           },
       ]
     }

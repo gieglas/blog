@@ -188,7 +188,7 @@
     box-shadow: #64646f33 0 7px 29px !important;
     max-width: 100%;
     height: auto;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem;
 }
 
 .pop-medium {
@@ -246,12 +246,17 @@
     text-decoration: none;
 }
 
+.img-icon {
+    width: 16px;
+    margin: 0px 5px 0px 0px !important;
+    max-width: 100%;
+    height: auto;
+}
+
 /** Bootsrap img-fluid */
 .img-mobile-screenshoot {
-    box-shadow: #64646f33 0 7px 29px !important;
-    max-width:300px;
+    max-width:300px !important;
     width: 100%;
-    height: auto;
 }
 
 

@@ -1,0 +1,2 @@
+
+{.govcy-table}

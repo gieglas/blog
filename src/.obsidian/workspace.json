@@ -8,49 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "65675b813500ca5f",
+            "id": "f0a54bca9762e4ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/online-search-registry-cregistry.md",
+                "file": "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "online-search-registry-cregistry"
+              "title": "diy-organization-tool-cocoon-grid-it-ripoff"
             }
           },
           {
-            "id": "76a0c0009bd43682",
+            "id": "211b3ae32dd17c94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/tag-your-plug.md",
+                "file": "blog/php-notificator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tag-your-plug"
-            }
-          },
-          {
-            "id": "52e9bdcafb87d7af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/evernote-business-taveling-maste-note-template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "evernote-business-taveling-maste-note-template"
+              "title": "php-notificator"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,8 +88,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -194,50 +179,50 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "061df4d8ce53d722",
+  "active": "211b3ae32dd17c94",
   "lastOpenFiles": [
-    "blog/intellectual-and-industrial-property-eservices.md",
-    "img/Pasted image 20241212143815.png",
-    "blog/evernote-project-master-note-template.md",
-    "blog/evernote-business-taveling-maste-note-template.md",
-    "blog/tag-your-plug.md",
-    "img/Pasted image 20241212143418.jpg",
-    "_drafts/archives/backup-posts-with-ifttt-and-evernote.md",
-    "img/Pasted image 20241212142640.jpg",
-    "img/Pasted image 20241212142533.jpg",
-    "img/Pasted image 20241212142504.jpg",
-    "img/Pasted image 20241212142443.jpg",
-    "img/Pasted image 20241212142425.jpg",
-    "_drafts/archives/Untitled.md",
-    "blog/fast-gtd-with-doit-im.md",
-    "img/Pasted image 20241212141836.jpg",
-    "img/Pasted image 20241212141811.jpg",
-    "img/Pasted image 20241212141755.jpg",
+    "img/figmaicon.png.0.pdnSave",
+    "img/figmaicon.png",
+    "img/FigmaIcon (Full-color).png",
+    "img/Figma Icon (Full-color).png",
+    "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
+    "blog/php-notificator.md",
+    "_templates/github link with icon.md",
+    "blog/php-pdo-connect-everywhere.md",
+    "REPO_URL.md",
+    "img/dot.png",
+    "about.md",
+    "img/github-mark-white.png",
+    "img/github-mark.svg",
+    "img/github-mark.png",
+    "img/github-mark-white.svg",
+    "img/Pasted image 20241215121336.png",
+    "img/Pasted image 20241215120754.png",
+    "_drafts/archives/security-alert-heartbleed.md",
+    "_drafts/archives/evernote-control-your-data-3.md",
+    "_drafts/archives/evernote-control-your-data-2.md",
+    "_drafts/archives/cmits-transphone-also-doubles-as-a-tablet.md",
+    "_drafts/archives/jqueryui-dialog-asp-ne.md",
+    "blog/schedule-stuff-with-php.md",
+    "blog/evernote-control-your-data.md",
+    "blog/gmail-issue-tracking-system.md",
+    "Untitled.md",
+    "_templates/mobile screenshot class.md",
+    "blog/evernote-for-its-remote-desktops.md",
+    "blog/how-to-make-your-life-easy-at-the-airport.md",
     "blog/online-search-registry-cregistry.md",
-    "_drafts/archives/another-phone-to-tablet.md",
-    "blog/getting-organized-with-evernote-gtd-task-management.md",
-    "_drafts/archives/followupthen-and-evernote.md",
-    "_drafts/archives/personal-life-corner-at-work.md",
-    "blog/evernote-life-work-balance.md",
-    "_drafts/archives/timeline-jquery-plugin.md",
-    "blog/eisenhower-matrix-with-evernote.md",
-    "blog/evernote-working-example-business-meeting-1.md",
-    "blog/evernote-working-example-business-meeting-2.md",
-    "blog/getting-organized-with-evernote-gtd-methodology.md",
-    "blog/getting-organized-with-evernote.md",
-    "blog/how-I-made-my-app-a-pwa.md",
-    "blog/google-sheets-script-for-trello.md",
-    "blog/Gitlab-ci-cd-and-gitlab-pages.md",
-    "blog/GitLab-CI-CD-and-React-Tests.md",
-    "blog/google-sheets-script-for-trello-v2.md",
-    "blog/google-sheets-script-for-email-report.md",
-    "blog/google-sheets-script-for-web-apps.md",
+    "blog/why-i-made-my-app-a-pwa.md",
+    "_templates/govcy-table class.md",
+    "_templates/target blank - new tab.md",
+    "blog/tag-your-plug.md",
+    "_templates/post.md",
+    "_templates",
+    "blog/evernote-business-taveling-maste-note-template.md",
     "_drafts/archives",
     "_drafts/find-page.njk",
     "_drafts",
     "_temp/find-page.njk",
     "_temp",
-    "Untitled",
     "templates"
   ]
 }

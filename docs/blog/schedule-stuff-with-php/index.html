@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="I needed a way to schedule notifications with PHP so I turned to the Internet and made a quick search. I couldn’t find a nice post on the subject so I thought I’d make one hoping to help a little bit.">
+        <meta property="og:title" content="Schedule stuff with PHP - Con&#39;s place">
+        <meta property="og:url" content="https://gieglas.github.io/blog/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/blog/img/Pasted%20image%2020241214183203.jpg">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gieglas.github.io/blog/">
+        <meta property="twitter:title" content="Schedule stuff with PHP - Con&#39;s place">
+        <meta property="twitter:description" content="I needed a way to schedule notifications with PHP so I turned to the Internet and made a quick search. I couldn’t find a nice post on the subject so I thought I’d make one hoping to help a little bit.">
+        <meta property="twitter:image" content="/blog/img/Pasted%20image%2020241214183203.jpg">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Schedule stuff with PHP - Con&#39;s place</title>
+        <meta name="description" content="I needed a way to schedule notifications with PHP so I turned to the Internet and made a quick search. I couldn’t find a nice post on the subject so I thought I’d make one hoping to help a little bit.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Schedule stuff with PHP</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2013-10-11T00:00:00.000Z">11 October 2013</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020241214183203.jpg" alt="Graphic for Schedule stuff with PHP" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Its been a while but I finally found some time to do some programming. I needed a way to schedule notifications with PHP so I turned to the Internet and made a quick search. I couldn’t find a nice post on the subject so I thought I’d make one hoping to help a little bit.</p>
+<p>Ok people will tell you DO NOT USE PHP FOR AUTOMATION… and they are probably right. PHP works great with doing stuff with http requests but not so great on automating stuff… but doable.</p>
+<p>The way to go is to call your php code from the command line using the</p>
+<pre class="language-shell"><code class="language-shell">php.exe <span class="token parameter variable">-f</span> yourCode.php</code></pre>
+<p>You can then use some kind of scheduler for example Windows Schedule Tasks or cron and automate your code.</p>
+<p>So what if you want to save your schedules information on a database (i.e. MySQL). Well then you’d have to do the work of the scheduler your self… and still use the OS scheduler to run your script every once in a while… say every minute. If you require a lot of precision on when a task is run DO NOT USE the solution described below.</p>
+<p>Here’s what to do:</p>
+<ol>
+<li>
+<p>First of all you would need to store the schedule information. In the following example I use “<strong>Frequency</strong>“, “<strong>Interval</strong>“, “<strong>Next Schedule Date</strong>“. With these 3 basic schedule information you can build the basics of a scheduler… if you need more I would suggest reading <a href="http://www.kanzaki.com/docs/ical/" title="iCalendar specs" target="_blank">iCalendar Specification</a>. Frequency can have the following values: <code>“SECONDLY” | “MINUTELY” | “HOURLY” | “DAILY” | “WEEKLY” | “MONTHLY” | “YEARLY”</code>.</p>
+</li>
+<li>
+<p>Then you would need to <strong>get all the scheduled tasks with Next Schedule Date smaller or equal than the current date time</strong>.</p>
+</li>
+<li>
+<p>Then <strong>for each</strong> of those tasks</p>
+</li>
+</ol>
+<p>3.1 do the <strong>actual task</strong></p>
+<p>3.2 <strong>update the Next Schedule Date</strong> with the next calculated  date</p>
+<p>Here’s some sample php code for scheduled notifications to be run by the OS scheduler (cron):</p>
+<pre class="language-php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?</span>php<span class="token comment">// get notifications from the database </span><br><br><span class="token variable">$notifications</span> <span class="token operator">=</span> <span class="token function">_getNotifications</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$notifications</span> <span class="token keyword">as</span> <span class="token variable">$res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token comment">//…………</span><br>    <span class="token comment">//do your thing that needs to be done when notification is defined here</span><br>    <span class="token comment">//…………</span><br>    <span class="token variable">$freq</span> <span class="token operator">=</span> <span class="token variable">$res</span><span class="token punctuation">[</span>“notify_freq”<span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token variable">$interval</span> <span class="token operator">=</span> <span class="token variable">$res</span><span class="token punctuation">[</span>“notify_interval”<span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token variable">$next_date</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DateTime</span><span class="token punctuation">(</span><span class="token variable">$res</span><span class="token punctuation">[</span>“next_notify_date”<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token variable">$end_date</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DateTime</span><span class="token punctuation">(</span><span class="token variable">$res</span><span class="token punctuation">[</span>“now”<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token variable">$next_date</span> <span class="token operator">&lt;</span> <span class="token variable">$end_date</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token variable">$freq</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>            <span class="token keyword">case</span> ‘<span class="token constant">MINUTELY</span>’<span class="token punctuation">:</span><br>                <span class="token variable">$next_date</span><span class="token operator">-></span><span class="token function">modify</span><span class="token punctuation">(</span>“<span class="token operator">+</span>”<span class="token operator">.</span><span class="token variable">$interval</span><span class="token operator">.</span>” minute”<span class="token punctuation">)</span><span class="token punctuation">;</span><br>                <span class="token keyword">break</span><span class="token punctuation">;</span><br>            <span class="token keyword">case</span> ‘<span class="token constant">HOURLY</span>’<span class="token punctuation">:</span><br>                <span class="token variable">$next_date</span><span class="token operator">-></span><span class="token function">modify</span><span class="token punctuation">(</span>“<span class="token operator">+</span>”<span class="token operator">.</span><span class="token variable">$interval</span><span class="token operator">.</span>” hour”<span class="token punctuation">)</span><span class="token punctuation">;</span><br>                <span class="token keyword">break</span><span class="token punctuation">;</span><br>            <span class="token keyword">case</span> ‘<span class="token constant">DAILY</span>’<span class="token punctuation">:</span><br>                <span class="token variable">$next_date</span><span class="token operator">-></span><span class="token function">modify</span><span class="token punctuation">(</span>“<span class="token operator">+</span>”<span class="token operator">.</span><span class="token variable">$interval</span><span class="token operator">.</span>” day”<span class="token punctuation">)</span><span class="token punctuation">;</span><br>                <span class="token keyword">break</span><span class="token punctuation">;</span><br>            <span class="token keyword">case</span> ‘<span class="token constant">WEEKLY</span>’<span class="token punctuation">:</span><br>                <span class="token variable">$next_date</span><span class="token operator">-></span><span class="token function">modify</span><span class="token punctuation">(</span>“<span class="token operator">+</span>”<span class="token operator">.</span><span class="token variable">$interval</span><span class="token operator">.</span>” week”<span class="token punctuation">)</span><span class="token punctuation">;</span><br>                <span class="token keyword">break</span><span class="token punctuation">;</span><br>            <span class="token keyword">case</span> ‘<span class="token constant">MONTHLY</span>’<span class="token punctuation">:</span><br>                <span class="token variable">$next_date</span><span class="token operator">-></span><span class="token function">modify</span><span class="token punctuation">(</span>“<span class="token operator">+</span>”<span class="token operator">.</span><span class="token variable">$interval</span><span class="token operator">.</span>” month”<span class="token punctuation">)</span><span class="token punctuation">;</span><br>                <span class="token keyword">break</span><span class="token punctuation">;</span><br>            <span class="token keyword">case</span> ‘<span class="token constant">YEARLY</span>’<span class="token punctuation">:</span><br>                <span class="token variable">$next_date</span><span class="token operator">-></span><span class="token function">modify</span><span class="token punctuation">(</span>“<span class="token operator">+</span>”<span class="token operator">.</span><span class="token variable">$interval</span><span class="token operator">.</span>” year”<span class="token punctuation">)</span><span class="token punctuation">;</span><br>                <span class="token keyword">break</span><span class="token punctuation">;</span><br>            <span class="token keyword">default</span><span class="token punctuation">:</span><br>                <span class="token variable">$next_date</span><span class="token operator">-></span><span class="token function">modify</span><span class="token punctuation">(</span>“<span class="token operator">+</span>”<span class="token operator">.</span><span class="token variable">$interval</span><span class="token operator">.</span>” hour”<span class="token punctuation">)</span><span class="token punctuation">;</span><br>                <span class="token keyword">break</span><span class="token punctuation">;</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>    <span class="token comment">// update the notification next date</span><br>    <span class="token function">updateNotificationsNextDate</span><span class="token punctuation">(</span><span class="token variable">$res</span><span class="token punctuation">[</span>“id”<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token variable">$next_date</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token delimiter important">?></span></span></code></pre>
+<p>These are the sqls used for <code>_getNotifications()</code> and <code>_updateNotificationNextDate</code></p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> now<br>    <span class="token punctuation">,</span>id<br>    <span class="token punctuation">,</span>notify_freq<br>    <span class="token punctuation">,</span>notify_interval<br>    <span class="token punctuation">,</span>next_notify_date<br>    <span class="token keyword">FROM</span> notifications<br>    <span class="token keyword">WHERE</span> notify_enabled<span class="token operator">=</span><span class="token number">1</span><br>    <span class="token operator">AND</span> next_notify_date <span class="token operator">&lt;=</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br><span class="token keyword">UPDATE</span> notifications <span class="token keyword">SET</span> next_notify_date <span class="token operator">=</span> :nextDateIn <span class="token keyword">WHERE</span> id <span class="token operator">=</span> :idIn</code></pre>
+<p>Well there you have it, hope it helps, and if I got it wrong of course please let me know 😊.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/blog/privacy-statement/">Privacy</a></li>
+                            <li><a href="/blog/cookie-policy/">Cookies</a></li>
+                            <li><a href="/blog/accessibility/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>

@@ -4,7 +4,7 @@ date: 2015-02-08
 summary: A quick walk through how I turned Gmail into a tracking system
 image: gmailHelpDesk.jpg
 tags:
-  - dev
+  - productivity
 ---
 One of the most demanding task in my work place is handling the various issues that are related to the IT systems we maintain. So I was asked to come up with a method of tracking these issues with the limited resources that we have. That means that we had to implement a method that would need no additional starting cost, no recurring fees, little administration and maintenance time, be implemented and used by the whole team, be future proof, efficient, and oh I forgot, had to be implemented immediately … as always.
 

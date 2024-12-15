@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="We have been looking for an easy way to programmatically send email notifications to customers and came up with small php application to do just that.">
+        <meta property="og:title" content="PHP Notificator - Con&#39;s place">
+        <meta property="og:url" content="https://gieglas.github.io/blog/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/blog/img/Pasted%20image%2020241215121336.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gieglas.github.io/blog/">
+        <meta property="twitter:title" content="PHP Notificator - Con&#39;s place">
+        <meta property="twitter:description" content="We have been looking for an easy way to programmatically send email notifications to customers and came up with small php application to do just that.">
+        <meta property="twitter:image" content="/blog/img/Pasted%20image%2020241215121336.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>PHP Notificator - Con&#39;s place</title>
+        <meta name="description" content="We have been looking for an easy way to programmatically send email notifications to customers and came up with small php application to do just that.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>PHP Notificator</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2015-02-25T00:00:00.000Z">25 February 2015</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020241215121336.png" alt="Graphic for PHP Notificator" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>We have been looking for an easy way to programmatically send email notifications to customers and came up with small php application to do just that. As it turned out we never used it but hey since I made it might as well share it.</p>
+<p>I know, there are lots of services and applications out there that do just that, but where’s the fun in that right. Besides our requirements were a bit restrictive, we needed to automatically send emails based on a table’s entries in our database (populated by other software that handle workflows). Now in our case we use a Sybase Database, but given the fact that we have lots of different databases for all sorts of stuff in our organisation we though it would be best to implement a <a href="../php-pdo-connect-everywhere/">PHP + PDO connect everywhere</a> application, you know just in case we wanted to use it again somewhere. Besides PDO, we used <a href="http://mustache.github.io/" target="_blank">mustache</a> as Template Engine and <a href="http://swiftmailer.org/%20" title="swift" target="_blank">swift</a> as Email Engine.</p>
+<p>Checkout all the code at <a href="https://github.com/gieglas/Notificator" target="_blank"><i class="bi bi-github govcy-text-body"></i> Notificator: Send email notifications</a></p>
+<h2>Description</h2>
+<p>Sends notifications depending on a database table. The input data must have the following format:</p>
+<pre class="language-php"><code class="language-php"><span class="token string single-quoted-string">'id'</span> <span class="token operator">=></span> <span class="token constant">NUMBER</span><span class="token punctuation">,</span><br><span class="token string single-quoted-string">'from'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'EMAIL@ADDRESS.COM'</span><span class="token punctuation">,</span><br><span class="token string single-quoted-string">'to'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'EMAIL@ADDRESS.COM'</span><span class="token punctuation">,</span><br><span class="token string single-quoted-string">'subject'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'STRING'</span><span class="token punctuation">,</span><br><span class="token string single-quoted-string">'notification_method'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'email'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token constant">NOTE</span><span class="token punctuation">,</span> <span class="token keyword">for</span> now only <span class="token string double-quoted-string">"email"</span> notification method is supported<span class="token punctuation">)</span><br><span class="token string single-quoted-string">'template'</span> <span class="token operator">=></span> <span class="token string single-quoted-string">'NAME OF TEMPLARE FILE WITHOUT THE .mustache EXTENSION'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token argument-name">NOTE</span><span class="token punctuation">:</span> <span class="token constant">ALL</span> <span class="token constant">TEMPLATES</span> <span class="token constant">MUST</span> <span class="token constant">EXIST</span> <span class="token constant">UNDER</span> <span class="token string double-quoted-string">"templates"</span> <span class="token constant">FOLDER</span><span class="token punctuation">)</span><br><span class="token string single-quoted-string">'data_json'</span><span class="token operator">=></span> <span class="token string single-quoted-string">'JSON STING WITH DATA SPECIFIC TO THE TEMPLATE'</span></code></pre>
+<p>This program will send all the emails that are derived from the <code>selectquery</code> in the <code>config.php</code> which checks records with <code>status = 0</code>. It then runs the <code>updatequerystatus1</code> which updates the status to 1. Then it sends the notification using a mustache template. It then updates the status of the send email to 2 (which means notification was send). If an error occurs the status of the record is set to 3</p>
+<p>The program <strong>will not</strong> populate the database table, it will only read, send notification and mark as send.</p>
+<p>It can connect to either Oracle, MySQL, Microsoft SQL Server, Sybase using PDO.</p>
+<pre><code>Template engine is mustache ( http://mustache.github.io/ ).
+Email engine is swift ( http://swiftmailer.org/ )
+</code></pre>
+<p><strong>Note</strong> Example of data_json:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">[</span><br>	<span class="token punctuation">{</span><span class="token property">"word"</span><span class="token operator">:</span><span class="token string">"watachikita"</span><span class="token punctuation">}</span><span class="token punctuation">,</span><br>	<span class="token punctuation">{</span><span class="token property">"word"</span><span class="token operator">:</span><span class="token string">"triskitsikitsikita"</span><span class="token punctuation">}</span><span class="token punctuation">,</span><br>	<span class="token punctuation">{</span><span class="token property">"word"</span><span class="token operator">:</span><span class="token string">"anginara"</span><span class="token punctuation">}</span><br><span class="token punctuation">]</span></code></pre>
+<p><strong>Note</strong> Example template:</p>
+<pre class="language-html"><code class="language-html"><br><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">></span></span> Data <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span><br>        {{#.}}<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span> {{word}} <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>        {{/.}}<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Powered by Notificator.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><br></code></pre>
+<h2>Prerequisites</h2>
+<p>Requires at least PHP 5.2.x to run, but works great in 5.3, 5.4 and 5.5, too.</p>
+<h2>Installation</h2>
+<ul>
+<li>Install PHP 5.2.x or later
+<ul>
+<li>Make sure the desired PDO extensions are enabled on php.ini, for example for mysql:<code>extension=php_pdo_mysql.dll</code></li>
+</ul>
+</li>
+<li>Copy the notificator folder on your machine</li>
+</ul>
+<h2>Basic Usage</h2>
+<ol>
+<li>The notificator table on the desired database can be populated by a 3rd party application or service. In order to send the notfication the new records must be marked with <code>status=0</code>.</li>
+<li>Run the php from the command line. For example:</li>
+</ol>
+<pre class="language-shell"><code class="language-shell"> C:<span class="token punctuation">\</span>php<span class="token punctuation">\</span>php.exe <span class="token parameter variable">-f</span> C:<span class="token punctuation">\</span>code<span class="token punctuation">\</span>notificator<span class="token punctuation">\</span>notify.php </code></pre>
+<h2>Config File</h2>
+<p>The config file defines the email server and the database server. The program can connect to any type of database as described above.</p>
+<pre class="language-php"><code class="language-php"><span class="token variable">$notify_options</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><br>        <span class="token string double-quoted-string">"mailserveraddress"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"smtpmail.example.com"</span><span class="token punctuation">,</span>   <span class="token comment">// smtp server location</span><br>        <span class="token string double-quoted-string">"mailserverport"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"25"</span><span class="token punctuation">,</span>                           <span class="token comment">//  smtp server port</span><br>        <span class="token string double-quoted-string">"connection"</span> <span class="token operator">=></span> <span class="token keyword">array</span> <span class="token punctuation">(</span><br>            <span class="token string double-quoted-string">"server"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"10.10.10.10"</span><span class="token punctuation">,</span>  <span class="token comment">// Location</span><br>            <span class="token string double-quoted-string">"port"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"5000"</span><span class="token punctuation">,</span>           <span class="token comment">// Port</span><br>            <span class="token string double-quoted-string">"user"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"user"</span><span class="token punctuation">,</span>           <span class="token comment">// Database user</span><br>            <span class="token string double-quoted-string">"pass"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"password"</span><span class="token punctuation">,</span>       <span class="token comment">// Password</span><br>            <span class="token string double-quoted-string">"name"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"dbname"</span><span class="token punctuation">,</span>         <span class="token comment">// Database name</span><br>            <span class="token string double-quoted-string">"provider"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"SYBASE"</span>      <span class="token comment">// available providers are mysql,sqlsrv,SYBASE,oci</span><br>        <span class="token punctuation">)</span><span class="token punctuation">,</span><br>        <span class="token string double-quoted-string">"convertencoding"</span> <span class="token operator">=></span> <span class="token constant boolean">true</span><span class="token punctuation">,</span>      <span class="token comment">// Convert encoding for subject and json_data?</span><br>        <span class="token string double-quoted-string">"in_charset"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"ISO-8859-7"</span><span class="token punctuation">,</span>   <span class="token comment">// Input character set (same as database)</span><br>        <span class="token string double-quoted-string">"out_charset"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"UTF-8"</span><span class="token punctuation">,</span>       <span class="token comment">// Output character set</span><br>        <span class="token string double-quoted-string">"table"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"notificator"</span><span class="token punctuation">,</span><br>        <span class="token string double-quoted-string">"selectquery"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"select id, notif_from, notif_to, subject, notification_method, template, data_json from notificator where status = 1"</span><span class="token punctuation">,</span> <span class="token comment">// Do not change unless you know what you are doing</span><br>        <span class="token string double-quoted-string">"updatequerystatus1"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"update notificator set status=1, send_date=getDate() where status=0"</span><span class="token punctuation">,</span> <span class="token comment">// Do not change unless you know what you are doing</span><br>        <span class="token string double-quoted-string">"updatequerystatus2"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"update notificator set status=2, send_date=getDate() where status=1"</span><span class="token punctuation">,</span> <span class="token comment">// Do not change unless you know what you are doing</span><br>        <span class="token string double-quoted-string">"updatequerystatus3"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"update notificator set status=3, send_date=getDate() where status=1"</span><span class="token punctuation">,</span> <span class="token comment">// Do not change unless you know what you are doing</span><br>        <span class="token string double-quoted-string">"updatequerystatusid"</span> <span class="token operator">=></span> <span class="token string double-quoted-string">"update notificator set status=2, send_date=getDate() where id=:id"</span> <span class="token comment">// Do not change unless you know what you are doing</span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>Database Table used</h2>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">table</span> notificator <span class="token punctuation">(</span><br>      id                   <span class="token keyword">int</span>              <span class="token keyword">identity</span>  <span class="token punctuation">,</span><br>      notif_from           <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span>    <span class="token operator">not</span> <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      notif_to             <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span>    <span class="token operator">not</span> <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      subject              <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span>    <span class="token operator">not</span> <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      notification_method  <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>     <span class="token operator">not</span> <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      template             <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>     <span class="token operator">not</span> <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      data_json            <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span>        <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      create_date          <span class="token keyword">datetime</span>         <span class="token operator">not</span> <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      send_date            <span class="token keyword">datetime</span>             <span class="token boolean">null</span>  <span class="token punctuation">,</span><br>      <span class="token keyword">status</span>               <span class="token keyword">tinyint</span>       <span class="token keyword">DEFAULT</span>  <span class="token number">0</span> <span class="token operator">not</span> <span class="token boolean">null</span><br>  <span class="token punctuation">)</span></code></pre>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/blog/privacy-statement/">Privacy</a></li>
+                            <li><a href="/blog/cookie-policy/">Cookies</a></li>
+                            <li><a href="/blog/accessibility/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>
