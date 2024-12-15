@@ -24,6 +24,10 @@ The numbering is a little different in my system but that does not matter really
 - Name: **DELEGATE** Query: **tag:”1-Not Important” tag:2-Urgent**
 - Name: **DELETE** Query: **tag:”1-Not Important” tag:”2-Not Urgent”**
 
-I then created some Windows desktop shortcuts (In front of the background you see on the image above) that open Evernote and searches the queries described above. For example “C:\path\to\evernote\**ENScript.exe** **showNotes /q “tag:1-Important tag:2-Urgent”**“.
+I then created some Windows desktop shortcuts (In front of the background you see on the image above) that open Evernote and searches the queries described above. For example 
+
+```shell
+C:\path\to\evernote\ENScript.exe showNotes /q "tag:1-Important tag:2-Urgent"
+```
 
 There you have it your own Eisenhower Matrix on Evernote. You can even make better queries to search for Evernote Reminders. For more information about the Eisenhower Matrix see the sources link below.

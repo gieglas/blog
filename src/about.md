@@ -8,28 +8,32 @@ Hello, I'm Constantinos Evangelou, an interaction designer working for the <a hr
 
 I helped implement various government services, but what I really enjoy is creating reusable tools to help others create simple, accessible services that improve people’s lives.
 
-## Work
-
-### DSF projects 
+## Current projects 
 
 <div class="row" style=""> 
 {% for project in site.localization[locale]["projects"] %}
 <div class="govcy-col-6"> 
     <div style="padding: 0.5rem; border: 1px solid #d3d3d3; margin-bottom: 1rem; border-radius: 5px; /*min-height:150px*/"> 
-        <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../../img/figmaicon.png" aria-hidden="true" class="img-icon"/>{% endif %}{{project.name}}</a>
+        <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../img/figmaicon.png" aria-hidden="true" alt="figma icon" class="img-icon"/>{% endif %}{{project.name}}</a>
         <p style="margin-top: 1rem">{{project.description}}</p>
     </div>
 </div>
 {% endfor %}
 </div>
 
-<ul class="govcy-pl-0"> 
-{% for project in site.localization[locale]["projects"] %}
-    <li class="nav-side"> <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../../img/figmaicon.png" aria-hidden="true" class="img-icon"/>{% endif %}{{project.name}}</a><div class="govcy-mt-1">{{project.description}}</div></li>
-{% endfor %}
-</ul>
+## Older projects
 
-### gov.cy services I worked on
+<div class="row" style=""> 
+{% for project in site.localization[locale]["old_projects"] %}
+<div class="govcy-col-6"> 
+    <div style="padding: 0.5rem; border: 1px solid #d3d3d3; margin-bottom: 1rem; border-radius: 5px; /*min-height:150px*/"> 
+        <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../../img/figmaicon.png" aria-hidden="true" class="img-icon"/>{% endif %}{{project.name}}</a><div class="govcy-mt-1">{{project.description}}</div>{% if project.post %}<div class="govcy-mt-1"><a href="../blog/{{project.post}}">Related post</a></div>{% endif %}{% if project.demo %}<div class="govcy-mt-1"><a href="{{project.demo}}" target="_blank">Demo</a></div>{% endif %}
+    </div>
+</div>
+{% endfor %}
+</div>
+
+## gov.cy services I worked on
 - [Issue citizen documents](https://citizen-documents.staging.service.gov.cy/){target="_blank"}
 - [My documents](https://citizen-documents.staging.service.gov.cy/Email/History/document){target="_blank"}
 - [Apply for a passport](https://citizen-documents.staging.service.gov.cy/passport-certificate){target="_blank"}

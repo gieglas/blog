@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="Had to create platform to administer and monitor our crazy IT environments, called it MonitrAll">
+        <meta property="og:title" content="Getting on top of things with MonitrAll - Con&#39;s place">
+        <meta property="og:url" content="https://gieglas.github.io/blog/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/blog/img/Pasted%20image%2020241215222615.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gieglas.github.io/blog/">
+        <meta property="twitter:title" content="Getting on top of things with MonitrAll - Con&#39;s place">
+        <meta property="twitter:description" content="Had to create platform to administer and monitor our crazy IT environments, called it MonitrAll">
+        <meta property="twitter:image" content="/blog/img/Pasted%20image%2020241215222615.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/blog/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/blog/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/blog/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/blog/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/blog/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/blog/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/blog/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/blog/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/blog/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/blog/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Getting on top of things with MonitrAll - Con&#39;s place</title>
+        <meta name="description" content="Had to create platform to administer and monitor our crazy IT environments, called it MonitrAll">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/blog/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/blog/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/blog/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/blog/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/blog/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Getting on top of things with MonitrAll</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2016-12-29T00:00:00.000Z">29 December 2016</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/blog/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/blog/tags/productivity">productivity</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/blog/img/Pasted%20image%2020241215222615.png" alt="Graphic for Getting on top of things with MonitrAll" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>This is for all those in IT people working in crazy environments. Have you ever found your self trying to administer several systems, all using different technologies, insane IT operations that break all the time, no documentation, people who knew the systems nowhere to be found, and always trying to defend your self to the Management? Am sure you know what I am talking about, and so do I. That is why I wanted some way to get on top of things, and that was how <a href="https://github.com/gieglas/MonitrAll/" target="_blank"><i class="bi bi-github govcy-text-body"></i> MonitrAll</a> was born.</p>
+<p>So when I first came to this environment and after the initial panic, I set a plan:</p>
+<p>Step 1: Get to know my Infrastructure and operations and Document</p>
+<p>Step 2: Gather Working Data</p>
+<p>Step 3: Identify Issues</p>
+<p>Step 4: Redesign and Correct Issues</p>
+<p>Step 5: Monitor and Measure</p>
+<p>After Step 1 I realized that the environment was insane. There was no way of managing all the information from all the systems and operations manually, so I had to somehow automate the process of gathering data and monitoring.</p>
+<p>I remembered from my programming years that you could pretty much <a href="../php-pdo-connect-everywhere/">connect to anywhere with PHP PDO</a>, so I started writing some code. Soon it became a full customizable system and is now an important part of my work life, saving me loads of precious hours.</p>
+<h2>What is it?</h2>
+<p>MonitraAll basically can read data, present it or run commands. The cool thing about it is that it can do that with any technology using 3 basic Channels:</p>
+<ol>
+<li>Database using PDO</li>
+<li>Web Services</li>
+<li>Execute scripts (where you can pretty much do anything you want)</li>
+</ol>
+<p><img src="../../img/Pasted%20image%2020241215223215.jpg" alt="MonitrAll structure diagram"></p>
+<p>The beauty of it lies in the simplicity and agility. It constantly reuses part of its self.</p>
+<h2>Features</h2>
+<ul>
+<li>It can connect to basically any database that is supported by PDO, execute scripts or call web services as data sources.</li>
+<li>It can display data in various templates, such as boxes, tables, progress bars, todo, or even graphs.</li>
+<li>It uses 3 simple rules for each presentation to control its behavior, and those are “what will make you go Green, Orange, or Red“</li>
+<li>It can execute commands either SQL, Web service or Script, based on user input via Forms and Fields.</li>
+<li>It can present numerical data that can afterwards be used for statistical reasons.</li>
+<li>It can display results in dashboards for easier administration of stuff.</li>
+<li>Every presentation is basically Web Service so it can be reused at any moment.</li>
+<li>It can get statistics</li>
+<li>It can save check’s status for reference or audit reasons</li>
+<li>It can send emails with results, and with preference to condition.</li>
+<li>All parts of the system’s access (both front and api) are controlled by a user management module capable of connecting to custom or LDAP users.</li>
+</ul>
+<h2>How it works</h2>
+<p>The system has a <strong>client side front application</strong> and a <strong>server side API</strong> . The front side for now is web app with only <em>HTML\css\Javascript.</em> No server side language is involved in the front web app. The API is a <em>PHP</em> application and it uses <em>slim framework</em> to easily create REST web services.</p>
+<p>Here’s a brief explanation for the basic web services.</p>
+<p><img src="../../img/Pasted%20image%2020241215223431.jpg" alt="MonitrAll sequence diagram"></p>
+<h2>What can it be used for</h2>
+<p><strong>Monitoring the green light on the server</strong><br>
+Create checks to monitor your servers with the simple green, orange, red rules. For example a script that returns the ping results.</p>
+<p><strong>Query values from any database</strong><br>
+For example get values from tables in the databases that holds application status.</p>
+<p><strong>Administrate systems with forms</strong><br>
+Make changes using database commands, scripts or webservices to administer stuff.</p>
+<p><strong>Get status of your environment with daily email</strong><br>
+Send emails to the right people with the checks (green, orange, red) that concern them at scheduled times.</p>
+<p><strong>Set KPIS and monitor them</strong><br>
+For example create a check to get the sum of sales amounts and set the green, orange, red rules accordingly. You can even use the same check to send emails when for example red is reached.</p>
+<p><strong>Get email notifications on critical checks</strong><br>
+Every morning I get an email of all the critical daily checks I need to perform. Saves me a lot of time.</p>
+<p><strong>Statistics</strong><br>
+Create results with numeric values and call the customStats.php daily to save these values in the statistics table.</p>
+<p><strong>Log Checks</strong><br>
+Save the green, orange, red status of selected checks using the customChecks.php in the checks table.</p>
+<p><strong>Data quality compliance</strong><br>
+Perform queries to get the data quality and present them as a green, orange, red check in terms of data quality compliance.</p>
+<p><strong>Reconsile synced database results</strong><br>
+Perform queries to reconsile data and present them as a green, orange, red check.</p>
+<h2>Demo</h2>
+<p>There is a demo at <a href="http://gieglas.byethost10.com/monitralldemo" target="_blank">here</a> . It’s a bit outdated (authenitcation module and dashboards are not included) but you can get the idea. The demo actually uses a snapshot of actual data from a live environment.</p>
+<p>Here are some screenshoots:</p>
+<p><img src="../../img/Pasted%20image%2020241215223633.jpg" alt="Dashboards"></p>
+<p><img src="../../img/Pasted%20image%2020241215223659.jpg" alt="Line Diagram view "></p>
+<p><img src="../../img/Pasted%20image%2020241215223841.jpg" alt="Boxes view"></p>
+<p><img src="../../img/Pasted%20image%2020241215223905.jpg" alt="Percent view"></p>
+<p><img src="../../img/Pasted%20image%2020241215224206.jpg" alt="Form"></p>
+<p><img src="../../img/Pasted%20image%2020241215224234.jpg" alt="Pie chart view"></p>
+<p><img src="../../img/Pasted%20image%2020241215224258.jpg" alt="Mobile"></p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                            <li><a href="/blog/privacy-statement/">Privacy</a></li>
+                            <li><a href="/blog/cookie-policy/">Cookies</a></li>
+                            <li><a href="/blog/accessibility/">Accessibility</a></li>
+                            <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        </script>       
+    </body>
+</html>

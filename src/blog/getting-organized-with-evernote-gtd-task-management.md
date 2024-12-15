@@ -53,7 +53,7 @@ To review, we will take advantage of the search functionality and the ability 
 
 {.govcy-table}
 
-These searches will allow you to easily find which issues are pending and check the issues **daily**, **weekly** and **occasionally** (maybe once a month or so). This way you will not be troubled with what’s pending and as GTD says, take these stuff out of your mind and concentrate on the performing your tasks. Putting this into practice will effectively increases your productivity.
+These searches will allow you to easily find which issues are pending and check the issues **daily**, **weekly** and **occasionally**  (maybe once a month or so). This way you will not be troubled with what’s pending and as GTD says, take these stuff out of your mind and concentrate on the performing your tasks. Putting this into practice will effectively increases your productivity.
 
 You can of course perform different combinations in your searches. For example you can use the `Issues Pending Review – 0 Daily` and further filter with `tag:”3.Pro-Project A”`. This will show you the issues pending daily for the specific project.
 

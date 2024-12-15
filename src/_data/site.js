@@ -74,6 +74,32 @@ module.exports = {
             url : "https://www.npmjs.com/package/@gov-cy/dsf-email-templates", 
             description: "Produce html emails with gov.cy looks"
           },
+      ],
+      "old_projects": 
+        [
+          {
+            name : "MonitrAll", 
+            type : "github", 
+            url : "https://github.com/gieglas/MonitrAll/", 
+            description: "Monitor everything",
+            demo: "http://gieglas.byethost10.com/monitralldemo",
+            post: "getting-on-top-of-things-with-monitrall"
+          }
+          ,{
+            name : "cRegistry", 
+            type : "", 
+            url : "https://www.dropbox.com/sh/y14kpexhg3w1ngf/AAA--Rb1bGR_KwpEMht4CXfba?dl=0", 
+            description: "Create dynamic online registries",
+            demo: "http://gieglas.byethost10.com/cRegistry/?i=2",
+            post: "online-search-registry-cregistry"
+          }
+          ,{
+            name : "Notificator", 
+            type : "github", 
+            url : "https://github.com/gieglas/Notificator", 
+            description: "Send email notifications",
+            post: "php-notificator"
+          }
       ]
     }
   }

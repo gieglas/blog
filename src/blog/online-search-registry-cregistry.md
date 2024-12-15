@@ -108,6 +108,8 @@ Options of the API define the details of the and the API requests. They are defi
 
 See below the details of the options file
 
+<div class="govcy-table-responsive">
+
 |Name|Description|Parent|Type|
 |---|---|---|---|
 |**proxy**|Proxy for connecting to the internet||url:port|
@@ -116,7 +118,11 @@ See below the details of the options file
 
 {.govcy-table}
 
+</div>
+
 **For each Service**
+
+<div class="govcy-table-responsive">
 
 |Name|Description|Parent|Type|
 |---|---|---|---|
@@ -131,7 +137,11 @@ See below the details of the options file
 
 {.govcy-table}
 
+</div>
+
 **For each searchoptions**
+
+<div class="govcy-table-responsive">
 
 | Name         | Description                                        | Parent        | Type       |
 | ------------ | -------------------------------------------------- | ------------- | ---------- |
@@ -139,6 +149,8 @@ See below the details of the options file
 | **islike**   | If this is a `like`                                | searchoptions | Boolean    |
 
 {.govcy-table}
+
+</div>
 
 **Example**
 
@@ -180,6 +192,8 @@ Each element in the root array defines a client application.
 
 See below the details of the options file for each client.
 
+<div class="govcy-table-responsive">
+
 |Name|Description|Type|
 |---|---|---|
 |**key**|Key for signing the JWT’s, I suggest generate it with base64_encode(openssl_random_pseudo_bytes(64))|String|
@@ -199,6 +213,8 @@ See below the details of the options file for each client.
 |**resourceVersion**|The resources (templates and localizations) version number. Change this when you want to force the client cache to be reset|Number|
 
 {.govcy-table}
+
+</div>
 
 **Example**:
 
@@ -238,6 +254,8 @@ Each element in the root array defines a data connection.
 
 See below the details of the options file for each client.
 
+<div class="govcy-table-responsive">
+
 |Name|Description|Type|
 |---|---|---|
 |**id**|The id of the connection. Must be the same as the array element name|String|
@@ -249,6 +267,8 @@ See below the details of the options file for each client.
 |**provider**|The data provider. Note that specific driver must be installed. The providers that are supported are **mysql**, **sqlsrv**, **oci**, **sybase**, **filesystem** (This is not a database connection but for searching i files)|String|
 
 {.govcy-table}
+
+</div>
 
 **example**:
 
@@ -271,6 +291,8 @@ Authorize and authenticate based on client id and response from google recaptcha
 
 ### auth
 
+<div class="govcy-table-responsive">
+
 | Name                | Value                                                 |
 | ------------------- | ----------------------------------------------------- |
 | **Request Method**  | POST                                                  |
@@ -282,6 +304,8 @@ Authorize and authenticate based on client id and response from google recaptcha
 | **Request Body**    | \{“response” : “:reCapchaCode”}                       |
 
 {.govcy-table}
+
+</div>
 
 Example Request:
 
@@ -307,6 +331,8 @@ Sample Return:
 
 Handles requests the get search results requests
 
+<div class="govcy-table-responsive">
+
 |Name|Value|
 |---|---|
 |**Request Method**|POST|
@@ -318,6 +344,8 @@ Handles requests the get search results requests
 |**Request Body**|:FormValues i.e. `[{"name":"InputName","value":"value"}]`|
 
 {.govcy-table}
+
+</div>
 
 Example Request:
 
@@ -362,6 +390,8 @@ Sample Return:
 
 Handles requests the get details requests
 
+<div class="govcy-table-responsive">
+
 |Name|Value|
 |---|---|
 |** Request Method**|POST|
@@ -373,6 +403,8 @@ Handles requests the get details requests
 |**Request Body**|Empty|
 
 {.govcy-table}
+
+</div>
 
 Example Request:
 

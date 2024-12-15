@@ -24,3 +24,13 @@ Some cool stuff
 </div>
 
 ```
+
+
+
+```html
+<ul class="govcy-pl-0"> 
+{% for project in site.localization[locale]["projects"] %}
+    <li class="nav-side"> <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../../img/figmaicon.png" aria-hidden="true" class="img-icon"/>{% endif %}{{project.name}}</a><div class="govcy-mt-1">{{project.description}}</div></li>
+{% endfor %}
+</ul>
+```

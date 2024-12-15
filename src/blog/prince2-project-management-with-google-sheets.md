@@ -13,6 +13,8 @@ Recently I was assigned to manage a PRINCE2 IT project, so I thought it would be
 
 I created all my PRINCE2 Records as follows:
 
+<div class="govcy-table-responsive">
+
 | Prince2 Record                 | Technology   | Notes                                                                                                                                                                                                                                              | Link                                                                                                                                                                                                                         |
 | ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Configuration Item Records** | Google Sheet | Called it **Products and Acceptance Register** and also added additional information about the products and acceptance. Has a tab where you can produce **Product Status Account** and **Product** **Descriptions** from the data of the register. | [View](https://drive.google.com/open?id=1XevecBQLZdNjtKJCIMqlnOfrrwdl9M7BJN4Dbup8UQM){target="_blank"} [Copy](https://docs.google.com/spreadsheets/d/1XevecBQLZdNjtKJCIMqlnOfrrwdl9M7BJN4Dbup8UQM/copy){target="_blank"}     |
@@ -24,6 +26,8 @@ I created all my PRINCE2 Records as follows:
 
 {.govcy-table}
 
+</div>
+
 Here are some screenshots of reports that are created automatically from the data of the registers.
 
 ![Risk report screenshot](../../img/Prince2RiskReport.jpg){.img-fluid .pop-small .govcy-mb-3}
@@ -34,12 +38,16 @@ Here are some screenshots of reports that are created automatically from the dat
 
 ![Product status account screenshot](../../img/Prince2ProductStatusAccount.jpg){.img-fluid .pop-small .govcy-mb-3}
 
-Then I created the **Dashboard** like spreadsheet that gathers data from all of the above google sheets to produce the **dashboard** with useful data to manage a project, some **early warning signs** based on the data in hand and sections of the **highlight reports** (have to change the period dates on the dashboard sheet) that concern **Issues**, **Products**, **Risks** and **Quality Activities**.
+Then I created the **Dashboard** like spreadsheet that gathers data from all of the above google sheets to produce the **dashboard** with useful data to manage a project, some **early warning signs** based on the data in hand and sections of the **highlight reports** (have to change the period dates on the dashboard sheet) that concern **Issues**, **Products**, **Risks** and  **Quality Activities**.
 
 In the Dashboard spreadsheet, I also added a tab for **Tasks** but the data for the Tasks I gather (simply copy paste 🙂 ) from custom reports from MS Project. For the rest of the registers all the Project Manager has to do is:
 
 - update the first tab of each register file with the actual registry data (i.e.  add Issues in the Issue Register) and the rest are created automatically
-- change the settings of the dashboard (has a dedicated tab) to point to the correct Google Sheet Id (see image below) for the respected registers. The Google Sheet Id is the value between “/d” and “/edit” in the URL of a spreadsheet i.e. https://docs.google.com/spreadsheets/d/**1at8kCJ1fDeqLNae1VeQKGakyAZxD8nmS1xnenmIfP64**/edit#gid=0.
+- change the settings of the dashboard (has a dedicated tab) to point to the correct Google Sheet Id (see image below) for the respected registers. The Google Sheet Id is the value between “/d” and “/edit” in the URL of a spreadsheet i.e. 
+
+```
+https://docs.google.com/spreadsheets/d/**1at8kCJ1fDeqLNae1VeQKGakyAZxD8nmS1xnenmIfP64**/edit#gid=0.
+```
 
 ![Dashboard settings screenshot](../../img/Prince2DashSettings.jpg){.img-fluid .pop-small .govcy-mb-3}
 

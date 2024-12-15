@@ -9,7 +9,7 @@ tags:
 ---
 So here I am on another business trip. I have learned some stuff about traveling and making my life easier with the right accessories and technology, and so I thought I’d share my knowledge.
 
-Though I love to travel, I am one of those people who hate being inside an airport. You know what I mean; waiting in lines to check in, the security check, looking for your gate, carrying all those stuff on your back, running all the time. It seems you can avoid most of the unpleasantness of the airports and really enjoy your time there(even have some time to write a post :-)). I know this is a big post, so if you don’t have the time to go through it all, you can simply read the titles as questions and the bold phrases as their answers 😊.
+Though I love to travel, I am one of those people who hate being inside an airport. You know what I mean; waiting in lines to check in, the security check, looking for your gate, carrying all those stuff on your back, running all the time. It seems you can avoid most of the unpleasantness of the airports and really enjoy your time there(even have some time to write a post 😊). I know this is a big post, so if you don’t have the time to go through it all, you can simply read the titles as questions and the bold phrases as their answers 😊.
 
 ## Prepare
 
@@ -17,7 +17,13 @@ It all starts with being a little prepared. It’s really not a complicated proc
 
 ### Online Services and Apps
 
-Talking about being prepared, there are some services and apps out there that can help you do just that. Personally (as you might have noticed) I use **Evernote** for everything. Again you can check out my [previous post](../evernote-business-taveling-maste-note-template/) for more details on that. Although Evernote should be enough I also like to use [Tripit](https://www.tripit.com/){target="_blank"} to create trips from my email itinerary, [Google Calendar](https://www.google.com/calendar){target="_blank"} that loads my Tripit calendar (love the fact that it takes care of the timezone issues) and [Traveler by FlightStates](http://www.flightstats.com/go/Home/home.do){target="_blank"} for flight status. Some other services that you might find useful are [TripCase](http://www.tripcase.com/ "Tripcase"){target="_blank"}, [Tripadvisor](http://www.tripadvisor.com/ "Tripadvisor"){target="_blank"}, [Skyscanner](http://www.skyscanner.net/ "skyscanner"){target="_blank"}, [Yelp](http://www.yelp.com/ "yelp"){target="_blank"}, [Kayak](http://www.kayak.com/){target="_blank"}, [Accuweather](http://www.accuweather.com/ "accuweather"){target="_blank"}.
+Talking about being prepared, there are some services and apps out there that can help you do just that. Personally (as you might have noticed) I use **Evernote** for everything. Again you can check out my [previous post](../evernote-business-taveling-maste-note-template/) for more details on that. Although Evernote should be enough I also like to use [Tripit](https://www.tripit.com/){target="_blank"} to create trips from my email itinerary, [Google Calendar](https://www.google.com/calendar){target="_blank"} that loads my Tripit calendar (love the fact that it takes care of the timezone issues) and [Traveler by FlightStates](http://www.flightstats.com/go/Home/home.do){target="_blank"} for flight status. Some other services that you might find useful are: 
+- [TripCase](http://www.tripcase.com/ "Tripcase"){target="_blank"}
+- [Tripadvisor](http://www.tripadvisor.com/ "Tripadvisor"){target="_blank"}
+- [Skyscanner](http://www.skyscanner.net/ "skyscanner"){target="_blank"}
+- [Yelp](http://www.yelp.com/ "yelp"){target="_blank"}
+- [Kayak](http://www.kayak.com/){target="_blank"}
+- [Accuweather](http://www.accuweather.com/ "accuweather"){target="_blank"}.
 
 ### What to take with me
 

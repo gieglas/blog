@@ -18,7 +18,7 @@ GitLab’s definitions for CI and CD:
 > **Continuous Delivery** adds that the software can be released to production at any time, often by automatically pushing changes to a staging system.  
 > **Continuous Deployment** goes further and pushes changes to production automatically.
 > 
-> [https://about.gitlab.com/product/continuous-integration/](https://about.gitlab.com/product/continuous-integration/){target="_blank"} 
+> [Gitlab continuous integration](https://about.gitlab.com/product/continuous-integration/){target="_blank"} 
 
 In my example I created a simple javascript application that shows some images on the screen, on which I use GitLab’s CI/CD to automatically deploy my pushed changes on GitLab’s Pages. Check out the [code](https://gitlab.com/gieglas/pages-test){target="_blank"}  and the [GitLab Page](https://gieglas.gitlab.io/pages-test/){target="_blank"}  that is created.
 

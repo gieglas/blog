@@ -125,6 +125,7 @@
                     <p>Recently I was assigned to manage a PRINCE2 IT project, so I thought it would be nice to setup some Google Sheets to better manage the project. The idea was to create all my PRINCE2 Registers and Logs on Google Sheets and then have a Dashboard like Sheet (as in the picture above) to easily review the Project and create my Reports (such as Highlight reports). It all seems to have worked out nicely for me, so I thought I’d share my setup. I have links below to all the Google Sheets templates based on my setup to view or download if you like.</p>
 <p><img src="../../img/Prince2QualityRegister.jpg" alt="Quality register screenshot" class="img-fluid pop-small govcy-mb-3"></p>
 <p>I created all my PRINCE2 Records as follows:</p>
+<div class="govcy-table-responsive">
 <table class="govcy-table">
 <thead>
 <tr>
@@ -173,17 +174,20 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>Here are some screenshots of reports that are created automatically from the data of the registers.</p>
 <p><img src="../../img/Prince2RiskReport.jpg" alt="Risk report screenshot" class="img-fluid pop-small govcy-mb-3"></p>
 <p><img src="../../img/Prince2IssueReport.jpg" alt="Risk issue report screenshot" class="img-fluid pop-small govcy-mb-3"></p>
 <p><img src="../../img/Prince2ProductDescription.jpg" alt="Product description screenshot" class="img-fluid pop-small govcy-mb-3"></p>
 <p><img src="../../img/Prince2ProductStatusAccount.jpg" alt="Product status account screenshot" class="img-fluid pop-small govcy-mb-3"></p>
-<p>Then I created the <strong>Dashboard</strong> like spreadsheet that gathers data from all of the above google sheets to produce the <strong>dashboard</strong> with useful data to manage a project, some <strong>early warning signs</strong> based on the data in hand and sections of the <strong>highlight reports</strong> (have to change the period dates on the dashboard sheet) that concern <strong>Issues</strong>, <strong>Products</strong>, <strong>Risks</strong> and <strong>Quality Activities</strong>.</p>
+<p>Then I created the <strong>Dashboard</strong> like spreadsheet that gathers data from all of the above google sheets to produce the <strong>dashboard</strong> with useful data to manage a project, some <strong>early warning signs</strong> based on the data in hand and sections of the <strong>highlight reports</strong> (have to change the period dates on the dashboard sheet) that concern <strong>Issues</strong>, <strong>Products</strong>, <strong>Risks</strong> and  <strong>Quality Activities</strong>.</p>
 <p>In the Dashboard spreadsheet, I also added a tab for <strong>Tasks</strong> but the data for the Tasks I gather (simply copy paste 🙂 ) from custom reports from MS Project. For the rest of the registers all the Project Manager has to do is:</p>
 <ul>
 <li>update the first tab of each register file with the actual registry data (i.e.  add Issues in the Issue Register) and the rest are created automatically</li>
-<li>change the settings of the dashboard (has a dedicated tab) to point to the correct Google Sheet Id (see image below) for the respected registers. The Google Sheet Id is the value between “/d” and “/edit” in the URL of a spreadsheet i.e. https://docs.google.com/spreadsheets/d/<strong>1at8kCJ1fDeqLNae1VeQKGakyAZxD8nmS1xnenmIfP64</strong>/edit#gid=0.</li>
+<li>change the settings of the dashboard (has a dedicated tab) to point to the correct Google Sheet Id (see image below) for the respected registers. The Google Sheet Id is the value between “/d” and “/edit” in the URL of a spreadsheet i.e.</li>
 </ul>
+<pre><code>https://docs.google.com/spreadsheets/d/**1at8kCJ1fDeqLNae1VeQKGakyAZxD8nmS1xnenmIfP64**/edit#gid=0.
+</code></pre>
 <p><img src="../../img/Prince2DashSettings.jpg" alt="Dashboard settings screenshot" class="img-fluid pop-small govcy-mb-3"></p>
 <p>Note that when linking the Google Sheets, you might get an “#REF!” error message because you have not explicitly allowed access to get data from the specific spreadsheets. This is standard feature of Google Sheets when linking data using the “importage” function. To allow access, hover your mouse over the cell, and you’ll see the box below appear asking you to “allow access”.</p>
 <p><img src="../../img/GoogleSheetAllowAccess.png" alt="Allow access screenshot" class="img-fluid pop-small govcy-mb-3"></p>

@@ -32,7 +32,7 @@ Any sites, services or tools of any kind that you would use in this project. Avo
 
 ##### 3.1. Official
 
-Official Plan and progress here. The distinction official/working is not necessary. Important to distinguish **who** does **what**, **deadlines** and **mark result**. You could use **Links** for additional information on Tasks.
+Official Plan and progress here. The distinction official/working is not necessary. Important to distinguish **who** does **what**, **deadlines** and  **mark result**. You could use **Links** for additional information on Tasks.
 
 ##### 3.2. Working
 
