@@ -1,4 +1,5 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs"); 
 const { execSync } = require('child_process')
 
@@ -30,6 +31,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // Add the RSS plugin
+  eleventyConfig.addPlugin(pluginRss);
 
   // Browsersync
   // Redirect from root to default language root during --serve
@@ -54,7 +57,10 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("recentPosts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md").reverse().slice(0, 5);
 	});
-
+  
+	eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
+	});
   //copy css
   eleventyConfig.addPassthroughCopy("./src/css");
   //copy js
@@ -76,6 +82,17 @@ module.exports = function (eleventyConfig) {
     return theDate.toISOString()
   });
 
+  // Add a filter to check if all pages have no issues
+  eleventyConfig.addGlobalData("accessibilityStatus", () => {
+    const data = JSON.parse(fs.readFileSync("src/_data/accessibilityresults.json", "utf-8"));
+    const allNoIssues = data.results.every(page => page.issues.length === 0);
+    return {
+      date: data.date,
+      results: data.results,
+      allNoIssues: allNoIssues
+    };
+  });
+  
   return {
     dir: {
       input: "src",

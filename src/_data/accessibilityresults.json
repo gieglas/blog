@@ -1,204 +1,12 @@
 {
-  "date": "2024-12-15",
+  "date": "2024-12-16",
   "results": [
-    {
-      "url": "/blog/diy-organization-tool-cocoon-grid-it-ripoff/",
-      "issues": []
-    },
-    {
-      "url": "/blog/eisenhower-matrix-with-evernote/",
-      "issues": []
-    },
-    {
-      "url": "/blog/evernote-control-your-data/",
-      "issues": []
-    },
-    {
-      "url": "/blog/evernote-business-taveling-maste-note-template/",
-      "issues": []
-    },
-    {
-      "url": "/blog/evernote-for-its-remote-desktops/",
-      "issues": []
-    },
-    {
-      "url": "/blog/evernote-life-work-balance/",
-      "issues": []
-    },
-    {
-      "url": "/blog/evernote-project-master-note-template/",
-      "issues": []
-    },
-    {
-      "url": "/blog/evernote-working-example-business-meeting-2/",
-      "issues": []
-    },
-    {
-      "url": "/blog/evernote-working-example-business-meeting-1/",
-      "issues": []
-    },
-    {
-      "url": "/blog/fast-gtd-with-doit-im/",
-      "issues": []
-    },
-    {
-      "url": "/blog/getting-on-top-of-things-with-monitrall/",
-      "issues": []
-    },
-    {
-      "url": "/blog/getting-organized-with-evernote-gtd-methodology/",
-      "issues": []
-    },
-    {
-      "url": "/blog/getting-organized-with-evernote/",
-      "issues": []
-    },
-    {
-      "url": "/blog/getting-organized-with-evernote-gtd-task-management/",
-      "issues": []
-    },
-    {
-      "url": "/blog/getting-organized-with-google-sheets-everything-in-one-place/",
-      "issues": []
-    },
-    {
-      "url": "/blog/Gitlab-ci-cd-and-gitlab-pages/",
-      "issues": []
-    },
-    {
-      "url": "/blog/gmail-issue-tracking-system/",
-      "issues": []
-    },
-    {
-      "url": "/blog/GitLab-CI-CD-and-React-Tests/",
-      "issues": []
-    },
-    {
-      "url": "/blog/google-sheets-script-for-email-report/",
-      "issues": []
-    },
-    {
-      "url": "/blog/google-sheets-script-for-trello-v2/",
-      "issues": []
-    },
-    {
-      "url": "/blog/google-sheets-script-for-trello/",
-      "issues": []
-    },
-    {
-      "url": "/blog/google-sheets-script-for-web-apps/",
-      "issues": []
-    },
-    {
-      "url": "/blog/how-I-made-my-app-a-pwa/",
-      "issues": []
-    },
-    {
-      "url": "/blog/how-i-made-my-wordpress-a-pwa/",
-      "issues": []
-    },
-    {
-      "url": "/blog/how-to-make-your-life-easy-at-the-airport/",
-      "issues": []
-    },
-    {
-      "url": "/blog/intellectual-and-industrial-property-eservices/",
-      "issues": []
-    },
-    {
-      "url": "/blog/nobodys-perfect-when-it-comes-pixels/",
-      "issues": []
-    },
-    {
-      "url": "/blog/multi-os-device-task-management-with-toodledo/",
-      "issues": []
-    },
-    {
-      "url": "/blog/online-search-registry-cregistry/",
-      "issues": []
-    },
-    {
-      "url": "/blog/php-notificator/",
-      "issues": []
-    },
-    {
-      "url": "/blog/perfect-entertainment-unit/",
-      "issues": []
-    },
-    {
-      "url": "/blog/php-pdo-connect-everywhere/",
-      "issues": []
-    },
-    {
-      "url": "/blog/power-by-simplicity-with-ifttt/",
-      "issues": []
-    },
-    {
-      "url": "/blog/prince2-project-management-with-google-sheets/",
-      "issues": []
-    },
-    {
-      "url": "/blog/productivity-services-101/",
-      "issues": []
-    },
-    {
-      "url": "/blog/tag-your-plug/",
-      "issues": []
-    },
-    {
-      "url": "/blog/schedule-stuff-with-php/",
-      "issues": []
-    },
-    {
-      "url": "/blog/promises-promises-web-app/",
-      "issues": []
-    },
-    {
-      "url": "/blog/web-apps-ui-trends/",
-      "issues": []
-    },
-    {
-      "url": "/blog/serial-progress-bar-for-asp-net-3-5/",
-      "issues": []
-    },
-    {
-      "url": "/blog/why-i-made-my-app-a-pwa/",
-      "issues": []
-    },
-    {
-      "url": "/blog/trello-kanban-like-board-for-issues-and-tasks-tracking/",
-      "issues": []
-    },
-    {
-      "url": "/blog/writing-a-good-readme-file/",
-      "issues": []
-    },
     {
       "url": "/accessibility/",
       "issues": []
     },
     {
-      "url": "/about/",
-      "issues": []
-    },
-    {
-      "url": "/cookie-policy/",
-      "issues": []
-    },
-    {
-      "url": "/privacy-statement/",
-      "issues": []
-    },
-    {
-      "url": "/contact/",
-      "issues": []
-    },
-    {
       "url": "/search/",
-      "issues": []
-    },
-    {
-      "url": "/",
       "issues": []
     },
     {
@@ -239,6 +47,202 @@
     },
     {
       "url": "/tags/design/",
+      "issues": []
+    },
+    {
+      "url": "/tags/posts/",
+      "issues": []
+    },
+    {
+      "url": "/blog/diy-organization-tool-cocoon-grid-it-ripoff/",
+      "issues": []
+    },
+    {
+      "url": "/blog/eisenhower-matrix-with-evernote/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-business-taveling-maste-note-template/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-control-your-data/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-for-its-remote-desktops/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-life-work-balance/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-project-master-note-template/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-working-example-business-meeting-1/",
+      "issues": []
+    },
+    {
+      "url": "/blog/evernote-working-example-business-meeting-2/",
+      "issues": []
+    },
+    {
+      "url": "/blog/fast-gtd-with-doit-im/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-on-top-of-things-with-monitrall/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-organized-with-evernote-gtd-methodology/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-organized-with-evernote-gtd-task-management/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-organized-with-evernote/",
+      "issues": []
+    },
+    {
+      "url": "/blog/getting-organized-with-google-sheets-everything-in-one-place/",
+      "issues": []
+    },
+    {
+      "url": "/blog/Gitlab-ci-cd-and-gitlab-pages/",
+      "issues": []
+    },
+    {
+      "url": "/blog/GitLab-CI-CD-and-React-Tests/",
+      "issues": []
+    },
+    {
+      "url": "/blog/gmail-issue-tracking-system/",
+      "issues": []
+    },
+    {
+      "url": "/blog/google-sheets-script-for-email-report/",
+      "issues": []
+    },
+    {
+      "url": "/blog/google-sheets-script-for-trello-v2/",
+      "issues": []
+    },
+    {
+      "url": "/blog/google-sheets-script-for-trello/",
+      "issues": []
+    },
+    {
+      "url": "/blog/google-sheets-script-for-web-apps/",
+      "issues": []
+    },
+    {
+      "url": "/blog/how-I-made-my-app-a-pwa/",
+      "issues": []
+    },
+    {
+      "url": "/blog/how-i-made-my-wordpress-a-pwa/",
+      "issues": []
+    },
+    {
+      "url": "/blog/how-to-make-your-life-easy-at-the-airport/",
+      "issues": []
+    },
+    {
+      "url": "/blog/intellectual-and-industrial-property-eservices/",
+      "issues": []
+    },
+    {
+      "url": "/blog/multi-os-device-task-management-with-toodledo/",
+      "issues": []
+    },
+    {
+      "url": "/blog/nobodys-perfect-when-it-comes-pixels/",
+      "issues": []
+    },
+    {
+      "url": "/blog/online-search-registry-cregistry/",
+      "issues": []
+    },
+    {
+      "url": "/blog/perfect-entertainment-unit/",
+      "issues": []
+    },
+    {
+      "url": "/blog/php-notificator/",
+      "issues": []
+    },
+    {
+      "url": "/blog/php-pdo-connect-everywhere/",
+      "issues": []
+    },
+    {
+      "url": "/blog/power-by-simplicity-with-ifttt/",
+      "issues": []
+    },
+    {
+      "url": "/blog/prince2-project-management-with-google-sheets/",
+      "issues": []
+    },
+    {
+      "url": "/blog/productivity-services-101/",
+      "issues": []
+    },
+    {
+      "url": "/blog/promises-promises-web-app/",
+      "issues": []
+    },
+    {
+      "url": "/blog/schedule-stuff-with-php/",
+      "issues": []
+    },
+    {
+      "url": "/blog/serial-progress-bar-for-asp-net-3-5/",
+      "issues": []
+    },
+    {
+      "url": "/blog/tag-your-plug/",
+      "issues": []
+    },
+    {
+      "url": "/blog/trello-kanban-like-board-for-issues-and-tasks-tracking/",
+      "issues": []
+    },
+    {
+      "url": "/blog/web-apps-ui-trends/",
+      "issues": []
+    },
+    {
+      "url": "/blog/why-i-made-my-app-a-pwa/",
+      "issues": []
+    },
+    {
+      "url": "/blog/writing-a-good-readme-file/",
+      "issues": []
+    },
+    {
+      "url": "/about/",
+      "issues": []
+    },
+    {
+      "url": "/contact/",
+      "issues": []
+    },
+    {
+      "url": "/cookie-policy/",
+      "issues": []
+    },
+    {
+      "url": "/privacy-statement/",
+      "issues": []
+    },
+    {
+      "url": "/",
       "issues": []
     },
     {

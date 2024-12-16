@@ -2,12 +2,32 @@
         <div class="govcy-container">
             <div class="row">   
                 <div class="govcy-footer">
-                        <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
-                            <li><a href="{{ '/privacy-statement/' | url }}">{{ site.localization[locale].privacy_label }}</a></li>
-                            <li><a href="{{ '/cookie-policy/' | url }}">{{ site.localization[locale].cookie_label }}</a></li>
-                            <li><a href="{{ '/accessibility/' | url }}">{{ site.localization[locale].accessibility_label }}</a></li>
-                            <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].copyright_label }}</li>
-                        </ul>
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
+                         {%- for cat in site.localization[locale]["top_menu"] -%}
+                            <li>
+                                <a href="{{ cat.url | url }}">
+                                    {{ cat.name }}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        <li><a href="{{ '/rss.xml' | url }}">{{ site.localization[locale].rss_label }}</a></li>
+                        <li>
+                            <a href="{{ '/accessibility/' | url }}">
+                                {{ site.localization[locale].accessibility_label }}
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                {% if accessibilityStatus.allNoIssues %}        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="{{ site.localization[locale].a11y_success}}" class="success-a11y-badge">
+                                {% else %}
+                                        <img src="https://a11ybadges.com/badge?logo=frown&amp;text=a11y_failed&amp;badgeColor=red" alt="{{ site.localization[locale].a11y_fail}}"  class="fail-a11y-badge">
+                                {% endif %}
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].copyright_label }}</li>
+                        <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].powered_by  | safe }}</li>
+                    </ul>
                 </div>
             </div>
         </div>

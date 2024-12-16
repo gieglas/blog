@@ -34,3 +34,38 @@ Some cool stuff
 {% endfor %}
 </ul>
 ```
+
+```html
+
+                        <li class="govcy-d-block govcy-text-dark">
+                                {% if accessibilityStatus.allNoIssues %}
+                                    <a href="/accessibility/#report">
+                                        <img src="https://a11ybadges.com/badge?logo=check-square&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" style="
+    content: url(https://a11ybadges.com/badge?logo=check-square&amp;text=a11y_passed&amp;badgeColor=green);
+    width: auto;
+    height: auto;
+">
+                                    </a>
+                                {% else %}
+                                        <img src="https://a11ybadges.com/badge?logo=x-square&amp;text=a11y_failed&amp;badgeColor=red" alt="Accessibility check failed" style="
+    content: url(https://a11ybadges.com/badge?logo=x-square&amp;text=a11y_failed&amp;badgeColor=red);
+    width: auto;
+    height: auto;
+">
+                                {% endif %}
+                            
+                        </li>
+
+
+```
+
+
+```html
+
+                                {% if accessibilityStatus.allNoIssues %}
+                                    ✅
+                                {% else %}
+                                    ⚠️
+                                {% endif %}
+                            
+```
