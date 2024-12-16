@@ -16,12 +16,12 @@
                                       • Tagged with 
                                       {% for tag in tags -%}
                                         {% if tag !== 'blog' and tag !== 'en' %}
-                                            <a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>
+                                            <a class="post-tag" href="{{ ('/tags/' ~ tag)  }}">{{ tag }}</a>
                                         {% endif %}
                                       {%- endfor %}</p>
                     {% endif %}
                     {% if image %} 
-                    <img aria-hidden="true" src="{{ (site.imagesLocation  ~  image) | url }}" alt="Graphic for {{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
+                    <img aria-hidden="true" src="{{ (site.imagesLocation  ~  image)  }}" alt="Graphic for {{ title }}" class="img-fluid pop-small govcy-mb-4"></a>
                     {% endif %}
                     <div class="blog-page">
                     {{ content | safe }}

@@ -7,8 +7,8 @@
              <div class="row">
                 <!--Displayed only on desktop-->
                 <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
-                    <a href="{{ '/' | url }}" class="desktop-header personal-logo">
-                        <img aria-hidden="true" alt="{{ site.localization[locale].logo_alt }}" src="{{ '/img/GieglasIconInverse.png' | url }}">
+                    <a href="{{ '/'  }}" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="{{ site.localization[locale].logo_alt }}" src="{{ '/img/GieglasIconInverse.png'  }}">
                         {{ site.localization[locale].title }}
                     </a>
                 </div>
@@ -18,7 +18,7 @@
                     <nav class="navbar navbar-expand-md navbar-light">
                         <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
                             <!--Displayed only on mobile-->
-                            <div class="d-md-none"><a href="{{ '/' | url }}" class="mobile-header personal-logo"><img alt="{{ site.localization[locale].title }}" src="{{ '/img/GieglasIconInverse.png' | url }}">{{ site.localization[locale].title }}</a></div>
+                            <div class="d-md-none"><a href="{{ '/'  }}" class="mobile-header personal-logo"><img alt="{{ site.localization[locale].title }}" src="{{ '/img/GieglasIconInverse.png'  }}">{{ site.localization[locale].title }}</a></div>
                             <!-- Displayed only on mobile end -->
                             <!-- Displayed only on mobile button-->                            
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,16 +32,16 @@
                                     {# loop through categories #}
                                 {%- for cat in site.localization[locale]["top_menu"] -%}
                                     <li class="nav-item">
-                                    <a href="{{ cat.url | url }}" {% if category == cat.category %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>
+                                    <a href="{{ cat.url  }}" {% if category == cat.category %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {% endif %}>
                                         {{ cat.name }}
                                     </a>
                                     </li>
                                 {%- endfor -%}
                                 </ul>
                                 {# pagefind search box #}
-                                {# <link href="{{ '/pagefind/pagefind-ui.css' | url}}" rel="stylesheet">
+                                {# <link href="{{ '/pagefind/pagefind-ui.css' }}" rel="stylesheet">
                                 <div id="search" class="search"></div>
-                                <script src="{{ '/pagefind/pagefind-ui.js' | url}}" onload="new PagefindUI({ element: '#search', showImages: true }); document.querySelector('.pagefind-ui__search-input').setAttribute('aria-label', '{{ site.localization[locale].search_placeholder }}');"></script> #}
+                                <script src="{{ '/pagefind/pagefind-ui.js' }}" onload="new PagefindUI({ element: '#search', showImages: true }); document.querySelector('.pagefind-ui__search-input').setAttribute('aria-label', '{{ site.localization[locale].search_placeholder }}');"></script> #}
                                 {# loop search box #}
                                 {# <div class="combobox combobox-list">
                                     <div class="group">
@@ -51,8 +51,8 @@
                                     {% for page in collections.all %}
                                         {%- if not page.data.hideSearch -%}
                                             {%- if locale == page.data.locale -%}
-                                                { label: "{{page.data.title}}", url: '{{ page.url | url }}', keys: "{{page.data.searchKeys}}" },
-                                        <li id="{{ page.fileSlug}}" data-url="{{ page.url | url }}" role="option">{{page.data.title}}</li>
+                                                { label: "{{page.data.title}}", url: '{{ page.url  }}', keys: "{{page.data.searchKeys}}" },
+                                        <li id="{{ page.fileSlug}}" data-url="{{ page.url  }}" role="option">{{page.data.title}}</li>
                                             {%- endif -%}
                                         {%- endif -%}
                                     {% endfor %}

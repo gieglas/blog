@@ -7,9 +7,9 @@ breadcrumbs: [{"name":"Search", "url": "/search/" }]
 hideSearch: true
 ---
 
-{# <link href="{{ '/pagefind/pagefind-ui.css' | url}}" rel="stylesheet">
+{# <link href="{{ '/pagefind/pagefind-ui.css' }}" rel="stylesheet">
 <div id="search" class="search"></div>
-<script src="{{ '/pagefind/pagefind-ui.js' | url}}" onload="new PagefindUI({ element: '#search', showImages: true });"></script> #}
+<script src="{{ '/pagefind/pagefind-ui.js' }}" onload="new PagefindUI({ element: '#search', showImages: true });"></script> #}
 <style>
 
 
@@ -24,8 +24,8 @@ hideSearch: true
 {% for page in collections.all %}
     {%- if not page.data.hideSearch -%}
         {%- if locale == page.data.locale -%}
-            { label: "{{page.data.title}}", url: '{{ page.url | url }}', keys: "{{page.data.searchKeys}}" },
-    <li id="{{ page.fileSlug}}" data-url="{{ page.url | url }}" role="option">{{page.data.title}}</li>
+            { label: "{{page.data.title}}", url: '{{ page.url  }}', keys: "{{page.data.searchKeys}}" },
+    <li id="{{ page.fileSlug}}" data-url="{{ page.url  }}" role="option">{{page.data.title}}</li>
         {%- endif -%}
     {%- endif -%}
 {% endfor %}

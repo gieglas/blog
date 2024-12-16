@@ -7,29 +7,29 @@
         <meta property="og:title" content="{{ title }} - {{ site.localization[locale].title }}">
         <meta property="og:url" content="{{ site.url }}">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="{% if image %}{{ (site.imagesLocation ~ image) | url }}{% else %}{{ site.url }}img/apple-touch-icon-144x144-precomposed.png{% endif %}">
+        <meta property="og:image" content="{% if image %}{{ (site.imagesLocation ~ image)  }}{% else %}{{ site.url }}img/apple-touch-icon-144x144-precomposed.png{% endif %}">
         <meta property="og:site_name" content="{{ site.localization[locale].title }}">
     
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="{{ site.url }}">
         <meta property="twitter:title" content="{{ title }} - {{ site.localization[locale].title }}">
         <meta property="twitter:description" content="{% if summary %}{{ summary }}{% else %}{{ site.localization[locale].description }}{% endif %}">
-        <meta property="twitter:image" content="{% if image %}{{ (site.imagesLocation ~ image) | url }}{% else %}{{ site.url }}img/apple-touch-icon-144x144-precomposed.png{% endif %}">
+        <meta property="twitter:image" content="{% if image %}{{ (site.imagesLocation ~ image)  }}{% else %}{{ site.url }}img/apple-touch-icon-144x144-precomposed.png{% endif %}">
         <!-- Theme --> 
-        <link rel="manifest" href="{{'/manifest.json' | url }}">
+        <link rel="manifest" href="{{'/manifest.json'  }}">
         <meta name="theme-color" content="#0090d3">
-        <link rel="icon" type="image/png" sizes="48x48" href="{{ '/img/favicon-48x48.png' | url }}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicon-32x32.png' | url }}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicon-16x16.png' | url }}">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/img/apple-touch-icon-144x144-precomposed.png' | url }}">
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ '/img/apple-touch-icon-120x120-precomposed.png' | url }}">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ '/img/apple-touch-icon-114x114-precomposed.png' | url }}">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ '/img/apple-touch-icon-72x72-precomposed.png' | url }}">
-        <link rel="apple-touch-icon-precomposed" href="{{ '/img/apple-touch-icon-57x57-precomposed.png' | url }}">
+        <link rel="icon" type="image/png" sizes="48x48" href="{{ '/img/favicon-48x48.png'  }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicon-32x32.png'  }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicon-16x16.png'  }}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/img/apple-touch-icon-144x144-precomposed.png'  }}">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ '/img/apple-touch-icon-120x120-precomposed.png'  }}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ '/img/apple-touch-icon-114x114-precomposed.png'  }}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ '/img/apple-touch-icon-72x72-precomposed.png'  }}">
+        <link rel="apple-touch-icon-precomposed" href="{{ '/img/apple-touch-icon-57x57-precomposed.png'  }}">
         <!-- Bootstrap CSS -->
-        <link href="{{ '/css/main.css' | url }}" rel="stylesheet" >
+        <link href="{{ '/css/main.css'  }}" rel="stylesheet" >
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
-        <link href="{{ '/css/docs.css' | url }}" rel="stylesheet" >
+        <link href="{{ '/css/docs.css'  }}" rel="stylesheet" >
         <!-- Prism Highlighter CSS -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
         <title>{{ title }} - {{ site.localization[locale].title }}</title>

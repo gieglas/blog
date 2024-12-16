@@ -5,19 +5,19 @@
                     <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium">
                          {%- for cat in site.localization[locale]["top_menu"] -%}
                             <li>
-                                <a href="{{ cat.url | url }}">
+                                <a href="{{ cat.url }}">
                                     {{ cat.name }}
                                 </a>
                             </li>
                             {%- endfor -%}
-                        <li><a href="{{ '/rss.xml' | url }}">{{ site.localization[locale].rss_label }}</a></li>
+                        <li><a href="{{ '/rss.xml' }}">{{ site.localization[locale].rss_label }}</a></li>
                         <li>
-                            <a href="{{ '/accessibility/' | url }}">
+                            <a href="{{ '/accessibility/' }}">
                                 {{ site.localization[locale].accessibility_label }}
                             </a>
                         </li>
                         <li class="govcy-d-block govcy-text-dark">
-                            <a href="/accessibility/#report" class="general-a11y-badge">
+                            <a href="{{ '/accessibility/#report' }}" class="general-a11y-badge">
                                 {% if accessibilityStatus.allNoIssues %}        
                                         <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="{{ site.localization[locale].a11y_success}}" class="success-a11y-badge">
                                 {% else %}

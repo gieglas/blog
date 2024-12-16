@@ -18,7 +18,7 @@
                             {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category -%}
                                 <li class="nav-side govcy-br-bottom-1 govcy-br-bottom-standard govcy-mb-4">
                                     <h2 class="govcy-fs-3 govcy-mb-1">
-                                        <a href="{{ pag.url | url }}">
+                                        <a href="{{ pag.url  }}">
                                             {{ pag.data.title }}
                                         </a>
                                     </h2>
@@ -28,12 +28,12 @@
                                       • Tagged with 
                                       {% for tag in pag.data.tags -%}
                                         {% if tag !== 'blog' and tag !== 'en' %}
-                                            <a class="post-tag" href="{{ ('/tags/' ~ tag) | url }}">{{ tag }}</a>
+                                            <a class="post-tag" href="{{ ('/tags/' ~ tag)  }}">{{ tag }}</a>
                                         {% endif %}
                                       {%- endfor %}
                                     </p>
                                     {% if pag.data.image %} 
-                                    <a href="{{ pag.url | url }}"><img style="height:180px" src="{{ pag.data.image | url }}" alt="{{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
+                                    <a href="{{ pag.url  }}"><img style="height:180px" src="{{ pag.data.image  }}" alt="{{ pag.data.title }}" class="img-fluid govcy-mb-2"></a>
                                     {% endif %}
                                     <p>{{pag.data.summary}}</p>
                                 </li>
