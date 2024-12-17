@@ -13,7 +13,7 @@ const mdOptions = {
 module.exports = async function (eleventyConfig) {
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
 
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+	await eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   
   let markdownIt = require('markdown-it')
   let markdownItAttrs = require('markdown-it-attrs')
@@ -101,7 +101,7 @@ module.exports = async function (eleventyConfig) {
   });
   
   //add feed
-  eleventyConfig.addPlugin(feedPlugin, {
+  await eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",
 		collection: {
