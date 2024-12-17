@@ -223,6 +223,11 @@
     box-shadow: 0 0 0 4pt #ffdd00 !important;
     outline: none;
 }
+.btn-image {
+    width: auto !important;
+    height: 24px !important;
+    margin: 0 5px 0 0 !important;
+}
 .general-a11y-badge img {
     width: auto !important;
     height: 24px !important;

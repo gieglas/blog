@@ -21,7 +21,7 @@ module.exports = {
       "admin_email" : "consevangelou@gmail.com",
       "description" : "A place where I write about things I find interesting or useful.",
       "menu" : "Menu",
-      "rss_label":"RSS Feed",
+      "rss_label":"Feed",
       "privacy_label":"Privacy",
       "cookie_label":"Cookies",
       "accessibility_label":"Accessibility",

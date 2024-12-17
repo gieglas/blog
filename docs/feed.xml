@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Con&#39;s place</title>
+  <subtitle> </subtitle>
+  <link href="https://gieglas.github.io/blog/feed.xml" rel="self" />
+  <link href="https://gieglas.github.io/blog/blog/" />
+  <updated>2024-08-07T00:00:00Z</updated>
+  <id>https://gieglas.github.io/blog/blog/</id>
+  <author>
+    <name>Constantinos Evangelou</name>
+  </author>
+  <entry>
+    <title>gov.cy Design System update (V.3.0.0) – Unified Design System</title>
+    <link href="https://gieglas.github.io/blog/blog/dsf-design-system-update-v-3-0-0-unified-design-system/" />
+    <updated>2024-08-07T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/dsf-design-system-update-v-3-0-0-unified-design-system/</id>
+    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, released of version 3.0.0 of the gov.cy design system. This is a total redesign of the design system, with branding and styling changes, updated and new components, to accommodate both services and websites.&lt;/p&gt;
+&lt;p&gt;The new version includes improvements on existing components, as well as new design elements to accommodate services and websites alike.&lt;/p&gt;
+&lt;p&gt;Drawing from the DSF’s experience developing gov.cy services, user research findings, and the feedback they received from other teams that used the design system, they incorporated lessons learned, to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;define the gov.cy design principles&lt;/li&gt;
+&lt;li&gt;align design elements with these principles&lt;/li&gt;
+&lt;li&gt;better explain the design system’s best practices&lt;/li&gt;
+&lt;li&gt;accelerate the design and development of services&lt;/li&gt;
+&lt;li&gt;make it easier for service teams to understand and implement the design system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Changes include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the introduction of the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/principles/&quot; target=&quot;_blank&quot;&gt;design system principles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;an updated &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/&quot; target=&quot;_blank&quot;&gt;Get started page&lt;/a&gt; for better understanding how to use the design system&lt;/li&gt;
+&lt;li&gt;an updated pattern on &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/patterns/service_structure/&quot; target=&quot;_blank&quot;&gt;structuring a gov.cy service&lt;/a&gt;, featuring example variants that have been tested and proven effective&lt;/li&gt;
+&lt;li&gt;a dedicated page to help developers &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/developer-assets/&quot; target=&quot;_blank&quot;&gt;use the design system’s developer assets&lt;/a&gt;  to accelerate development&lt;/li&gt;
+&lt;li&gt;an &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/page-template/&quot; target=&quot;_blank&quot;&gt;updated page template&lt;/a&gt; with sample pages, for websites, as well as services&lt;/li&gt;
+&lt;li&gt;better guidance for implementing &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/components/&quot; target=&quot;_blank&quot;&gt;components&lt;/a&gt; with sections, explaining:
+&lt;ul&gt;
+&lt;li&gt;when to use a component&lt;/li&gt;
+&lt;li&gt;when not to use a component&lt;/li&gt;
+&lt;li&gt;how the component works&lt;/li&gt;
+&lt;li&gt;how to implement different variants of the component&lt;/li&gt;
+&lt;li&gt;how to display errors&lt;/li&gt;
+&lt;li&gt;what content to use&lt;/li&gt;
+&lt;li&gt;accessibility best practices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The design system also introduces the following new elements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Components
+&lt;ul&gt;
+&lt;li&gt;accordion&lt;/li&gt;
+&lt;li&gt;character count&lt;/li&gt;
+&lt;li&gt;cookie banner&lt;/li&gt;
+&lt;li&gt;data tables&lt;/li&gt;
+&lt;li&gt;date picker&lt;/li&gt;
+&lt;li&gt;inset text&lt;/li&gt;
+&lt;li&gt;phase banner&lt;/li&gt;
+&lt;li&gt;summary list&lt;/li&gt;
+&lt;li&gt;tag&lt;/li&gt;
+&lt;li&gt;textarea&lt;/li&gt;
+&lt;li&gt;warning text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Styles
+&lt;ul&gt;
+&lt;li&gt;images&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Patterns
+&lt;ul&gt;
+&lt;li&gt;addresses&lt;/li&gt;
+&lt;li&gt;bank details&lt;/li&gt;
+&lt;li&gt;confirm an email address&lt;/li&gt;
+&lt;li&gt;confirmation pages&lt;/li&gt;
+&lt;li&gt;contact page&lt;/li&gt;
+&lt;li&gt;cookies page&lt;/li&gt;
+&lt;li&gt;filter results&lt;/li&gt;
+&lt;li&gt;gender or sex&lt;/li&gt;
+&lt;li&gt;numeric inputs&lt;/li&gt;
+&lt;li&gt;social insurance number&lt;/li&gt;
+&lt;li&gt;step by step navigation&lt;/li&gt;
+&lt;li&gt;task list page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Accessibility enhancements&lt;/h2&gt;
+&lt;p&gt;The new version of the design system emphasises accessibility. All elements have been tested and comply with the  &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/principles/#8.-include-everyone&quot; target=&quot;_blank&quot;&gt;include everyone principle&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The DSF has included recommendations and best practices on how to enhance accessibility using their components and patterns (for example see the  &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/components/text_input/#accessibility&quot; target=&quot;_blank&quot;&gt;input text accessibility recommendations&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;However, that does not mean that any implementation that uses the developer assets, automatically complies with the Standard. When implementing a gov.cy service or website, make sure to always test for compliance with the EN 301 549 Standard.&lt;/p&gt;
+&lt;h2&gt;Design system website&lt;/h2&gt;
+&lt;p&gt;The  &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/&quot; target=&quot;_blank&quot;&gt;design system’s website&lt;/a&gt; has been updated with the new styling and guidance.&lt;/p&gt;
+&lt;p&gt;Anyone implementing a service or a website for gov.cy, should first go through the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/&quot; target=&quot;_blank&quot;&gt;Get started page&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Developer assets&lt;/h2&gt;
+&lt;p&gt;The developer assets (CSS and JavaScript) have also been updated for the new version. Check out the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/developer-assets/&quot; target=&quot;_blank&quot;&gt;developer assets page&lt;/a&gt; for information on how to use the prebuilt CSS and JavaScript.&lt;/p&gt;
+&lt;p&gt;This is a major release and the changes on CSS and JavaScript are not backward compatible with version 2. For more information about the older version visit the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs-v2/&quot; target=&quot;_blank&quot;&gt;v2 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Related tools and libraries&lt;/h2&gt;
+&lt;p&gt;In updating the design system, DSF also enhanced the libraries used for rapid design, development, prototyping and testing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://excalidraw-libraries-git-cevangelougovcy-gov-e2dec6-excalidraw.vercel.app/?theme=light&amp;amp;sort=default#cevangelougovcy-gov-cy-uds-library&quot; target=&quot;_blank&quot;&gt;excalidraw library&lt;/a&gt; to create rapid wireframes and sketches.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.figma.com/community/file/1388468172430388495/dsf-gov-cy-unified-design-system-v-3&quot; target=&quot;_blank&quot;&gt;figma library&lt;/a&gt; to rapidly create designs and prototypes the gov.cy way&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/dsf-email-templates&quot; target=&quot;_blank&quot;&gt;dsf-email-templates&lt;/a&gt; NPM package to create HTML email templates&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester&quot; target=&quot;_blank&quot;&gt;govcy-frontend-tester&lt;/a&gt; NPM package to perform front end tests in terms of the accessibility and generic guidelines of the design system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the gov.cy Design System&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Improving Accessibility: Lessons from making design elements screen reader-friendly (by DSF)</title>
+    <link href="https://gieglas.github.io/blog/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/" />
+    <updated>2024-01-23T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/</id>
+    <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on how the DSF tried to evolve the screen reader capabilities of their components, sharing the lessons learned from that process&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2024/01/23/improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How to use the Figma community library file to design digital services (by DSF)</title>
+    <link href="https://gieglas.github.io/blog/blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services/" />
+    <updated>2023-08-24T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services/</id>
+    <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on how to use the &lt;a href=&quot;https://www.figma.com/community/file/1388468172430388495/dsf-gov-cy-unified-design-system-v-3&quot; target=&quot;_blank&quot;&gt;DSF Figma community library file&lt;/a&gt; to rapidly design and prototype digital services the gov.cy way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2023/08/24/how-to-use-the-figma-community-library-file-to-design-digital-services/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Writing a good README file</title>
+    <link href="https://gieglas.github.io/blog/blog/writing-a-good-readme-file/" />
+    <updated>2023-05-06T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/writing-a-good-readme-file/</id>
+    <content type="html">&lt;p&gt;Documentation is a key for any coding project and the README file is a big part of it. In this article you can find some best practices on how to write a good README file.&lt;/p&gt;
+&lt;h2&gt;Why having a good README file is important&lt;/h2&gt;
+&lt;p&gt;A well-crafted README file can be an essential tool for sharing information about your project. A properly formatted and organized README can help potential users and contributors quickly understand the purpose, functionality, and usage of your project. In addition, popular code hosting services like GitHub and NPM rely heavily on README files to display project information and make it more discoverable to users.&lt;/p&gt;
+&lt;p&gt;Investing time and effort in creating a high-quality README file can pay off in numerous ways. It can save time and effort in the long run, build trust, attract new users and contributors, and even improve the quality of your code. So don’t underestimate the importance of the all mighty README file!&lt;/p&gt;
+&lt;h2&gt;Best practices&lt;/h2&gt;
+&lt;h3&gt;Keep it to the point and clean&lt;/h3&gt;
+&lt;p&gt;While it’s important to provide all the necessary information, you also want to keep your README file concise and to the point. Users should be able to quickly understand what your project does and how to use it without getting into unnecessary details. Use bullet points and formatting to break up your content and make it more scannable.&lt;/p&gt;
+&lt;p&gt;Make sure to use clear, easy-to-understand language when writing your README file. Avoid using technical jargon or overly complex language that might confuse users. If you do need to use technical terms, make sure to explain them clearly so that users who aren’t familiar with the technology can still understand.&lt;/p&gt;
+&lt;h3&gt;Make It Easy to Navigate&lt;/h3&gt;
+&lt;p&gt;Your README file should be easy to navigate and understand. Use headings and subheadings to organize your content and make it easy for users to find the information they’re looking for. If your project is complex, consider including a table of contents at the beginning of your README.&lt;/p&gt;
+&lt;h3&gt;Keep It Up to Date&lt;/h3&gt;
+&lt;p&gt;Your README file should always be up to date with the latest information about your project. Make sure to update it whenever you make changes to your project. Include a date stamp, or version number at the top of the file to indicate when it was last updated. Keeping a good changelog file is also a good idea.&lt;/p&gt;
+&lt;h3&gt;Include Installation and Setup Instructions&lt;/h3&gt;
+&lt;p&gt;Make sure to include clear, step-by-step instructions for installing and setting up your project. This should include information about any dependencies or prerequisites that need to be installed, as well as any configuration options that users might need to set up before using your project.&lt;/p&gt;
+&lt;h3&gt;Include Examples and Code Snippets&lt;/h3&gt;
+&lt;p&gt;Including examples and code snippets can help users understand how to use your project in practice. You might include sample code that demonstrates how to use your project’s API, or screenshots that show what your project looks like in action. This can help make your project more intuitive and accessible.&lt;/p&gt;
+&lt;h3&gt;Include a License&lt;/h3&gt;
+&lt;p&gt;Finally, make sure to include a clear statement about the license under which your project is released. This can help users understand how they’re allowed to use and distribute your project, and can help avoid any confusion or legal issues down the line.&lt;/p&gt;
+&lt;h3&gt;Template README file&lt;/h3&gt;
+&lt;p&gt;Here’s a template you can use to get started in your own README file:&lt;/p&gt;
+&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;Description what the project does and who is the intended audience (i.e. developers, QA teams etc)&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Features&lt;/span&gt;&lt;br&gt; &lt;br&gt;List the features of the project in bullet points&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Prerequisites&lt;/span&gt;&lt;br&gt; &lt;br&gt;Note any pre-requisites and dependencies needed for this project. For example:&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Nodejs 8+&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Installation&lt;/span&gt;&lt;br&gt; &lt;br&gt;Explain the steps needed to install the project. For example:&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; git clone https://github.com/your-project-path.git&lt;br&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; cd your-project-path&lt;br&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; npm install&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Usage&lt;/span&gt;&lt;br&gt; &lt;br&gt;Explain how to use the project. This might include &quot;How to&quot; instructions and code segments&lt;br&gt; &lt;br&gt;If the project provides customization or configuration, list all (or the most important) customizations with examples. &lt;br&gt; &lt;br&gt;If you have complicated API&#39;s or more detailed definitions, make sure to link them in your README file.&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Credits&lt;/span&gt;&lt;br&gt; &lt;br&gt;Give credits to contributors or any other open source projects that helped.&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Notes&lt;/span&gt;&lt;br&gt; &lt;br&gt;Any other notes you feel are important.&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; License&lt;/span&gt;&lt;br&gt; &lt;br&gt;Mention the license for example:&quot;This project is released under the &lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;MIT License&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;LICENCE.md&lt;/span&gt;)&lt;/span&gt;.&quot;&lt;br&gt; &lt;br&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Contact&lt;/span&gt;&lt;br&gt; &lt;br&gt;Explain how people can make questions or provide feedback on the project, for example:&lt;br&gt; &lt;br&gt;If you have any questions or feedback, please feel free to reach out to us at &lt;span class=&quot;token url&quot;&gt;[&lt;span class=&quot;token content&quot;&gt;yourmail@yourmail.com&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;mailto:yourmail@yourmail.com&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By following these best practices, you can create a README file that is clear, concise, and easy to understand. This can help users get up and running with your project quickly and easily, and can make your project more accessible to a wider audience.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How to create new design elements using the utility classes (by DSF)</title>
+    <link href="https://gieglas.github.io/blog/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/" />
+    <updated>2023-02-16T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/</id>
+    <content type="html">&lt;p&gt;Check out the link below for a guide I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;. The guide describes how developers can use the Design System utility classes, to create a brand new HTML design element with the gov.cy designs.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_design_element/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How to create a page using the gov.cy design system (by DSF)</title>
+    <link href="https://gieglas.github.io/blog/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/" />
+    <updated>2023-02-15T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/</id>
+    <content type="html">&lt;p&gt;Check out the link below for a guide I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;. The guide describes how developers can use the Design System reusable components, to create a simple question page.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_page/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Designing the Design System (by DSF)</title>
+    <link href="https://gieglas.github.io/blog/blog/dsf-designing-the-design-system/" />
+    <updated>2023-02-15T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/dsf-designing-the-design-system/</id>
+    <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on designing the Design System and how the DSF is trying to creates a consistent, clean, accessible and intuitive user experience throughout the services.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2023/02/15/designing-the-design-system/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>GitLab CI/CD and React Tests</title>
+    <link href="https://gieglas.github.io/blog/blog/GitLab-CI-CD-and-React-Tests/" />
+    <updated>2019-09-27T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/GitLab-CI-CD-and-React-Tests/</id>
+    <content type="html">&lt;p&gt;Continuing after my previous post about &lt;a href=&quot;https://gieglas.github.io/blog/blog/Gitlab-ci-cd-and-gitlab-pages&quot;&gt;Gitlab CI/CD&lt;/a&gt;, I would like to show another example of Continuous Integration, this time with unit testing react components.&lt;/p&gt;
+&lt;h3&gt;.gitlab-ci.yml&lt;/h3&gt;
+&lt;p&gt;Just a reminder, the way to configure GitLab’s CI is by adding a &lt;a href=&quot;https://doc.gitlab.com/ee/ci/quick_start/README.html#creating-a-.gitlab-ci.yml-file&quot; target=&quot;_blank&quot;&gt;configuration file&lt;/a&gt;  called &lt;code&gt;.gitlab-ci.yml&lt;/code&gt;, which tells the GitLab runner what to do.&lt;/p&gt;
+&lt;p&gt;In this example we only use the &lt;code&gt;test&lt;/code&gt; stage. The script simply uses &lt;code&gt;npm&lt;/code&gt; commands to install all dependencies and perform the test (i.e. using &lt;a href=&quot;https://jestjs.io/&quot; target=&quot;_blank&quot;&gt;Jest&lt;/a&gt; ). Check out the code below.&lt;/p&gt;
+&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;image: node:11.10.1&lt;br&gt; &lt;br&gt;stages:&lt;br&gt;    - &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt;&lt;br&gt; &lt;br&gt;run-unit-test:&lt;br&gt;    stage: &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt;&lt;br&gt;    script:&lt;br&gt;        - &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# Install all dependencies&lt;/span&gt;&lt;br&gt;        - &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# Test &lt;/span&gt;&lt;br&gt;    only:&lt;br&gt;        - merge_requests&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you might have noticed the job will only be triggered on &lt;code&gt;merge_requests&lt;/code&gt;. So after a merge request you can see the results of the tests in the &lt;code&gt;CI/CD / Pipelines&lt;/code&gt; and &lt;code&gt;CI/CD / Jobs&lt;/code&gt; (check out the screenshoots below)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Pasted%20image%2020240326092746.png&quot; alt=&quot;Pipelines test&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Pasted%20image%2020240326092840.png&quot; alt=&quot;Jobs test&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Pasted%20image%2020240326092929.png&quot; alt=&quot;Test results&quot;&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>GitLab CI/CD and GitLab Pages</title>
+    <link href="https://gieglas.github.io/blog/blog/Gitlab-ci-cd-and-gitlab-pages/" />
+    <updated>2019-08-27T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/Gitlab-ci-cd-and-gitlab-pages/</id>
+    <content type="html">&lt;p&gt;In this post I will try and explain how to deploy a simple javascript application on GitLab pages, using Continuous Deployment with a live working example.&lt;/p&gt;
+&lt;p&gt;For those that don’t know about &lt;a href=&quot;https://about.gitlab.com/&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt; , it’s an online GIT repository, just like GitHub that offers web-based DevOps tools. Where GitLab really shines, is it’s Continuous Integration (CI) and Continuous Delivery (CD) capabilities.&lt;/p&gt;
+&lt;p&gt;GitLab’s definitions for CI and CD:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Continuous Integration&lt;/strong&gt; is the practice of integrating code into a shared repository and building/testing each change automatically, as early as possible – usually several times a day.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Continuous Delivery&lt;/strong&gt; adds that the software can be released to production at any time, often by automatically pushing changes to a staging system.&lt;br&gt;
+&lt;strong&gt;Continuous Deployment&lt;/strong&gt; goes further and pushes changes to production automatically.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://about.gitlab.com/product/continuous-integration/&quot; target=&quot;_blank&quot;&gt;Gitlab continuous integration&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In my example I created a simple javascript application that shows some images on the screen, on which I use GitLab’s CI/CD to automatically deploy my pushed changes on GitLab’s Pages. Check out the &lt;a href=&quot;https://gitlab.com/gieglas/pages-test&quot; target=&quot;_blank&quot;&gt;code&lt;/a&gt;  and the &lt;a href=&quot;https://gieglas.gitlab.io/pages-test/&quot; target=&quot;_blank&quot;&gt;GitLab Page&lt;/a&gt;  that is created.&lt;/p&gt;
+&lt;p&gt;Oh it’s worth mentioning here that &lt;a href=&quot;https://about.gitlab.com/product/pages/&quot; target=&quot;_blank&quot;&gt;GitLab’s Pages&lt;/a&gt;  can hosts static websites only (HTML, CSS and JS).&lt;/p&gt;
+&lt;h3&gt;.gitlab-ci.yml&lt;/h3&gt;
+&lt;p&gt;The way to configure GitLab’s CI is by adding a &lt;a href=&quot;http://doc.gitlab.com/ee/ci/quick_start/README.html#creating-a-.gitlab-ci.yml-file&quot; target=&quot;_blank&quot;&gt;configuration file&lt;/a&gt;  called &lt;code&gt;.gitlab-ci.yml&lt;/code&gt;, which tells the GitLab runner what to do (NOTE: It needs to be placed at your root directory and file is written in &lt;a href=&quot;http://yaml.org/&quot; target=&quot;_blank&quot;&gt;YAML&lt;/a&gt; )&lt;/p&gt;
+&lt;p&gt;There are three stages which GitLab runner runs, &lt;code&gt;build&lt;/code&gt;, &lt;code&gt;test&lt;/code&gt;, and &lt;code&gt;deploy&lt;/code&gt;. In our example we only use the &lt;code&gt;deploy&lt;/code&gt; stage which is triggered only when commits are pushed on the &lt;code&gt;master&lt;/code&gt; branch. Check out the code i used below.&lt;/p&gt;
+&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;pages&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token key atrule&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; deploy&lt;br&gt;  &lt;span class=&quot;token key atrule&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; mkdir .public&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; cp &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;r * .public&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; mv .public public&lt;br&gt;  &lt;span class=&quot;token key atrule&quot;&gt;artifacts&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token key atrule&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; public&lt;br&gt;  &lt;span class=&quot;token key atrule&quot;&gt;only&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Take a look also on a more detailed tutorial by GitLab on &lt;a href=&quot;https://about.gitlab.com/2016/04/07/gitlab-pages-setup/&quot; target=&quot;_blank&quot;&gt;pages setup&lt;/a&gt;  and the documentation on &lt;a href=&quot;https://docs.gitlab.com/ee/ci/yaml/README.html&quot; target=&quot;_blank&quot;&gt;.gitlab-ci.yml&lt;/a&gt;  and &lt;a href=&quot;https://docs.gitlab.com/ee/user/project/pages/index.html&quot; target=&quot;_blank&quot;&gt;GitLab Pages&lt;/a&gt; .&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How I made my wordpress a PWA</title>
+    <link href="https://gieglas.github.io/blog/blog/how-i-made-my-wordpress-a-pwa/" />
+    <updated>2019-07-31T00:00:00Z</updated>
+    <id>https://gieglas.github.io/blog/blog/how-i-made-my-wordpress-a-pwa/</id>
+    <content type="html">&lt;p&gt;Keeping up with the &lt;a href=&quot;https://developers.google.com/web/progressive-web-apps/&quot; target=&quot;_blank&quot;&gt;PWA&lt;/a&gt; frency, I discovered that it is fairly simple to convert your wordpress into a Progressive Web App, so I thought I’d share my exprerience.&lt;/p&gt;
+&lt;p&gt;Remember all you need to do to turn your WordPress site into a PWA are the 3 basic steps (for more on PWAs check out my posts about &lt;a href=&quot;https://gieglas.github.io/blog/blog/why-i-made-my-app-a-pwa/&quot;&gt;why&lt;/a&gt; and &lt;a href=&quot;https://gieglas.github.io/blog/blog/how-I-made-my-app-a-pwa/&quot;&gt;how&lt;/a&gt; I made my app a PWA) :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;add a &lt;strong&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/primers/service-workers/&quot; target=&quot;_blank&quot;&gt;service worker&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;add a &lt;strong&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/web-app-manifest/&quot; target=&quot;_blank&quot;&gt;manifest&lt;/a&gt;&lt;/strong&gt; file&lt;/li&gt;
+&lt;li&gt;use &lt;strong&gt;https&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Seems like there are a lot of ways to satisfy at least the first 2 steps. For the https step, you would have to take care of that with your hosting company, but remember to reference only HTTPS resources in your site.&lt;/p&gt;
+&lt;p&gt;So back to the ways to add a service worker and a manifest. You could use functionality in themes, custom javascript code, plugins and so on. I found that &lt;a href=&quot;https://superpwa.com/&quot; target=&quot;_blank&quot;&gt;Super Progressive Web Apps&lt;/a&gt; plugin is dead simple and to the point. You can set the options for the manifest and lets you define an offline page from the plugin’s admin page. Also as far as caching is concerned, every page you visit gets cached. Finally if you make a new post or change a post, the plugin takes care of it and make’s sure the visitors see the updated version of your site.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Super-Progressive-Web-Apps-1.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 1&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Super-Progressive-Web-Apps-2.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 2&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Super-Progressive-Web-Apps-3.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 3&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
+</content>
+  </entry>
+</feed>

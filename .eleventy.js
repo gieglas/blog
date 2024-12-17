@@ -1,5 +1,5 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs"); 
 const { execSync } = require('child_process')
 
@@ -10,20 +10,27 @@ const mdOptions = {
   typographer: true
 }
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  
   let markdownIt = require('markdown-it')
   let markdownItAttrs = require('markdown-it-attrs')
-  // Read pathPrefix from command-line arguments
-  const argv = process.argv.slice(2); // Remove node and script path
-  const pathPrefixArg = argv.find(arg => arg.startsWith('--pathprefix='));
-  const pathPrefix = pathPrefixArg ? pathPrefixArg.split('=')[1] : '';
-  console.log('pathPrefix:', );
-  // Add a custom global value
-  eleventyConfig.addGlobalData("pathPrefixValue", pathPrefix);
+  // // Read pathPrefix from command-line arguments
+  // const argv = process.argv.slice(2); // Remove node and script path
+  // const pathPrefixArg = argv.find(arg => arg.startsWith('--pathprefix='));
+  // const pathPrefix = pathPrefixArg ? pathPrefixArg.split('=')[1] : '';
+  // console.log('pathPrefix:', );
+  // // Add a custom global value
+  // eleventyConfig.addGlobalData("pathPrefixValue", pathPrefix);
   //pagefind 
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --source docs --glob \"**/*.html\"`, { encoding: 'utf-8' })
   })
+
+  //get site data
+  const siteData = require("./src/_data/site.js"); // Adjust the path to your site.js file
 
   // Markdown
   eleventyConfig.setLibrary('md',markdownIt(mdOptions)
@@ -31,8 +38,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  // Add the RSS plugin
-  eleventyConfig.addPlugin(pluginRss);
+  // // Add the RSS plugin
+  // eleventyConfig.addPlugin(pluginRss);
 
   // Browsersync
   // Redirect from root to default language root during --serve
@@ -93,6 +100,26 @@ module.exports = function (eleventyConfig) {
     };
   });
   
+  //add feed
+  eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom", // or "rss", "json"
+		outputPath: "/feed.xml",
+		collection: {
+			name: "blog", // iterate over `collections.posts`
+			limit: 10,     // 0 means no limit
+		},
+		metadata: {
+			language: "en",
+			title: siteData.localization["en"].title,
+			subtitle: siteData.localization["en"].subtitle,
+			base: siteData.url,
+			author: {
+				name: siteData.localization["en"].author,
+				email: "", // Optional
+			}
+		}
+	});
+
   return {
     dir: {
       input: "src",

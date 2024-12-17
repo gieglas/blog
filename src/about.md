@@ -52,11 +52,14 @@ I helped implement various government services, but what I really enjoy is creat
 
 ## Writing
 
-- [Improving Accessibility: Lessons from making design elements screen reader-friendly](https://dsf.dmrid.gov.cy/2024/01/23/improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly){target="_blank"}
-- [How to use the Figma community library file to design digital services](https://dsf.dmrid.gov.cy/2023/08/24/how-to-use-the-figma-community-library-file-to-design-digital-services/){targe="_blank"}
-- [How to create new design elements using the utility classes](https://dsf.dmrid.gov.cy/2023/02/16/how-to-create-new-design-elements-using-the-gov-cy-utility-classes/){target="_blank"}
-- [How to create a page using the design system](https://dsf.dmrid.gov.cy/2023/02/15/how-to-create-a-page-using-the-gov-cy-design-system/){target="_blank"}
-- [Designing the Design System](https://dsf.dmrid.gov.cy/2023/02/15/designing-the-design-system/){target="_blank"}
+I wrote the [gov.cy Universal Design System](https://gov-cy.github.io/govcy-design-system-docs/){target="_blank"} but was heavily influenced by the gov.uk design system. For more original content on the Design System check out:
+- [Structuring a service](https://gov-cy.github.io/govcy-design-system-docs/patterns/service_structure/){target="_blank"}
+- [How to create a page using the gov.cy Unified Design System](https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_page/){target="_blank"}
+- [How to create new design elements using the gov.cy utility classes](https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_design_element/){target="_blank"}
+- [How to create an HTML email](https://gov-cy.github.io/govcy-design-system-docs/guides/create_an_html_email/){target="_blank"}
+
+For all the rest check out my [blog](../blog/)
+
 
 ## Contact
 <dl>

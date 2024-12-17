@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/getting-on-top-of-things-with-monitrall.md",
+                "file": "blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "getting-on-top-of-things-with-monitrall"
+              "title": "dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly"
             }
           }
         ],
@@ -175,29 +175,39 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "211b3ae32dd17c94",
   "lastOpenFiles": [
-    "img/Pasted image 20241215224258.jpg",
-    "img/Pasted image 20241215224234.jpg",
-    "img/Pasted image 20241215224206.jpg",
-    "img/Pasted image 20241215223905.jpg",
-    "img/Pasted image 20241215223841.jpg",
-    "img/Pasted image 20241215223659.jpg",
-    "img/Pasted image 20241215223633.jpg",
-    "img/Pasted image 20241215223431.jpg",
-    "img/Pasted image 20241215223215.jpg",
-    "img/Pasted image 20241215223206.jpg",
-    "blog/php-notificator.md",
+    "blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services.md",
+    "blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes.md",
+    "blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system.md",
+    "blog/dsf-designing-the-design-system.md",
+    "blog/dsf-design-system-update-v-3-0-0-unified-design-system.md",
+    "img/DSIconograpy.svg",
+    "img/Unconfirmed 991112.crdownload",
+    "img/Pasted image 20241217105547.png",
+    "blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly.md",
+    "img/Pasted image 20241217104435.png",
+    "img/Pasted image 20241217094022.png",
+    "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
+    "img/dsf-small-white-icon.svg",
+    "img/DSF_Icon.svg",
+    "img/dsf-small-white-icon.txt",
+    "img/New Text Document.txt",
+    "img/Pasted image 20241217075141.png",
+    "img/Pasted image 20241217074056.png",
+    "img/Pasted image 20241217072939.png",
+    "_drafts/archives/security-alert-heartbleed-2.md",
     "blog/getting-on-top-of-things-with-monitrall.md",
-    "img/Pasted image 20241215222615.png",
+    "img/Pasted image 20241215224258.jpg",
+    "blog/php-notificator.md",
     "_drafts/archives/security-alert-heartbleed.md",
     "_drafts/archives/backup-posts-with-ifttt-and-evernote.md",
     "_templates/responsive horizontal table.md",
     "img/figmaicon.png.0.pdnSave",
-    "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
     "_templates/github link with icon.md",
     "blog/php-pdo-connect-everywhere.md",
     "REPO_URL.md",
@@ -210,19 +220,11 @@
     "blog/evernote-control-your-data.md",
     "blog/gmail-issue-tracking-system.md",
     "Untitled.md",
-    "_templates/mobile screenshot class.md",
-    "blog/evernote-for-its-remote-desktops.md",
-    "blog/how-to-make-your-life-easy-at-the-airport.md",
-    "blog/online-search-registry-cregistry.md",
-    "blog/why-i-made-my-app-a-pwa.md",
-    "_templates/govcy-table class.md",
-    "_templates/target blank - new tab.md",
     "_templates",
     "_drafts/archives",
     "_drafts/find-page.njk",
     "_drafts",
     "_temp/find-page.njk",
-    "_temp",
-    "templates"
+    "_temp"
   ]
 }

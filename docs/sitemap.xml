@@ -127,8 +127,26 @@
             <loc>/blog/GitLab-CI-CD-and-React-Tests/</loc>
             <lastmod>2019-09-27T00:00:00.000Z</lastmod>
         </url><url>
+            <loc>/blog/dsf-designing-the-design-system/</loc>
+            <lastmod>2023-02-15T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/</loc>
+            <lastmod>2023-02-15T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/</loc>
+            <lastmod>2023-02-16T00:00:00.000Z</lastmod>
+        </url><url>
             <loc>/blog/writing-a-good-readme-file/</loc>
             <lastmod>2023-05-06T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>/blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services/</loc>
+            <lastmod>2023-08-24T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/</loc>
+            <lastmod>2024-01-23T00:00:00.000Z</lastmod>
+        </url><url>
+            <loc>/blog/dsf-design-system-update-v-3-0-0-unified-design-system/</loc>
+            <lastmod>2024-08-07T00:00:00.000Z</lastmod>
         </url><url>
             <loc>/accessibility/</loc>
             <lastmod>2024-09-14T17:15:22.895Z</lastmod>
@@ -153,5 +171,8 @@
         </url><url>
             <loc>/tags/diy/</loc>
             <lastmod>2024-12-10T05:33:49.822Z</lastmod>
+        </url><url>
+            <loc>/feed.xml</loc>
+            <lastmod>2024-12-17T10:42:45.252Z</lastmod>
         </url>
 </urlset>
