@@ -1,13 +1,7 @@
 design ideas
 - https://dribbble.com/shots/6172851-NathanBarry-com 
 
-images for here
-
-- https://unsplash.com/photos/silver-macbook-air-on-table-near-imac-jJT2r2n7lYA
-- https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-wooden-table-nPnIOAM8pbo
-
-
-Some cool stuff
+## Some cool stuff
 
 ```html
 <div class="row" style="border-bottom: solid 1px #64646f33; box-shadow: #64646f33 0 10px 29px; position: relative;">
@@ -59,13 +53,68 @@ Some cool stuff
 
 ```
 
+## Accessibility test with mocha and chai
 
-```html
+```js
+import Eleventy from "@11ty/eleventy";
+import pa11y from 'pa11y';
+import { writeFile } from 'fs/promises';
+import { expect } from 'chai';
 
-                                {% if accessibilityStatus.allNoIssues %}
-                                    ✅
-                                {% else %}
-                                    ⚠️
-                                {% endif %}
-                            
+
+async function testAccessibilityAndSave() {
+    let elev = new Eleventy();
+    let pagesJson = await elev.toJSON();
+    const pages = pagesJson.filter(item => item.url.endsWith('/'));
+    let serverURL = "http://localhost:8080";
+    console.log(`## Run tests`);
+
+    const resultsArray = [];
+    let pageName = '';
+    let i=0;
+    for (var element of pages) {
+        i++;
+        if (i<5) {
+            if (element.outputPath.endsWith(".html")) {
+                pageName = element.url.replace(/\//g, '_');
+                try {
+                    console.log(`Testing ${element.url}`);
+                    const results = await pa11y(serverURL + element.url, {
+                        standard: 'WCAG2AA'
+                    });
+                    resultsArray.push({ url: element.url, issues: results.issues });
+                    if (results.issues.length > 0) {
+                        console.error(`Accessibility issues found in ${element.url}`);
+                        console.error(results.issues);
+                    }
+                } catch (error) {
+                    console.error(`Error testing ${element.url}:`, error.message);
+                }
+            }
+        }
+    }
+    
+    try {
+        const resultsJSON = {
+            date: new Date().toISOString().split('T')[0],
+            results: resultsArray
+        }
+        await writeFile('src/_data/accessibilityresults.json', JSON.stringify(resultsJSON, null, 2));
+        console.log('Results saved to `src/_data/accessibilityresults.json`');
+    } catch (fileError) {
+        console.error('Error saving results:', fileError.message);
+    }
+    return resultsArray;
+}
+
+describe('Accessibility Tests', () => {
+    it('should have no accessibility issues on all pages', () => {
+      return testAccessibilityAndSave().then(resultsArray => {
+        resultsArray.forEach((result) => {
+            expect(result.issues).to.be.an('array').that.is.empty;
+        });
+      })
+    })
+  })
+  
 ```

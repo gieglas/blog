@@ -17,13 +17,7 @@ module.exports = async function (eleventyConfig) {
   
   let markdownIt = require('markdown-it')
   let markdownItAttrs = require('markdown-it-attrs')
-  // // Read pathPrefix from command-line arguments
-  // const argv = process.argv.slice(2); // Remove node and script path
-  // const pathPrefixArg = argv.find(arg => arg.startsWith('--pathprefix='));
-  // const pathPrefix = pathPrefixArg ? pathPrefixArg.split('=')[1] : '';
-  // console.log('pathPrefix:', );
-  // // Add a custom global value
-  // eleventyConfig.addGlobalData("pathPrefixValue", pathPrefix);
+  
   //pagefind 
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --source docs --glob \"**/*.html\"`, { encoding: 'utf-8' })
@@ -101,7 +95,7 @@ module.exports = async function (eleventyConfig) {
   });
   
   //add feed
-  await eleventyConfig.addPlugin(feedPlugin, {
+  eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",
 		collection: {
@@ -117,7 +111,11 @@ module.exports = async function (eleventyConfig) {
 				name: siteData.localization["en"].author,
 				email: "", // Optional
 			}
-		}
+		},
+    htmlBasePluginOptions: {
+      baseHref: "",
+    }
+
 	});
 
   return {
