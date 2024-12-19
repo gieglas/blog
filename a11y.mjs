@@ -17,6 +17,7 @@ import { writeFile } from 'fs/promises';
 
 async function testAccessibilityAndSave(pages,serverURL) {
     const resultsArray = [];
+    let failed = false; // Track failures
     // for each page
     for (var page of pages) {
         if (page.outputPath.endsWith(".html")) {
@@ -32,9 +33,11 @@ async function testAccessibilityAndSave(pages,serverURL) {
                 if (results.issues.length > 0) {
                     console.error(`Accessibility issues found in ${page.url}`);
                     console.error(results.issues);
+                    failed = true; // Mark as failed if any issues are found
                 }
             } catch (error) {
                 console.error(`Error testing ${page.url}:`, error.message);
+                failed = true; // Mark as failed if an error occurs
             }
         }
     }
@@ -50,5 +53,9 @@ async function testAccessibilityAndSave(pages,serverURL) {
         console.log('Results saved to `src/_data/accessibilityresults.json`');
     } catch (fileError) {
         console.error('Error saving results:', fileError.message);
+        failed = true; // Mark as failed if an error occurs
     }
+
+    // Exit with code 1 if any tests failed, otherwise exit with code 0
+    process.exit(failed ? 1 : 0);
 }

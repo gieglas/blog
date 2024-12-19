@@ -1,8 +1,8 @@
 module.exports = {
   buildTime: new Date(),
   isMultiLanguage : false,
-  url : "https://gieglas.github.io/blog/",
-  urlNoSlash : "https://gieglas.github.io/blog",
+  url : "https://consevangelou.com/",
+  urlNoSlash : "http://consevangelou.com",
   version:"1.3.2", 
   cssDownload: "https://raw.githubusercontent.com/gov-cy/govcy-design-system/v1.3.2/dist/css/main.min.css",
   imagesLocation: "/img/",
@@ -52,8 +52,8 @@ module.exports = {
           {
             name : "govcy-design-system-docs", 
             type : "github", 
-            url : "https://gov-cy.github.io/govcy-design-system-docs/", 
-            description: "The documentation pages of the govcy design system"
+            url : "https://github.com/gov-cy/govcy-design-system-docs", 
+            description: "The project for the documentation pages of the govcy design system"
           },
           {
             name : "gov.cy - UDS Library in Figma", 

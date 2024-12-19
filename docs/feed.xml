@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Con&#39;s place</title>
   <subtitle> </subtitle>
-  <link href="https://gieglas.github.io/blog/feed.xml" rel="self" />
-  <link href="https://gieglas.github.io/blog/blog/" />
+  <link href="https://consevangelou.com/feed.xml" rel="self" />
+  <link href="https://consevangelou.com/" />
   <updated>2024-08-07T00:00:00Z</updated>
-  <id>https://gieglas.github.io/blog/blog/</id>
+  <id>https://consevangelou.com/</id>
   <author>
     <name>Constantinos Evangelou</name>
   </author>
   <entry>
     <title>gov.cy Design System update (V.3.0.0) – Unified Design System</title>
-    <link href="https://gieglas.github.io/blog/blog/dsf-design-system-update-v-3-0-0-unified-design-system/" />
+    <link href="https://consevangelou.com/blog/dsf-design-system-update-v-3-0-0-unified-design-system/" />
     <updated>2024-08-07T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/dsf-design-system-update-v-3-0-0-unified-design-system/</id>
+    <id>https://consevangelou.com/blog/dsf-design-system-update-v-3-0-0-unified-design-system/</id>
     <content type="html">&lt;p&gt;The &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, released of version 3.0.0 of the gov.cy design system. This is a total redesign of the design system, with branding and styling changes, updated and new components, to accommodate both services and websites.&lt;/p&gt;
 &lt;p&gt;The new version includes improvements on existing components, as well as new design elements to accommodate services and websites alike.&lt;/p&gt;
 &lt;p&gt;Drawing from the DSF’s experience developing gov.cy services, user research findings, and the feedback they received from other teams that used the design system, they incorporated lessons learned, to:&lt;/p&gt;
@@ -100,32 +100,32 @@
 &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/dsf-email-templates&quot; target=&quot;_blank&quot;&gt;dsf-email-templates&lt;/a&gt; NPM package to create HTML email templates&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester&quot; target=&quot;_blank&quot;&gt;govcy-frontend-tester&lt;/a&gt; NPM package to perform front end tests in terms of the accessibility and generic guidelines of the design system&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the gov.cy Design System&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the gov.cy Design System&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>Improving Accessibility: Lessons from making design elements screen reader-friendly (by DSF)</title>
-    <link href="https://gieglas.github.io/blog/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/" />
+    <link href="https://consevangelou.com/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/" />
     <updated>2024-01-23T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/</id>
+    <id>https://consevangelou.com/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/</id>
     <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on how the DSF tried to evolve the screen reader capabilities of their components, sharing the lessons learned from that process&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2024/01/23/improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2024/01/23/improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>How to use the Figma community library file to design digital services (by DSF)</title>
-    <link href="https://gieglas.github.io/blog/blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services/" />
+    <link href="https://consevangelou.com/blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services/" />
     <updated>2023-08-24T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services/</id>
+    <id>https://consevangelou.com/blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services/</id>
     <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on how to use the &lt;a href=&quot;https://www.figma.com/community/file/1388468172430388495/dsf-gov-cy-unified-design-system-v-3&quot; target=&quot;_blank&quot;&gt;DSF Figma community library file&lt;/a&gt; to rapidly design and prototype digital services the gov.cy way.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2023/08/24/how-to-use-the-figma-community-library-file-to-design-digital-services/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2023/08/24/how-to-use-the-figma-community-library-file-to-design-digital-services/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>Writing a good README file</title>
-    <link href="https://gieglas.github.io/blog/blog/writing-a-good-readme-file/" />
+    <link href="https://consevangelou.com/blog/writing-a-good-readme-file/" />
     <updated>2023-05-06T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/writing-a-good-readme-file/</id>
+    <id>https://consevangelou.com/blog/writing-a-good-readme-file/</id>
     <content type="html">&lt;p&gt;Documentation is a key for any coding project and the README file is a big part of it. In this article you can find some best practices on how to write a good README file.&lt;/p&gt;
 &lt;h2&gt;Why having a good README file is important&lt;/h2&gt;
 &lt;p&gt;A well-crafted README file can be an essential tool for sharing information about your project. A properly formatted and organized README can help potential users and contributors quickly understand the purpose, functionality, and usage of your project. In addition, popular code hosting services like GitHub and NPM rely heavily on README files to display project information and make it more discoverable to users.&lt;/p&gt;
@@ -152,52 +152,52 @@
   </entry>
   <entry>
     <title>How to create new design elements using the utility classes (by DSF)</title>
-    <link href="https://gieglas.github.io/blog/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/" />
+    <link href="https://consevangelou.com/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/" />
     <updated>2023-02-16T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/</id>
+    <id>https://consevangelou.com/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/</id>
     <content type="html">&lt;p&gt;Check out the link below for a guide I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;. The guide describes how developers can use the Design System utility classes, to create a brand new HTML design element with the gov.cy designs.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_design_element/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_design_element/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>How to create a page using the gov.cy design system (by DSF)</title>
-    <link href="https://gieglas.github.io/blog/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/" />
+    <link href="https://consevangelou.com/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/" />
     <updated>2023-02-15T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/</id>
+    <id>https://consevangelou.com/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/</id>
     <content type="html">&lt;p&gt;Check out the link below for a guide I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;. The guide describes how developers can use the Design System reusable components, to create a simple question page.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_page/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_page/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>Designing the Design System (by DSF)</title>
-    <link href="https://gieglas.github.io/blog/blog/dsf-designing-the-design-system/" />
+    <link href="https://consevangelou.com/blog/dsf-designing-the-design-system/" />
     <updated>2023-02-15T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/dsf-designing-the-design-system/</id>
+    <id>https://consevangelou.com/blog/dsf-designing-the-design-system/</id>
     <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on designing the Design System and how the DSF is trying to creates a consistent, clean, accessible and intuitive user experience throughout the services.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2023/02/15/designing-the-design-system/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2023/02/15/designing-the-design-system/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>GitLab CI/CD and React Tests</title>
-    <link href="https://gieglas.github.io/blog/blog/GitLab-CI-CD-and-React-Tests/" />
+    <link href="https://consevangelou.com/blog/GitLab-CI-CD-and-React-Tests/" />
     <updated>2019-09-27T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/GitLab-CI-CD-and-React-Tests/</id>
-    <content type="html">&lt;p&gt;Continuing after my previous post about &lt;a href=&quot;https://gieglas.github.io/blog/blog/Gitlab-ci-cd-and-gitlab-pages&quot;&gt;Gitlab CI/CD&lt;/a&gt;, I would like to show another example of Continuous Integration, this time with unit testing react components.&lt;/p&gt;
+    <id>https://consevangelou.com/blog/GitLab-CI-CD-and-React-Tests/</id>
+    <content type="html">&lt;p&gt;Continuing after my previous post about &lt;a href=&quot;https://consevangelou.com/blog/Gitlab-ci-cd-and-gitlab-pages&quot;&gt;Gitlab CI/CD&lt;/a&gt;, I would like to show another example of Continuous Integration, this time with unit testing react components.&lt;/p&gt;
 &lt;h3&gt;.gitlab-ci.yml&lt;/h3&gt;
 &lt;p&gt;Just a reminder, the way to configure GitLab’s CI is by adding a &lt;a href=&quot;https://doc.gitlab.com/ee/ci/quick_start/README.html#creating-a-.gitlab-ci.yml-file&quot; target=&quot;_blank&quot;&gt;configuration file&lt;/a&gt;  called &lt;code&gt;.gitlab-ci.yml&lt;/code&gt;, which tells the GitLab runner what to do.&lt;/p&gt;
 &lt;p&gt;In this example we only use the &lt;code&gt;test&lt;/code&gt; stage. The script simply uses &lt;code&gt;npm&lt;/code&gt; commands to install all dependencies and perform the test (i.e. using &lt;a href=&quot;https://jestjs.io/&quot; target=&quot;_blank&quot;&gt;Jest&lt;/a&gt; ). Check out the code below.&lt;/p&gt;
 &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;image: node:11.10.1&lt;br&gt; &lt;br&gt;stages:&lt;br&gt;    - &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt;&lt;br&gt; &lt;br&gt;run-unit-test:&lt;br&gt;    stage: &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt;&lt;br&gt;    script:&lt;br&gt;        - &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# Install all dependencies&lt;/span&gt;&lt;br&gt;        - &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# Test &lt;/span&gt;&lt;br&gt;    only:&lt;br&gt;        - merge_requests&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;As you might have noticed the job will only be triggered on &lt;code&gt;merge_requests&lt;/code&gt;. So after a merge request you can see the results of the tests in the &lt;code&gt;CI/CD / Pipelines&lt;/code&gt; and &lt;code&gt;CI/CD / Jobs&lt;/code&gt; (check out the screenshoots below)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Pasted%20image%2020240326092746.png&quot; alt=&quot;Pipelines test&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Pasted%20image%2020240326092840.png&quot; alt=&quot;Jobs test&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Pasted%20image%2020240326092929.png&quot; alt=&quot;Test results&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://consevangelou.com/img/Pasted%20image%2020240326092746.png&quot; alt=&quot;Pipelines test&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://consevangelou.com/img/Pasted%20image%2020240326092840.png&quot; alt=&quot;Jobs test&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://consevangelou.com/img/Pasted%20image%2020240326092929.png&quot; alt=&quot;Test results&quot;&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>GitLab CI/CD and GitLab Pages</title>
-    <link href="https://gieglas.github.io/blog/blog/Gitlab-ci-cd-and-gitlab-pages/" />
+    <link href="https://consevangelou.com/blog/Gitlab-ci-cd-and-gitlab-pages/" />
     <updated>2019-08-27T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/Gitlab-ci-cd-and-gitlab-pages/</id>
+    <id>https://consevangelou.com/blog/Gitlab-ci-cd-and-gitlab-pages/</id>
     <content type="html">&lt;p&gt;In this post I will try and explain how to deploy a simple javascript application on GitLab pages, using Continuous Deployment with a live working example.&lt;/p&gt;
 &lt;p&gt;For those that don’t know about &lt;a href=&quot;https://about.gitlab.com/&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt; , it’s an online GIT repository, just like GitHub that offers web-based DevOps tools. Where GitLab really shines, is it’s Continuous Integration (CI) and Continuous Delivery (CD) capabilities.&lt;/p&gt;
 &lt;p&gt;GitLab’s definitions for CI and CD:&lt;/p&gt;
@@ -218,11 +218,11 @@
   </entry>
   <entry>
     <title>How I made my wordpress a PWA</title>
-    <link href="https://gieglas.github.io/blog/blog/how-i-made-my-wordpress-a-pwa/" />
+    <link href="https://consevangelou.com/blog/how-i-made-my-wordpress-a-pwa/" />
     <updated>2019-07-31T00:00:00Z</updated>
-    <id>https://gieglas.github.io/blog/blog/how-i-made-my-wordpress-a-pwa/</id>
+    <id>https://consevangelou.com/blog/how-i-made-my-wordpress-a-pwa/</id>
     <content type="html">&lt;p&gt;Keeping up with the &lt;a href=&quot;https://developers.google.com/web/progressive-web-apps/&quot; target=&quot;_blank&quot;&gt;PWA&lt;/a&gt; frency, I discovered that it is fairly simple to convert your wordpress into a Progressive Web App, so I thought I’d share my exprerience.&lt;/p&gt;
-&lt;p&gt;Remember all you need to do to turn your WordPress site into a PWA are the 3 basic steps (for more on PWAs check out my posts about &lt;a href=&quot;https://gieglas.github.io/blog/blog/why-i-made-my-app-a-pwa/&quot;&gt;why&lt;/a&gt; and &lt;a href=&quot;https://gieglas.github.io/blog/blog/how-I-made-my-app-a-pwa/&quot;&gt;how&lt;/a&gt; I made my app a PWA) :&lt;/p&gt;
+&lt;p&gt;Remember all you need to do to turn your WordPress site into a PWA are the 3 basic steps (for more on PWAs check out my posts about &lt;a href=&quot;https://consevangelou.com/blog/why-i-made-my-app-a-pwa/&quot;&gt;why&lt;/a&gt; and &lt;a href=&quot;https://consevangelou.com/blog/how-I-made-my-app-a-pwa/&quot;&gt;how&lt;/a&gt; I made my app a PWA) :&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;add a &lt;strong&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/primers/service-workers/&quot; target=&quot;_blank&quot;&gt;service worker&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;add a &lt;strong&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/web-app-manifest/&quot; target=&quot;_blank&quot;&gt;manifest&lt;/a&gt;&lt;/strong&gt; file&lt;/li&gt;
@@ -230,9 +230,9 @@
 &lt;/ol&gt;
 &lt;p&gt;Seems like there are a lot of ways to satisfy at least the first 2 steps. For the https step, you would have to take care of that with your hosting company, but remember to reference only HTTPS resources in your site.&lt;/p&gt;
 &lt;p&gt;So back to the ways to add a service worker and a manifest. You could use functionality in themes, custom javascript code, plugins and so on. I found that &lt;a href=&quot;https://superpwa.com/&quot; target=&quot;_blank&quot;&gt;Super Progressive Web Apps&lt;/a&gt; plugin is dead simple and to the point. You can set the options for the manifest and lets you define an offline page from the plugin’s admin page. Also as far as caching is concerned, every page you visit gets cached. Finally if you make a new post or change a post, the plugin takes care of it and make’s sure the visitors see the updated version of your site.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Super-Progressive-Web-Apps-1.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 1&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Super-Progressive-Web-Apps-2.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 2&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gieglas.github.io/blog/img/Super-Progressive-Web-Apps-3.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 3&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://consevangelou.com/img/Super-Progressive-Web-Apps-1.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 1&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://consevangelou.com/img/Super-Progressive-Web-Apps-2.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 2&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://consevangelou.com/img/Super-Progressive-Web-Apps-3.png&quot; alt=&quot;Super Progressive Web Apps Screenshot 3&quot; class=&quot;img-fluid pop-small govcy-mb-3&quot;&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

@@ -1,4 +1,4 @@
-Sitemap: https://gieglas.github.io/blog/sitemap.xml
+Sitemap: https://consevangelou.com/sitemap.xml
 
 User-agent: *
 Disallow:

@@ -11,7 +11,7 @@
     "clear-build": "node clear-build.mjs",
     "build-github-pages": "node clear-build.mjs && npx @11ty/eleventy --pathprefix=blog",
     "build-eleventy": "npx @11ty/eleventy",
-    "build": "node build.mjs"
+    "build": "node clear-build.mjs && npx @11ty/eleventy"
   },
   "keywords": [],
   "devDependencies": {

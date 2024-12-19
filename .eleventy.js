@@ -83,7 +83,7 @@ module.exports = async function (eleventyConfig) {
     return theDate.toISOString()
   });
 
-  // Add a filter to check if all pages have no issues
+  // Add a global data to check if all pages have no issues
   eleventyConfig.addGlobalData("accessibilityStatus", () => {
     const data = JSON.parse(fs.readFileSync("src/_data/accessibilityresults.json", "utf-8"));
     const allNoIssues = data.results.every(page => page.issues.length === 0);
