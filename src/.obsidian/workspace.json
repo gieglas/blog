@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/adding-accessibility-report-on-your-site.md",
+                "file": "_drafts/automating-accessibility-checks-site-auditing-reporting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "adding-accessibility-report-on-your-site"
+              "title": "automating-accessibility-checks-site-auditing-reporting"
             }
           }
         ],
@@ -175,13 +175,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "211b3ae32dd17c94",
+  "active": "96130c5b5b916e96",
   "lastOpenFiles": [
+    "CNAME",
+    "img/pa11nty_report.png.0.pdnSave",
+    "img/pa11nty_report.png",
     "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
-    "_drafts/adding-accessibility-report-on-your-site.md",
+    "_drafts/automating-accessibility-checks-site-auditing-reporting.md",
     "blog/php-notificator.md",
     "blog/evernote-control-your-data.md",
     "blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly.md",
@@ -204,7 +208,6 @@
     "img/Pasted image 20241217072939.png",
     "_drafts/archives/security-alert-heartbleed-2.md",
     "blog/getting-on-top-of-things-with-monitrall.md",
-    "img/Pasted image 20241215224258.jpg",
     "_drafts/archives/security-alert-heartbleed.md",
     "_drafts/archives/backup-posts-with-ifttt-and-evernote.md",
     "_templates/responsive horizontal table.md",
@@ -219,12 +222,10 @@
     "_drafts/archives/jqueryui-dialog-asp-ne.md",
     "blog/schedule-stuff-with-php.md",
     "blog/gmail-issue-tracking-system.md",
-    "Untitled.md",
     "_templates",
     "_drafts/archives",
     "_drafts/find-page.njk",
     "_drafts",
-    "_temp/find-page.njk",
-    "_temp"
+    "_temp/find-page.njk"
   ]
 }

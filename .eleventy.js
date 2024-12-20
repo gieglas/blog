@@ -70,6 +70,8 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   //copy manifest
   eleventyConfig.addPassthroughCopy("./src/manifest.json");
+  //copy CNAME
+  eleventyConfig.addPassthroughCopy("./src/CNAME");
 
   //Add custom filter for date
   eleventyConfig.addFilter("dateOnly", function (dateVal, locale = "en-cy") {
