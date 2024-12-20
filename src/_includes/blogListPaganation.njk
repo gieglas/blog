@@ -18,7 +18,7 @@
                             {#- Checks if we want to show the index page -#}
                             {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category -%}
                                 <li class="nav-side govcy-br-bottom-1 govcy-br-bottom-standard govcy-py-2 govcy-mb-4">
-                                    <h2 class="govcy-fs-3 govcy-mb-1">
+                                    <h2 class="govcy-fs-4 govcy-mb-1 post-list-title-link">
                                         <a href="{{ pag.url  }}">
                                             {{ pag.data.title }}
                                         </a>

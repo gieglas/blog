@@ -199,6 +199,10 @@
     box-shadow: #64646f33 0 7px 29px !important;
 }
 
+.post-list-title-link a{
+    text-decoration: none;
+}
+
 .post-date {
     font-size: 16px;
 }
