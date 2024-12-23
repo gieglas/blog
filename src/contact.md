@@ -12,9 +12,7 @@ hideSearch: true
         Email
     </dt>
     <dd>
-        <a href="mailto:consevangelou@gmail.com">
-        consevangelou@gmail.com
-        </a>
+        {{ site.localization[locale].admin_email | obfuscateEmail }}
     </dd>
     <dt>
         Linkedin

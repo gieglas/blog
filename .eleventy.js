@@ -85,6 +85,12 @@ module.exports = async function (eleventyConfig) {
     return theDate.toISOString()
   });
 
+  //Add custom filter to obfuscate email
+  eleventyConfig.addFilter("obfuscateEmail", function(email) {
+    return email.replace(/@/, "[at]").replace(/\./g, "[dot]");
+  });
+
+
   // Add a global data to check if all pages have no issues
   eleventyConfig.addGlobalData("accessibilityStatus", () => {
     const data = JSON.parse(fs.readFileSync("src/_data/accessibilityresults.json", "utf-8"));
