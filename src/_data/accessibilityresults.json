@@ -1,5 +1,5 @@
 {
-  "date": "2024-12-23",
+  "date": "2025-01-08",
   "results": [
     {
       "url": "/accessibility/",
@@ -83,6 +83,10 @@
     },
     {
       "url": "/blog/dsf-designing-the-design-system/",
+      "issues": []
+    },
+    {
+      "url": "/blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing/",
       "issues": []
     },
     {
@@ -307,6 +311,10 @@
     },
     {
       "url": "/blog/4/",
+      "issues": []
+    },
+    {
+      "url": "/blog/5/",
       "issues": []
     }
   ]
