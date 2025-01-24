@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="An overview on how a dynamic HTML renderer (gocvy-frontend-renderer) works">
+        <meta property="og:title" content="Building a Dynamic HTML Renderer with Nunjucks and JSON Templates - Con&#39;s place">
+        <meta property="og:url" content="https://consevangelou.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/Pasted%20image%2020250124152306.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://consevangelou.com/">
+        <meta property="twitter:title" content="Building a Dynamic HTML Renderer with Nunjucks and JSON Templates - Con&#39;s place">
+        <meta property="twitter:description" content="An overview on how a dynamic HTML renderer (gocvy-frontend-renderer) works">
+        <meta property="twitter:image" content="/img/Pasted%20image%2020250124152306.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Building a Dynamic HTML Renderer with Nunjucks and JSON Templates - Con&#39;s place</title>
+        <meta name="description" content="An overview on how a dynamic HTML renderer (gocvy-frontend-renderer) works">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Building a Dynamic HTML Renderer with Nunjucks and JSON Templates</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2025-01-24T00:00:00.000Z">24 January 2025</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/tags/dsf">dsf</a>
+                                        
+                                            <a class="post-tag" href="/tags/ci-cd">ci-cd</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/img/Pasted%20image%2020250124152306.png" alt="Graphic for Building a Dynamic HTML Renderer with Nunjucks and JSON Templates" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>I’ve been working on a dynamic HTML renderer (<a href="https://github.com/gov-cy/govcy-frontend-renderer" target="_blank">gocvy-frontend-renderer</a>) and I thought it might be interesting to explain how it works.</p>
+<h2>Project Overview</h2>
+<p>The gocvy-frontend-renderer project is structured to support the rendering of HTML elements based on the <a href="https://gov-cy.github.io/govcy-design-system-docs/" target="_blank">gov.cy Unified Design System (UDS)</a>. The goal is to enable the creation of gov.cy UI components using either structured data (JSON), or a powerful template engine (<a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a> ), without requiring any HTML knowledge. This approach offers significant flexibility and ease of use, making the transition from data to UI seamless. It has a wide range of applications, such as:</p>
+<ul>
+<li>Rapidly creating prototypes using static site generators (check out this <a href="https://gov-cy.github.io/govcy-frontend-prototype/task-list-demo/" target="_blank">prototype example</a> ).</li>
+<li>Rendering the UI in applications (check out this <a href="https://gov-cy.github.io/dsf-assessment-checklist/" target="_blank">SPA application example</a> ).</li>
+<li>Rendering the UI in low code products.</li>
+</ul>
+<p>By leveraging JSON and Nunjucks, this project simplifies the process of building consistent and reusable UI components that adhere to the UDS guidelines.</p>
+<p><img src="../../img/Pasted%20image%2020250124082931.png" alt="using the govcy-frontend-renderer project"></p>
+<p>Here is an example of how the package can be used:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> govcyFrontendRenderer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@gov-cy/govcy-frontend-renderer'</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> renderer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">govcyFrontendRenderer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// Define the input data</span><br><span class="token keyword">const</span> inputData <span class="token operator">=</span> <br><span class="token punctuation">{</span>    <br>    <span class="token string-property property">"site"</span> <span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token string-property property">"lang"</span> <span class="token operator">:</span> <span class="token string">"en"</span><span class="token punctuation">,</span><br>        <span class="token string-property property">"title"</span> <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"en"</span><span class="token operator">:</span><span class="token string">"Service title"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Τιτλός υπηρεσίας"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <br>        <span class="token string-property property">"headerTitle"</span> <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"en"</span><span class="token operator">:</span><span class="token string">"Header title"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Τιτλός επικεφαλιδας"</span><span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token string-property property">"description"</span> <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"en"</span><span class="token operator">:</span><span class="token string">"Service description"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Περιγραφή υπηρεσίας"</span><span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token string-property property">"url"</span> <span class="token operator">:</span> <span class="token string">"https://gov.cy"</span><span class="token punctuation">,</span><br>        <span class="token string-property property">"cdn"</span> <span class="token operator">:</span> <span class="token punctuation">{</span><br>            <span class="token string-property property">"dist"</span> <span class="token operator">:</span> <span class="token string">"https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist"</span><span class="token punctuation">,</span><br>            <span class="token string-property property">"cssIntegrity"</span> <span class="token operator">:</span> <span class="token string">"sha384-1zLHWOtnS0hOIz5mVEPZp0UH5gUE6eo0CQcCGA3sF2TyYhHyKOd3Ni8Iy/NjEASU"</span><span class="token punctuation">,</span><br>            <span class="token string-property property">"jsIntegrity"</span> <span class="token operator">:</span> <span class="token string">"sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+"</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token string-property property">"pageData"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token string-property property">"title"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"en"</span><span class="token operator">:</span> <span class="token string">"Page title"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span> <span class="token string">"Τιτλός σελιδας"</span><span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token string-property property">"layout"</span><span class="token operator">:</span> <span class="token string">"layouts/govcyBase.njk"</span><span class="token punctuation">,</span><br>        <span class="token string-property property">"mainLayout"</span><span class="token operator">:</span> <span class="token string">"max-width"</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br><br><span class="token comment">// Define the JSON template </span><br><span class="token keyword">let</span> inputJson <span class="token operator">=</span>  <br><span class="token punctuation">{</span><br>    <span class="token string-property property">"sections"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token punctuation">{</span><br>            <span class="token string-property property">"name"</span><span class="token operator">:</span> <span class="token string">"main"</span><span class="token punctuation">,</span><br>            <span class="token string-property property">"elements"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>                <span class="token punctuation">{</span><br>                    <span class="token string-property property">"element"</span><span class="token operator">:</span> <span class="token string">"form"</span><span class="token punctuation">,</span><br>                    <span class="token string-property property">"params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>                        <span class="token string-property property">"elements"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>                            <span class="token punctuation">{</span><br>                                <span class="token string-property property">"element"</span><span class="token operator">:</span> <span class="token string">"textInput"</span><span class="token punctuation">,</span><br>                                <span class="token string-property property">"params"</span><span class="token operator">:</span> <br>                                <span class="token punctuation">{</span><br>                                    <span class="token string-property property">"label"</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">"en"</span><span class="token operator">:</span><span class="token string">"What is your name?"</span><span class="token punctuation">,</span><span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Ποιο είναι το όνομα σας;"</span><span class="token punctuation">}</span><br>                                    <span class="token punctuation">,</span><span class="token string-property property">"id"</span><span class="token operator">:</span><span class="token string">"name"</span><br>                                    <span class="token punctuation">,</span><span class="token string-property property">"name"</span><span class="token operator">:</span><span class="token string">"name"</span><br>                                    <span class="token punctuation">,</span><span class="token string-property property">"isPageHeading"</span><span class="token operator">:</span> <span class="token boolean">true</span><br>                                    <span class="token punctuation">,</span><span class="token string-property property">"autocomplete"</span><span class="token operator">:</span><span class="token string">"tel"</span><br>                                <span class="token punctuation">}</span><br>                            <span class="token punctuation">}</span><span class="token punctuation">,</span><br>                            <span class="token punctuation">{</span><br>                                <span class="token string-property property">"element"</span><span class="token operator">:</span> <span class="token string">"button"</span><span class="token punctuation">,</span><br>                                <span class="token string-property property">"params"</span><span class="token operator">:</span> <br>                                <span class="token punctuation">{</span><br>                                    <span class="token string-property property">"text"</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">"en"</span><span class="token operator">:</span><span class="token string">"Continue"</span><span class="token punctuation">,</span><span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Συνέχεια"</span><span class="token punctuation">}</span><br>                                    <span class="token punctuation">,</span> <span class="token string-property property">"type"</span><span class="token operator">:</span><span class="token string">"submit"</span><br>                                <span class="token punctuation">}</span><br>                            <span class="token punctuation">}</span><br>                        <span class="token punctuation">]</span><br>                    <span class="token punctuation">}</span><br>                <span class="token punctuation">}</span><br>            <span class="token punctuation">]</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span><br><span class="token punctuation">;</span><br><br><span class="token comment">// Render</span><br><span class="token keyword">let</span> rtn <span class="token operator">=</span> renderer<span class="token punctuation">.</span><span class="token function">renderFromJSON</span><span class="token punctuation">(</span>inputJson<span class="token punctuation">,</span> inputData<span class="token punctuation">)</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>rtn<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>More details and instructions on how to use the package are included in the projects <a href="https://github.com/gov-cy/govcy-frontend-prototype/blob/main/README.md" target="_blank">read me file</a>.</p>
+<h2>Rendering HTML</h2>
+<p>The project uses Nunjucks, a powerful templating engine, to process templates and generate HTML.  Every call to render, goes through the <code>govcyFrontendRenderer</code> JS class, which supports two types of input templates: Nunjucks and JSON templates.</p>
+<p><code>govcyFrontendRenderer</code> uses the <code>govcyElement</code> Nunjucks macro, which is the core of the rendering system. It is responsible for rendering individual design elements. The macro imports the necessary Nunjucks templates for each element and calls the appropriate macro to render the element. It uses the <code>component</code> argument to decide which macro to import and use, and the <code>params</code> argument for the element’s parameters.</p>
+<p><img src="../../img/Pasted%20image%2020250124115652.png" alt="Rendering HTML with govcy-frontend-renderer"></p>
+<p>Here’s a usage example of <code>govcyElement</code> macro</p>
+<pre class="language-twig"><code class="language-twig"><br><span class="token twig language-twig"><span class="token delimiter punctuation">{{</span> <br>    govcyElement<span class="token punctuation">(</span><br>        <span class="token string"><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">,</span><br>        <span class="token punctuation">{</span><br>            text<span class="token punctuation">:</span><span class="token punctuation">{</span>en<span class="token punctuation">:</span><span class="token string"><span class="token punctuation">"</span>Continue<span class="token punctuation">"</span></span><span class="token punctuation">,</span>el<span class="token punctuation">:</span><span class="token string"><span class="token punctuation">"</span>Συνέχεια<span class="token punctuation">"</span></span><span class="token punctuation">}</span><span class="token punctuation">,</span> <br>            variant<span class="token punctuation">:</span><span class="token string"><span class="token punctuation">"</span>success<span class="token punctuation">"</span></span><span class="token punctuation">,</span> <br>            id<span class="token punctuation">:</span><span class="token string"><span class="token punctuation">"</span>success-button<span class="token punctuation">"</span></span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">)</span> <br><span class="token delimiter punctuation">}}</span></span><br></code></pre>
+<h3>Reusability and consistency</h3>
+<p>The project is designed to ensure reusability and consistency. Regardless of whether the input template is, JSON or Nunjucks, the resulting HTML is rendered using the same Nunjucks macros, guaranteeing consistent output.</p>
+<p>It also reuses common elements across different components, such as labels, hints, and error messages.</p>
+<p><img src="../../img/Pasted%20image%2020250124122416.png" alt="How elements such as labels are reused by different components"></p>
+<h2>Adding more elements</h2>
+<p>The project is build to be flexible and easily extensible, allowing the team add more elements over time.</p>
+<p>The process for adding more elements is very simple.</p>
+<ul>
+<li><strong>1. Element’s nunjucks macro file</strong>. Create an <code>njk</code> file for the macro in the directory <code>src\njk\elements</code>.</li>
+<li><strong>2. govcyElement.njk</strong>. Update the <code>src\njk\govcyElement.njk</code> file macro with the new component, by adding the macro name in the <code>macroBlocks</code> array.</li>
+</ul>
+<p>Before going live, all changes are of course tested.</p>
+<h3>Testing</h3>
+<p>Testing is particularly important, as we wanted to build trust and encourage usage. Every element’s rendered HTML is verified against the definitions in the Unified Design System.</p>
+<p>For every element supported by the project, the following process is followed:</p>
+<ul>
+<li><strong>1. test.njk</strong>. The <code>test\test.njk</code> file is updated, rendering all variants of the element with <code>govcyElement</code>.</li>
+<li><strong>2. test.json</strong>. The <code>test\test.json</code> file is update with the same variants of  the element as in <code>test\test.njk</code>.</li>
+<li><strong>3. Manuall test</strong>. Changes are manually tested on local host by running <code>npm start</code> against the definitions in the Unified Design System</li>
+<li><strong>4. Unit test script</strong>. The <code>test\moca\unit.test.mjs</code> file is updated with tests for all the element’s variants.</li>
+<li><strong>5. Run unit tests</strong>. Unit tests are run by <code>npm run test</code></li>
+</ul>
+<h3>Versioning</h3>
+<p>Having a versioning policy is crucial, especially for projects intended to be used by third parties. In this project, the Semantic Versioning (SemVer) is followed to manage versions using the three-part version number: <code>MAJOR.MINOR.PATCH</code>.</p>
+<p>Before releasing a new version the following process is followed:</p>
+<ol>
+<li><strong>Update Version Number</strong>: the version number in <code>package.json</code> is updated according to the changes made.</li>
+<li><strong>Update Changelog</strong>: The <code>CHANGELOG.md</code> file is updated to document the changes included in the new version.</li>
+<li><strong>Local tests</strong>: All changes are tested locally.</li>
+<li><strong>Pull request tests</strong>: Unit tests are run using GitHub Actions on every pull request.</li>
+<li><strong>Tag and Publish</strong>: Tagging and publishing the new version on npm is done using GitHub Actions on every merge to the Main branch.</li>
+</ol>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium"><li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li><li>
+                                <a href="/blog/">
+                                    Blog
+                                </a>
+                            </li><li>
+                                <a href="/about/">
+                                    About
+                                </a>
+                            </li><li>
+                                <a href="/search/">
+                                    Search
+                                </a>
+                            </li><li><a href="/feed.xml">Feed</a></li>
+                        <li>
+                            <a href="/accessibility/">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" class="success-a11y-badge">
+                                
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        <li class="govcy-d-block govcy-text-dark">Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script data-goatcounter="https://consevangelou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>       
+    </body>
+</html>

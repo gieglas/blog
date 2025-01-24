@@ -65,7 +65,15 @@ module.exports = {
             name : "govcy-frontend-renderer", 
             type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/govcy-frontend-renderer", 
-            description: "Render HTML for design elements, as they are defined in the gov.cy Design System based on JSON or njk templates"
+            description: "Render HTML for design elements, as they are defined in the gov.cy Design System based on JSON or njk templates",
+            post: "building-a-dynamic-html-renderer"
+          },
+          {
+            name : "govcy-frontend-prototype", 
+            type : "github",
+            url : "https://github.com/gov-cy/govcy-frontend-prototype", 
+            description: "Build prototypes of gov.cy services and websites using the Unified Design System of gov.cy without coding",
+            demo: "https://gov-cy.github.io/govcy-frontend-prototype/task-list-demo/",
           },
           {
             name : "govcy-frontend-tester", 
@@ -78,6 +86,13 @@ module.exports = {
             type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/dsf-email-templates", 
             description: "Produce html emails with gov.cy looks"
+          },
+          {
+            name : "dsf-assessment-checklist", 
+            type : "github",
+            url : "https://github.com/gov-cy/dsf-assessment-checklist", 
+            description: "A sample application to demonstrate usage of SPA, PWA, govcy-frontend-renderer browser library and CDN latest major alias",
+            demo: "https://gov-cy.github.io/dsf-assessment-checklist/",
           },
       ],
       "old_projects": 

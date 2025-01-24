@@ -1,5 +1,5 @@
 {
-  "date": "2025-01-08",
+  "date": "2025-01-24",
   "results": [
     {
       "url": "/accessibility/",
@@ -26,11 +26,11 @@
       "issues": []
     },
     {
-      "url": "/tags/diy/",
+      "url": "/tags/dsf/",
       "issues": []
     },
     {
-      "url": "/tags/dsf/",
+      "url": "/tags/diy/",
       "issues": []
     },
     {
@@ -71,6 +71,10 @@
     },
     {
       "url": "/blog/automating-accessibility-site-wide-testing-and-reporting-guide/",
+      "issues": []
+    },
+    {
+      "url": "/blog/building-a-dynamic-html-renderer/",
       "issues": []
     },
     {

@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "dsf-enhancing-the-unified-design-system-with-automated-visual-testing"
             }
+          },
+          {
+            "id": "e3adc20b2ab7feb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/building-a-dynamic-html-renderer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "building-a-dynamic-html-renderer"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,11 +179,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "96130c5b5b916e96",
+  "active": "e3adc20b2ab7feb3",
   "lastOpenFiles": [
+    "img/Pasted image 20250124152306.png",
+    "blog/building-a-dynamic-html-renderer.md",
+    "blog/automating-accessibility-site-wide-testing-and-reporting-guide copy.md",
+    "Untitled.md",
+    "blog/building-a-dynamic-html-renderer.md",
+    "_drafts/ideas/versioning-important.md",
+    "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
+    "_drafts/ideas",
+    "_drafts/Untitled.md",
+    "img/Pasted image 20250124122416.png",
+    "img/Pasted image 20250124115652.png",
+    "img/Pasted image 20250124115505.png",
+    "img/Pasted image 20250124082931.png",
+    "_drafts/archives/711-next-day.md",
+    "img/Pasted image 20250124072736.png",
     "blog/dsf-designing-the-design-system.md",
     "blog/automating-accessibility-site-wide-testing-and-reporting-guide.md",
-    "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
     "blog/automating-accessibility-checks-site-auditing-reporting.md",
     "img/Featured-Image_960x640_Visual_Regression_Testing.png",
     "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
@@ -188,13 +217,8 @@
     "img/Unconfirmed 991112.crdownload",
     "img/Pasted image 20241217105547.png",
     "img/Pasted image 20241217104435.png",
-    "img/Pasted image 20241217094022.png",
-    "img/dsf-small-white-icon.svg",
-    "img/DSF_Icon.svg",
     "img/dsf-small-white-icon.txt",
     "img/New Text Document.txt",
-    "img/Pasted image 20241217075141.png",
-    "img/Pasted image 20241217074056.png",
     "_drafts/archives/security-alert-heartbleed-2.md",
     "blog/getting-on-top-of-things-with-monitrall.md",
     "_drafts/archives/security-alert-heartbleed.md",
@@ -202,15 +226,6 @@
     "_templates/responsive horizontal table.md",
     "img/figmaicon.png.0.pdnSave",
     "_templates/github link with icon.md",
-    "blog/php-pdo-connect-everywhere.md",
-    "REPO_URL.md",
-    "about.md",
-    "_drafts/archives/evernote-control-your-data-3.md",
-    "_drafts/archives/evernote-control-your-data-2.md",
-    "_drafts/archives/cmits-transphone-also-doubles-as-a-tablet.md",
-    "_drafts/archives/jqueryui-dialog-asp-ne.md",
-    "blog/schedule-stuff-with-php.md",
-    "_templates",
-    "_drafts/archives"
+    "_templates"
   ]
 }
