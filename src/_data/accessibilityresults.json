@@ -1,5 +1,5 @@
 {
-  "date": "2025-01-24",
+  "date": "2025-02-03",
   "results": [
     {
       "url": "/accessibility/",
@@ -271,6 +271,10 @@
     },
     {
       "url": "/blog/why-i-made-my-app-a-pwa/",
+      "issues": []
+    },
+    {
+      "url": "/blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/",
       "issues": []
     },
     {

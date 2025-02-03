@@ -13,16 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
+                "file": "_drafts/ideas/why-release-versioning-matters-release-policy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dsf-enhancing-the-unified-design-system-with-automated-visual-testing"
+              "title": "why-release-versioning-matters-release-policy"
             }
           },
           {
             "id": "e3adc20b2ab7feb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "why-release-versioning-matters-a-guide-to-semver-and-automated-publishing"
+            }
+          },
+          {
+            "id": "c4dea2e8211960a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -55,7 +69,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -108,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/how-I-made-my-app-a-pwa.md",
+                "file": "_drafts/ideas/why-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for how-I-made-my-app-a-pwa"
+              "title": "Backlinks for why-versioning-matters-a-guide-to-semver-and-automated-publishing"
             }
           },
           {
@@ -154,18 +169,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/how-I-made-my-app-a-pwa.md"
+                "file": "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of how-I-made-my-app-a-pwa"
+              "title": "Outline of why-release-versioning-matters-a-guide-to-semver-and-automated-publishing"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,31 +199,33 @@
   },
   "active": "e3adc20b2ab7feb3",
   "lastOpenFiles": [
-    "img/Pasted image 20250124152306.png",
+    "_drafts/ideas/why-release-versioning-matters-release-policy.md",
+    "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
     "blog/building-a-dynamic-html-renderer.md",
-    "blog/automating-accessibility-site-wide-testing-and-reporting-guide copy.md",
-    "Untitled.md",
-    "blog/building-a-dynamic-html-renderer.md",
-    "_drafts/ideas/versioning-important.md",
+    "img/Pasted image 20250128105320.png",
+    "img/Pasted image 20250128104337.png",
+    "img/Pasted image 20250127084356.png",
     "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
+    "img/Pasted image 20250125185218.png",
+    "img/Pasted image 20250125182506.png",
+    "img/Pasted image 20250125125255.png",
+    "Untitled.md",
+    "img/Pasted image 20250124152306.png",
+    "blog/automating-accessibility-site-wide-testing-and-reporting-guide copy.md",
     "_drafts/ideas",
     "_drafts/Untitled.md",
     "img/Pasted image 20250124122416.png",
     "img/Pasted image 20250124115652.png",
     "img/Pasted image 20250124115505.png",
-    "img/Pasted image 20250124082931.png",
     "_drafts/archives/711-next-day.md",
-    "img/Pasted image 20250124072736.png",
     "blog/dsf-designing-the-design-system.md",
     "blog/automating-accessibility-site-wide-testing-and-reporting-guide.md",
     "blog/automating-accessibility-checks-site-auditing-reporting.md",
-    "img/Featured-Image_960x640_Visual_Regression_Testing.png",
     "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
     "img/CE-ETEK-confirmation.pdf",
     "img/CE-ETEK-confirmation.pdf.crdownload",
     "CNAME",
     "img/pa11nty_report.png.0.pdnSave",
-    "img/pa11nty_report.png",
     "blog/php-notificator.md",
     "blog/evernote-control-your-data.md",
     "blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly.md",
@@ -213,10 +233,7 @@
     "blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes.md",
     "blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system.md",
     "blog/dsf-design-system-update-v-3-0-0-unified-design-system.md",
-    "img/DSIconograpy.svg",
     "img/Unconfirmed 991112.crdownload",
-    "img/Pasted image 20241217105547.png",
-    "img/Pasted image 20241217104435.png",
     "img/dsf-small-white-icon.txt",
     "img/New Text Document.txt",
     "_drafts/archives/security-alert-heartbleed-2.md",

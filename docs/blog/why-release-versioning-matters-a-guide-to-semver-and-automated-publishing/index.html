@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="A look on why versioning matters, how Semantic Versioning (SemVer) works and how to implement an automated versioning workflow for products intended to be used by external teams and developers">
+        <meta property="og:title" content="Why release versioning matters: A Guide to SemVer and automated publishing - Con&#39;s place">
+        <meta property="og:url" content="https://consevangelou.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/Pasted%20image%2020250125182506.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://consevangelou.com/">
+        <meta property="twitter:title" content="Why release versioning matters: A Guide to SemVer and automated publishing - Con&#39;s place">
+        <meta property="twitter:description" content="A look on why versioning matters, how Semantic Versioning (SemVer) works and how to implement an automated versioning workflow for products intended to be used by external teams and developers">
+        <meta property="twitter:image" content="/img/Pasted%20image%2020250125182506.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Why release versioning matters: A Guide to SemVer and automated publishing - Con&#39;s place</title>
+        <meta name="description" content="A look on why versioning matters, how Semantic Versioning (SemVer) works and how to implement an automated versioning workflow for products intended to be used by external teams and developers">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Why release versioning matters: A Guide to SemVer and automated publishing</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2025-02-03T00:00:00.000Z">3 February 2025</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/tags/ci-cd">ci-cd</a>
+                                        
+                                            <a class="post-tag" href="/tags/productivity">productivity</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/img/Pasted%20image%2020250125182506.png" alt="Graphic for Why release versioning matters: A Guide to SemVer and automated publishing" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>In the world of software development, versioning is more than just a technical detail, it’s a critical practice that ensures reliability, compatibility, and trust. Whether you’re building libraries, frameworks, or tools for third-party use, a well-defined versioning policy is essential for maintaining a healthy ecosystem. In this post, we’ll explore why versioning matters, how Semantic Versioning (SemVer) works and how to implement an automated versioning workflow for products intended to be used by external teams and developers.</p>
+<p>When talking about “versioning” in this post, I am not referring to Git or version control systems. Instead, I’m focusing on <strong>release versioning</strong>—the practice of assigning version numbers (like <code>1.0.0</code> or <code>2.1.3</code>) to software releases to communicate changes effectively.</p>
+<h2>Why versioning matters to your users</h2>
+<p>Versioning is the backbone of software maintenance and distribution. It provides a clear and structured way to communicate changes, updates, and improvements to users. Here’s why having a versioning crucial:</p>
+<ol>
+<li><strong>Predictability</strong>: Users can anticipate the impact of updates based on version numbers. For example:
+<ul>
+<li>A <strong>major version</strong> change (e.g., <code>1.0.0</code> to <code>2.0.0</code>) signals breaking changes.</li>
+<li>A <strong>minor version</strong> change (e.g., <code>1.0.0</code> to <code>1.1.0</code>) indicates new, backward-compatible features.</li>
+<li>A <strong>patch version</strong> change (e.g., <code>1.0.0</code> to <code>1.0.1</code>) means bug fixes without breaking existing functionality.</li>
+</ul>
+</li>
+<li><strong>Compatibility</strong>: A clear versioning policy ensures that users can safely update dependencies without unexpected issues. It helps maintain backward compatibility and reduces the risk of breaking changes.</li>
+<li><strong>Transparency</strong>: Versioning provides a documented history of changes, making it easier for users to understand what’s new, what’s fixed, and what’s changed in each release.</li>
+<li><strong>Trust</strong>: A consistent versioning policy builds confidence among users, demonstrating a commitment to maintaining and improving the software in a structured and predictable manner.</li>
+</ol>
+<h2>Semantic versioning (SemVer)</h2>
+<p><a href="https://semver.org/" target="_blank">Semantic Versioning</a>, or SemVer, is a widely adopted versioning scheme that uses a three-part version number: <code>MAJOR.MINOR.PATCH</code>. Here’s how it works:</p>
+<ul>
+<li><strong>MAJOR</strong>: Incremented for incompatible API changes. Change here indicates to users that they will need to make changes to their code in order to use this version safely.</li>
+<li><strong>MINOR</strong>: Incremented for backward-compatible new features. Changes here without changing the Major number, indicates to users they can safely update to this version.</li>
+<li><strong>PATCH</strong>: Incremented for backward-compatible bug fixes. Changes here without changing the Major number, also indicates to users they can safely update to this version.</li>
+</ul>
+<p>By adhering to SemVer, developers can communicate the nature of changes clearly, making it easier for other developers or teams to decide when and how to update.</p>
+<h3>SemVer with Git tags</h3>
+<p><img src="../../img/Pasted%20image%2020250125185218.png" alt="GitHub tags"><br>
+At the heart of most versioning strategies is the use of <strong>Git tags</strong>. Git tags are references to specific commits in your Git history. Unlike branches, which move as new commits are added, tags are immutable—they always point to the same commit. This makes them ideal for marking release points, such as <code>v1.0.0</code> or <code>v2.1.3</code>.</p>
+<h3>Why use git tags for versioning?</h3>
+<ol>
+<li><strong>Immutable releases</strong>: Once a tag is created, it permanently points to a specific commit. This ensures that a version (e.g., <code>v1.0.0</code>) always refers to the exact same code, providing consistency and reliability.</li>
+<li><strong>Clear history</strong>: Tags make it easy to see when releases were made and what changes were included in each version.</li>
+<li><strong>Automation-friendly</strong>: Git tags integrate seamlessly with tools like GitHub, GitLab and CI/CD platforms (e.g., GitHub Actions, CircleCI), enabling automated workflows for versioning, testing, and publishing.</li>
+<li><strong>SemVer compatibility</strong>: By naming tags according to Semantic Versioning (e.g., <code>v1.0.0</code>), you can clearly communicate the nature of each release (major, minor, or patch).</li>
+<li><strong>Industry standard</strong>: Many open-source projects and organizations use Git tags to manage releases. For example, projects like Kubernetes, React, and Vue.js rely on Git tags for versioning.</li>
+<li><strong>Traceability</strong>: Tags provide a clear and traceable history of releases.</li>
+<li><strong>Tooling integration</strong>: Tools like npm and CDNs (e.g., jsDelivr) recognize Git tags as version identifiers. For example, when you publish a package to npm, it uses Git tags to map versions like <code>v1.0.0</code> to specific releases.</li>
+</ol>
+<p>We’ll explore how to implement a versioning workflow and automate the creation of Git tags later on this post.</p>
+<h2>SemVer from the user’s perspective</h2>
+<p>The structured approach of SemVer ensures clarity which allows third-party developers to update dependencies with confidence, knowing that patch and minor updates won’t break their applications.</p>
+<p>SemVer also simplifies dependency management. Developers can use version ranges like <code>^1.2.3</code> (for minor and patch updates) or <code>~1.2.3</code> (for patch updates only) in their <code>package.json</code> to control how updates are applied (more on that later on).</p>
+<p><img src="../../img/Pasted%20image%2020250128105320.png" alt="Example of how users can use a library with SemVer"></p>
+<p>This flexibility, combined with detailed changelogs, fosters trust and reliability. By following SemVer, library maintainers demonstrate a commitment to stability and transparency, making it easier for teams to adopt and maintain their libraries over time.</p>
+<p>Let’s look at some examples of how third parties can use SemVer to load your libraries.</p>
+<h3>1. npm Packages</h3>
+<p>npm (Node Package Manager) uses SemVer to manage package versions and developers can specify how these packages get updated in their <code>package.json</code>. Here’s an example for updating only non major releases:</p>
+<ol>
+<li><strong>Add the library</strong>: The library consumer adds the library to their <code>package.json</code> dependencies section with a caret (<code>^</code>), which indicates npm to allow minor and patch updates:</li>
+</ol>
+<pre class="language-json"><code class="language-json">  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"your-library"</span><span class="token operator">:</span> <span class="token string">"^1.2.3"</span><br>  <span class="token punctuation">}</span></code></pre>
+<ol start="2">
+<li><strong>Install dependencies</strong>: The developer installs the library</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span></code></pre>
+<ol start="3">
+<li><strong>Receive updates</strong>: When there is a release of a new version (e.g., <code>1.2.4</code> or <code>1.3.0</code>), the developer can update their dependencies.</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> update</code></pre>
+<ul>
+<li>If the new version is <code>1.2.4</code> (patch), it will be applied automatically.</li>
+<li>If the new version is <code>1.3.0</code> (minor), it will also be applied.</li>
+<li>If the new version is <code>2.0.0</code> (major), it will <strong>not</strong> be applied, as the <code>^</code> prefix restricts updates to the <code>1.x.x</code> range.</li>
+</ul>
+<h3>2. CDN providers (e.g., jsDelivr)</h3>
+<p>CDNs like <a href="https://www.jsdelivr.com/" target="_blank">jsDelivr</a> use SemVer to serve library versions. They also provide aliases for major versions, ensuring users always get the latest compatible version. Here are some examples:</p>
+<ul>
+<li><strong>Major Version Alias</strong>:<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/npm/some-library@3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+Will always load the latest version within the specified major version. Example: <code>@3</code> will load the latest <code>3.x.x</code> version.</li>
+<li><strong>Specific Version</strong>:<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/npm/some-library@3.2.1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+Will always load the exact version specified. Example: <code>@3.2.1</code> will load only version <code>3.2.1</code>.</li>
+</ul>
+<h2>Deployment workflow</h2>
+<p>Following a structured workflow can ensure that every release is predictable, well-tested, and thoroughly documented. Let’s see an example workflow for an npm library.</p>
+<ol>
+<li><strong>Update Version Number</strong><br>
+Increment the version in your <code>package.json</code> file based on the nature of the changes  (major, minor, or patch)</li>
+<li><strong>Update Changelog</strong><br>
+Record all changes in the <code>CHANGELOG.md</code> file to keep a detailed history of updates, including bug fixes, new features, and deprecations.</li>
+<li><strong>Build the Project</strong><br>
+Rebuild the project using your build script (<code>npm run build</code>) to ensure the latest changes are compiled and ready for release.</li>
+<li><strong>Run Tests</strong><br>
+Run automated tests (<code>npm test</code>) to ensure the integrity of the code and prevent regressions.</li>
+<li><strong>Manual Testing</strong><br>
+Test the updates locally (<code>npm start</code>) to verify functionality and ensure no issues were missed by automated tests.</li>
+<li><strong>Update Documentation</strong><br>
+Update relevant documentation to reflect any new features, changes, or guidance on upgrading to a new major version.</li>
+<li><strong>Tag and Publish</strong><br>
+Use tools like GitHub Actions to automate testing, tagging the release (e.g., <code>v1.2.3</code>) and publishing it to the appropriate package registry.</li>
+<li><strong>Communicate</strong><br>
+Notify your team, users, or stakeholders about the release, highlighting key changes and any required actions.</li>
+</ol>
+<h3>Automated workflow for tag and publish</h3>
+<p>Automating tag creation and publishing ensures consistency, reduces manual errors, and saves time for library maintainers, while providing users with reliable and clearly versioned releases.</p>
+<p>Here’s an example GitHub Actions workflow that automates versioning and publishing:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Tag and Publish on Version Change<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> main<br>    <span class="token key atrule">paths</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token string">'**'</span><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">tag-and-publish-on-version-change</span><span class="token punctuation">:</span><br>    <span class="token key atrule">name</span><span class="token punctuation">:</span> Tag and publish on version change<br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest<br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> EndBug/version<span class="token punctuation">-</span>check@v2.1.5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">static-checking</span><span class="token punctuation">:</span> localIsNew<br>          <span class="token key atrule">token</span><span class="token punctuation">:</span> $<br>          <span class="token key atrule">file-url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//raw.githubusercontent.com/your<span class="token punctuation">-</span>org/your<span class="token punctuation">-</span>repo<span class="token punctuation">-</span>name/latest/package.json<br>        <span class="token key atrule">id</span><span class="token punctuation">:</span> version<span class="token punctuation">-</span>check<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check version not decreased<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true' <span class="token important">&amp;&amp;</span> steps.version<span class="token punctuation">-</span>check.outputs.type == 'undefined'<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check package.lock<span class="token punctuation">:</span><span class="token punctuation">:</span>version updated if ./dist changed<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'false'<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "Version remained the same. Exiting<span class="token punctuation">...</span>"; <br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.X.X' version git tag<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>            github.rest.git.createRef({<br>              owner: context.repo.owner,<br>              repo: context.repo.repo,<br>              ref: 'refs/tags/v' + '$NaN',<br>              sha: context.sha<br>            })</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> dev<span class="token punctuation">-</span>drprasad/delete<span class="token punctuation">-</span>tag<span class="token punctuation">-</span>and<span class="token punctuation">-</span>release@v0.2.1<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">tag_name</span><span class="token punctuation">:</span> latest<br>        <span class="token key atrule">env</span><span class="token punctuation">:</span><br>          <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'latest' git tag<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>            github.rest.git.createRef({<br>              owner: context.repo.owner,<br>              repo: context.repo.repo,<br>              ref: 'refs/tags/latest',<br>              sha: context.sha<br>            })</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Extract Major Version<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">id</span><span class="token punctuation">:</span> major<span class="token punctuation">-</span>version<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "major=$(echo '$NaN' <span class="token punctuation">|</span> cut <span class="token punctuation">-</span>d. <span class="token punctuation">-</span>f1)" <span class="token punctuation">></span><span class="token punctuation">></span> $GITHUB_ENV<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.x.x' version git tag<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>            const majorVersion = process.env.major || "0"; // Default to "0" if not set<br>            console.log(`Extracted Major Version: ${majorVersion}`); // Debugging output<br>            const tagName = `v${majorVersion}.x.x`;<br>            console.log(`Tag to create: ${tagName}`); // Debugging output</span><br>            <br>            const tagExists = await github.rest.git.getRef(<span class="token punctuation">{</span><br>                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>            <span class="token punctuation">}</span>).catch(() =<span class="token punctuation">></span> null);<br><br>            if (tagExists) <span class="token punctuation">{</span><br>                await github.rest.git.deleteRef(<span class="token punctuation">{</span><br>                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>                <span class="token punctuation">}</span>);<br>            <span class="token punctuation">}</span><br><br>            await github.rest.git.createRef(<span class="token punctuation">{</span><br>                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `refs/tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<span class="token punctuation">,</span><br>                <span class="token key atrule">sha</span><span class="token punctuation">:</span> context.sha<br>            <span class="token punctuation">}</span>);<br>      <span class="token comment"># Publish on npm</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v2<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.x'</span><br>          <span class="token key atrule">registry-url</span><span class="token punctuation">:</span> <span class="token string">'https://registry.npmjs.org'</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies <br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Publish package on NPM 📦<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm publish <span class="token punctuation">-</span><span class="token punctuation">-</span>access=public<br>        <span class="token key atrule">env</span><span class="token punctuation">:</span><br>          <span class="token key atrule">NODE_AUTH_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
+<p>Let’s break it down step by step to explain what each part does:</p>
+<h4>Workflow Overview</h4>
+<ul>
+<li><strong>Trigger</strong>: The workflow runs on a <code>push</code> to the <code>main</code> branch, but only if changes are detected in any file (<code>paths: '**'</code>).</li>
+<li><strong>Purpose</strong>: It checks if the version in <code>package.json</code> has changed, creates Git tags for the new version, and publishes the package to npm.</li>
+</ul>
+<h4>Step-by-Step Explanation</h4>
+<h5>1. Checkout the repository</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2</code></pre>
+<ul>
+<li>This step checks out the repository code so that the workflow can access the files (e.g., <code>package.json</code>).</li>
+</ul>
+<h5>2. Check for version changes</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> EndBug/version<span class="token punctuation">-</span>check@v2.1.5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">static-checking</span><span class="token punctuation">:</span> localIsNew<br>    <span class="token key atrule">token</span><span class="token punctuation">:</span> $<br>    <span class="token key atrule">file-url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//raw.githubusercontent.com/your<span class="token punctuation">-</span>org/your<span class="token punctuation">-</span>repo<span class="token punctuation">-</span>name/latest/package.json<br>  <span class="token key atrule">id</span><span class="token punctuation">:</span> version<span class="token punctuation">-</span>check</code></pre>
+<ul>
+<li><strong>Action</strong>: <code>EndBug/version-check</code> compares the local <code>package.json</code> version with the version in the specified <code>file-url</code> (in this case, the <code>latest</code> branch of the repository).</li>
+<li><strong>Purpose</strong>: Determines if the version has changed and outputs:
+<ul>
+<li><code>changed</code>: <code>true</code> if the version has changed, <code>false</code> otherwise.</li>
+<li><code>version</code>: The new version from <code>package.json</code>.</li>
+<li><code>type</code>: The type of version change (<code>major</code>, <code>minor</code>, <code>patch</code>, or <code>undefined</code> if the version decreased).</li>
+</ul>
+</li>
+</ul>
+<h5>3. Ensure version does not decrease</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check version not decreased<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true' <span class="token important">&amp;&amp;</span> steps.version<span class="token punctuation">-</span>check.outputs.type == 'undefined'<br>  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1</code></pre>
+<ul>
+<li><strong>Condition</strong>: Runs only if the version has changed (<code>changed == 'true'</code>) and the change type is <code>undefined</code> (indicating a version decrease).</li>
+<li><strong>Action</strong>: Exits the workflow with an error message if the version has decreased, enforcing Semantic Versioning (SemVer) rules.</li>
+</ul>
+<h5>4. Skip workflow if version unchanged</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check package.lock<span class="token punctuation">:</span><span class="token punctuation">:</span>version updated if ./dist changed<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'false'<br>  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "Version remained the same. Exiting<span class="token punctuation">...</span>"; </code></pre>
+<ul>
+<li><strong>Condition</strong>: Runs if the version has not changed (<code>changed == 'false'</code>).</li>
+<li><strong>Action</strong>: Logs a message and exits the workflow early since no action is needed.</li>
+</ul>
+<h5>5. Create a git tag for the new version</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.X.X' version git tag<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>      github.rest.git.createRef({<br>        owner: context.repo.owner,<br>        repo: context.repo.repo,<br>        ref: 'refs/tags/v' + '$NaN',<br>        sha: context.sha<br>      })</span></code></pre>
+<ul>
+<li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
+<li><strong>Action</strong>: Creates a Git tag for the new version (e.g., <code>v1.2.3</code>) using the <code>github-script</code> action.</li>
+</ul>
+<h5>6. Delete the <code>latest</code> Tag (if it exists)</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> dev<span class="token punctuation">-</span>drprasad/delete<span class="token punctuation">-</span>tag<span class="token punctuation">-</span>and<span class="token punctuation">-</span>release@v0.2.1<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">tag_name</span><span class="token punctuation">:</span> latest<br>  <span class="token key atrule">env</span><span class="token punctuation">:</span><br>    <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
+<ul>
+<li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
+<li><strong>Action</strong>: Deletes the existing <code>latest</code> Git tag to prepare for creating a new one.</li>
+</ul>
+<h5>7. Create a New <code>latest</code> Git Tag</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'latest' git tag<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>      github.rest.git.createRef({<br>        owner: context.repo.owner,<br>        repo: context.repo.repo,<br>        ref: 'refs/tags/latest',<br>        sha: context.sha<br>      })</span></code></pre>
+<ul>
+<li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
+<li><strong>Action</strong>: Creates a new <code>latest</code> Git tag pointing to the latest commit.</li>
+</ul>
+<h5>8. Extract the Major Version</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Extract Major Version<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">id</span><span class="token punctuation">:</span> major<span class="token punctuation">-</span>version<br>  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "major=$(echo '$NaN' <span class="token punctuation">|</span> cut <span class="token punctuation">-</span>d. <span class="token punctuation">-</span>f1)" <span class="token punctuation">></span><span class="token punctuation">></span> $GITHUB_ENV</code></pre>
+<ul>
+<li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
+<li><strong>Action</strong>: Extracts the major version number (e.g., <code>1</code> from <code>1.2.3</code>) and stores it in the <code>major</code> environment variable.</li>
+</ul>
+<h5>9. Create a Major Version Tag (e.g., <code>v1.x.x</code>)</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.x.x' version git tag<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>      const majorVersion = process.env.major || "0"; // Default to "0" if not set<br>      console.log(`Extracted Major Version: ${majorVersion}`); // Debugging output<br>      const tagName = `v${majorVersion}.x.x`;<br>      console.log(`Tag to create: ${tagName}`); // Debugging output</span><br>      <br>      const tagExists = await github.rest.git.getRef(<span class="token punctuation">{</span><br>          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>      <span class="token punctuation">}</span>).catch(() =<span class="token punctuation">></span> null);<br><br>      if (tagExists) <span class="token punctuation">{</span><br>          await github.rest.git.deleteRef(<span class="token punctuation">{</span><br>          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>          <span class="token punctuation">}</span>);<br>      <span class="token punctuation">}</span><br><br>      await github.rest.git.createRef(<span class="token punctuation">{</span><br>          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `refs/tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<span class="token punctuation">,</span><br>          <span class="token key atrule">sha</span><span class="token punctuation">:</span> context.sha<br>      <span class="token punctuation">}</span>);</code></pre>
+<ul>
+<li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
+<li><strong>Action</strong>: Creates a major version tag (e.g., <code>v1.x.x</code>) for the new version. If the tag already exists, it is deleted and recreated.</li>
+</ul>
+<h5>10. Publish the Package to npm</h5>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># Publish on npm</span><br><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br><span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v2<br><span class="token key atrule">with</span><span class="token punctuation">:</span><br>  <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.x'</span><br>  <span class="token key atrule">registry-url</span><span class="token punctuation">:</span> <span class="token string">'https://registry.npmjs.org'</span><br><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies <br><span class="token key atrule">run</span><span class="token punctuation">:</span> npm install<br><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Publish package on NPM 📦<br><span class="token key atrule">run</span><span class="token punctuation">:</span> npm publish <span class="token punctuation">-</span><span class="token punctuation">-</span>access=public<br><span class="token key atrule">env</span><span class="token punctuation">:</span><br>  <span class="token key atrule">NODE_AUTH_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
+<ul>
+<li><strong>Action</strong>: Sets up Node.js, installs dependencies using <code>npm install</code> and publishes the package to npm with public access. The <code>NODE_AUTH_TOKEN</code> environment variable is used for authentication.</li>
+</ul>
+<p>This workflow ensures that every version change is automatically tagged and published, reducing manual effort and minimizing errors.</p>
+<h2>Conclusion</h2>
+<p>A well-defined versioning policy is essential for any project used by third parties. By adopting Semantic Versioning and automating your versioning workflow, you can provide clarity, reliability, and trust to your users. Whether you’re managing npm packages or serving libraries via CDNs, versioning ensures that your software remains compatible and predictable. Investing in a structured release process not only improves adopters efficiency, but also contributes to a more stable and sustainable software ecosystem.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium"><li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li><li>
+                                <a href="/blog/">
+                                    Blog
+                                </a>
+                            </li><li>
+                                <a href="/about/">
+                                    About
+                                </a>
+                            </li><li>
+                                <a href="/search/">
+                                    Search
+                                </a>
+                            </li><li><a href="/feed.xml">Feed</a></li>
+                        <li>
+                            <a href="/accessibility/">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" class="success-a11y-badge">
+                                
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2024</li>
+                        <li class="govcy-d-block govcy-text-dark">Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script data-goatcounter="https://consevangelou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>       
+    </body>
+</html>
