@@ -315,6 +315,8 @@ footer {
     font-size: 40px;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    color: #000;
 }
 .mobile-header {
     font-family: "Montserrat", sans-serif;
@@ -416,4 +418,15 @@ main a:focus img {
     border-bottom: solid 1px #31576f;
     background: #f7f7f7;
     padding: 8px 0 8px 0;
+}
+
+/* Unstyled list */
+.list-unstyled {
+    padding-left: 0;
+    list-style: none
+}
+
+.list-unstyled ul{
+    padding-left: 1.5em; /* Adjust as needed */
+    list-style: none
 }

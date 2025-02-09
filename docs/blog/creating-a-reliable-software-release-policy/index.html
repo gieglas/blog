@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="A look at the key aspects of a release policy and a practical checklist for seamless, high-quality software releases.">
+        <meta property="og:title" content="Creating a reliable software release policy - Con&#39;s place">
+        <meta property="og:url" content="https://consevangelou.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/Pasted%20image%2020250127084356.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://consevangelou.com/">
+        <meta property="twitter:title" content="Creating a reliable software release policy - Con&#39;s place">
+        <meta property="twitter:description" content="A look at the key aspects of a release policy and a practical checklist for seamless, high-quality software releases.">
+        <meta property="twitter:image" content="/img/Pasted%20image%2020250127084356.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Creating a reliable software release policy - Con&#39;s place</title>
+        <meta name="description" content="A look at the key aspects of a release policy and a practical checklist for seamless, high-quality software releases.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block">
+        <a href="/" class="desktop-header">
+            <img src="/img/GieglasIconInverse.png" alt="Con's place logo" aria-hidden="true">
+            Con's place
+        </a>
+    </div>
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Creating a reliable software release policy</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2025-02-09T00:00:00.000Z">9 February 2025</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/tags/ci-cd">ci-cd</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/img/Pasted%20image%2020250127084356.png" alt="Graphic for Creating a reliable software release policy" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Releasing software updates isn’t just about numbers and tags—it’s a <strong>commitment to quality, reliability, and trust</strong>. While using adopting <a href="../why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/">Semantic Versioning and automation</a> is a great start, it’s only part of the story. A truly effective versioning strategy requires a clear release policy, a commitment to maintaining compatibility, and a sense of responsibility to the third parties who rely on your software.</p>
+<p>In this post, we’ll explore the key aspects of a release policy and provide a practical checklist to help ensure it’s consistently followed.</p>
+<h2>Considerations for a release policy</h2>
+<p>A well-defined release policy should address the following key areas to ensure smooth, reliable, and predictable software updates:</p>
+<ol>
+<li><span aria-hidden="true">📋</span> <strong>Alignment with organizational policies</strong>
+<ul>
+<li>Ensure changes comply with relevant organizational policies, such as branding guidelines, GDPR compliance, and accessibility standards.</li>
+<li>Example: If your organization mandates WCAG 2.2 AA compliance, all releases must be tested for and meet these accessibility requirements.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🎯</span> <strong>Alignment with project goals and principles</strong>
+<ul>
+<li>Changes should support the project’s core goals and principles.</li>
+<li>Example: If the goal is to accelerate development, new features should simplify workflows and reduce complexity for developers.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔢</span> <strong>Adopting Semantic versioning</strong>
+<ul>
+<li>Use the Semantic versioning scheme assign version numbers.</li>
+<li>Example: Check out the post on <a href="../why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/">Semantic Versioning and automation</a> .</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔄</span> <strong>Backward compatibility</strong>
+<ul>
+<li>Non-major releases (minor and patch versions) must maintain backward compatibility.</li>
+<li>Example: Avoid introducing breaking changes in patch updates; reserve them for major releases with clear migration paths.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔗</span> <strong>Feature interaction and integration</strong>
+<ul>
+<li>Consider how new features or changes interact with existing ones.</li>
+<li>Example: In a Design System, a new Hint component should be tested alongside related components (e.g., Text Inputs) to ensure seamless integration.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔄</span> <strong>Consistency across releases</strong>
+<ul>
+<li>Maintain consistency in how features are implemented and used.</li>
+<li>Example: If text content is defined as <code>{&quot;en&quot;:&quot;Some text&quot;,&quot;el&quot;:&quot;Περιεχόμενο&quot;}</code> in existing features, new features should follow the same pattern.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🧪</span> <strong>Regression testing</strong>
+<ul>
+<li>Test every release against existing functionality to catch regressions early.</li>
+<li>Example: Use automated regression tests to ensure new changes don’t break existing features.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔧</span> <strong>Update related products or tools</strong>
+<ul>
+<li>Ensure that all related products or tools are updated as needed.</li>
+<li>Example: A change in the Design System may require updates to its rendering tool or usage documentation.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">📚</span> <strong>Documentation and communication</strong>
+<ul>
+<li>Provide detailed changelogs, release notes, and upgrade guides for every release.</li>
+<li>Example: Clearly document breaking changes in major releases and provide migration steps for developers.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">📅</span> <strong>Release frequency and scheduling</strong>
+<ul>
+<li>Define a predictable release schedule to manage expectations.</li>
+<li>Example: Commit to monthly patch releases and quarterly minor releases, with major releases planned once every year.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🤝</span> <strong>Stakeholder involvement</strong>
+<ul>
+<li>Involve relevant stakeholders (e.g., product managers, developers, QA teams) in the release process.</li>
+<li>Example: Conduct a release review meeting to ensure all teams are aligned before deployment.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🚨</span> <strong>Rollback and emergency fixes</strong>
+<ul>
+<li>Plan for rollback procedures and emergency fixes in case of critical issues.</li>
+<li>Example: Maintain a hotfix branch for urgent patches and ensure rollback mechanisms are tested.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">📣</span> <strong>User feedback and impact assessment</strong>
+<ul>
+<li>Gather feedback from the users to assess the impact of changes.</li>
+<li>Example: Use surveys, feedback forms and metrics to understand how updates affect third-party integrations.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔒</span> <strong>Security and compliance</strong>
+<ul>
+<li>Ensure releases meet security and compliance requirements.</li>
+<li>Example: Conduct security audits for major releases and ensure compliance with industry standards like ISO 27001.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🤖</span> <strong>Automation and tooling</strong>
+<ul>
+<li>Leverage automation tools (e.g., GitHub Actions, CI/CD pipelines) to streamline the release process.</li>
+<li>Example: Automate <a href="../why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/">version tagging</a>, testing, and publishing to reduce manual errors.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🎓</span> <strong>Training and support</strong>
+<ul>
+<li>Provide training and support for external developers or teams adapting to new changes.</li>
+<li>Example: Host webinars or create tutorials to explain new features or migration steps.</li>
+</ul>
+</li>
+</ol>
+<h2>Release checklist</h2>
+<p>Having a checklist helps to ensure that every update follows a structured process. Instead of walking you through a long policy document, I’m sharing a practical checklist that I use to ensure the release policy for our Design System is followed. I’ve made some adjustments to make it more generic, but it still reflects the key considerations of a Design System project. If you plan to use it, don’t just copy and paste—adapt it to fit the specifics of your own project.</p>
+<h3>1. <span aria-hidden="true">🔍</span> Discover</h3>
+<p>Identify the purpose and impact of the proposed change to ensure alignment with project goals and policies.</p>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> <strong>Purpose</strong> - Clearly articulate the <strong>reason for the change</strong>.
+<ul>
+<li><span aria-hidden="true">🔲</span> Identify the <strong>problem or opportunity</strong> the change addresses.</li>
+<li><span aria-hidden="true">🔲</span> Make sure the <em>Purpose</em> address the <strong>project goals</strong> and the <strong>users’ needs</strong>.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> Ensure the proposed change promotes the <strong>organizational policies</strong></li>
+<li><span aria-hidden="true">🔲</span> Ensure the proposed change aligns with the <strong>core principles</strong> of the project.</li>
+<li><span aria-hidden="true">🔲</span> Evaluate the <strong>accessibility impact</strong> of the change and <strong>compliance</strong> with standards.</li>
+<li><span aria-hidden="true">🔲</span> <strong>Other Elements</strong> - Identify and document any existing elements or features that will be affected by the change.
+<ul>
+<li><span aria-hidden="true">🔲</span> Assess the impact on existing elements</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> <strong>Design System alignment</strong> - Review the proposed change against the Design System.
+<ul>
+<li><span aria-hidden="true">🔲</span> Ensure <strong>consistency</strong> and <strong>coherence</strong> with the overall design language</li>
+</ul>
+</li>
+</ul>
+<h3>2. <span aria-hidden="true">🧐</span> Evaluate</h3>
+<p>Assess the proposed change to determine its impact and how it should be released. This phase is crucial as it defines the release type based on Semantic Versioning, ensuring updates are categorized correctly and released appropriately.</p>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> <strong>Evaluate</strong> the proposed change and decide:
+<ol>
+<li>Implement as a <strong>Minor Update</strong>: This kind of change is backward compatible and will not require developers to change their code if the decide to upgrade. This could be a bug, backward compatible improvement, or a new component. The change can be implemented as soon as possible and can be incorporated into a <code>minor</code> or <code>patch</code> version update.</li>
+<li>Implement within <strong>Next Major</strong> update: This kind of change would require third-party developers to change their code in order to upgrade. The change will be scheduled for the next major version and will be grouped together with other Major changes.</li>
+<li><strong>Further Research Needed</strong>: Additional research or prototyping and testing is required before a final decision.</li>
+<li><strong>Revise and Resubmit</strong>: The proposal needs revisions and must be resubmitted for evaluation.</li>
+<li><strong>Pilot Implementation</strong>: Implement the change on a trial basis to gather more data before full implementation.</li>
+<li><strong>Do Not Implement</strong>: The change will not be implemented. This could be a change that does not agree with the goals and principles of the project.</li>
+</ol>
+</li>
+</ul>
+<h3>3. <span aria-hidden="true">✍</span> Define</h3>
+<p>Create detailed designs and documentation to ensure all aspects of the change are well-planned.</p>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> Create <strong>visual designs</strong> for the proposed change (e.g. in Figma).
+<ul>
+<li><span aria-hidden="true">🔲</span> Include changes needed in other <strong>affected components</strong>.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> Define and design <strong>all variants</strong> of the component or pattern.
+<ul>
+<li><span aria-hidden="true">🔲</span> Ensure each variant meets the <strong>design principles</strong> and <strong>accessibility standards</strong></li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> While designing make sure to follow the <strong>technical</strong> and <strong>design principles</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Ensure designs meets the <strong>security</strong> and <strong>accessibility standards</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Document any <strong>additional requirements</strong>, such as performance or usability considerations.</li>
+<li><span aria-hidden="true">🔲</span> Design and review <strong>any content associated</strong> with the change. Ensure clarity, readability, and accessibility.</li>
+</ul>
+<h3>4. <span aria-hidden="true">🛠️</span> Prototype</h3>
+<p>Develop a working prototype to test and validate the proposed change before full-scale development.</p>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> Develop a <strong>working prototype</strong> of the proposed change.</li>
+<li><span aria-hidden="true">🔲</span> Ensure it accurately <strong>reflects the design and functionality</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Develop <strong>all variants</strong>, and if applicable, all <strong>other existing elements that are affected</strong> by the change.</li>
+<li><span aria-hidden="true">🔲</span> Develop <strong>use specific test pages</strong>.</li>
+</ul>
+<h4>Test, User Research</h4>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> Conduct initial tests to <strong>validate the prototype against it’s purpose</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Ensure it <strong>functions as expected</strong> and <strong>meets all requirements</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Conduct <strong>user research</strong> to gather feedback on the prototype.</li>
+<li><span aria-hidden="true">🔲</span> Use insights to <strong>refine</strong> and <strong>improve</strong> the design.</li>
+</ul>
+<h3>5. <span aria-hidden="true">💻</span> Develop</h3>
+<p>Code the changes and ensuring quality and consistency.</p>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> <strong>Develop</strong> changes.</li>
+<li><span aria-hidden="true">🔲</span> <strong>Code review</strong>
+<ul>
+<li><span aria-hidden="true">🔲</span> Ensure coding <strong>consistency</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Ensure it adheres to <strong>coding standards</strong> and <strong>best practices</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Ensure it follows the <strong>technical</strong> and <strong>design principles</strong>.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> Conduct and pass <strong>regression tests</strong> (e.g. visual regression tests with Percy).</li>
+<li><span aria-hidden="true">🔲</span> Update the <strong>changelog</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Update version in <strong>package.json</strong>.</li>
+</ul>
+<h4>Accessibility test</h4>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> <strong>Visual inspection</strong> – Check display consistency and mouse interaction.</li>
+<li><span aria-hidden="true">🔲</span> <strong>Automatic accessibility testing</strong> – Run tests with automated tools like PA11Y.</li>
+<li><span aria-hidden="true">🔲</span> <strong>Keyboard navigation</strong> – Test navigation using arrow keys, Tab, Enter, Space, etc.</li>
+<li><span aria-hidden="true">🔲</span> <strong>Screen readers compatibility</strong> – Test with supported screen readers like NVDA (Windows) and VoiceOver (MacOS).</li>
+<li><span aria-hidden="true">🔲</span> <strong>Magnification &amp; Zoom</strong> – Verify with browser zoom, pinch-to-zoom (mobile), and magnifiers (e.g. Windows magnifier).</li>
+<li><span aria-hidden="true">🔲</span> <strong>User Testing</strong> – Conduct tests with real users, including those with disabilities.</li>
+</ul>
+<h4>Browsers testing</h4>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> iOS Safari</li>
+<li><span aria-hidden="true">🔲</span> MacOS Safari</li>
+<li><span aria-hidden="true">🔲</span> Windows Chrome</li>
+<li><span aria-hidden="true">🔲</span> Windows Edge</li>
+<li><span aria-hidden="true">🔲</span> Windows Firefox</li>
+<li><span aria-hidden="true">🔲</span> Android Chrome</li>
+<li><span aria-hidden="true">🔲</span> Android Samsung browser</li>
+</ul>
+<h3>6. <span aria-hidden="true">🚀</span> Deploy</h3>
+<p>Release the new version smoothly, updating all necessary documentation and tools.</p>
+<h4>Code</h4>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> Deploy New Version (<strong>Merge to Main</strong>).</li>
+<li><span aria-hidden="true">🔲</span> Ensure all <strong>GitHub workflows (actions) are completed successfully</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Ensure all <strong>developer assets are updated</strong> accordingly.</li>
+<li><span aria-hidden="true">🔲</span> Ensure a <strong>version change has been made</strong> (check GitHub tags, releases and npm).</li>
+<li><span aria-hidden="true">🔲</span> Ensure the library has been <strong>released on all required platforms</strong> (e.g., npm, GitHub Releases, etc).</li>
+</ul>
+<h4>Documentation</h4>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> <strong>Update Documentation</strong> website.
+<ul>
+<li><span aria-hidden="true">🔲</span> Make sure to include <strong>coded examples</strong> of <strong>all variants</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Make sure all <strong>affected existing elements</strong> are also updated.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> <strong>New elements or features</strong>
+<ul>
+<li><span aria-hidden="true">🔲</span> Use the same <strong>documentation template</strong> and <strong>style</strong> of documentation.</li>
+<li><span aria-hidden="true">🔲</span> <strong>reference the new elements</strong> wherever is appropriate.</li>
+<li><span aria-hidden="true">🔲</span>  document the <strong>accessibility</strong>, <strong>error messages</strong> and <strong>content</strong> sections of the new element.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> <strong>Update the version reference</strong>
+<ul>
+<li><span aria-hidden="true">🔲</span> in all <strong>sample pages</strong>.</li>
+<li><span aria-hidden="true">🔲</span> in <strong>developer assets page</strong>.</li>
+<li><span aria-hidden="true">🔲</span> in <strong>template page</strong>.</li>
+<li><span aria-hidden="true">🔲</span> in <strong>version number</strong> shown on every page.</li>
+</ul>
+</li>
+<li><span aria-hidden="true">🔲</span> Update the <strong>What’s new</strong> section</li>
+</ul>
+<h4>Supporting tools</h4>
+<ul class="list-unstyled">
+<li><span aria-hidden="true">🔲</span> <strong>Update the design library</strong> (e.g. Figma) to include the new elements.</li>
+<li><span aria-hidden="true">🔲</span> Update other supporting tools if needed (e.g. renderer library, tester, etc.).</li>
+<li><span aria-hidden="true">🔲</span> Update the <strong>reference to the product version</strong>.</li>
+<li><span aria-hidden="true">🔲</span> Deploy.</li>
+</ul>
+<h2>Conclusion</h2>
+<p>A well-defined release policy ensures every update is intentional, reliable, and aligned with your project’s goals. Whether you’re maintaining a Design System or a complex software product, having a structured approach to releases improves consistency, reduces regressions, and builds trust with your users.</p>
+<p>A good release policy not only benefits the users but also the team, making releases smooth and predictable. Use the checklist as a starting point and adapt it to your needs to make your releases easier, and as always, try to automate as much as you can.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium"><li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li><li>
+                                <a href="/blog/">
+                                    Blog
+                                </a>
+                            </li><li>
+                                <a href="/about/">
+                                    About
+                                </a>
+                            </li><li>
+                                <a href="/search/">
+                                    Search
+                                </a>
+                            </li><li><a href="/feed.xml">Feed</a></li>
+                        <li>
+                            <a href="/accessibility/">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" class="success-a11y-badge">
+                                
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2025</li>
+                        <li class="govcy-d-block govcy-text-dark">Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block govcy-text-dark">
+        © Constantinos Evangelou, 2025
+    </div>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script data-goatcounter="https://consevangelou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>       
+    </body>
+</html>

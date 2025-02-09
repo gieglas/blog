@@ -6,7 +6,6 @@ image: Pasted%20image%2020250125182506.png
 tags:
   - dev
   - ci-cd
-  - productivity
 ---
 In the world of software development, versioning is more than just a technical detail, it’s a critical practice that ensures reliability, compatibility, and trust. Whether you’re building libraries, frameworks, or tools for third-party use, a well-defined versioning policy is essential for maintaining a healthy ecosystem. In this post, we’ll explore why versioning matters, how Semantic Versioning (SemVer) works and how to implement an automated versioning workflow for products intended to be used by external teams and developers. 
 

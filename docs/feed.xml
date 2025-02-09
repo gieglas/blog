@@ -4,11 +4,271 @@
   <subtitle> </subtitle>
   <link href="https://consevangelou.com/feed.xml" rel="self" />
   <link href="https://consevangelou.com/" />
-  <updated>2025-02-03T00:00:00Z</updated>
+  <updated>2025-02-09T00:00:00Z</updated>
   <id>https://consevangelou.com/</id>
   <author>
     <name>Constantinos Evangelou</name>
   </author>
+  <entry>
+    <title>Creating a reliable software release policy</title>
+    <link href="https://consevangelou.com/blog/creating-a-reliable-software-release-policy/" />
+    <updated>2025-02-09T00:00:00Z</updated>
+    <id>https://consevangelou.com/blog/creating-a-reliable-software-release-policy/</id>
+    <content type="html">&lt;p&gt;Releasing software updates isn’t just about numbers and tags—it’s a &lt;strong&gt;commitment to quality, reliability, and trust&lt;/strong&gt;. While using adopting &lt;a href=&quot;https://consevangelou.com/blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/&quot;&gt;Semantic Versioning and automation&lt;/a&gt; is a great start, it’s only part of the story. A truly effective versioning strategy requires a clear release policy, a commitment to maintaining compatibility, and a sense of responsibility to the third parties who rely on your software.&lt;/p&gt;
+&lt;p&gt;In this post, we’ll explore the key aspects of a release policy and provide a practical checklist to help ensure it’s consistently followed.&lt;/p&gt;
+&lt;h2&gt;Considerations for a release policy&lt;/h2&gt;
+&lt;p&gt;A well-defined release policy should address the following key areas to ensure smooth, reliable, and predictable software updates:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;📋&lt;/span&gt; &lt;strong&gt;Alignment with organizational policies&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure changes comply with relevant organizational policies, such as branding guidelines, GDPR compliance, and accessibility standards.&lt;/li&gt;
+&lt;li&gt;Example: If your organization mandates WCAG 2.2 AA compliance, all releases must be tested for and meet these accessibility requirements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🎯&lt;/span&gt; &lt;strong&gt;Alignment with project goals and principles&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Changes should support the project’s core goals and principles.&lt;/li&gt;
+&lt;li&gt;Example: If the goal is to accelerate development, new features should simplify workflows and reduce complexity for developers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔢&lt;/span&gt; &lt;strong&gt;Adopting Semantic versioning&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the Semantic versioning scheme assign version numbers.&lt;/li&gt;
+&lt;li&gt;Example: Check out the post on &lt;a href=&quot;https://consevangelou.com/blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/&quot;&gt;Semantic Versioning and automation&lt;/a&gt; .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔄&lt;/span&gt; &lt;strong&gt;Backward compatibility&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Non-major releases (minor and patch versions) must maintain backward compatibility.&lt;/li&gt;
+&lt;li&gt;Example: Avoid introducing breaking changes in patch updates; reserve them for major releases with clear migration paths.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔗&lt;/span&gt; &lt;strong&gt;Feature interaction and integration&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Consider how new features or changes interact with existing ones.&lt;/li&gt;
+&lt;li&gt;Example: In a Design System, a new Hint component should be tested alongside related components (e.g., Text Inputs) to ensure seamless integration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔄&lt;/span&gt; &lt;strong&gt;Consistency across releases&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Maintain consistency in how features are implemented and used.&lt;/li&gt;
+&lt;li&gt;Example: If text content is defined as &lt;code&gt;{&amp;quot;en&amp;quot;:&amp;quot;Some text&amp;quot;,&amp;quot;el&amp;quot;:&amp;quot;Περιεχόμενο&amp;quot;}&lt;/code&gt; in existing features, new features should follow the same pattern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🧪&lt;/span&gt; &lt;strong&gt;Regression testing&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Test every release against existing functionality to catch regressions early.&lt;/li&gt;
+&lt;li&gt;Example: Use automated regression tests to ensure new changes don’t break existing features.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔧&lt;/span&gt; &lt;strong&gt;Update related products or tools&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure that all related products or tools are updated as needed.&lt;/li&gt;
+&lt;li&gt;Example: A change in the Design System may require updates to its rendering tool or usage documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;📚&lt;/span&gt; &lt;strong&gt;Documentation and communication&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide detailed changelogs, release notes, and upgrade guides for every release.&lt;/li&gt;
+&lt;li&gt;Example: Clearly document breaking changes in major releases and provide migration steps for developers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;📅&lt;/span&gt; &lt;strong&gt;Release frequency and scheduling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Define a predictable release schedule to manage expectations.&lt;/li&gt;
+&lt;li&gt;Example: Commit to monthly patch releases and quarterly minor releases, with major releases planned once every year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🤝&lt;/span&gt; &lt;strong&gt;Stakeholder involvement&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Involve relevant stakeholders (e.g., product managers, developers, QA teams) in the release process.&lt;/li&gt;
+&lt;li&gt;Example: Conduct a release review meeting to ensure all teams are aligned before deployment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🚨&lt;/span&gt; &lt;strong&gt;Rollback and emergency fixes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Plan for rollback procedures and emergency fixes in case of critical issues.&lt;/li&gt;
+&lt;li&gt;Example: Maintain a hotfix branch for urgent patches and ensure rollback mechanisms are tested.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;📣&lt;/span&gt; &lt;strong&gt;User feedback and impact assessment&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Gather feedback from the users to assess the impact of changes.&lt;/li&gt;
+&lt;li&gt;Example: Use surveys, feedback forms and metrics to understand how updates affect third-party integrations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔒&lt;/span&gt; &lt;strong&gt;Security and compliance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure releases meet security and compliance requirements.&lt;/li&gt;
+&lt;li&gt;Example: Conduct security audits for major releases and ensure compliance with industry standards like ISO 27001.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🤖&lt;/span&gt; &lt;strong&gt;Automation and tooling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Leverage automation tools (e.g., GitHub Actions, CI/CD pipelines) to streamline the release process.&lt;/li&gt;
+&lt;li&gt;Example: Automate &lt;a href=&quot;https://consevangelou.com/blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/&quot;&gt;version tagging&lt;/a&gt;, testing, and publishing to reduce manual errors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🎓&lt;/span&gt; &lt;strong&gt;Training and support&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide training and support for external developers or teams adapting to new changes.&lt;/li&gt;
+&lt;li&gt;Example: Host webinars or create tutorials to explain new features or migration steps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Release checklist&lt;/h2&gt;
+&lt;p&gt;Having a checklist helps to ensure that every update follows a structured process. Instead of walking you through a long policy document, I’m sharing a practical checklist that I use to ensure the release policy for our Design System is followed. I’ve made some adjustments to make it more generic, but it still reflects the key considerations of a Design System project. If you plan to use it, don’t just copy and paste—adapt it to fit the specifics of your own project.&lt;/p&gt;
+&lt;h3&gt;1. &lt;span aria-hidden=&quot;true&quot;&gt;🔍&lt;/span&gt; Discover&lt;/h3&gt;
+&lt;p&gt;Identify the purpose and impact of the proposed change to ensure alignment with project goals and policies.&lt;/p&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Purpose&lt;/strong&gt; - Clearly articulate the &lt;strong&gt;reason for the change&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Identify the &lt;strong&gt;problem or opportunity&lt;/strong&gt; the change addresses.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Make sure the &lt;em&gt;Purpose&lt;/em&gt; address the &lt;strong&gt;project goals&lt;/strong&gt; and the &lt;strong&gt;users’ needs&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure the proposed change promotes the &lt;strong&gt;organizational policies&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure the proposed change aligns with the &lt;strong&gt;core principles&lt;/strong&gt; of the project.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Evaluate the &lt;strong&gt;accessibility impact&lt;/strong&gt; of the change and &lt;strong&gt;compliance&lt;/strong&gt; with standards.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Other Elements&lt;/strong&gt; - Identify and document any existing elements or features that will be affected by the change.
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Assess the impact on existing elements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Design System alignment&lt;/strong&gt; - Review the proposed change against the Design System.
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure &lt;strong&gt;consistency&lt;/strong&gt; and &lt;strong&gt;coherence&lt;/strong&gt; with the overall design language&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2. &lt;span aria-hidden=&quot;true&quot;&gt;🧐&lt;/span&gt; Evaluate&lt;/h3&gt;
+&lt;p&gt;Assess the proposed change to determine its impact and how it should be released. This phase is crucial as it defines the release type based on Semantic Versioning, ensuring updates are categorized correctly and released appropriately.&lt;/p&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Evaluate&lt;/strong&gt; the proposed change and decide:
+&lt;ol&gt;
+&lt;li&gt;Implement as a &lt;strong&gt;Minor Update&lt;/strong&gt;: This kind of change is backward compatible and will not require developers to change their code if the decide to upgrade. This could be a bug, backward compatible improvement, or a new component. The change can be implemented as soon as possible and can be incorporated into a &lt;code&gt;minor&lt;/code&gt; or &lt;code&gt;patch&lt;/code&gt; version update.&lt;/li&gt;
+&lt;li&gt;Implement within &lt;strong&gt;Next Major&lt;/strong&gt; update: This kind of change would require third-party developers to change their code in order to upgrade. The change will be scheduled for the next major version and will be grouped together with other Major changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Further Research Needed&lt;/strong&gt;: Additional research or prototyping and testing is required before a final decision.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Revise and Resubmit&lt;/strong&gt;: The proposal needs revisions and must be resubmitted for evaluation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pilot Implementation&lt;/strong&gt;: Implement the change on a trial basis to gather more data before full implementation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do Not Implement&lt;/strong&gt;: The change will not be implemented. This could be a change that does not agree with the goals and principles of the project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3. &lt;span aria-hidden=&quot;true&quot;&gt;✍&lt;/span&gt; Define&lt;/h3&gt;
+&lt;p&gt;Create detailed designs and documentation to ensure all aspects of the change are well-planned.&lt;/p&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Create &lt;strong&gt;visual designs&lt;/strong&gt; for the proposed change (e.g. in Figma).
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Include changes needed in other &lt;strong&gt;affected components&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Define and design &lt;strong&gt;all variants&lt;/strong&gt; of the component or pattern.
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure each variant meets the &lt;strong&gt;design principles&lt;/strong&gt; and &lt;strong&gt;accessibility standards&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; While designing make sure to follow the &lt;strong&gt;technical&lt;/strong&gt; and &lt;strong&gt;design principles&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure designs meets the &lt;strong&gt;security&lt;/strong&gt; and &lt;strong&gt;accessibility standards&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Document any &lt;strong&gt;additional requirements&lt;/strong&gt;, such as performance or usability considerations.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Design and review &lt;strong&gt;any content associated&lt;/strong&gt; with the change. Ensure clarity, readability, and accessibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;4. &lt;span aria-hidden=&quot;true&quot;&gt;🛠️&lt;/span&gt; Prototype&lt;/h3&gt;
+&lt;p&gt;Develop a working prototype to test and validate the proposed change before full-scale development.&lt;/p&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Develop a &lt;strong&gt;working prototype&lt;/strong&gt; of the proposed change.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure it accurately &lt;strong&gt;reflects the design and functionality&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Develop &lt;strong&gt;all variants&lt;/strong&gt;, and if applicable, all &lt;strong&gt;other existing elements that are affected&lt;/strong&gt; by the change.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Develop &lt;strong&gt;use specific test pages&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Test, User Research&lt;/h4&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Conduct initial tests to &lt;strong&gt;validate the prototype against it’s purpose&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure it &lt;strong&gt;functions as expected&lt;/strong&gt; and &lt;strong&gt;meets all requirements&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Conduct &lt;strong&gt;user research&lt;/strong&gt; to gather feedback on the prototype.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Use insights to &lt;strong&gt;refine&lt;/strong&gt; and &lt;strong&gt;improve&lt;/strong&gt; the design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;5. &lt;span aria-hidden=&quot;true&quot;&gt;💻&lt;/span&gt; Develop&lt;/h3&gt;
+&lt;p&gt;Code the changes and ensuring quality and consistency.&lt;/p&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Develop&lt;/strong&gt; changes.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Code review&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure coding &lt;strong&gt;consistency&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure it adheres to &lt;strong&gt;coding standards&lt;/strong&gt; and &lt;strong&gt;best practices&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure it follows the &lt;strong&gt;technical&lt;/strong&gt; and &lt;strong&gt;design principles&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Conduct and pass &lt;strong&gt;regression tests&lt;/strong&gt; (e.g. visual regression tests with Percy).&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Update the &lt;strong&gt;changelog&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Update version in &lt;strong&gt;package.json&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Accessibility test&lt;/h4&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Visual inspection&lt;/strong&gt; – Check display consistency and mouse interaction.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Automatic accessibility testing&lt;/strong&gt; – Run tests with automated tools like PA11Y.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Keyboard navigation&lt;/strong&gt; – Test navigation using arrow keys, Tab, Enter, Space, etc.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Screen readers compatibility&lt;/strong&gt; – Test with supported screen readers like NVDA (Windows) and VoiceOver (MacOS).&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Magnification &amp;amp; Zoom&lt;/strong&gt; – Verify with browser zoom, pinch-to-zoom (mobile), and magnifiers (e.g. Windows magnifier).&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;User Testing&lt;/strong&gt; – Conduct tests with real users, including those with disabilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Browsers testing&lt;/h4&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; iOS Safari&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; MacOS Safari&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Windows Chrome&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Windows Edge&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Windows Firefox&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Android Chrome&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Android Samsung browser&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;6. &lt;span aria-hidden=&quot;true&quot;&gt;🚀&lt;/span&gt; Deploy&lt;/h3&gt;
+&lt;p&gt;Release the new version smoothly, updating all necessary documentation and tools.&lt;/p&gt;
+&lt;h4&gt;Code&lt;/h4&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Deploy New Version (&lt;strong&gt;Merge to Main&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure all &lt;strong&gt;GitHub workflows (actions) are completed successfully&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure all &lt;strong&gt;developer assets are updated&lt;/strong&gt; accordingly.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure a &lt;strong&gt;version change has been made&lt;/strong&gt; (check GitHub tags, releases and npm).&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Ensure the library has been &lt;strong&gt;released on all required platforms&lt;/strong&gt; (e.g., npm, GitHub Releases, etc).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Documentation&lt;/h4&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Update Documentation&lt;/strong&gt; website.
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Make sure to include &lt;strong&gt;coded examples&lt;/strong&gt; of &lt;strong&gt;all variants&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Make sure all &lt;strong&gt;affected existing elements&lt;/strong&gt; are also updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;New elements or features&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Use the same &lt;strong&gt;documentation template&lt;/strong&gt; and &lt;strong&gt;style&lt;/strong&gt; of documentation.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;reference the new elements&lt;/strong&gt; wherever is appropriate.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt;  document the &lt;strong&gt;accessibility&lt;/strong&gt;, &lt;strong&gt;error messages&lt;/strong&gt; and &lt;strong&gt;content&lt;/strong&gt; sections of the new element.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Update the version reference&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; in all &lt;strong&gt;sample pages&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; in &lt;strong&gt;developer assets page&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; in &lt;strong&gt;template page&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; in &lt;strong&gt;version number&lt;/strong&gt; shown on every page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Update the &lt;strong&gt;What’s new&lt;/strong&gt; section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Supporting tools&lt;/h4&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; &lt;strong&gt;Update the design library&lt;/strong&gt; (e.g. Figma) to include the new elements.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Update other supporting tools if needed (e.g. renderer library, tester, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Update the &lt;strong&gt;reference to the product version&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span aria-hidden=&quot;true&quot;&gt;🔲&lt;/span&gt; Deploy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;A well-defined release policy ensures every update is intentional, reliable, and aligned with your project’s goals. Whether you’re maintaining a Design System or a complex software product, having a structured approach to releases improves consistency, reduces regressions, and builds trust with your users.&lt;/p&gt;
+&lt;p&gt;A good release policy not only benefits the users but also the team, making releases smooth and predictable. Use the checklist as a starting point and adapt it to your needs to make your releases easier, and as always, try to automate as much as you can.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Why release versioning matters: A Guide to SemVer and automated publishing</title>
     <link href="https://consevangelou.com/blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing/" />
@@ -471,15 +731,6 @@ Notify your team, users, or stakeholders about the release, highlighting key cha
     <id>https://consevangelou.com/blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes/</id>
     <content type="html">&lt;p&gt;Check out the link below for a guide I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;. The guide describes how developers can use the Design System utility classes, to create a brand new HTML design element with the gov.cy designs.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_design_element/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How to create a page using the gov.cy design system (by DSF)</title>
-    <link href="https://consevangelou.com/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/" />
-    <updated>2023-02-15T00:00:00Z</updated>
-    <id>https://consevangelou.com/blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system/</id>
-    <content type="html">&lt;p&gt;Check out the link below for a guide I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;. The guide describes how developers can use the Design System reusable components, to create a simple question page.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/guides/create_a_page/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the Guide&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
