@@ -25,10 +25,13 @@
                                 {% endif %}
                              </a>
                         </li>
-                        <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].copyright_label }}</li>
+                        <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].copyright_label }}{{ yearBuild }}</li>
                         <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].powered_by  | safe }}</li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block govcy-text-dark">
+        {{ site.localization[locale].copyright_label }}{{ yearBuild }}
+    </div>

@@ -27,7 +27,7 @@ module.exports = {
       "cookie_label":"Cookies",
       "accessibility_label":"Accessibility",
       "accessibility_check_date":"22/5/2024",
-      "copyright_label":"© Constantinos Evangelou, 2024",
+      "copyright_label":"© Constantinos Evangelou, ",
       "powered_by":"Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.",
       "a11y_success":"Accessibility check passed",
       "a11y_fail":"Accessibility check failed",

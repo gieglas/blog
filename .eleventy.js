@@ -90,6 +90,8 @@ module.exports = async function (eleventyConfig) {
     return email.replace(/@/, "[at]").replace(/\./g, "[dot]");
   });
 
+  // Add year of build
+  eleventyConfig.addGlobalData("yearBuild", new Date().getFullYear());
 
   // Add a global data to check if all pages have no issues
   eleventyConfig.addGlobalData("accessibilityStatus", () => {
