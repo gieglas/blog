@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
+                "file": "blog/managing-multi-repository-product-with-github-projects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "why-release-versioning-matters-a-guide-to-semver-and-automated-publishing"
-            }
-          },
-          {
-            "id": "0d3ea525b91d07e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/creating-a-reliable-software-release-policy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "creating-a-reliable-software-release-policy"
+              "title": "managing-multi-repository-product-with-github-projects"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/creating-a-reliable-software-release-policy.md",
+                "file": "blog/managing-multi-repository-product-with-github-projects.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of creating-a-reliable-software-release-policy"
+              "title": "Outline of managing-multi-repository-product-with-github-projects"
             }
           }
         ],
@@ -179,16 +164,39 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0d3ea525b91d07e7",
+  "active": "96130c5b5b916e96",
   "lastOpenFiles": [
-    "_templates/emoji accessible.md",
+    "img/github-projects1b.png",
+    "_drafts/ideas/why-i-love-data-driven-rendering.md",
+    "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
+    "_drafts/ideas/Untitled.md",
+    "blog/managing-multi-repository-product-with-github-projects.md",
+    "img/burnup-example.png.0.pdnSave",
+    "img/burnup-example.png",
+    "img/burnup-example.webp",
+    "img/github-issues-1.png",
+    "img/github-projects-1.png",
+    "_drafts/images/github-projects1b.png",
+    "_drafts/images/github-projects1b.png.0.pdnSave",
+    "_drafts/images/github-projects1a.png",
+    "_drafts/images/github-projects1a.png.0.pdnSave",
+    "_drafts/images/github-projects4.jfif",
+    "_drafts/images/github-projects3.jfif",
+    "_drafts/images/github-projects2.jfif",
+    "_drafts/images/github-projects1.jfif",
+    "_drafts/images/Gemini_Generated_Image_803ync803ync803y.jfif",
+    "_drafts/images/Gemini_Generated_Image_rag9oqrag9oqrag9.jfif",
+    "_drafts/images/Gemini_Generated_Image_g1gb1tg1gb1tg1gb.jfif",
+    "_drafts/images/data-driven-rendering-2.jpg",
+    "_drafts/ideas/things-often-overlooked-in-frontend.md",
     "blog/creating-a-reliable-software-release-policy.md",
+    "_templates/emoji accessible.md",
     "_templates/list (ul) no style.md",
     "_templates/target blank - new tab.md",
-    "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
     "blog/how-I-made-my-app-a-pwa.md",
     "blog/online-search-registry-cregistry.md",
     "blog/building-a-dynamic-html-renderer.md",
@@ -196,39 +204,17 @@
     "img/Pasted image 20250128104337.png",
     "img/Pasted image 20250127084356.png",
     "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
-    "img/Pasted image 20250125185218.png",
-    "img/Pasted image 20250125182506.png",
-    "img/Pasted image 20250125125255.png",
     "Untitled.md",
-    "img/Pasted image 20250124152306.png",
     "blog/automating-accessibility-site-wide-testing-and-reporting-guide copy.md",
-    "_drafts/ideas",
     "_drafts/Untitled.md",
-    "img/Pasted image 20250124122416.png",
-    "img/Pasted image 20250124115652.png",
-    "img/Pasted image 20250124115505.png",
     "_drafts/archives/711-next-day.md",
     "blog/dsf-designing-the-design-system.md",
     "blog/automating-accessibility-site-wide-testing-and-reporting-guide.md",
     "blog/automating-accessibility-checks-site-auditing-reporting.md",
     "blog/diy-organization-tool-cocoon-grid-it-ripoff.md",
-    "img/CE-ETEK-confirmation.pdf",
-    "img/CE-ETEK-confirmation.pdf.crdownload",
-    "CNAME",
-    "img/pa11nty_report.png.0.pdnSave",
     "blog/php-notificator.md",
     "blog/evernote-control-your-data.md",
     "blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly.md",
-    "blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services.md",
-    "blog/dsf-how-to-create-new-design-elements-using-the-gov-cy-utility-classes.md",
-    "blog/dsf-how-to-create-a-page-using-the-gov-cy-design-system.md",
-    "blog/dsf-design-system-update-v-3-0-0-unified-design-system.md",
-    "img/Unconfirmed 991112.crdownload",
-    "img/dsf-small-white-icon.txt",
-    "img/New Text Document.txt",
-    "_drafts/archives/security-alert-heartbleed-2.md",
-    "blog/getting-on-top-of-things-with-monitrall.md",
-    "img/figmaicon.png.0.pdnSave",
-    "_templates"
+    "blog/dsf-how-to-use-the-figma-community-library-file-to-design-digital-services.md"
   ]
 }

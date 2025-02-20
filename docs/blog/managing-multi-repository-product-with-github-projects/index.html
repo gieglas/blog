@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="How to efficiently manage a multi-repository product using GitHub Projects.">
+        <meta property="og:title" content="Managing multi repository products with GitHub projects - Con&#39;s place">
+        <meta property="og:url" content="https://consevangelou.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/github-projects1b.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://consevangelou.com/">
+        <meta property="twitter:title" content="Managing multi repository products with GitHub projects - Con&#39;s place">
+        <meta property="twitter:description" content="How to efficiently manage a multi-repository product using GitHub Projects.">
+        <meta property="twitter:image" content="/img/github-projects1b.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Managing multi repository products with GitHub projects - Con&#39;s place</title>
+        <meta name="description" content="How to efficiently manage a multi-repository product using GitHub Projects.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block">
+        <a href="/" class="desktop-header">
+            <img src="/img/GieglasIconInverse.png" alt="Con's place logo" aria-hidden="true">
+            Con's place
+        </a>
+    </div>
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Managing multi repository products with GitHub projects</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2025-02-20T00:00:00.000Z">20 February 2025</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/tags/productivity">productivity</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/img/github-projects1b.png" alt="Graphic for Managing multi repository products with GitHub projects" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Managing a product spread across multiple repositories can be challenging. Things like keeping track of issues, coordinating updates, and ensuring smooth integration between components require a structured approach. In this post, we’ll explore how we use <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects" target="_blank">GitHub Projects</a> to manage our multi-repository design system effectively.</p>
+<h2>The complexity</h2>
+<p>Let me explain how things get complicated in a multi repository environment, by walking you through the design system project I am working on.</p>
+<p>The design system is structured as a multi-repository product, with each repo serving a distinct product while remaining interconnected. We manage several separate repositories, including:</p>
+<ul>
+<li><strong>Developer Assets</strong> – A project that generates the CSS and JavaScript for all foundational styles, components, and design tokens.</li>
+<li><strong>Documentation website</strong> –  A project that generates the documentation website with all the information needed to use the Design System</li>
+<li><strong>Renderer</strong> – A separate package for rendering the Design System components’ UI dynamically based on JSON data.</li>
+<li><strong>Prototype tool</strong> – A repository of a tool that generates HTML prototypes sites, using the renderer package.</li>
+<li><strong>Testing &amp; Validation</strong> – A package with tools and scripts used to ensure websites and services adhere to accessibility and Design System standards.</li>
+</ul>
+<p>Each repository plays a role in maintaining modularity, allowing teams to work independently while ensuring seamless integration.</p>
+<p>To add to the complexity, there are cases where we use the same versioning for multiple repositories. For example, the <strong>Developer Assets</strong> and <strong>Documentation Website</strong> share the same versioning scheme to ensure that changes in one repository are accurately reflected in the other, preventing inconsistencies and outdated information.</p>
+<p>On top of that, we also manage projects outside GitHub, like our Figma Library, adding another layer of complexity to our workflow.</p>
+<p>As you can imagine, managing this product across multiple repositories presents challenges in tracking issues, maintaining consistency, and organizing development efforts. A simple question such as “what’s next”, is difficult to answer without the right tools in place.</p>
+<h2>Why GitHub Projects?</h2>
+<p>GitHub Projects provides a powerful way to centralize issue tracking and streamline workflows, helping teams stay organized and productive. It provides a unified workspace that enhances collaboration across all repositories. Here’s why it works well for our setup:</p>
+<ul>
+<li><strong>Centralized Issue Tracking</strong> – Instead of jumping between repositories, we can manage issues, features, and bug reports in one place.</li>
+<li><strong>Cross-Repo Visibility</strong> – Developers and designers can see work across all repositories, reducing silos and improving communication.</li>
+<li><strong>Product &amp; Version Organization</strong> – We categorize issues by product and version, making it easier to plan and prioritize work.</li>
+<li><strong>Automated Workflows</strong> – Integration with GitHub Actions allows automatic updates to project statuses based on issue progress.</li>
+<li><strong>Custom Views &amp; Filters</strong> – Tailoring views by repository, version, or work type helps different teams focus on relevant tasks.</li>
+<li><strong>Custom Fields</strong> – Adding custom fields enables teams to track specific details like priority, estimated effort, or related milestones, making planning more flexible and informative.</li>
+<li><strong>Works with GitHub Issues</strong> – Since GitHub Projects directly integrates with GitHub Issues, it fits naturally into developers’ existing workflows, reducing friction and improving efficiency.</li>
+</ul>
+<h2>Organizing work with GitHub Projects</h2>
+<p><img src="../../img/github-projects-1.png" alt="Screenshot of GitHub project, showing the &quot;by product and version&quot; view "></p>
+<p>Different types of projects can be structured differently depending on their needs, allowing for flexibility in organizing work effectively. To keep our work structured, we have set up GitHub Projects with the following principles:</p>
+<ul>
+<li><strong>Grouping by Product &amp; Version</strong> – Each feature or update is linked to a specific project and version to ensure clear tracking.</li>
+<li><strong>Status Updates &amp; Labels</strong> – Using labels and status updates to indicate backlog, in progress, and completed tasks.</li>
+<li><strong>Issue linking &amp; dependencies</strong> – Connecting issues between repositories helps visualize dependencies and potential blockers.</li>
+</ul>
+<p>Additionally, because we use GitHub Issues to record and manage GitHub Project items, we take full advantage of GitHub’s built-in features, such as linking issues with commits and pull requests. This allows us to track progress seamlessly, see which changes are associated with specific issues, and maintain a clear history of development decisions.<br>
+<img src="../../img/github-issues-1.png" alt="Example of a GitHub issue connected to a project"></p>
+<p>This setup also provides product managers with an overall high-level view of the product across multiple repositories. They can track overall product health, identify bottlenecks, and ensure that releases stay on schedule. The ability to categorize and filter issues by product and version gives them better control over planning and prioritization, making strategic decisions more informed and data-driven.</p>
+<p><img src="../../img/burnup-example.png" alt="Example of GitHub projects burnup chart "></p>
+<h2>Conclusion</h2>
+<p>By leveraging GitHub Projects effectively, you can improve your ability to manage a multi-repository product efficiently, ensuring a smooth development process. The seamless integration with GitHub Issues is particularly beneficial, as it fits naturally into existing developer workflows. With a structured approach and best practices in place, you can keep your projects organized and your teams aligned.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium"><li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li><li>
+                                <a href="/blog/">
+                                    Blog
+                                </a>
+                            </li><li>
+                                <a href="/about/">
+                                    About
+                                </a>
+                            </li><li>
+                                <a href="/search/">
+                                    Search
+                                </a>
+                            </li><li><a href="/feed.xml">Feed</a></li>
+                        <li>
+                            <a href="/accessibility/">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" class="success-a11y-badge">
+                                
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2025</li>
+                        <li class="govcy-d-block govcy-text-dark">Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block govcy-text-dark">
+        © Constantinos Evangelou, 2025
+    </div>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script data-goatcounter="https://consevangelou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>       
+    </body>
+</html>

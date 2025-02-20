@@ -16,5 +16,4 @@
 
 
 ## Other
-- https://dribbble.com/shots/6172851-NathanBarry-com 
 - Hostinger + GitHub Pages https://youtu.be/0o0uwp8KX2Y?si=r7cVWqcy3wCz3QK0  
