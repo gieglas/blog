@@ -1,5 +1,5 @@
 {
-  "date": "2025-02-20",
+  "date": "2025-03-04",
   "results": [
     {
       "url": "/accessibility/",
@@ -195,6 +195,10 @@
     },
     {
       "url": "/blog/google-sheets-script-for-web-apps/",
+      "issues": []
+    },
+    {
+      "url": "/blog/govcy-frontend-prototype-a-dynamic-prototype-tool/",
       "issues": []
     },
     {
