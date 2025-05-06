@@ -1,16 +1,16 @@
 ---
 title: Building a Dynamic HTML Renderer with Nunjucks and JSON Templates
 date: 2025-01-24
-summary: An overview on how a dynamic HTML renderer (gocvy-frontend-renderer) works
+summary: An overview on how a dynamic HTML renderer (govcy-frontend-renderer) works
 image: Pasted%20image%2020250124152306.png
 tags:
   - dev
   - dsf
   - ci-cd
 ---
-I've been working on a dynamic HTML renderer ([gocvy-frontend-renderer](https://github.com/gov-cy/govcy-frontend-renderer){target="_blank"}) and I thought it might be interesting to explain how it works. 
+I've been working on a dynamic HTML renderer ([govcy-frontend-renderer](https://github.com/gov-cy/govcy-frontend-renderer){target="_blank"}) and I thought it might be interesting to explain how it works. 
 ## Project Overview
-The gocvy-frontend-renderer project is structured to support the rendering of HTML elements based on the [gov.cy Unified Design System (UDS)](https://gov-cy.github.io/govcy-design-system-docs/){target="_blank"}. The goal is to enable the creation of gov.cy UI components using either structured data (JSON), or a powerful template engine ([Nunjucks](https://mozilla.github.io/nunjucks/){target="_blank"} ), without requiring any HTML knowledge. This approach offers significant flexibility and ease of use, making the transition from data to UI seamless. It has a wide range of applications, such as:
+The govcy-frontend-renderer project is structured to support the rendering of HTML elements based on the [gov.cy Unified Design System (UDS)](https://gov-cy.github.io/govcy-design-system-docs/){target="_blank"}. The goal is to enable the creation of gov.cy UI components using either structured data (JSON), or a powerful template engine ([Nunjucks](https://mozilla.github.io/nunjucks/){target="_blank"} ), without requiring any HTML knowledge. This approach offers significant flexibility and ease of use, making the transition from data to UI seamless. It has a wide range of applications, such as:
 - Rapidly creating prototypes using static site generators (check out this [prototype example](https://gov-cy.github.io/govcy-frontend-prototype/task-list-demo/){target="_blank"} ).
 - Rendering the UI in applications (check out this [SPA application example](https://gov-cy.github.io/dsf-assessment-checklist/){target="_blank"} ).
 - Rendering the UI in low code products. 

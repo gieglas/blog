@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/ideas/why-i-love-data-driven-rendering.md",
+                "file": "blog/data-driven-rendering-a-universal-ui-language.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "why-i-love-data-driven-rendering"
+              "title": "data-driven-rendering-a-universal-ui-language"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "intellec",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/ideas/why-i-love-data-driven-rendering.md",
+                "file": "blog/data-driven-rendering-a-universal-ui-language.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of why-i-love-data-driven-rendering"
+              "title": "Outline of data-driven-rendering-a-universal-ui-language"
             }
           }
         ],
@@ -164,41 +164,41 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "webpage-html-export:Export Vault to HTML": false
     }
   },
   "active": "e3adc20b2ab7feb3",
   "lastOpenFiles": [
+    "img/Pasted image 20250504212521.png",
+    "_drafts/images/data-driven-rendering-7.png",
+    "_drafts/images/data-driven-rendering-7.png.0.pdnSave",
+    "_drafts/images/data-driven-rendering-7.jfif",
+    "_drafts/images/Gemini_Generated_Image_soexhusoexhusoex.jfif",
+    "_drafts/images/data-driven-rendering-6.jfif",
+    "_drafts/images/data-driven-rendering-5.png",
+    "_drafts/images/unnamed.png",
+    "img/Pasted image 20250504120322.png",
+    "img/Pasted image 20250504115858.png",
+    "img/Pasted image 20250504115309.png",
+    "_drafts/ideas/things-often-overlooked-in-frontend.md",
+    "_drafts/images/Overlooked details in frontend.png",
+    "_drafts/images/Overlooked details in frontend.png.0.pdnSave",
+    "_drafts/images/Gemini_Generated_Image_fg7fx5fg7fx5fg7f.jfif",
+    "_drafts/images/Gemini_Generated_Image_ojdaatojdaatojda.jfif",
+    "_drafts/ideas/things-often-overlooked-in-frontend 1.md",
+    "_drafts/ideas/designing-accessible-online-services-a-heuristic-approach-for-designers.md",
+    "blog/data-driven-rendering-a-universal-ui-language.md",
     "blog/govcy-frontend-prototype-a-dynamic-prototype-tool.md",
     "img/Pasted image 20250304132430.png",
     "img/Pasted image 20250304132109.png",
     "blog/creating-a-reliable-software-release-policy.md",
-    "_drafts/ideas/why-i-love-data-driven-rendering.md",
-    "_drafts/ideas/designing-accessible-online-services-a-heuristic-approach-for-designers.md",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-1.jfif",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-3.jfif",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-2.jfif",
     "_drafts/images/data-driven-rendering-2.jpg",
-    "_drafts/images/github-projects1a.png",
-    "_drafts/ideas/things-often-overlooked-in-frontend 1.md",
     "_drafts/ideas/1designing-accessible-online-services-a-heuristic-approach-for-designers.md",
-    "_drafts/ideas/things-often-overlooked-in-frontend.md",
     "blog/managing-multi-repository-product-with-github-projects.md",
-    "img/github-projects1b.png",
     "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
-    "img/burnup-example.png.0.pdnSave",
-    "img/burnup-example.png",
-    "img/burnup-example.webp",
-    "img/github-issues-1.png",
-    "img/github-projects-1.png",
-    "_drafts/images/github-projects1b.png",
-    "_drafts/images/github-projects1b.png.0.pdnSave",
-    "_drafts/images/github-projects1a.png.0.pdnSave",
-    "_drafts/images/github-projects4.jfif",
-    "_drafts/images/github-projects3.jfif",
-    "_drafts/images/github-projects2.jfif",
-    "_drafts/images/github-projects1.jfif",
     "_templates/emoji accessible.md",
     "_templates/list (ul) no style.md",
     "_templates/target blank - new tab.md",

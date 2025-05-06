@@ -57,7 +57,7 @@ A final score helps prioritize fixes. A **low score** highlights critical barrie
 
 - ⬜ Are error messages clear, specific, and helpful? (e.g., “Enter a valid email” instead of “Invalid input”)
 - ⬜ Are optional fields clearly marked? (e.g., non-required fields labeled as “(Optional)”)
-- ⬜ Is the form layout logical and easy to follow (e.g., grouping related fields together)?
+- ⬜ Is the form/page layout logical and easy to follow (e.g., avoid having multiple questions in one page, grouping related fields together)? 
 
 ### 4. ⚙️ Robust (Does it support different user needs?)
 

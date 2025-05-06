@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="Explore how data-driven rendering simplifies UI development by generating interfaces from structured data, reducing the need for extensive manual coding.">
+        <meta property="og:title" content="Data-driven rendering: A universal UI language - Con&#39;s place">
+        <meta property="og:url" content="https://consevangelou.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/Pasted%20image%2020250504212521.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://consevangelou.com/">
+        <meta property="twitter:title" content="Data-driven rendering: A universal UI language - Con&#39;s place">
+        <meta property="twitter:description" content="Explore how data-driven rendering simplifies UI development by generating interfaces from structured data, reducing the need for extensive manual coding.">
+        <meta property="twitter:image" content="/img/Pasted%20image%2020250504212521.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Data-driven rendering: A universal UI language - Con&#39;s place</title>
+        <meta name="description" content="Explore how data-driven rendering simplifies UI development by generating interfaces from structured data, reducing the need for extensive manual coding.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block">
+        <a href="/" class="desktop-header">
+            <img src="/img/GieglasIconInverse.png" alt="Con's place logo" aria-hidden="true">
+            Con's place
+        </a>
+    </div>
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>Data-driven rendering: A universal UI language</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2025-05-06T00:00:00.000Z">6 May 2025</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/tags/design">design</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/img/Pasted%20image%2020250504212521.png" alt="Graphic for Data-driven rendering: A universal UI language" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Developing consistent, scalable UI can be tedious and time-consuming. Traditionally, developers write HTML, templates, or components manually. But what if UI could be rendered dynamically, using only structured data? This is what I call data-driven rendering, where the UI is generated based on data, whether on the server or client side, without developers needing to manually code it.</p>
+<h2>Traditional view technologies <span aria-hidden="true">🏗️</span> vs. data-driven rendering <span aria-hidden="true">⚡</span></h2>
+<p><img src="../../img/Pasted%20image%2020250504115309.png" alt="Comparing the chaos of a construction site symbolizing the traditional technologies vs the order of a factory assembly line"></p>
+<p>Traditional MVC-style templating systems have been widely used to build dynamic web applications. These frameworks allow developers to generate HTML on the server side with embedded logic. However, they still rely on explicitly defined templates and manual UI coding, which presents several challenges. Check out below a typical Razor template:</p>
+<pre class="language-csharp"><code class="language-csharp">@page <span class="token string">"/example"</span><br><span class="token operator">&lt;</span>h3<span class="token operator">></span>Simple Form<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">></span><br><br><span class="token operator">&lt;</span><span class="token class-name">input</span> type<span class="token operator">=</span><span class="token string">"text"</span> placeholder<span class="token operator">=</span><span class="token string">"First name"</span> <span class="token operator">/</span><span class="token operator">></span><br><span class="token operator">&lt;</span><span class="token class-name">input</span> type<span class="token operator">=</span><span class="token string">"text"</span> placeholder<span class="token operator">=</span><span class="token string">"Last name"</span> <span class="token operator">/</span><span class="token operator">></span><br><br><span class="token operator">&lt;</span>button<span class="token operator">></span>Submit<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span></code></pre>
+<p>Even with Razor’s templating capabilities, developers still need to define UI components manually, making maintenance and scalability more challenging.</p>
+<ul>
+<li><strong><span aria-hidden="true">🏗️</span> Manual component definitions</strong>: Even though these technologies help with templating, developers still need to write and maintain a large number of views manually.</li>
+<li><strong><span aria-hidden="true">🔁</span> Limited reusability</strong>:  MVCs often mix business logic with UI code, making it harder to reuse components across different applications without modifications.</li>
+<li><strong><span aria-hidden="true">📈</span> Scalability challenges</strong>: As applications grow, maintaining a vast number of templates and views becomes increasingly complex.</li>
+</ul>
+<p>Data-driven rendering libraries (like the <a href="https://github.com/gov-cy/govcy-frontend-renderer" target="_blank">govcy-frontend-renderer</a>) eliminates these limitations by fully separating the UI from the logic. Instead of manually coding templates for every scenario, a data-driven renderer can dynamically construct UI elements based on structured data (e.g., JSON). This allows applications to scale more efficiently and reduces development overhead by removing the need for repetitive template creation.</p>
+<p>Check out below a data-driven template:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> jsonTemplate <span class="token operator">=</span> <span class="token punctuation">[</span><br>  <span class="token punctuation">{</span><br>      <span class="token string-property property">"element"</span><span class="token operator">:</span> <span class="token string">"textInput"</span><span class="token punctuation">,</span><br>      <span class="token string-property property">"params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"label"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">"en"</span><span class="token operator">:</span> <span class="token string">"First name"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Όνομα"</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span> <br>  <span class="token punctuation">{</span><br>      <span class="token string-property property">"element"</span><span class="token operator">:</span> <span class="token string">"textInput"</span><span class="token punctuation">,</span><br>      <span class="token string-property property">"params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"label"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">"en"</span><span class="token operator">:</span> <span class="token string">"Last name"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Επώνυμο"</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span> <br>  <span class="token punctuation">{</span><br>      <span class="token string-property property">"element"</span><span class="token operator">:</span> <span class="token string">"button"</span><span class="token punctuation">,</span><br>      <span class="token string-property property">"params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"text"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">"en"</span><span class="token operator">:</span> <span class="token string">"Submit"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Υποβολή"</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span> <br><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<p>Defining the UI as data gives developers greater flexibility and ease of use. For example, suppose you want to add an <code>h1</code> element to the example above. All you need to do is just add a new item to the array:</p>
+<pre class="language-js"><code class="language-js">jsonTemplate<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>      <span class="token string-property property">"element"</span><span class="token operator">:</span> <span class="token string">"textElement"</span><span class="token punctuation">,</span><br>      <span class="token string-property property">"params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string-property property">"text"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">"en"</span><span class="token operator">:</span> <span class="token string">"Title"</span><span class="token punctuation">,</span> <span class="token string-property property">"el"</span><span class="token operator">:</span><span class="token string">"Τίτλος"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string-property property">"type"</span><span class="token operator">:</span> <span class="token string">"h1"</span><span class="token punctuation">}</span><br>  <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>What’s more, defining UI as structured data like JSON creates a <strong>universal UI language</strong> across your organization. Instead of scattered conventions, you get a single, consistent format that every service, designer, and developer can use. This makes your design system not just a style guide, but an executable blueprint that is easier to test, easier to document, and easier to scale.</p>
+<h2><span aria-hidden="true">✨</span> The beauty of data-driven rendering</h2>
+<p>Data-driven rendering simplifies UI development in many ways. Here are some of it’s key advantages.</p>
+<h3><span aria-hidden="true">⏳</span><span aria-hidden="true">✅</span> Saving time and promoting best practices</h3>
+<p>One of the biggest advantages of data-driven rendering is how much time it saves developers. By automating UI generation, developers spend less time writing repetitive code and more time focusing on business logic.</p>
+<p>Additionally, data-driven rendering enforces coding best practices by ensuring that all UI elements are generated in a consistent manner. This reduces the likelihood of errors, eliminates redundant code, and promotes modularity. With a centralized rendering approach, teams can enforce accessibility, security, and performance optimizations without requiring every developer to manually implement these best practices.</p>
+<h3><span aria-hidden="true">🔧</span><span aria-hidden="true">🚀</span> Easier maintenance and feature expansion</h3>
+<p>Data-driven rendering makes it significantly easier for teams to maintain a product over time. Since the UI is generated dynamically, making updates or implementing new features requires modifying the data or renderer logic rather than refactoring large chunks of code. This means teams can adapt quickly to changes, whether they are design updates, accessibility improvements, or functional enhancements.</p>
+<p>Another major benefit is the reduction of boilerplate code. When UI elements are defined in a structured format, there is far less duplicate code, making the overall codebase cleaner and easier to manage. This not only reduces technical debt but also allows developers to focus on solving more complex problems rather than manually updating UI components.</p>
+<p>With more time freed from repetitive UI coding, teams can dedicate their efforts to innovation, improving user experience, and delivering new features faster. The streamlined workflow leads to better collaboration between designers and developers, ensuring that the product evolves efficiently over time.</p>
+<h3><span aria-hidden="true">🏗️</span><span aria-hidden="true">👥</span> Empowering non-developers to enhance the product</h3>
+<p>One of the most exciting benefits of data-driven rendering is that it enables non-developers to contribute to UI development. With a well-designed administration platform, product managers, designers, and content editors can modify the UI without needing to write code.</p>
+<ul>
+<li><strong><span aria-hidden="true">🎨</span> Low-code/no-code flexibility</strong>: Business users can update forms, modify layouts, or introduce new UI elements using a structured interface instead of relying on developers.</li>
+<li><strong><span aria-hidden="true">🔄</span> Faster iteration cycles</strong>: Non-technical teams can make UI changes without waiting for engineering resources, leading to quicker updates and more agile development.</li>
+<li><strong><span aria-hidden="true">🤝</span> More efficient collaboration</strong>: Developers can focus on building and improving the rendering engine, while non-developers manage the visual and functional aspects of the product.</li>
+</ul>
+<figure>
+<img src="../../img/Pasted%20image%2020250504115858.png" alt="Example service designed on figma"> 
+<figcaption>At <a href="https://dsf.dmrid.gov.cy/" target="_blank">DSF</a> we use Figma as an administration platform where designers define a service and it's UI, and a Figma plugin to export the data definition of the UI.</figcaption>
+</figure>
+<p>This shift reduces development bottlenecks and enables teams to iterate faster, improving user experience without increasing engineering overhead.</p>
+<h2>Other benefits of data-driven rendering</h2>
+<h3><span aria-hidden="true">📝</span> No more manually writing UI code</h3>
+<p>Instead of hardcoding templates, developers can define data structures, and a renderer takes care of the rest. This means less time spent on markup and more focus on logic.</p>
+<h3><span aria-hidden="true">🔄</span> Consistency across applications</h3>
+<p>When all UI is generated using a renderer, consistency is ensured because the same set of rules applies everywhere. There’s no risk of one developer implementing a component slightly differently from another.</p>
+<h3><span aria-hidden="true">🛠️</span> Easier maintenance</h3>
+<p>Since UI is driven by structured data, changes only need to be made in one place. If the design evolves, updating the renderer automatically updates all interfaces that depend on it.</p>
+<h3><span aria-hidden="true">♿</span> Better accessibility &amp; compliance</h3>
+<p>A well-designed renderer ensures that every UI element adheres to best practices, including accessibility and design standards, without requiring developers to think about them individually.</p>
+<h3><span aria-hidden="true">⚡</span> Faster prototyping &amp; iteration</h3>
+<p>With data-driven rendering, UI updates can be done by simply modifying the data. This allows designers and developers to iterate quickly without rewriting templates.</p>
+<h3><span aria-hidden="true">📱</span><span aria-hidden="true">💻</span> Multi-platform support</h3>
+<p>By separating the UI definition from its rendering logic, the same data can be used to generate interfaces for web, mobile, or other platforms seamlessly.</p>
+<h2><span aria-hidden="true">🌍</span> Real-world applications</h2>
+<p>Data-driven rendering is widely used in various industries and tools. Some well-known examples include:</p>
+<ul>
+<li><strong><span aria-hidden="true">📄</span> <a href="https://workspace.google.com/products/forms/" target="_blank">Google Forms</a></strong>: Forms are generated dynamically based on structured form data, eliminating the need to manually code each form.</li>
+<li><strong><span aria-hidden="true">🏗️</span> <a href="https://www.notion.com/" target="_blank">Notion</a></strong>: Pages and blocks are rendered dynamically from structured content, making it easy to reorganize and display data.</li>
+<li><strong><span aria-hidden="true">🌐</span> CMS-based websites</strong>: Platforms like <a href="https://wordpress.org/" target="_blank">WordPress</a> and <a href="https://www.contentful.com/" target="_blank">Contentful</a> dynamically generate web pages from stored content.</li>
+<li><strong><span aria-hidden="true">🎨</span> Design systems &amp; component libraries</strong>: UI libraries like <a href="https://mui.com/material-ui/" target="_blank">Material UI</a> or <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> often include systems that dynamically generate components based on predefined configurations.</li>
+<li><strong><span aria-hidden="true">📊</span> Dashboard &amp; data visualization tools</strong>: Tools like <a href="https://www.tableau.com/" target="_blank">Tableau</a> and <a href="https://www.microsoft.com/en-us/power-platform/products/power-bi" target="_blank">Power BI</a> dynamically render charts and UI components based on input data.</li>
+</ul>
+<h2><span aria-hidden="true">💡</span> Final thoughts</h2>
+<p>Data-driven rendering isn’t just a development technique, it’s a mindset shift. It enables automation, reduces redundancy, and makes UI more scalable and maintainable. If you’re building applications with repetitive UI structures, consider leveraging a renderer to simplify your workflow.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium"><li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li><li>
+                                <a href="/blog/">
+                                    Blog
+                                </a>
+                            </li><li>
+                                <a href="/about/">
+                                    About
+                                </a>
+                            </li><li>
+                                <a href="/search/">
+                                    Search
+                                </a>
+                            </li><li><a href="/feed.xml">Feed</a></li>
+                        <li>
+                            <a href="/accessibility/">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" class="success-a11y-badge">
+                                
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2025</li>
+                        <li class="govcy-d-block govcy-text-dark">Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block govcy-text-dark">
+        © Constantinos Evangelou, 2025
+    </div>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script data-goatcounter="https://consevangelou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>       
+    </body>
+</html>
