@@ -4,11 +4,20 @@
   <subtitle> </subtitle>
   <link href="https://consevangelou.com/feed.xml" rel="self" />
   <link href="https://consevangelou.com/" />
-  <updated>2025-05-06T00:00:00Z</updated>
+  <updated>2025-05-28T00:00:00Z</updated>
   <id>https://consevangelou.com/</id>
   <author>
     <name>Constantinos Evangelou</name>
   </author>
+  <entry>
+    <title>13 overlooked details in Front-end Development (That make a big difference) (By DSF)</title>
+    <link href="https://consevangelou.com/blog/dsf-13-things-often-overlooked-in-frontend-development/" />
+    <updated>2025-05-28T00:00:00Z</updated>
+    <id>https://consevangelou.com/blog/dsf-13-things-often-overlooked-in-frontend-development/</id>
+    <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on the most overlooked, yet essential, front-end details, and how they are covered by our Unified Design System.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2025/05/28/13-overlooked-details-in-front-end-development-that-make-a-big-difference/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Data-driven rendering: A universal UI language</title>
     <link href="https://consevangelou.com/blog/data-driven-rendering-a-universal-ui-language/" />
@@ -859,15 +868,6 @@ Notify your team, users, or stakeholders about the release, highlighting key cha
 &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester&quot; target=&quot;_blank&quot;&gt;govcy-frontend-tester&lt;/a&gt; NPM package to perform front end tests in terms of the accessibility and generic guidelines of the design system&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the gov.cy Design System&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Improving Accessibility: Lessons from making design elements screen reader-friendly (by DSF)</title>
-    <link href="https://consevangelou.com/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/" />
-    <updated>2024-01-23T00:00:00Z</updated>
-    <id>https://consevangelou.com/blog/dsf-improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/</id>
-    <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on how the DSF tried to evolve the screen reader capabilities of their components, sharing the lessons learned from that process&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2024/01/23/improving-accessibility-lessons-from-making-design-elements-screen-reader-friendly/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="The most overlooked, yet essential, front-end details, and how they are covered by our Unified Design System">
+        <meta property="og:title" content="13 overlooked details in Front-end Development (That make a big difference) (By DSF) - Con&#39;s place">
+        <meta property="og:url" content="https://consevangelou.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/Overlooked%20details%20in%20frontend.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://consevangelou.com/">
+        <meta property="twitter:title" content="13 overlooked details in Front-end Development (That make a big difference) (By DSF) - Con&#39;s place">
+        <meta property="twitter:description" content="The most overlooked, yet essential, front-end details, and how they are covered by our Unified Design System">
+        <meta property="twitter:image" content="/img/Overlooked%20details%20in%20frontend.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>13 overlooked details in Front-end Development (That make a big difference) (By DSF) - Con&#39;s place</title>
+        <meta name="description" content="The most overlooked, yet essential, front-end details, and how they are covered by our Unified Design System">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block">
+        <a href="/" class="desktop-header">
+            <img src="/img/GieglasIconInverse.png" alt="Con's place logo" aria-hidden="true">
+            Con's place
+        </a>
+    </div>
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>13 overlooked details in Front-end Development (That make a big difference) (By DSF)</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2025-05-28T00:00:00.000Z">28 May 2025</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/tags/dev">dev</a>
+                                        
+                                            <a class="post-tag" href="/tags/dsf">dsf</a>
+                                        
+                                            <a class="post-tag" href="/tags/design">design</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/img/Overlooked%20details%20in%20frontend.png" alt="Graphic for 13 overlooked details in Front-end Development (That make a big difference) (By DSF)" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Check out the link below for the post I wrote for the <a href="https://dsf.dmrid.gov.cy/" target="_blank">Digital Services Factory (DSF)</a>, on the most overlooked, yet essential, front-end details, and how they are covered by our Unified Design System.</p>
+<p><a href="https://dsf.dmrid.gov.cy/2025/05/28/13-overlooked-details-in-front-end-development-that-make-a-big-difference/" class="govcy-btn-primary" target="_blank"><img src="/img/dsf-small-white-icon.svg" alt="DSF" class="btn-image"> Launch the post</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium"><li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li><li>
+                                <a href="/blog/">
+                                    Blog
+                                </a>
+                            </li><li>
+                                <a href="/about/">
+                                    About
+                                </a>
+                            </li><li>
+                                <a href="/search/">
+                                    Search
+                                </a>
+                            </li><li><a href="/feed.xml">Feed</a></li>
+                        <li>
+                            <a href="/accessibility/">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" class="success-a11y-badge">
+                                
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2025</li>
+                        <li class="govcy-d-block govcy-text-dark">Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block govcy-text-dark">
+        © Constantinos Evangelou, 2025
+    </div>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script data-goatcounter="https://consevangelou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>       
+    </body>
+</html>

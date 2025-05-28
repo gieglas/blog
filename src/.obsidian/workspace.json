@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/data-driven-rendering-a-universal-ui-language.md",
+                "file": "blog/dsf-13-things-often-overlooked-in-frontend-development.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data-driven-rendering-a-universal-ui-language"
+              "title": "dsf-13-things-often-overlooked-in-frontend-development"
+            }
+          },
+          {
+            "id": "3052ac99f446ef67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "dsf-enhancing-the-unified-design-system-with-automated-visual-testing"
             }
           }
         ]
@@ -140,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/data-driven-rendering-a-universal-ui-language.md",
+                "file": "blog/dsf-13-things-often-overlooked-in-frontend-development.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of data-driven-rendering-a-universal-ui-language"
+              "title": "Outline of dsf-13-things-often-overlooked-in-frontend-development"
             }
           }
         ],
@@ -164,11 +178,16 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "e3adc20b2ab7feb3",
   "lastOpenFiles": [
+    "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
+    "img/Overlooked details in frontend.png",
+    "blog/dsf-13-things-often-overlooked-in-frontend-development.md",
+    "blog/data-driven-rendering-a-universal-ui-language.md",
     "img/Pasted image 20250504212521.png",
     "_drafts/images/data-driven-rendering-7.png",
     "_drafts/images/data-driven-rendering-7.png.0.pdnSave",
@@ -180,22 +199,18 @@
     "img/Pasted image 20250504120322.png",
     "img/Pasted image 20250504115858.png",
     "img/Pasted image 20250504115309.png",
-    "_drafts/ideas/things-often-overlooked-in-frontend.md",
     "_drafts/images/Overlooked details in frontend.png",
     "_drafts/images/Overlooked details in frontend.png.0.pdnSave",
     "_drafts/images/Gemini_Generated_Image_fg7fx5fg7fx5fg7f.jfif",
     "_drafts/images/Gemini_Generated_Image_ojdaatojdaatojda.jfif",
     "_drafts/ideas/things-often-overlooked-in-frontend 1.md",
     "_drafts/ideas/designing-accessible-online-services-a-heuristic-approach-for-designers.md",
-    "blog/data-driven-rendering-a-universal-ui-language.md",
     "blog/govcy-frontend-prototype-a-dynamic-prototype-tool.md",
     "img/Pasted image 20250304132430.png",
-    "img/Pasted image 20250304132109.png",
     "blog/creating-a-reliable-software-release-policy.md",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-1.jfif",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-3.jfif",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-2.jfif",
-    "_drafts/images/data-driven-rendering-2.jpg",
     "_drafts/ideas/1designing-accessible-online-services-a-heuristic-approach-for-designers.md",
     "blog/managing-multi-repository-product-with-github-projects.md",
     "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
@@ -205,7 +220,6 @@
     "blog/how-I-made-my-app-a-pwa.md",
     "blog/online-search-registry-cregistry.md",
     "blog/building-a-dynamic-html-renderer.md",
-    "blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing.md",
     "Untitled.md",
     "blog/automating-accessibility-site-wide-testing-and-reporting-guide copy.md",
     "_drafts/Untitled.md",
