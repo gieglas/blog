@@ -59,7 +59,8 @@ module.exports = {
             name : "gov.cy - UDS Library in Figma", 
             type : "figma",
             url : "https://www.figma.com/community/file/1388468172430388495/dsf-gov-cy-unified-design-system-v-3", 
-            description: "Figma library for the gov.cy Design System"
+            description: "Figma library for the gov.cy Design System",
+            post: "dsf-how-to-use-the-figma-community-library-file-to-design-digital-services"
           },
           {
             name : "govcy-frontend-renderer", 
@@ -73,6 +74,7 @@ module.exports = {
             type : "github",
             url : "https://github.com/gov-cy/govcy-frontend-prototype", 
             description: "Build prototypes of gov.cy services and websites using the Unified Design System of gov.cy without coding",
+            post: "govcy-frontend-prototype-a-dynamic-prototype-tool",
             demo: "https://gov-cy.github.io/govcy-frontend-prototype/task-list-demo/",
           },
           {
