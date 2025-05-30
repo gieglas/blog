@@ -4,11 +4,20 @@
   <subtitle> </subtitle>
   <link href="https://consevangelou.com/feed.xml" rel="self" />
   <link href="https://consevangelou.com/" />
-  <updated>2025-05-28T00:00:00Z</updated>
+  <updated>2025-05-30T00:00:00Z</updated>
   <id>https://consevangelou.com/</id>
   <author>
     <name>Constantinos Evangelou</name>
   </author>
+  <entry>
+    <title>Designing accessible online services: a heuristic approach for designers (By DSF)</title>
+    <link href="https://consevangelou.com/blog/dsf-designing-accessible-online-services-a-heuristic-approach-for-designers/" />
+    <updated>2025-05-30T00:00:00Z</updated>
+    <id>https://consevangelou.com/blog/dsf-designing-accessible-online-services-a-heuristic-approach-for-designers/</id>
+    <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, that explores how the accessibility heuristics table and scoring system work, how to use heuristic evaluation, and how designers can apply this in practice. The heuristics used in this post were adapted to align with the Unified Design System (UDS).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2025/05/30/designing-accessible-online-services-a-heuristic-approach-for-designers/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>13 overlooked details in Front-end Development (That make a big difference) (By DSF)</title>
     <link href="https://consevangelou.com/blog/dsf-13-things-often-overlooked-in-frontend-development/" />
@@ -774,100 +783,6 @@ Notify your team, users, or stakeholders about the release, highlighting key cha
 &lt;p&gt;So there you have it! I hope this post can help you implement your own automated accessibility check process.&lt;/p&gt;
 &lt;p&gt;Automating accessibility checks can save you a lot of time and help you maintain a more accessible website. However, remember that automated tests are not a substitute for manual testing. Use them as a tool to catch common issues and guide your manual testing efforts.&lt;/p&gt;
 &lt;p&gt;Happy testing!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>gov.cy Design System update (V.3.0.0) – Unified Design System</title>
-    <link href="https://consevangelou.com/blog/dsf-design-system-update-v-3-0-0-unified-design-system/" />
-    <updated>2024-08-07T00:00:00Z</updated>
-    <id>https://consevangelou.com/blog/dsf-design-system-update-v-3-0-0-unified-design-system/</id>
-    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, released of version 3.0.0 of the gov.cy design system. This is a total redesign of the design system, with branding and styling changes, updated and new components, to accommodate both services and websites.&lt;/p&gt;
-&lt;p&gt;The new version includes improvements on existing components, as well as new design elements to accommodate services and websites alike.&lt;/p&gt;
-&lt;p&gt;Drawing from the DSF’s experience developing gov.cy services, user research findings, and the feedback they received from other teams that used the design system, they incorporated lessons learned, to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;define the gov.cy design principles&lt;/li&gt;
-&lt;li&gt;align design elements with these principles&lt;/li&gt;
-&lt;li&gt;better explain the design system’s best practices&lt;/li&gt;
-&lt;li&gt;accelerate the design and development of services&lt;/li&gt;
-&lt;li&gt;make it easier for service teams to understand and implement the design system&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Changes include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the introduction of the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/principles/&quot; target=&quot;_blank&quot;&gt;design system principles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;an updated &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/&quot; target=&quot;_blank&quot;&gt;Get started page&lt;/a&gt; for better understanding how to use the design system&lt;/li&gt;
-&lt;li&gt;an updated pattern on &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/patterns/service_structure/&quot; target=&quot;_blank&quot;&gt;structuring a gov.cy service&lt;/a&gt;, featuring example variants that have been tested and proven effective&lt;/li&gt;
-&lt;li&gt;a dedicated page to help developers &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/developer-assets/&quot; target=&quot;_blank&quot;&gt;use the design system’s developer assets&lt;/a&gt;  to accelerate development&lt;/li&gt;
-&lt;li&gt;an &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/page-template/&quot; target=&quot;_blank&quot;&gt;updated page template&lt;/a&gt; with sample pages, for websites, as well as services&lt;/li&gt;
-&lt;li&gt;better guidance for implementing &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/components/&quot; target=&quot;_blank&quot;&gt;components&lt;/a&gt; with sections, explaining:
-&lt;ul&gt;
-&lt;li&gt;when to use a component&lt;/li&gt;
-&lt;li&gt;when not to use a component&lt;/li&gt;
-&lt;li&gt;how the component works&lt;/li&gt;
-&lt;li&gt;how to implement different variants of the component&lt;/li&gt;
-&lt;li&gt;how to display errors&lt;/li&gt;
-&lt;li&gt;what content to use&lt;/li&gt;
-&lt;li&gt;accessibility best practices&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The design system also introduces the following new elements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Components
-&lt;ul&gt;
-&lt;li&gt;accordion&lt;/li&gt;
-&lt;li&gt;character count&lt;/li&gt;
-&lt;li&gt;cookie banner&lt;/li&gt;
-&lt;li&gt;data tables&lt;/li&gt;
-&lt;li&gt;date picker&lt;/li&gt;
-&lt;li&gt;inset text&lt;/li&gt;
-&lt;li&gt;phase banner&lt;/li&gt;
-&lt;li&gt;summary list&lt;/li&gt;
-&lt;li&gt;tag&lt;/li&gt;
-&lt;li&gt;textarea&lt;/li&gt;
-&lt;li&gt;warning text&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Styles
-&lt;ul&gt;
-&lt;li&gt;images&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Patterns
-&lt;ul&gt;
-&lt;li&gt;addresses&lt;/li&gt;
-&lt;li&gt;bank details&lt;/li&gt;
-&lt;li&gt;confirm an email address&lt;/li&gt;
-&lt;li&gt;confirmation pages&lt;/li&gt;
-&lt;li&gt;contact page&lt;/li&gt;
-&lt;li&gt;cookies page&lt;/li&gt;
-&lt;li&gt;filter results&lt;/li&gt;
-&lt;li&gt;gender or sex&lt;/li&gt;
-&lt;li&gt;numeric inputs&lt;/li&gt;
-&lt;li&gt;social insurance number&lt;/li&gt;
-&lt;li&gt;step by step navigation&lt;/li&gt;
-&lt;li&gt;task list page&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Accessibility enhancements&lt;/h2&gt;
-&lt;p&gt;The new version of the design system emphasises accessibility. All elements have been tested and comply with the  &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/principles/#8.-include-everyone&quot; target=&quot;_blank&quot;&gt;include everyone principle&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The DSF has included recommendations and best practices on how to enhance accessibility using their components and patterns (for example see the  &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/components/text_input/#accessibility&quot; target=&quot;_blank&quot;&gt;input text accessibility recommendations&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;However, that does not mean that any implementation that uses the developer assets, automatically complies with the Standard. When implementing a gov.cy service or website, make sure to always test for compliance with the EN 301 549 Standard.&lt;/p&gt;
-&lt;h2&gt;Design system website&lt;/h2&gt;
-&lt;p&gt;The  &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/&quot; target=&quot;_blank&quot;&gt;design system’s website&lt;/a&gt; has been updated with the new styling and guidance.&lt;/p&gt;
-&lt;p&gt;Anyone implementing a service or a website for gov.cy, should first go through the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/&quot; target=&quot;_blank&quot;&gt;Get started page&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Developer assets&lt;/h2&gt;
-&lt;p&gt;The developer assets (CSS and JavaScript) have also been updated for the new version. Check out the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs/getting-started/developer-assets/&quot; target=&quot;_blank&quot;&gt;developer assets page&lt;/a&gt; for information on how to use the prebuilt CSS and JavaScript.&lt;/p&gt;
-&lt;p&gt;This is a major release and the changes on CSS and JavaScript are not backward compatible with version 2. For more information about the older version visit the &lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs-v2/&quot; target=&quot;_blank&quot;&gt;v2 documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Related tools and libraries&lt;/h2&gt;
-&lt;p&gt;In updating the design system, DSF also enhanced the libraries used for rapid design, development, prototyping and testing:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://excalidraw-libraries-git-cevangelougovcy-gov-e2dec6-excalidraw.vercel.app/?theme=light&amp;amp;sort=default#cevangelougovcy-gov-cy-uds-library&quot; target=&quot;_blank&quot;&gt;excalidraw library&lt;/a&gt; to create rapid wireframes and sketches.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.figma.com/community/file/1388468172430388495/dsf-gov-cy-unified-design-system-v-3&quot; target=&quot;_blank&quot;&gt;figma library&lt;/a&gt; to rapidly create designs and prototypes the gov.cy way&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/dsf-email-templates&quot; target=&quot;_blank&quot;&gt;dsf-email-templates&lt;/a&gt; NPM package to create HTML email templates&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester&quot; target=&quot;_blank&quot;&gt;govcy-frontend-tester&lt;/a&gt; NPM package to perform front end tests in terms of the accessibility and generic guidelines of the design system&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;https://gov-cy.github.io/govcy-design-system-docs&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the gov.cy Design System&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
