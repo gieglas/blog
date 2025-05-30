@@ -6,9 +6,9 @@ category: "about"
 
 Hello, I'm Constantinos Evangelou, an interaction designer working for the <a href="https://dsf.dmrid.gov.cy" target="_blank">Digital Services Factory (DSF)</a> who loves to play with code and this is where I write about stuff. 
 
-I helped implement various government services, but what I really enjoy is creating reusable tools to help others create simple, accessible services that improve people’s lives.
+I helped implement various online services for the <a href="https://www.gov.cy/" target="_blank">Government of Cyprus (gov.cy)</a>, but what I really enjoy is creating reusable tools to help others create simple, accessible services that improve people’s lives.
 
-## Current projects 
+## DSF projects 
 
 <div class="row" style=""> 
 {% for project in site.localization[locale]["projects"] %}
@@ -34,17 +34,18 @@ I helped implement various government services, but what I really enjoy is creat
 </div>
 
 ## gov.cy services I worked on
-- [Issue citizen documents](https://citizen-documents.staging.service.gov.cy/){target="_blank"}
-- [My documents](https://citizen-documents.staging.service.gov.cy/Email/History/document){target="_blank"}
-- [Apply for a passport](https://citizen-documents.staging.service.gov.cy/passport-certificate){target="_blank"}
-- [Apply for an ID card](https://citizen-documents.staging.service.gov.cy/identity-certificate){target="_blank"}
-- [Birth certificate](https://citizen-documents.staging.service.gov.cy/birth-certificate){target="_blank"}
-- [Death certificate](https://citizen-documents.staging.service.gov.cy/death-certificate){target="_blank"}
-- [Certificate of permanent residence](https://citizen-documents.staging.service.gov.cy/permanent-residence-certificate){target="_blank"}
-- [Certificate of origin](https://citizen-documents.staging.service.gov.cy/student-origin){target="_blank"}
-- [Displaced family ID card](https://citizen-documents.staging.service.gov.cy/refugee-id-certificate){target="_blank"}
-- [Parental consent](https://citizen-documents.staging.service.gov.cy/parental-consent-info){target="_blank"}
-- [Confirm the validity of documents](https://citizen-documents.staging.service.gov.cy/certificate-verification-info){target="_blank"}
+- [Issue citizen documents](https://citizen-documents.service.gov.cy/){target="_blank"}
+- [My documents](https://citizen-documents.service.gov.cy/Email/History/document){target="_blank"}
+- [Apply for a passport](https://citizen-documents.service.gov.cy/passport-certificate){target="_blank"}
+- [Apply for an ID card](https://citizen-documents.service.gov.cy/identity-certificate){target="_blank"}
+- [Birth certificate](https://citizen-documents.service.gov.cy/birth-certificate){target="_blank"}
+- [Death certificate](https://citizen-documents.service.gov.cy/death-certificate){target="_blank"}
+- [Certificate of permanent residence](https://citizen-documents.service.gov.cy/permanent-residence-certificate){target="_blank"}
+- [Certificate of origin](https://citizen-documents.service.gov.cy/student-origin){target="_blank"}
+- [Displaced family ID card](https://citizen-documents.service.gov.cy/refugee-id-certificate){target="_blank"}
+- [Parental consent](https://citizen-documents.service.gov.cy/parental-consent-info){target="_blank"}
+- [Confirm the validity of documents](https://citizen-documents.service.gov.cy/certificate-verification-info){target="_blank"}
+- [Search in the Civil Registry](https://civil-registry-search.service.gov.cy/){target="_blank"}
 - [National Solidarity Fund Scheme](https://national-solidarity-fund.service.gov.cy/){target="_blank"} 
 - [Voter registration](https://voter-registration.service.gov.cy/){target="_blank"} 
 - [Update my personal details](https://update-my-details.service.gov.cy/){target="_blank"} 
