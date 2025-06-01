@@ -5,6 +5,7 @@ summary: Explore how the accessibility heuristics table and scoring system work,
 image: designing-accessible-online-services-a-heuristic-approach-for-designers-2.png
 tags:
   - dev
+  - accessibility
   - dsf
   - design
 ---
