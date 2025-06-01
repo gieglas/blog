@@ -5,6 +5,7 @@ summary: The most overlooked, yet essential, front-end details, and how they are
 image: Overlooked%20details%20in%20frontend.png
 tags:
   - dev
+  - accessibility
   - dsf
   - design
 ---

@@ -6,6 +6,7 @@ image: Pasted%20image%2020250504212521.png
 tags:
   - dev
   - design
+  - accessibility
 ---
 Developing consistent, scalable UI can be tedious and time-consuming. Traditionally, developers write HTML, templates, or components manually. But what if UI could be rendered dynamically, using only structured data? This is what I call data-driven rendering, where the UI is generated based on data, whether on the server or client side, without developers needing to manually code it.
 ## Traditional view technologies <span aria-hidden="true">🏗️</span> vs. data-driven rendering <span aria-hidden="true">⚡</span>

@@ -5,6 +5,7 @@ summary: An overview on how a dynamic HTML renderer (govcy-frontend-renderer) wo
 image: Pasted%20image%2020250124152306.png
 tags:
   - dev
+  - accessibility
   - dsf
   - ci-cd
 ---
