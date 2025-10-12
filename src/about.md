@@ -50,6 +50,7 @@ I helped implement various online services for the <a href="https://www.gov.cy/"
 - [Voter registration](https://voter-registration.service.gov.cy/){target="_blank"} 
 - [Update my personal details](https://update-my-details.service.gov.cy/){target="_blank"} 
 - [Child birth grant](https://child-birth-grant.service.gov.cy/){target="_blank"}
+- [Confirmation of assumption of duties - Supporting programs of the Ministry of Education](https://moec-eservices.service.gov.cy/){target="_blank"}
 
 ## Writing
 

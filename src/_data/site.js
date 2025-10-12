@@ -44,13 +44,13 @@ module.exports = {
         "projects": 
         [
           {
-            name : "govcy-design-system", 
+            name : "gov.cy Unified Design System", 
             type : "github", 
             url : "https://github.com/gov-cy/govcy-design-system", 
             description: "The gov.cy design system developer assets project"
           },
           {
-            name : "govcy-design-system-docs", 
+            name : "gov.cy Unified Design System Documentation", 
             type : "github", 
             url : "https://github.com/gov-cy/govcy-design-system-docs", 
             description: "The project for the documentation pages of the govcy design system"
@@ -63,14 +63,20 @@ module.exports = {
             post: "dsf-how-to-use-the-figma-community-library-file-to-design-digital-services"
           },
           {
-            name : "govcy-frontend-renderer", 
+            name : "gov.cy Express Services", 
+            type : "npm",
+            url : "https://www.npmjs.com/package/@gov-cy/govcy-express-services", 
+            description: "Dynamically renders online service forms using `@gov-cy/govcy-frontend-renderer`, handles data input, validations, renders a review page and submits the data via a submission API.",
+          },
+          {
+            name : "gov.cy Frontend Renderer", 
             type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/govcy-frontend-renderer", 
             description: "Render HTML for design elements, as they are defined in the gov.cy Design System based on JSON or njk templates",
             post: "building-a-dynamic-html-renderer"
           },
           {
-            name : "govcy-frontend-prototype", 
+            name : "gov.cy Frontend Prototype", 
             type : "github",
             url : "https://github.com/gov-cy/govcy-frontend-prototype", 
             description: "Build prototypes of gov.cy services and websites using the Unified Design System of gov.cy without coding",
@@ -78,19 +84,19 @@ module.exports = {
             demo: "https://gov-cy.github.io/govcy-frontend-prototype/task-list-demo/",
           },
           {
-            name : "govcy-frontend-tester", 
+            name : "govcy Frontend Tester", 
             type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/govcy-frontend-tester", 
             description: "Perform front end tests in terms of the accessibility and design guidelines established by the Digital Services Factory (DSF) Cyprus"
           },
           {
-            name : "dsf-email-templates", 
+            name : "DSF HTML Email Generator", 
             type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/dsf-email-templates", 
             description: "Produce html emails with gov.cy looks"
           },
           {
-            name : "dsf-assessment-checklist", 
+            name : "DSF Assessment Checklist", 
             type : "github",
             url : "https://github.com/gov-cy/dsf-assessment-checklist", 
             description: "A sample application to demonstrate usage of SPA, PWA, govcy-frontend-renderer browser library and CDN latest major alias",
