@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="A personal look at how AI can help government services, where it becomes risky, and a simple framework for deciding what belongs where.">
+        <meta property="og:title" content="A simple risk framework for AI in government services - Con&#39;s place">
+        <meta property="og:url" content="https://consevangelou.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/img/A%20simple%20risk%20framework%20for%20AI%20in%20government%20services.png">
+        <meta property="og:site_name" content="Con&#39;s place">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://consevangelou.com/">
+        <meta property="twitter:title" content="A simple risk framework for AI in government services - Con&#39;s place">
+        <meta property="twitter:description" content="A personal look at how AI can help government services, where it becomes risky, and a simple framework for deciding what belongs where.">
+        <meta property="twitter:image" content="/img/A%20simple%20risk%20framework%20for%20AI%20in%20government%20services.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#0090d3">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/main.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>A simple risk framework for AI in government services - Con&#39;s place</title>
+        <meta name="description" content="A personal look at how AI can help government services, where it becomes risky, and a simple framework for deciding what belongs where.">
+        <meta name="author" content="Constantinos Evangelou">
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#mainContainer" class="govcy-skip-link govcy-mb-0">Skip to main content</a> 
+        <!--Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block">
+        <a href="/" class="desktop-header">
+            <img src="/img/GieglasIconInverse.png" alt="Con's place logo" aria-hidden="true">
+            Con's place
+        </a>
+    </div>
+    <header class="govcy-container-fluid govcy-p-0 govcy-pt-2 govcy-m-0 govcy-position-relative govcy-d-print-none ce-header">
+         <div class="govcy-container">
+             <div class="row">
+                <!--Displayed only on desktop-->
+                <div class="d-none d-md-block govcy-p-0 govcy-m-0 ">
+                    <a href="/" class="desktop-header personal-logo">
+                        <img aria-hidden="true" alt="Con&#39;s place logo" src="/img/GieglasIconInverse.png">
+                        Con&#39;s place
+                    </a>
+                </div>
+                <!-- Diplay only on desktop end -->
+                <span class="d-none d-md-block tagline govcy-mb-0 govcy-mt-1 govcy-ml-1">Be creative </span>
+                <div class="govcy-header govcy-mb-0">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="govcy-container govcy-p-0 govcy-m-0 govcy-mr-2">
+                            <!--Displayed only on mobile-->
+                            <div class="d-md-none"><a href="/" class="mobile-header personal-logo"><img alt="Con&#39;s place" src="/img/GieglasIconInverse.png">Con&#39;s place</a></div>
+                            <!-- Displayed only on mobile end -->
+                            <!-- Displayed only on mobile button-->                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <span style="vertical-align: middle !important;" class="govcy-mr-1 material-icons">menu</span>Menu 
+                                </span>
+                            </button>
+                            <!-- Displayed only on mobile end -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0 govcy-ml-3">
+                                    <li class="nav-item">
+                                    <a href="/"  class="nav-link" >
+                                        Home
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/blog/"  class="nav-link active" aria-current="page" >
+                                        Blog
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/about/"  class="nav-link" >
+                                        About
+                                    </a>
+                                    </li><li class="nav-item">
+                                    <a href="/search/"  class="nav-link" >
+                                        Search
+                                    </a>
+                                    </li></ul>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Displayed only on mobile-->
+                    <span class="d-md-none tagline govcy-mb-0 govcy-ml-3">Be creative </span>
+                    <!-- Displayed only on mobile  end -->
+                </div>
+             </div>
+         </div>
+    </header>
+    
+        <!--Main-->
+        <main class="govcy-container govcy-my-4" id="mainContainer">
+            <div class="row">
+                <div class="govcy-col-8 govcy-order-last">
+                    <h1>A simple risk framework for AI in government services</h1>
+                    <p class="post-date">Posted on 
+                                      <time datetime="2025-12-24T00:00:00.000Z">24 December 2025</time> 
+                                      • Tagged with 
+                                      
+                                            <a class="post-tag" href="/tags/design">design</a>
+                                        
+                                            <a class="post-tag" href="/tags/ai">ai</a>
+                                        
+                                            <a class="post-tag" href="/tags/dsf">dsf</a>
+                                        </p>
+                    
+                     
+                    <img aria-hidden="true" src="/img/A%20simple%20risk%20framework%20for%20AI%20in%20government%20services.png" alt="Graphic for A simple risk framework for AI in government services" class="img-fluid pop-small govcy-mb-4"></a>
+                    
+                    <div class="blog-page">
+                    <p>Artificial Intelligence is quickly becoming part of everyday conversations in government. From automation and analytics to content generation and decision support, the question is no longer <em>if</em> AI can be useful, but <em>where</em> it should be used, <em>where it shouldn’t</em>, and <em>where we need to be more careful</em>.</p>
+<p>This post is a personal attempt to make sense of those boundaries, and to share a simple, practical way of thinking about AI risk in the context of government services.</p>
+<p><strong>Sources and inspiration:</strong></p>
+<ul>
+<li><a href="https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html" target="_blank">UK Government’s Artificial Intelligence Playbook</a></li>
+<li><a href="https://www.deloitte.com/content/dam/assets-zone3/us/en/docs/services/consulting/2024/us-ai-institute-goverment-public-services-dossier.pdf" target="_blank">Deloitte’s Government &amp; Public Services AI Dossier</a></li>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689" target="_blank">EU’s AI Act</a></li>
+</ul>
+<h2>Where AI is genuinely useful in government</h2>
+<p>If you strip away the hype, there’s a strong pattern in how governments are already using AI successfully.</p>
+<p>Across both UK government guidance and Deloitte’s research, AI creates the most value when it:</p>
+<ul>
+<li>reduces complexity</li>
+<li>increases speed and efficiency</li>
+<li>improves consistency and quality</li>
+<li>supports people doing their jobs better</li>
+</ul>
+<p>Most real-world examples focus on:</p>
+<ul>
+<li>back-office automation</li>
+<li>analytics, prediction, and insight</li>
+<li>quality checks and consistency</li>
+<li>decision support for professionals</li>
+</ul>
+<p>In all of these cases, AI is <strong>assistive</strong>. It helps humans, but it does not replace authority.</p>
+<p>That distinction turns out to be critical.</p>
+<h2>Why government AI is different</h2>
+<p>Government services are not just digital experiences. They often relate to:</p>
+<ul>
+<li>access to public services</li>
+<li>legal or administrative outcomes</li>
+<li>citizen rights and obligations</li>
+</ul>
+<p>This is why governments are far more cautious than the private sector when AI moves closer to citizens and live transactions. A confusing product recommendation is annoying, but a confusing explanation in a government service can have real consequences.</p>
+<p>This is also why you don’t see AI-generated content embedded inside live transactional services like GOV.UK forms, not because governments lack imagination, but because <strong>the risk profile changes dramatically</strong>.</p>
+<h2>A simple risk-tier framework for AI in government services</h2>
+<p><img src="../../img/risk-tier%20framework.png" alt="risk-tier framework"><br>
+Before diving into risk tiers, there’s one important clarification.</p>
+<blockquote class="govcy-br-left-3 govcy-br-left-danger govcy-pl-3">
+<p><em>It’s about <strong>context</strong>, not models</em></p>
+</blockquote>
+<p>This guide does <strong>not</strong> evaluate “AI models” in isolation.</p>
+<p>It evaluates the context:</p>
+<ul>
+<li>where the AI is used</li>
+<li>how it is used</li>
+<li>for what purpose</li>
+</ul>
+<p>The same AI capability can be:</p>
+<ul>
+<li>minimal risk in one context</li>
+<li>high risk in another</li>
+</ul>
+<p>This idea sits at the heart of the EU AI Act, and it’s a very useful mental shift for service teams.</p>
+<p>Here’s a high-level summary of the four risk tiers, before going into more detail below.</p>
+<div class="govcy-table-responsive">
+<table class="govcy-table">
+  <thead>
+    <tr>
+      <th scope="col">Risk tier</th>
+      <th scope="col">How AI is used</th>
+      <th scope="col">What this means for teams</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">🔴 Unacceptable</th>
+      <td>AI use that manipulates, exploits, or removes accountability. </td>
+      <td>Do not use in government services.</td>
+    </tr>
+    <tr>
+      <th scope="row">🟠 High</th>
+      <td>AI that affects rights, access to services, or appears as official authority.</td>
+      <td> Possible, but heavily constrained. Highly regulated, costly to govern, and requires strong justification.</td>
+    </tr>
+    <tr>
+      <th scope="row">🟡 Limited</th>
+      <td>AI that interacts with users but does not decide outcomes. </td>
+      <td>Allowed with transparency, clear boundaries, and safeguards.</td>
+    </tr>
+    <tr>
+      <th scope="row">🟢 Minimal</th>
+      <td>Internal or assistive AI that supports teams and improves quality. </td>
+      <td>Encouraged. Minimal additional obligations beyond existing good practice.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Below, I’ll walk through each tier in a bit more detail.</p>
+<h3><span aria-hidden="true">🔴</span> Unacceptable risk</h3>
+<p>AI should not be used here</p>
+<p>AI systems that:</p>
+<ul>
+<li>manipulate behaviour</li>
+<li>exploit vulnerable users</li>
+<li>obscure accountability</li>
+<li>perform social scoring or covert influence</li>
+</ul>
+<p>From an EU AI Act perspective, systems in this category are either explicitly prohibited or fundamentally incompatible with public-sector use.</p>
+<p><strong>Simple test:</strong><br>
+If users cannot reasonably understand or challenge what the AI is doing, it doesn’t belong here.</p>
+<hr>
+<h3><span aria-hidden="true">🟠</span> High risk</h3>
+<p>AI is possible, but heavily constrained</p>
+<p>AI used in contexts that:</p>
+<ul>
+<li>affect access to public services</li>
+<li>influence eligibility or legal outcomes</li>
+<li>form part of an official administrative process</li>
+<li>appear as authoritative government guidance</li>
+</ul>
+<p>Examples include:</p>
+<ul>
+<li>AI-generated content that replaces official review or confirmation steps</li>
+<li>AI interpreting rules or requirements for citizens</li>
+<li>AI outputs that could reasonably be relied on as “the government’s answer”</li>
+<li>AI influencing decisions without clear human oversight</li>
+</ul>
+<p>This is where the EU AI Act places the strongest obligations. In practice, this means teams must expect requirements around risk assessment, documentation, transparency to users, meaningful human oversight, and the ability to audit and reconstruct how the AI behaves.</p>
+<hr>
+<h3><span aria-hidden="true">🟡</span> Limited risk</h3>
+<p>AI can be used, with clear boundaries</p>
+<p>AI systems that:</p>
+<ul>
+<li>interact with users</li>
+<li>generate or transform content</li>
+<li>but do <strong>not</strong> decide outcomes</li>
+</ul>
+<p>Key requirements:</p>
+<ul>
+<li>users must clearly know they are interacting with AI</li>
+<li>AI output must not be the sole source of truth or authoritative source of information</li>
+<li>behaviour must be predictable and constrained</li>
+</ul>
+<p>Here, the main EU AI Act obligation is transparency: users should understand that AI is involved, what its role is, and where its limits are.</p>
+<p><strong>Simple test:</strong><br>
+AI may help explain, but must not redefine meaning.</p>
+<hr>
+<h3><span aria-hidden="true">🟢</span> Minimal risk</h3>
+<p>AI use is encouraged</p>
+<p>AI systems that:</p>
+<ul>
+<li>are internal-facing</li>
+<li>support designers, developers, and teams</li>
+<li>improve quality, accessibility, and consistency</li>
+<li>do not directly affect citizen outcomes</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>content clarity checks</li>
+<li>accessibility analysis</li>
+<li>standards compliance review</li>
+<li>analytics and insight</li>
+<li>drafting and review support with human approval</li>
+</ul>
+<p>This is where AI delivers a lot of value with comparatively little risk.</p>
+<p>These uses typically fall into the lowest-risk category under the EU AI Act, with minimal additional obligations beyond existing good practice.</p>
+<p>In practice, “minimal obligations” does not mean no responsibility. It means AI use that fits within existing expectations: clear ownership, sensible testing, monitoring for obvious issues, and the ability for humans to override or ignore AI outputs.</p>
+<hr>
+<h2>The risk framework in practice</h2>
+<p><img src="../../img/AI%20risk%20framework%20in%20practice.png" alt="Minimal and high risk examples"></p>
+<p>To make this concrete, here’s a simple comparison of two common AI directions in government services.</p>
+<h3><span aria-hidden="true">🧩</span> An AI tool helping service development teams</h3>
+<p>For example, an AI tool that helps designers and developers:</p>
+<ul>
+<li>review content for clarity and readability</li>
+<li>flag accessibility or usability issues</li>
+<li>check consistency against design and content standards</li>
+<li>highlight potential problem areas before a service goes live</li>
+</ul>
+<p>In this case:</p>
+<ul>
+<li><strong>Risk level</strong>: 🟢 Minimal</li>
+<li><strong>Who it affects</strong>: internal teams</li>
+<li><strong>Authority</strong>: advisory only</li>
+<li><strong>AI Act obligations</strong>: very light</li>
+<li><strong>Requirements</strong>:
+<ul>
+<li>human judgement remains final</li>
+<li>outputs can be challenged, ignored, or overridden</li>
+</ul>
+</li>
+<li><strong>Failure impact</strong>: low and reversible</li>
+</ul>
+<p>This kind of AI improves <strong>how services are built</strong>, not how decisions are made.<br>
+If it’s wrong, a human can simply disagree and move on.</p>
+<h3><span aria-hidden="true">🧾</span> AI embedded in citizen-facing services</h3>
+<p>For example, AI used to:</p>
+<ul>
+<li>generate explanations of what a question means</li>
+<li>summarise a user’s answers on a review page</li>
+<li>rephrase requirements to “make them easier to understand”</li>
+</ul>
+<p>In this case:</p>
+<ul>
+<li><strong>Risk level</strong>: 🟠 High</li>
+<li><strong>Who it affects</strong>: citizens directly</li>
+<li><strong>Authority</strong>: likely to be perceived as official guidance</li>
+<li><strong>AI Act obligations</strong>:
+<ul>
+<li>transparency to users (“this is AI-generated”)</li>
+<li>logging of AI behaviour</li>
+<li>traceability of outputs</li>
+<li>ability to reconstruct how an outcome was produced</li>
+<li>meaningful human oversight</li>
+</ul>
+</li>
+<li><strong>Failure impact</strong>: asymmetric and potentially serious</li>
+</ul>
+<p>Here, even small errors can have real consequences.<br>
+If the AI explains something incorrectly, users may reasonably assume <em>the government told them so</em>.</p>
+<p>This doesn’t mean “never”, but it does mean <strong>slow, careful, and heavily governed</strong>.</p>
+<h2>A simple way to evaluate AI risk</h2>
+<p>When thinking about an AI idea, I’ve found these questions useful:</p>
+<ul>
+<li>Does this AI influence outcomes, or only support understanding?</li>
+<li>Would a user reasonably treat this output as authoritative?</li>
+<li>If the AI is wrong, who is affected and how badly?</li>
+<li>Can we explain and reconstruct what the AI did?</li>
+<li>Can a human realistically override it?</li>
+</ul>
+<p>If answering those questions makes you uncomfortable, that’s usually a signal… not a blocker, but a warning.</p>
+<h2>Closing thoughts</h2>
+<p>AI absolutely has a place in government services.</p>
+<p>But the most responsible uses tend to:</p>
+<ul>
+<li>sit behind the scenes</li>
+<li>improve quality and consistency</li>
+<li>support people rather than replace authority</li>
+</ul>
+<p>A risk-based lens doesn’t slow innovation, it helps aim it.</p>
+<p>And sometimes, choosing <em>where not to use AI</em> is just as important as choosing where to use it.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+            <footer class="govcy-container-fluid govcy-p-3 govcy-pl-0 govcy-d-print-none">
+        <div class="govcy-container">
+            <div class="row">   
+                <div class="govcy-footer">
+                    <ul class="govcy-d-inline-block govcy-m-0  govcy-pl-0 govcy-efs-medium"><li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li><li>
+                                <a href="/blog/">
+                                    Blog
+                                </a>
+                            </li><li>
+                                <a href="/about/">
+                                    About
+                                </a>
+                            </li><li>
+                                <a href="/search/">
+                                    Search
+                                </a>
+                            </li><li><a href="/feed.xml">Feed</a></li>
+                        <li>
+                            <a href="/accessibility/">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">
+                            <a href="/accessibility/#report" class="general-a11y-badge">
+                                        
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="Accessibility check passed" class="success-a11y-badge">
+                                
+                             </a>
+                        </li>
+                        <li class="govcy-d-block govcy-text-dark">© Constantinos Evangelou, 2025</li>
+                        <li class="govcy-d-block govcy-text-dark">Powered by <a href='https://www.11ty.dev/' target='_blank'>Eleventy</a> and <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="d-none govcy-p-0 govcy-m-0 d-print-block govcy-text-dark">
+        © Constantinos Evangelou, 2025
+    </div>
+        <!-- js stuff -->
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script data-goatcounter="https://consevangelou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>       
+    </body>
+</html>

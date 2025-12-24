@@ -62,6 +62,22 @@ module.exports = async function (eleventyConfig) {
 	eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
 	});
+
+  eleventyConfig.addCollection("tagsList", (collectionApi) => {
+  const tagSet = new Set();
+
+  collectionApi.getAll().forEach(item => {
+    if (!Array.isArray(item.data.tags)) return;
+
+      item.data.tags.forEach(tag => {
+        // exclude internal/system tags
+        if (["blog", "all", "en", "recentPosts"].includes(tag)) return;
+        tagSet.add(tag);
+      });
+    });
+
+    return [...tagSet].sort();
+  });
   //copy css
   eleventyConfig.addPassthroughCopy("./src/css");
   //copy js

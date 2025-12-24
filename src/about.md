@@ -12,7 +12,7 @@ I helped implement various online services for the <a href="https://www.gov.cy/"
 
 <div class="row" style=""> 
 {% for project in site.localization[locale]["projects"] %}
-<div class="govcy-col-6"> 
+<div class="govcy-col-12"> 
     <div style="padding: 0.5rem; border: 1px solid #d3d3d3; margin-bottom: 1rem; border-radius: 5px; /*min-height:150px*/"> 
         <a href="{{project.url}}" target="_blank">{% if project.type == "github"%}<i class="bi bi-github govcy-text-body"></i> {% elif project.type == "npm"%}<span class="govcy-text-body govcy-fw-bolder govcy-text-deco-none">npm</span> {% elif project.type == "figma"%}<img src="../img/figmaicon.png" aria-hidden="true" alt="figma icon" class="img-icon"/>{% endif %}{{project.name}}</a>
         <p style="margin-top: 1rem">{{project.description}}</p>{% if project.post %}<div class="govcy-mt-1"><a href="../blog/{{project.post}}">Related post</a></div>{% endif %}{% if project.demo %}<div class="govcy-mt-1"><a href="{{project.demo}}" target="_blank">Demo</a></div>{% endif %}
@@ -50,7 +50,23 @@ I helped implement various online services for the <a href="https://www.gov.cy/"
 - [Voter registration](https://voter-registration.service.gov.cy/){target="_blank"} 
 - [Update my personal details](https://update-my-details.service.gov.cy/){target="_blank"} 
 - [Child birth grant](https://child-birth-grant.service.gov.cy/){target="_blank"}
+
+### gov.cy services built on the Express Service Framework
 - [Confirmation of assumption of duties - Supporting programs of the Ministry of Education](https://moec-eservices.service.gov.cy/){target="_blank"}
+- [Submission of documents by MOEC trainers](https://moec-eservices.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Cyprus Theater Organisation (ΘΟΚ)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Licensing Authority](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Cyprus Port Authority](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Cyprus Telecommunications Authority (CYTA)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Natural Gas Public Company (ΔΕΦΑ)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Electricity Authority of Cyprus (ΑΗΚ)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Council for the Registration of Building and Civil Engineering Contractors](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Cyprus Football Association (ΚΟΑ)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Cyprus Land Development Corporation (ΚΟΑΓ)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Town Planning Council (ΚΟΑΓ)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Expression of interest for the Board of Directors of the Cyprus Broadcasting Corporation (ΡΙΚ)](https://apply-for-board-of-directors.service.gov.cy/){target="_blank"}
+- [Apply for an ISBN](https://cypruslibrary.service.gov.cy/){target="_blank"}
+- [Report hazardous cosmetics](https://pharmaceutical-cosmetics.service.gov.cy/){target="_blank"}
 
 ## Writing
 
