@@ -90,6 +90,12 @@ module.exports = {
             description: "Perform front end tests in terms of the accessibility and design guidelines established by the Digital Services Factory (DSF) Cyprus"
           },
           {
+            name : "gov.cy UDF checker chrome extension", 
+            type : "github",
+            url : "https://github.com/gov-cy/govcy-uds-checker-chrome", 
+            description: "A Chrome/Edge browser extension that validates any web page against the gov.cy Unified Design System rules"
+          },
+          {
             name : "DSF HTML Email Generator", 
             type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/dsf-email-templates", 
@@ -102,6 +108,12 @@ module.exports = {
             description: "A sample application to demonstrate usage of SPA, PWA, govcy-frontend-renderer browser library and CDN latest major alias",
             demo: "https://gov-cy.github.io/dsf-assessment-checklist/",
           },
+          {
+            name : "Accessibility audit core", 
+            type : "npm",
+            url : "https://www.npmjs.com/package/@consevangelou/accessibility-audit-core", 
+            description: "Core utilities for automated web accessibility auditing"
+          }
       ],
       "old_projects": 
         [

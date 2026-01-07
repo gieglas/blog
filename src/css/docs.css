@@ -237,10 +237,10 @@
     height: 24px !important;
 }
 .success-a11y-badge {
-    content: url(https://a11ybadges.com/badge?logo=smile&text=a11y_passed&badgeColor=green) !important;
+    content: url(https://a11ybadges.com/badge?logo=smile&text=accessibility_check_passed&badgeColor=green) !important;
 }
 .fail-a11y-badge {
-    content: url(https://a11ybadges.com/badge?logo=frown&text=a11y_failed&badgeColor=red) !important;
+    content: url(https://a11ybadges.com/badge?logo=frown&text=accessibility_check_failed&badgeColor=red) !important;
 }
 
 .fail-tag {

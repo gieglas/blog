@@ -19,13 +19,13 @@
                         <li class="govcy-d-block govcy-text-dark">
                             <a href="{{ '/accessibility/#report' }}" class="general-a11y-badge">
                                 {% if accessibilityStatus.allNoIssues %}        
-                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=a11y_passed&amp;badgeColor=green" alt="{{ site.localization[locale].a11y_success}}" class="success-a11y-badge">
+                                        <img src="https://a11ybadges.com/badge?logo=smile&amp;text=accessibility_check_passed&amp;badgeColor=green" alt="{{ site.localization[locale].a11y_success}}" class="success-a11y-badge">
                                 {% else %}
-                                        <img src="https://a11ybadges.com/badge?logo=frown&amp;text=a11y_failed&amp;badgeColor=red" alt="{{ site.localization[locale].a11y_fail}}"  class="fail-a11y-badge">
+                                        <img src="https://a11ybadges.com/badge?logo=frown&amp;text=accessibility_check_failed&amp;badgeColor=red" alt="{{ site.localization[locale].a11y_fail}}"  class="fail-a11y-badge">
                                 {% endif %}
                              </a>
                         </li>
-                        <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].copyright_label }}{{ yearBuild }}</li>
+                        <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].copyright_label }}2011 - {{ yearBuild }}</li>
                         <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].powered_by  | safe }}</li>
                     </ul>
                 </div>
@@ -33,5 +33,5 @@
         </div>
     </footer>
     <div class="d-none govcy-p-0 govcy-m-0 d-print-block govcy-text-dark">
-        {{ site.localization[locale].copyright_label }}{{ yearBuild }}
+        {{ site.localization[locale].copyright_label }}2011 - {{ yearBuild }}
     </div>
