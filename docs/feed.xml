@@ -4,11 +4,31 @@
   <subtitle> </subtitle>
   <link href="https://consevangelou.com/feed.xml" rel="self" />
   <link href="https://consevangelou.com/" />
-  <updated>2025-12-24T00:00:00Z</updated>
+  <updated>2026-01-23T00:00:00Z</updated>
   <id>https://consevangelou.com/</id>
   <author>
     <name>Constantinos Evangelou</name>
   </author>
+  <entry>
+    <title>Building government services faster with Express Services (By DSF)</title>
+    <link href="https://consevangelou.com/blog/dsf-building-government-services-faster-with-express-services/" />
+    <updated>2026-01-23T00:00:00Z</updated>
+    <id>https://consevangelou.com/blog/dsf-building-government-services-faster-with-express-services/</id>
+    <content type="html">&lt;p&gt;Over the past months, we’ve been delivering real government services at &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt; using &lt;a href=&quot;https://www.npmjs.com/package/@gov-cy/govcy-express-services&quot; target=&quot;_blank&quot;&gt;Express Services&lt;/a&gt;, a Node.js / Express-based framework designed for building linear government online services on &lt;a href=&quot;http://gov.cy/&quot;&gt;gov.cy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It provides a shared foundation for common service needs like page flows, validation, authentication, review pages, and secure submission, allowing teams to focus on user needs instead of rebuilding infrastructure.&lt;/p&gt;
+&lt;p&gt;The result so far:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;faster delivery&lt;/li&gt;
+&lt;li&gt;more consistent services&lt;/li&gt;
+&lt;li&gt;less technical overhead&lt;/li&gt;
+&lt;li&gt;more focus on user needs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Express Services is intentionally simple and opinionated, aligned with the Unified Design System and the Service Standard. It supports delivery, without replacing the responsibility of service teams for quality, security, and compliance.&lt;/p&gt;
+&lt;p&gt;Express Services is already being used to deliver real services, such as &lt;a href=&quot;https://www.gov.cy/en/service/apply-for-isbn/&quot; target=&quot;_blank&quot;&gt;Apply for an ISBN&lt;/a&gt;, and &lt;a href=&quot;https://www.gov.cy/en/service/report-hazardous-cosmetics/&quot; target=&quot;_blank&quot;&gt;Report hazardous cosmetics&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Read more about it at the the post I wrote for &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;DSF&lt;/a&gt;, on building government services faster with Express Services using the link below.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2026/01/23/building-government-services-faster-with-express-services/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>A simple risk framework for AI in government services</title>
     <link href="https://consevangelou.com/blog/a-simple-risk-framework-for-ai-in-government-services/" />
@@ -942,15 +962,6 @@ Notify your team, users, or stakeholders about the release, highlighting key cha
 &lt;li&gt;&lt;strong&gt;Pull request tests&lt;/strong&gt;: Unit tests are run using GitHub Actions on every pull request.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Tag and Publish&lt;/strong&gt;: Tagging and publishing the new version on npm is done using GitHub Actions on every merge to the Main branch.&lt;/li&gt;
 &lt;/ol&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Enhancing the Unified Design System with automated visual testing (by DSF)</title>
-    <link href="https://consevangelou.com/blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing/" />
-    <updated>2025-01-08T00:00:00Z</updated>
-    <id>https://consevangelou.com/blog/dsf-enhancing-the-unified-design-system-with-automated-visual-testing/</id>
-    <content type="html">&lt;p&gt;Check out the link below for the post I wrote for the &lt;a href=&quot;https://dsf.dmrid.gov.cy/&quot; target=&quot;_blank&quot;&gt;Digital Services Factory (DSF)&lt;/a&gt;, on how DSF uses Percy to perform automatic visual regression testing, to improve the quality of the Unified Design System and provide a more reliable user experience.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://dsf.dmrid.gov.cy/2025/01/08/enhancing-the-unified-design-system-with-automated-visual-testing/&quot; class=&quot;govcy-btn-primary&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://consevangelou.com/img/dsf-small-white-icon.svg&quot; alt=&quot;DSF&quot; class=&quot;btn-image&quot;&gt; Launch the post&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

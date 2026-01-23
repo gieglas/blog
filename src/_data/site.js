@@ -67,6 +67,7 @@ module.exports = {
             type : "npm",
             url : "https://www.npmjs.com/package/@gov-cy/govcy-express-services", 
             description: "Dynamically renders online service forms using `@gov-cy/govcy-frontend-renderer`, handles data input, validations, renders a review page and submits the data via a submission API.",
+            post: "dsf-building-government-services-faster-with-express-services"
           },
           {
             name : "gov.cy Frontend Renderer", 

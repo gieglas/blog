@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/a-simple-risk-framework-for-ai-in-government-services.md",
+                "file": "blog/dsf-building-government-services-faster-with-express-services.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "a-simple-risk-framework-for-ai-in-government-services"
+              "title": "dsf-building-government-services-faster-with-express-services"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/a-simple-risk-framework-for-ai-in-government-services.md",
+                "file": "blog/dsf-building-government-services-faster-with-express-services.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of a-simple-risk-framework-for-ai-in-government-services"
+              "title": "Outline of dsf-building-government-services-faster-with-express-services"
             }
           }
         ],
@@ -169,8 +169,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3052ac99f446ef67",
+  "active": "96130c5b5b916e96",
   "lastOpenFiles": [
+    "img/image-6971f5057dfb2.png",
+    "blog/a-simple-risk-framework-for-ai-in-government-services.md",
+    "blog/dsf-building-government-services-faster-with-express-services.md",
     "debug.njk",
     "blog/creating-a-reliable-software-release-policy.md",
     "blog/data-driven-rendering-a-universal-ui-language.md",
@@ -178,7 +181,6 @@
     "blog/intellectual-and-industrial-property-eservices.md",
     "blog/php-pdo-connect-everywhere.md",
     "blog/prince2-project-management-with-google-sheets.md",
-    "blog/a-simple-risk-framework-for-ai-in-government-services.md",
     "img/risk-tier framework.png",
     "img/AI risk framework in practice.png",
     "img/A simple risk framework for AI in government services.png",
@@ -205,7 +207,6 @@
     "blog/govcy-frontend-prototype-a-dynamic-prototype-tool.md",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-1.jfif",
     "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-3.jfif",
-    "_drafts/images/designing-accessible-online-services-a-heuristic-approach-for-designers-2.jfif",
     "_drafts/ideas/1designing-accessible-online-services-a-heuristic-approach-for-designers.md",
     "blog/managing-multi-repository-product-with-github-projects.md",
     "blog/why-release-versioning-matters-a-guide-to-semver-and-automated-publishing.md",
@@ -215,7 +216,6 @@
     "blog/how-I-made-my-app-a-pwa.md",
     "blog/online-search-registry-cregistry.md",
     "blog/building-a-dynamic-html-renderer.md",
-    "Untitled.md",
-    "blog/automating-accessibility-site-wide-testing-and-reporting-guide copy.md"
+    "Untitled.md"
   ]
 }
