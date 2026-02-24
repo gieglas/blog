@@ -165,8 +165,7 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "webpage-html-export:Export Vault to HTML": false
     }
   },
   "active": "96130c5b5b916e96",

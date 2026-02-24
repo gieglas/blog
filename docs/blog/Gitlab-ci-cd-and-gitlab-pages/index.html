@@ -142,7 +142,17 @@
 <h3>.gitlab-ci.yml</h3>
 <p>The way to configure GitLab’s CI is by adding a <a href="http://doc.gitlab.com/ee/ci/quick_start/README.html#creating-a-.gitlab-ci.yml-file" target="_blank">configuration file</a>  called <code>.gitlab-ci.yml</code>, which tells the GitLab runner what to do (NOTE: It needs to be placed at your root directory and file is written in <a href="http://yaml.org/" target="_blank">YAML</a> )</p>
 <p>There are three stages which GitLab runner runs, <code>build</code>, <code>test</code>, and <code>deploy</code>. In our example we only use the <code>deploy</code> stage which is triggered only when commits are pushed on the <code>master</code> branch. Check out the code i used below.</p>
-<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">pages</span><span class="token punctuation">:</span><br>  <span class="token key atrule">stage</span><span class="token punctuation">:</span> deploy<br>  <span class="token key atrule">script</span><span class="token punctuation">:</span><br>  <span class="token punctuation">-</span> mkdir .public<br>  <span class="token punctuation">-</span> cp <span class="token punctuation">-</span>r * .public<br>  <span class="token punctuation">-</span> mv .public public<br>  <span class="token key atrule">artifacts</span><span class="token punctuation">:</span><br>    <span class="token key atrule">paths</span><span class="token punctuation">:</span><br>    <span class="token punctuation">-</span> public<br>  <span class="token key atrule">only</span><span class="token punctuation">:</span><br>  <span class="token punctuation">-</span> master</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">pages</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> deploy
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> mkdir .public
+  <span class="token punctuation">-</span> cp <span class="token punctuation">-</span>r * .public
+  <span class="token punctuation">-</span> mv .public public
+  <span class="token key atrule">artifacts</span><span class="token punctuation">:</span>
+    <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> public
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> master</code></pre>
 <p>Take a look also on a more detailed tutorial by GitLab on <a href="https://about.gitlab.com/2016/04/07/gitlab-pages-setup/" target="_blank">pages setup</a>  and the documentation on <a href="https://docs.gitlab.com/ee/ci/yaml/README.html" target="_blank">.gitlab-ci.yml</a>  and <a href="https://docs.gitlab.com/ee/user/project/pages/index.html" target="_blank">GitLab Pages</a> .</p>
 
                     </div>

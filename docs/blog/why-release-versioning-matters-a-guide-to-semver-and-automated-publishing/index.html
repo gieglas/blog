@@ -177,7 +177,9 @@ At the heart of most versioning strategies is the use of <strong>Git tags</stro
 <ol>
 <li><strong>Add the library</strong>: The library consumer adds the library to their <code>package.json</code> dependencies section with a caret (<code>^</code>), which indicates npm to allow minor and patch updates:</li>
 </ol>
-<pre class="language-json"><code class="language-json">  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"your-library"</span><span class="token operator">:</span> <span class="token string">"^1.2.3"</span><br>  <span class="token punctuation">}</span></code></pre>
+<pre class="language-json"><code class="language-json">  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"your-library"</span><span class="token operator">:</span> <span class="token string">"^1.2.3"</span>
+  <span class="token punctuation">}</span></code></pre>
 <ol start="2">
 <li><strong>Install dependencies</strong>: The developer installs the library</li>
 </ol>
@@ -222,7 +224,106 @@ Notify your team, users, or stakeholders about the release, highlighting key cha
 <h3>Automated workflow for tag and publish</h3>
 <p>Automating tag creation and publishing ensures consistency, reduces manual errors, and saves time for library maintainers, while providing users with reliable and clearly versioned releases.</p>
 <p>Here’s an example GitHub Actions workflow that automates versioning and publishing:</p>
-<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Tag and Publish on Version Change<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> main<br>    <span class="token key atrule">paths</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token string">'**'</span><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">tag-and-publish-on-version-change</span><span class="token punctuation">:</span><br>    <span class="token key atrule">name</span><span class="token punctuation">:</span> Tag and publish on version change<br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest<br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> EndBug/version<span class="token punctuation">-</span>check@v2.1.5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">static-checking</span><span class="token punctuation">:</span> localIsNew<br>          <span class="token key atrule">token</span><span class="token punctuation">:</span> $<br>          <span class="token key atrule">file-url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//raw.githubusercontent.com/your<span class="token punctuation">-</span>org/your<span class="token punctuation">-</span>repo<span class="token punctuation">-</span>name/latest/package.json<br>        <span class="token key atrule">id</span><span class="token punctuation">:</span> version<span class="token punctuation">-</span>check<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check version not decreased<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true' <span class="token important">&amp;&amp;</span> steps.version<span class="token punctuation">-</span>check.outputs.type == 'undefined'<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check package.lock<span class="token punctuation">:</span><span class="token punctuation">:</span>version updated if ./dist changed<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'false'<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "Version remained the same. Exiting<span class="token punctuation">...</span>"; <br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.X.X' version git tag<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>            github.rest.git.createRef({<br>              owner: context.repo.owner,<br>              repo: context.repo.repo,<br>              ref: 'refs/tags/v' + '$NaN',<br>              sha: context.sha<br>            })</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> dev<span class="token punctuation">-</span>drprasad/delete<span class="token punctuation">-</span>tag<span class="token punctuation">-</span>and<span class="token punctuation">-</span>release@v0.2.1<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">tag_name</span><span class="token punctuation">:</span> latest<br>        <span class="token key atrule">env</span><span class="token punctuation">:</span><br>          <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'latest' git tag<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>            github.rest.git.createRef({<br>              owner: context.repo.owner,<br>              repo: context.repo.repo,<br>              ref: 'refs/tags/latest',<br>              sha: context.sha<br>            })</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Extract Major Version<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">id</span><span class="token punctuation">:</span> major<span class="token punctuation">-</span>version<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "major=$(echo '$NaN' <span class="token punctuation">|</span> cut <span class="token punctuation">-</span>d. <span class="token punctuation">-</span>f1)" <span class="token punctuation">></span><span class="token punctuation">></span> $GITHUB_ENV<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.x.x' version git tag<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>            const majorVersion = process.env.major || "0"; // Default to "0" if not set<br>            console.log(`Extracted Major Version: ${majorVersion}`); // Debugging output<br>            const tagName = `v${majorVersion}.x.x`;<br>            console.log(`Tag to create: ${tagName}`); // Debugging output</span><br>            <br>            const tagExists = await github.rest.git.getRef(<span class="token punctuation">{</span><br>                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>            <span class="token punctuation">}</span>).catch(() =<span class="token punctuation">></span> null);<br><br>            if (tagExists) <span class="token punctuation">{</span><br>                await github.rest.git.deleteRef(<span class="token punctuation">{</span><br>                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>                <span class="token punctuation">}</span>);<br>            <span class="token punctuation">}</span><br><br>            await github.rest.git.createRef(<span class="token punctuation">{</span><br>                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `refs/tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<span class="token punctuation">,</span><br>                <span class="token key atrule">sha</span><span class="token punctuation">:</span> context.sha<br>            <span class="token punctuation">}</span>);<br>      <span class="token comment"># Publish on npm</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v2<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.x'</span><br>          <span class="token key atrule">registry-url</span><span class="token punctuation">:</span> <span class="token string">'https://registry.npmjs.org'</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies <br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Publish package on NPM 📦<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm publish <span class="token punctuation">-</span><span class="token punctuation">-</span>access=public<br>        <span class="token key atrule">env</span><span class="token punctuation">:</span><br>          <span class="token key atrule">NODE_AUTH_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Tag and Publish on Version Change
+
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> main
+    <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">'**'</span>
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">tag-and-publish-on-version-change</span><span class="token punctuation">:</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> Tag and publish on version change
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> EndBug/version<span class="token punctuation">-</span>check@v2.1.5
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">static-checking</span><span class="token punctuation">:</span> localIsNew
+          <span class="token key atrule">token</span><span class="token punctuation">:</span> $
+          <span class="token key atrule">file-url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//raw.githubusercontent.com/your<span class="token punctuation">-</span>org/your<span class="token punctuation">-</span>repo<span class="token punctuation">-</span>name/latest/package.json
+        <span class="token key atrule">id</span><span class="token punctuation">:</span> version<span class="token punctuation">-</span>check
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check version not decreased
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true' <span class="token important">&amp;&amp;</span> steps.version<span class="token punctuation">-</span>check.outputs.type == 'undefined'
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check package.lock<span class="token punctuation">:</span><span class="token punctuation">:</span>version updated if ./dist changed
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'false'
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "Version remained the same. Exiting<span class="token punctuation">...</span>"; 
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.X.X' version git tag
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/v' + '$NaN',
+              sha: context.sha
+            })</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> dev<span class="token punctuation">-</span>drprasad/delete<span class="token punctuation">-</span>tag<span class="token punctuation">-</span>and<span class="token punctuation">-</span>release@v0.2.1
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">tag_name</span><span class="token punctuation">:</span> latest
+        <span class="token key atrule">env</span><span class="token punctuation">:</span>
+          <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'latest' git tag
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/latest',
+              sha: context.sha
+            })</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Extract Major Version
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+        <span class="token key atrule">id</span><span class="token punctuation">:</span> major<span class="token punctuation">-</span>version
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "major=$(echo '$NaN' <span class="token punctuation">|</span> cut <span class="token punctuation">-</span>d. <span class="token punctuation">-</span>f1)" <span class="token punctuation">></span><span class="token punctuation">></span> $GITHUB_ENV
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.x.x' version git tag
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+            const majorVersion = process.env.major || "0"; // Default to "0" if not set
+            console.log(`Extracted Major Version: ${majorVersion}`); // Debugging output
+            const tagName = `v${majorVersion}.x.x`;
+            console.log(`Tag to create: ${tagName}`); // Debugging output</span>
+            
+            const tagExists = await github.rest.git.getRef(<span class="token punctuation">{</span>
+                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span>
+                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span>
+                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`
+            <span class="token punctuation">}</span>).catch(() =<span class="token punctuation">></span> null);
+
+            if (tagExists) <span class="token punctuation">{</span>
+                await github.rest.git.deleteRef(<span class="token punctuation">{</span>
+                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span>
+                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span>
+                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`
+                <span class="token punctuation">}</span>);
+            <span class="token punctuation">}</span>
+
+            await github.rest.git.createRef(<span class="token punctuation">{</span>
+                <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span>
+                <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span>
+                <span class="token key atrule">ref</span><span class="token punctuation">:</span> `refs/tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<span class="token punctuation">,</span>
+                <span class="token key atrule">sha</span><span class="token punctuation">:</span> context.sha
+            <span class="token punctuation">}</span>);
+      <span class="token comment"># Publish on npm</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v2
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.x'</span>
+          <span class="token key atrule">registry-url</span><span class="token punctuation">:</span> <span class="token string">'https://registry.npmjs.org'</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies 
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Publish package on NPM 📦
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm publish <span class="token punctuation">-</span><span class="token punctuation">-</span>access=public
+        <span class="token key atrule">env</span><span class="token punctuation">:</span>
+          <span class="token key atrule">NODE_AUTH_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
 <p>Let’s break it down step by step to explain what each part does:</p>
 <h4>Workflow Overview</h4>
 <ul>
@@ -236,7 +337,12 @@ Notify your team, users, or stakeholders about the release, highlighting key cha
 <li>This step checks out the repository code so that the workflow can access the files (e.g., <code>package.json</code>).</li>
 </ul>
 <h5>2. Check for version changes</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> EndBug/version<span class="token punctuation">-</span>check@v2.1.5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">static-checking</span><span class="token punctuation">:</span> localIsNew<br>    <span class="token key atrule">token</span><span class="token punctuation">:</span> $<br>    <span class="token key atrule">file-url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//raw.githubusercontent.com/your<span class="token punctuation">-</span>org/your<span class="token punctuation">-</span>repo<span class="token punctuation">-</span>name/latest/package.json<br>  <span class="token key atrule">id</span><span class="token punctuation">:</span> version<span class="token punctuation">-</span>check</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> EndBug/version<span class="token punctuation">-</span>check@v2.1.5
+  <span class="token key atrule">with</span><span class="token punctuation">:</span>
+    <span class="token key atrule">static-checking</span><span class="token punctuation">:</span> localIsNew
+    <span class="token key atrule">token</span><span class="token punctuation">:</span> $
+    <span class="token key atrule">file-url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//raw.githubusercontent.com/your<span class="token punctuation">-</span>org/your<span class="token punctuation">-</span>repo<span class="token punctuation">-</span>name/latest/package.json
+  <span class="token key atrule">id</span><span class="token punctuation">:</span> version<span class="token punctuation">-</span>check</code></pre>
 <ul>
 <li><strong>Action</strong>: <code>EndBug/version-check</code> compares the local <code>package.json</code> version with the version in the specified <code>file-url</code> (in this case, the <code>latest</code> branch of the repository).</li>
 <li><strong>Purpose</strong>: Determines if the version has changed and outputs:
@@ -248,49 +354,121 @@ Notify your team, users, or stakeholders about the release, highlighting key cha
 </li>
 </ul>
 <h5>3. Ensure version does not decrease</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check version not decreased<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true' <span class="token important">&amp;&amp;</span> steps.version<span class="token punctuation">-</span>check.outputs.type == 'undefined'<br>  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check version not decreased
+  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true' <span class="token important">&amp;&amp;</span> steps.version<span class="token punctuation">-</span>check.outputs.type == 'undefined'
+  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1</code></pre>
 <ul>
 <li><strong>Condition</strong>: Runs only if the version has changed (<code>changed == 'true'</code>) and the change type is <code>undefined</code> (indicating a version decrease).</li>
 <li><strong>Action</strong>: Exits the workflow with an error message if the version has decreased, enforcing Semantic Versioning (SemVer) rules.</li>
 </ul>
 <h5>4. Skip workflow if version unchanged</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check package.lock<span class="token punctuation">:</span><span class="token punctuation">:</span>version updated if ./dist changed<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'false'<br>  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "Version remained the same. Exiting<span class="token punctuation">...</span>"; </code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Check package.lock<span class="token punctuation">:</span><span class="token punctuation">:</span>version updated if ./dist changed
+  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'false'
+  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "Version remained the same. Exiting<span class="token punctuation">...</span>"; </code></pre>
 <ul>
 <li><strong>Condition</strong>: Runs if the version has not changed (<code>changed == 'false'</code>).</li>
 <li><strong>Action</strong>: Logs a message and exits the workflow early since no action is needed.</li>
 </ul>
 <h5>5. Create a git tag for the new version</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.X.X' version git tag<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>      github.rest.git.createRef({<br>        owner: context.repo.owner,<br>        repo: context.repo.repo,<br>        ref: 'refs/tags/v' + '$NaN',<br>        sha: context.sha<br>      })</span></code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.X.X' version git tag
+  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5
+  <span class="token key atrule">with</span><span class="token punctuation">:</span>
+    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+      github.rest.git.createRef({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        ref: 'refs/tags/v' + '$NaN',
+        sha: context.sha
+      })</span></code></pre>
 <ul>
 <li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
 <li><strong>Action</strong>: Creates a Git tag for the new version (e.g., <code>v1.2.3</code>) using the <code>github-script</code> action.</li>
 </ul>
 <h5>6. Delete the <code>latest</code> Tag (if it exists)</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> dev<span class="token punctuation">-</span>drprasad/delete<span class="token punctuation">-</span>tag<span class="token punctuation">-</span>and<span class="token punctuation">-</span>release@v0.2.1<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">tag_name</span><span class="token punctuation">:</span> latest<br>  <span class="token key atrule">env</span><span class="token punctuation">:</span><br>    <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> dev<span class="token punctuation">-</span>drprasad/delete<span class="token punctuation">-</span>tag<span class="token punctuation">-</span>and<span class="token punctuation">-</span>release@v0.2.1
+  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+  <span class="token key atrule">with</span><span class="token punctuation">:</span>
+    <span class="token key atrule">tag_name</span><span class="token punctuation">:</span> latest
+  <span class="token key atrule">env</span><span class="token punctuation">:</span>
+    <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
 <ul>
 <li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
 <li><strong>Action</strong>: Deletes the existing <code>latest</code> Git tag to prepare for creating a new one.</li>
 </ul>
 <h5>7. Create a New <code>latest</code> Git Tag</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'latest' git tag<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>      github.rest.git.createRef({<br>        owner: context.repo.owner,<br>        repo: context.repo.repo,<br>        ref: 'refs/tags/latest',<br>        sha: context.sha<br>      })</span></code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'latest' git tag
+  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5
+  <span class="token key atrule">with</span><span class="token punctuation">:</span>
+    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+      github.rest.git.createRef({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        ref: 'refs/tags/latest',
+        sha: context.sha
+      })</span></code></pre>
 <ul>
 <li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
 <li><strong>Action</strong>: Creates a new <code>latest</code> Git tag pointing to the latest commit.</li>
 </ul>
 <h5>8. Extract the Major Version</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Extract Major Version<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">id</span><span class="token punctuation">:</span> major<span class="token punctuation">-</span>version<br>  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "major=$(echo '$NaN' <span class="token punctuation">|</span> cut <span class="token punctuation">-</span>d. <span class="token punctuation">-</span>f1)" <span class="token punctuation">></span><span class="token punctuation">></span> $GITHUB_ENV</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Extract Major Version
+  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+  <span class="token key atrule">id</span><span class="token punctuation">:</span> major<span class="token punctuation">-</span>version
+  <span class="token key atrule">run</span><span class="token punctuation">:</span> echo "major=$(echo '$NaN' <span class="token punctuation">|</span> cut <span class="token punctuation">-</span>d. <span class="token punctuation">-</span>f1)" <span class="token punctuation">></span><span class="token punctuation">></span> $GITHUB_ENV</code></pre>
 <ul>
 <li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
 <li><strong>Action</strong>: Extracts the major version number (e.g., <code>1</code> from <code>1.2.3</code>) and stores it in the <code>major</code> environment variable.</li>
 </ul>
 <h5>9. Create a Major Version Tag (e.g., <code>v1.x.x</code>)</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.x.x' version git tag<br>  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'<br>  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5<br>  <span class="token key atrule">with</span><span class="token punctuation">:</span><br>    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>      const majorVersion = process.env.major || "0"; // Default to "0" if not set<br>      console.log(`Extracted Major Version: ${majorVersion}`); // Debugging output<br>      const tagName = `v${majorVersion}.x.x`;<br>      console.log(`Tag to create: ${tagName}`); // Debugging output</span><br>      <br>      const tagExists = await github.rest.git.getRef(<span class="token punctuation">{</span><br>          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>      <span class="token punctuation">}</span>).catch(() =<span class="token punctuation">></span> null);<br><br>      if (tagExists) <span class="token punctuation">{</span><br>          await github.rest.git.deleteRef(<span class="token punctuation">{</span><br>          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<br>          <span class="token punctuation">}</span>);<br>      <span class="token punctuation">}</span><br><br>      await github.rest.git.createRef(<span class="token punctuation">{</span><br>          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span><br>          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span><br>          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `refs/tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<span class="token punctuation">,</span><br>          <span class="token key atrule">sha</span><span class="token punctuation">:</span> context.sha<br>      <span class="token punctuation">}</span>);</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Create 'vX.x.x' version git tag
+  <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.version<span class="token punctuation">-</span>check.outputs.changed == 'true'
+  <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/github<span class="token punctuation">-</span>script@v5
+  <span class="token key atrule">with</span><span class="token punctuation">:</span>
+    <span class="token key atrule">script</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+      const majorVersion = process.env.major || "0"; // Default to "0" if not set
+      console.log(`Extracted Major Version: ${majorVersion}`); // Debugging output
+      const tagName = `v${majorVersion}.x.x`;
+      console.log(`Tag to create: ${tagName}`); // Debugging output</span>
+      
+      const tagExists = await github.rest.git.getRef(<span class="token punctuation">{</span>
+          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span>
+          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span>
+          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`
+      <span class="token punctuation">}</span>).catch(() =<span class="token punctuation">></span> null);
+
+      if (tagExists) <span class="token punctuation">{</span>
+          await github.rest.git.deleteRef(<span class="token punctuation">{</span>
+          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span>
+          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span>
+          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`
+          <span class="token punctuation">}</span>);
+      <span class="token punctuation">}</span>
+
+      await github.rest.git.createRef(<span class="token punctuation">{</span>
+          <span class="token key atrule">owner</span><span class="token punctuation">:</span> context.repo.owner<span class="token punctuation">,</span>
+          <span class="token key atrule">repo</span><span class="token punctuation">:</span> context.repo.repo<span class="token punctuation">,</span>
+          <span class="token key atrule">ref</span><span class="token punctuation">:</span> `refs/tags/$<span class="token punctuation">{</span>tagName<span class="token punctuation">}</span>`<span class="token punctuation">,</span>
+          <span class="token key atrule">sha</span><span class="token punctuation">:</span> context.sha
+      <span class="token punctuation">}</span>);</code></pre>
 <ul>
 <li><strong>Condition</strong>: Runs if the version has changed (<code>changed == 'true'</code>).</li>
 <li><strong>Action</strong>: Creates a major version tag (e.g., <code>v1.x.x</code>) for the new version. If the tag already exists, it is deleted and recreated.</li>
 </ul>
 <h5>10. Publish the Package to npm</h5>
-<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># Publish on npm</span><br><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node<br><span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v2<br><span class="token key atrule">with</span><span class="token punctuation">:</span><br>  <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.x'</span><br>  <span class="token key atrule">registry-url</span><span class="token punctuation">:</span> <span class="token string">'https://registry.npmjs.org'</span><br><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies <br><span class="token key atrule">run</span><span class="token punctuation">:</span> npm install<br><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Publish package on NPM 📦<br><span class="token key atrule">run</span><span class="token punctuation">:</span> npm publish <span class="token punctuation">-</span><span class="token punctuation">-</span>access=public<br><span class="token key atrule">env</span><span class="token punctuation">:</span><br>  <span class="token key atrule">NODE_AUTH_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># Publish on npm</span>
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node
+<span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v2
+<span class="token key atrule">with</span><span class="token punctuation">:</span>
+  <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'18.x'</span>
+  <span class="token key atrule">registry-url</span><span class="token punctuation">:</span> <span class="token string">'https://registry.npmjs.org'</span>
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies 
+<span class="token key atrule">run</span><span class="token punctuation">:</span> npm install
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Publish package on NPM 📦
+<span class="token key atrule">run</span><span class="token punctuation">:</span> npm publish <span class="token punctuation">-</span><span class="token punctuation">-</span>access=public
+<span class="token key atrule">env</span><span class="token punctuation">:</span>
+  <span class="token key atrule">NODE_AUTH_TOKEN</span><span class="token punctuation">:</span> $</code></pre>
 <ul>
 <li><strong>Action</strong>: Sets up Node.js, installs dependencies using <code>npm install</code> and publishes the package to npm with public access. The <code>NODE_AUTH_TOKEN</code> environment variable is used for authentication.</li>
 </ul>
