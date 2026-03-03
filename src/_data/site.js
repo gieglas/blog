@@ -108,12 +108,20 @@ module.exports = {
             url : "https://github.com/gov-cy/dsf-assessment-checklist", 
             description: "A sample application to demonstrate usage of SPA, PWA, govcy-frontend-renderer browser library and CDN latest major alias",
             demo: "https://gov-cy.github.io/dsf-assessment-checklist/",
-          },
+          }
+      ],
+      "other_projects": [
           {
             name : "Accessibility audit core", 
             type : "npm",
             url : "https://www.npmjs.com/package/@consevangelou/accessibility-audit-core", 
             description: "Core utilities for automated web accessibility auditing"
+          },
+          {
+            name : "Accessibility audit CLI", 
+            type : "npm",
+            url : "https://www.npmjs.com/package/@consevangelou/accessibility-audit-cli", 
+            description: "CLI tool to run accessibility audits (WCAG / EN 301 549)"
           }
       ],
       "old_projects": 
