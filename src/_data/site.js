@@ -47,7 +47,8 @@ module.exports = {
             name : "gov.cy Unified Design System", 
             type : "github", 
             url : "https://github.com/gov-cy/govcy-design-system", 
-            description: "The gov.cy design system developer assets project"
+            description: "The gov.cy design system developer assets project",
+            post: "dsf-design-system-update-v-3-0-0-unified-design-system"
           },
           {
             name : "gov.cy Unified Design System Documentation", 

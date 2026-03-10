@@ -34,6 +34,13 @@ I helped implement various online services for the <a href="https://www.gov.cy/"
 {% endfor %}
 </div>
 
+## Accessible EU's best practices
+
+These projects have been featured on [Accessible EU's best practices](https://accessible-eu-centre.ec.europa.eu/content-corner/good-practices_en){target="_blank"}
+
+- [“govcy-frontend-renderer” A software to render HTML for gov.cy elements - Cyprus](https://accessible-eu-centre.ec.europa.eu/govcy-frontend-renderer-software-render-html-govcy-elements-cyprus_en){target="_blank"}
+- [gov.cy Unified Design System - Cyprus](https://accessible-eu-centre.ec.europa.eu/govcy-unified-design-system-cyprus_en){target="_blank"}
+
 ## Older projects
 
 <div class="row" style=""> 
@@ -82,6 +89,7 @@ I helped implement various online services for the <a href="https://www.gov.cy/"
 - [Report hazardous cosmetics](https://www.gov.cy/en/service/report-hazardous-cosmetics/){target="_blank"}
 - [Sick leave application by MOEC trainers](https://moec-eservices.service.gov.cy/sick-leave-application){target="_blank"}
 - [Maternity leave application by MOEC trainers](https://moec-eservices.service.gov.cy/maternity-leave-application){target="_blank"}
+- [Notification for Installation of Aerators](https://www.gov.cy/en/service/notification-for-installation-of-aerators/){target="_blank"}
 
 ## Writing
 
