@@ -84,6 +84,8 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/js");
   //copy img
   eleventyConfig.addPassthroughCopy("./src/img");
+  //copy experiments
+  eleventyConfig.addPassthroughCopy("./src/experiments");
   //copy manifest
   eleventyConfig.addPassthroughCopy("./src/manifest.json");
   //copy CNAME
