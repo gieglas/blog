@@ -70,6 +70,8 @@ These projects have been featured on [Accessible EU's best practices](https://ac
 - [Voter registration](https://voter-registration.service.gov.cy/){target="_blank"} 
 - [Update my personal details](https://update-my-details.service.gov.cy/){target="_blank"} 
 - [Child birth grant](https://child-birth-grant.service.gov.cy/){target="_blank"}
+- [Application for Foreign Direct Investment Screening](https://www.gov.cy/en/service/application-for-foreign-direct-investment-screening/){target="_blank"}
+- [Find benefits you may qualify for](https://www.gov.cy/en/service/find-benefits-you-may-qualify-for/){target="_blank"}
 
 ### gov.cy services built on the Express Service Framework
 - [Confirmation of assumption of duties - Supporting programs of the Ministry of Education](https://www.gov.cy/en/service/confirmation-of-assumption-of-duties-supporting-programs-of-the-ministry-of-education/){target="_blank"}
@@ -90,6 +92,11 @@ These projects have been featured on [Accessible EU's best practices](https://ac
 - [Sick leave application by MOEC trainers](https://moec-eservices.service.gov.cy/sick-leave-application){target="_blank"}
 - [Maternity leave application by MOEC trainers](https://moec-eservices.service.gov.cy/maternity-leave-application){target="_blank"}
 - [Notification for Installation of Aerators](https://www.gov.cy/en/service/notification-for-installation-of-aerators/){target="_blank"}
+- [Apply for an ISSN](https://www.gov.cy/en/service/apply-for-issn/){target="_blank"}
+- [Apply for an ISMN](https://www.gov.cy/en/service/apply-for-ismn/){target="_blank"}
+- [Fertilizers and agricultural supplies subsidy scheme](https://www.gov.cy/en/service/fertilizers-scheme/){target="_blank"}
+- [Permit to use a government borehole](https://www.gov.cy/en/service/permit-to-use-a-government-borehole/){target="_blank"}
+- [Change of bank account for public employees](https://www.gov.cy/en/services/ergasia-kai-asfalish/salaries-and-pensions-of-state-officials-public-employees-and-hourly-paid-government-personnel/){target="_blank"}
 
 ## Writing
 
