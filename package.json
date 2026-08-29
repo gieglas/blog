@@ -22,7 +22,7 @@
     "http-server": "^14.1.1",
     "markdown-it-anchor": "^8.6.4",
     "markdown-it-attrs": "^4.1.4",
-    "pa11y": "^9.1.0",
+    "pa11y": "^10.0.0",
     "pagefind": "^1.1.0"
   },
   "resolutions": {
@@ -32,5 +32,8 @@
   "overrides": {
     "tar-fs": "^3.1.1",
     "minimatch": "^10.2.2"
+  },
+  "allowScripts": {
+    "puppeteer@25.9.0": true
   }
 }
